@@ -2,159 +2,224 @@
 
 This file provides guidance for AI assistants (Claude and others) working in this repository.
 
-## Repository
-
-- **Name**: syncovate-11
-- **Remote**: `ssjennings1/syncovate-11`
-- **Status**: Initial setup — no source files committed yet.
-
-> **Note**: This repository was analyzed on 2026-03-11 and contained no source code. The sections below are structured to be filled in as the project evolves. Update this file whenever the project structure, tooling, or conventions change.
-
 ---
 
 ## Project Overview
 
-<!-- Fill in once the project purpose is established -->
-<!-- Example: "Syncovate is a real-time data synchronization service built with..." -->
+**Syncovate** — [syncovatellc.com](https://syncovatellc.com)
+
+An organizational consulting firm offering diagnostics, executive coaching, and speaking/facilitation services. Principal: **Dr. Shannon Jennings, PsyD** ("Dr. J").
+
+**Target audience:** Founders, CEOs, middle managers, and family business leaders at companies with $1M–$50M revenue.
+
+**Tone:** Direct, warm, psychologically grounded. No jargon, no corporate fluff. Write like a trusted advisor who has done the work — not a marketer.
+
+---
+
+## Tech Stack
+
+- **Vanilla HTML, CSS, JavaScript only** — no frameworks, no bundlers, no build step.
+- Each page is a **standalone `.html` file** exported directly for upload to Taft Systems hosting.
+- No npm, no package.json, no dependencies.
 
 ---
 
 ## Repository Structure
 
-<!-- Update this section once files are added -->
 ```
 syncovate-11/
-├── CLAUDE.md          # This file
-└── (project files TBD)
+├── CLAUDE.md           # This file
+├── scotoma.html        # Organizational Diagnostics (flagship service)
+├── coaching.html       # Executive Coaching & Advising
+├── speaking.html       # Speaking & Facilitation
+└── about.html          # About Dr. J
 ```
 
+Pages under development (not yet created):
+- Sales pages for courses/programs (payment triggers + tracking TBD)
+
 ---
 
-## Development Setup
+## Brand
 
-### Prerequisites
+### Colors
 
-<!-- List required tools, language runtimes, package managers, etc. -->
-<!-- Example:
-- Node.js >= 20
-- pnpm >= 9
-- Docker (for local services)
--->
+| Token | Hex | Usage |
+|-------|-----|-------|
+| Bronze | `#C4935A` | Primary CTA buttons, accents, hover states |
+| Bronze Hover | `#A87840` | Button hover / active state |
+| Teal | `#56ADBF` | Secondary accent, highlights |
+| Charcoal Deep | `#252830` | Dark hero backgrounds, footer |
+| Cream | `#FAF8F5` | Light section backgrounds |
+| Warm Gray | `#F0EDE8` | Alternate light section backgrounds |
 
-### Getting Started
+### Typography
 
-```bash
-# Clone the repository
-git clone <repo-url>
-cd syncovate-11
+| Role | Font | Notes |
+|------|------|-------|
+| Headings (h1–h3) | Cormorant Garamond | Serif, loaded from Google Fonts |
+| Body / UI | DM Sans | Sans-serif, loaded from Google Fonts |
 
-# Install dependencies (update command to match actual package manager)
-# npm install / pnpm install / pip install -r requirements.txt / cargo build / go mod download
+### Key External Links
 
-# Start development environment
-# npm run dev / make dev / etc.
+| Purpose | URL |
+|---------|-----|
+| Book a Call (Calendly widget) | `https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo` |
+| Scotoma Quiz (lead capture) | `https://go.syncovatellc.com/scotoma-spotter` |
+| Phone | `574-532-3178` |
+
+---
+
+## Page Structure & Design Patterns
+
+Every page **must** implement all of the following. Do not omit any pattern on new pages.
+
+### 1. Scroll Progress Bar
+A thin bar fixed at the very top of the viewport that fills left-to-right as the user scrolls.
+
+```html
+<div class="scroll-progress" id="scrollProgress"></div>
 ```
 
-### Environment Variables
+```js
+window.addEventListener('scroll', () => {
+  const pct = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+  document.getElementById('scrollProgress').style.width = pct + '%';
+});
+```
 
-<!-- Document required environment variables here -->
-<!-- Example:
-Copy `.env.example` to `.env` and fill in values:
-- `DATABASE_URL` — connection string for the primary database
-- `API_KEY` — external service API key
--->
+### 2. Fixed Nav with Blur / Scroll State
+The `<nav>` starts transparent and gains a `scrolled` class (backdrop blur + shadow) once the user scrolls past ~50px.
+
+```js
+window.addEventListener('scroll', () => {
+  document.querySelector('nav').classList.toggle('scrolled', window.scrollY > 50);
+});
+```
+
+### 3. Mobile Hamburger Menu
+Full-screen overlay menu triggered by a hamburger button. Nav links close the menu on click.
+
+### 4. Scroll Reveal Animations
+Elements animate in as they enter the viewport using an `IntersectionObserver`.
+
+- `.reveal` — fade + slide up
+- `.reveal-scale` — fade + scale up
+
+Apply these classes to section containers, cards, and content blocks. Never add them to the `<nav>` or `<footer>`.
+
+### 5. Dark Hero with Radial Bronze Glow
+All hero sections use `background: #252830` with a radial gradient overlay centered behind the headline, using a semi-transparent bronze (`rgba(196, 147, 90, 0.15)` or similar).
+
+### 6. Section Copy Structure
+Every content section follows this eyebrow → headline → body hierarchy:
+
+```html
+<span class="eyebrow">Short Label</span>
+<h2>Serif Headline Here</h2>
+<p>Body copy in DM Sans. Keep it grounded and direct.</p>
+```
+
+The eyebrow label is small, uppercase, letter-spaced, in bronze or teal depending on section background.
 
 ---
 
-## Commands
+## Existing Pages Reference
 
-<!-- Update these to reflect actual scripts once package.json / Makefile / etc. are added -->
+### `scotoma.html` — Organizational Diagnostics (flagship)
+The most important page. Centers on the "scotoma" metaphor (organizational blind spots). Leads to the Scotoma Quiz CTA.
 
-| Command | Description |
-|---------|-------------|
-| `<build command>` | Build the project |
-| `<test command>` | Run the test suite |
-| `<lint command>` | Lint and format code |
-| `<dev command>` | Start local development server |
+### `coaching.html` — Executive Coaching & Advising
+1:1 and group coaching for executives and business owners.
+
+### `speaking.html` — Speaking & Facilitation
+Keynotes, workshops, and team sessions.
+
+### `about.html` — About Dr. J
+Background, credentials, and story of Dr. Shannon Jennings.
 
 ---
 
-## Testing
+## Hosting & Deployment
 
-<!-- Describe the testing strategy and how to run tests -->
-<!-- Example:
-- Unit tests live alongside source files as `*.test.ts`
-- Integration tests are in `tests/integration/`
-- Run all tests: `npm test`
-- Run a single test file: `npm test -- path/to/file.test.ts`
--->
+- Files are uploaded **manually** to Taft Systems as standalone HTML files.
+- Each `.html` file must be fully self-contained (inline `<style>` blocks acceptable; external CSS files are fine if also uploaded).
+- No server-side rendering, no routing, no APIs.
+- Google Fonts are loaded via `<link>` tags in `<head>` — always include both Cormorant Garamond and DM Sans.
+
+---
+
+## Writing & Copy Guidelines
+
+- **Voice:** Confident, direct, warm. Dr. J speaks plainly — avoid consultant-speak.
+- **Headlines:** Lead with the problem or transformation, not credentials.
+- **CTAs:** Specific and action-forward. Prefer "Take the Scotoma Quiz" or "Book a Call" over "Learn More."
+- **Length:** Body copy should be scannable. Short paragraphs (2–4 lines). Use `<ul>` for lists of 3+ items.
+- **Psychology references:** Appropriate when grounded — this audience expects intellectual credibility, not pop-psych platitudes.
 
 ---
 
 ## Code Conventions
 
-<!-- Document project-specific conventions as they emerge -->
+### HTML
+- Use semantic elements (`<section>`, `<article>`, `<nav>`, `<main>`, `<footer>`).
+- All interactive elements must be keyboard accessible.
+- `alt` text required on all images.
 
-### General
+### CSS
+- Use CSS custom properties (`--var`) for all brand colors and repeated values.
+- Mobile-first media queries.
+- Avoid `!important` except to override third-party embed styles.
 
-- Prefer explicit over implicit.
-- Keep functions small and focused on a single responsibility.
-- Write tests for any non-trivial logic.
+### JavaScript
+- Vanilla ES6+. No libraries.
+- All JS at the bottom of `<body>` or in a `<script>` block before `</body>`.
+- Use `DOMContentLoaded` or place scripts after the elements they reference.
+- No `console.log` left in production code.
 
-### Naming
+### File Naming
+- All page files: `kebab-case.html`
+- Images/assets: `kebab-case.ext`
 
-<!-- Example:
-- Files: `kebab-case`
-- Functions/variables: `camelCase`
-- Types/classes: `PascalCase`
-- Constants: `UPPER_SNAKE_CASE`
--->
+---
 
-### Commits
+## Commits
 
-- Use the [Conventional Commits](https://www.conventionalcommits.org/) format:
-  ```
-  <type>(<scope>): <short summary>
-  ```
-  Types: `feat`, `fix`, `chore`, `docs`, `refactor`, `test`, `style`, `perf`, `ci`
-- Keep the subject line under 72 characters.
-- Reference issue numbers where relevant (`fixes #123`).
+Use [Conventional Commits](https://www.conventionalcommits.org/) format:
+
+```
+<type>(<scope>): <short summary>
+```
+
+| Type | When to use |
+|------|-------------|
+| `feat` | New page or significant new section |
+| `fix` | Bug fix, broken link, layout issue |
+| `copy` | Copy/content changes only |
+| `style` | Visual/CSS-only changes |
+| `chore` | Housekeeping, file renames |
+| `docs` | CLAUDE.md or other documentation |
+
+Scope examples: `scotoma`, `coaching`, `speaking`, `about`, `nav`, `global`
 
 ---
 
 ## Branch Strategy
 
-- `main` — production-ready code; protected, requires PR + review.
-- `feat/<description>` — new features.
-- `fix/<description>` — bug fixes.
-- `chore/<description>` — maintenance tasks.
-
----
-
-## Pull Requests
-
-- Every PR should have a clear description of **what** changed and **why**.
-- Link to the relevant issue.
-- Ensure CI passes before requesting review.
-- Keep PRs focused — one logical change per PR.
-
----
-
-## Architecture Notes
-
-<!-- Add architectural decisions, ADRs, or key design patterns here as they are established -->
+- `main` — production-ready; matches what is live on Taft Systems.
+- `feat/<page-or-feature>` — new pages or major features.
+- `fix/<description>` — bug/layout fixes.
+- `copy/<page>` — copy-only edits.
 
 ---
 
 ## AI Assistant Guidelines
 
-When working in this repository:
-
-1. **Read before editing** — always read a file before modifying it.
-2. **Minimal changes** — only change what is directly required by the task; avoid refactoring unrelated code.
-3. **No speculative additions** — do not add error handling, abstractions, or features that are not explicitly requested.
-4. **Test coverage** — when adding logic, add or update corresponding tests.
-5. **Security** — do not introduce OWASP Top 10 vulnerabilities (XSS, SQL injection, command injection, etc.).
-6. **Commit hygiene** — write descriptive commit messages following the Conventional Commits format above.
-7. **Branch discipline** — develop on the designated feature branch; never push directly to `main`.
-8. **Update this file** — when you discover or establish new conventions, tooling, or architectural patterns, update the relevant section of this CLAUDE.md.
+1. **Read before editing** — always read the full file before making changes.
+2. **Match existing patterns exactly** — every page must have all five design patterns (scroll bar, nav scroll state, hamburger, reveal animations, dark hero). Never skip one.
+3. **Brand consistency** — use only the defined color tokens and fonts. No improvising with new colors or typefaces.
+4. **No frameworks** — do not introduce React, Vue, Alpine, Tailwind, or any external library. Pure HTML/CSS/JS only.
+5. **Self-contained files** — each `.html` must work when opened standalone in a browser with no local server.
+6. **Copy tone** — write in Dr. J's voice: direct, warm, credibility-forward, jargon-free.
+7. **Minimal changes** — only change what the task requires. Do not refactor working code.
+8. **Update this file** — when new pages are added or conventions evolve, update CLAUDE.md.
