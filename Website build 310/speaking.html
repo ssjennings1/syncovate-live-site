@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Speaking & Facilitation | Syncovate — Dr. Shannon Jennings</title>
 <meta name="description" content="Keynote speaking and expert facilitation by Dr. Shannon Jennings, PsyD. Leadership retreats, conference keynotes, and strategic working sessions that produce real decisions — not just good conversation.">
@@ -14,6 +15,11 @@
 <meta property="og:description" content="Keynotes and facilitated sessions that don't just spark conversation — they produce decisions. For leadership retreats, conferences, and strategic offsites.">
 <meta property="og:image" content="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/yCTzggMS1VT4xrqF3lML/media/699cf94f340118eab6af87e5.jpeg">
 <meta property="og:site_name" content="Syncovate">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Speaking & Facilitation | Syncovate — Dr. Shannon Jennings">
+<meta name="twitter:description" content="Keynotes and facilitated sessions that produce decisions, not just conversation. For leadership retreats and strategic offsites.">
+<meta name="twitter:image" content="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/yCTzggMS1VT4xrqF3lML/media/699cf94f340118eab6af87e5.jpeg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -83,18 +89,17 @@ nav.scrolled .nav-wordmark { color: var(--charcoal-deep); }
   color: rgba(250,248,245,0.6); text-decoration: none;
   transition: color 0.2s;
 }
-.nav-links a:hover { color: rgba(250,248,245,0.95); }
+.nav-links a:hover { color: var(--bronze-hover); }
 nav.scrolled .nav-links a { color: var(--text-muted); }
 nav.scrolled .nav-links a:hover { color: var(--bronze); }
 .nav-pill {
-  font-size: 0.68rem !important; font-weight: 500 !important;
-  letter-spacing: 0.12em !important;
+  font-size: 0.72rem; font-weight: 500;
+  letter-spacing: 0.12em; text-transform: uppercase;
   color: var(--charcoal-deep) !important;
-  background: var(--bronze); padding: 0.55rem 1.3rem !important;
-  transition: background 0.2s !important;
+  background: var(--bronze); padding: 0.6rem 1.4rem;
+  text-decoration: none; transition: background 0.2s, transform 0.2s;
 }
-.nav-pill:hover { background: var(--bronze-hover) !important; }
-nav.scrolled .nav-pill { color: var(--charcoal-deep) !important; }
+.nav-pill:hover { background: var(--bronze-hover); transform: translateY(-1px); }
 
 .hamburger {
   display: none; flex-direction: column; gap: 5px;
@@ -106,7 +111,7 @@ nav.scrolled .nav-pill { color: var(--charcoal-deep) !important; }
   background: rgba(250,248,245,0.8);
   transition: transform 0.3s, opacity 0.3s, background 0.3s;
 }
-nav.scrolled .hamburger span { background: var(--charcoal); }
+nav.scrolled .hamburger span { background: var(--charcoal-deep); }
 .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
 .hamburger.open span:nth-child(2) { opacity: 0; }
 .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
@@ -124,7 +129,7 @@ nav.scrolled .hamburger span { background: var(--charcoal); }
   color: rgba(250,248,245,0.7); text-decoration: none;
   transition: color 0.2s;
 }
-.mobile-menu a:hover { color: var(--bronze); }
+.mobile-menu a:hover { color: var(--bronze-hover); }
 .mobile-menu .mobile-cta {
   font-family: 'DM Sans', sans-serif;
   font-size: 0.8rem; font-weight: 500;
@@ -506,14 +511,15 @@ footer {
   display: grid; grid-template-columns: 2fr 1fr 1fr;
   gap: 4rem; margin-bottom: 4rem;
 }
+.footer-brand { display: flex; flex-direction: column; gap: 20px; }
 .footer-wordmark {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.3rem; font-weight: 600;
   letter-spacing: 0.14em; text-transform: uppercase;
   color: rgba(250,248,245,0.7);
-  display: block; margin-bottom: 1rem;
 }
 .footer-tagline {
+  font-family: 'DM Sans', sans-serif; font-weight: 300;
   font-size: 0.85rem; line-height: 1.75;
   color: rgba(250,248,245,0.3); max-width: 280px;
 }
@@ -522,8 +528,7 @@ footer {
   letter-spacing: 0.22em; text-transform: uppercase;
   color: rgba(250,248,245,0.35); margin-bottom: 1.25rem;
 }
-.footer-links { list-style: none; }
-.footer-links li { margin-bottom: 0.65rem; }
+.footer-links { list-style: none; display: flex; flex-direction: column; gap: 0.65rem; }
 .footer-links a {
   font-size: 0.85rem;
   color: rgba(250,248,245,0.4);
@@ -558,22 +563,23 @@ footer {
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
-  .nav-links { display: none; }
-  .hamburger { display: flex; }
   .what-you-get-inner { grid-template-columns: 1fr; gap: 3rem; }
   .wg-left { position: static; }
   .formats-grid { grid-template-columns: 1fr; }
   .topics-grid { grid-template-columns: 1fr; }
   .testi-grid { grid-template-columns: 1fr; }
-  .footer-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .footer-grid { grid-template-columns: 1fr; gap: 36px; }
+  footer { padding: 48px 28px 32px; }
+  .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
   .cred-bar-inner { gap: 1.5rem; }
   .cred-divider { display: none; }
 }
-@media (max-width: 600px) {
-  nav { padding: 0 1.5rem; }
+@media (max-width: 1024px) {
+  nav { padding: 0 1.25rem; height: 60px; }
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
   .opening, .what-you-get, .formats, .topics,
   .testimonials, .inquiry { padding: 5rem 1.5rem; }
-  footer { padding: 4rem 1.5rem 2rem; }
 }
 
 /* Reduced motion */
@@ -600,7 +606,7 @@ a:focus-visible, button:focus-visible {
 <nav>
   <a href="/" class="nav-wordmark">Syncovate</a>
   <ul class="nav-links">
-    <li><a href="/scotoma">Organizational Diagnostics</a></li>
+    <li><a href="/organizational-diagnostic">Organizational Diagnostics</a></li>
     <li><a href="/coaching">Coaching</a></li>
     <li><a href="/speaking">Speaking & Facilitation</a></li>
     <li><a href="/about">About Dr. J</a></li>
@@ -612,7 +618,7 @@ a:focus-visible, button:focus-visible {
 </nav>
 
 <div class="mobile-menu">
-  <a href="/scotoma">Organizational Diagnostics</a>
+  <a href="/organizational-diagnostic">Organizational Diagnostics</a>
   <a href="/coaching">Coaching</a>
   <a href="/speaking">Speaking & Facilitation</a>
   <a href="/about">About Dr. J</a>
@@ -639,7 +645,7 @@ a:focus-visible, button:focus-visible {
   <div class="cred-bar-inner">
     <div class="cred-item"><strong>Edward Lowe Foundation</strong>Multi-season keynote facilitator<br>for CEO leadership retreats</div>
     <div class="cred-divider"></div>
-    <div class="cred-item"><strong>Global Small Business Forum</strong>Panelist · 10th Annual · Chicago</div>
+    <div class="cred-item"><strong>Strategic Doing Fellow</strong></div>
     <div class="cred-divider"></div>
     <div class="cred-item"><strong>APA Council of Representatives</strong>National policy on psychology<br>in organizations</div>
     <div class="cred-divider"></div>
@@ -762,7 +768,7 @@ a:focus-visible, button:focus-visible {
       <div class="topic-card reveal">
         <div class="topic-num">02</div>
         <div class="topic-title">94% of Your Problems Are Systemic. Stop Fixing the 6%.</div>
-        <p class="topic-body">W. Edwards Deming established that 94% of workplace problems are systemic — not individual. Yet most leadership development focuses on individual behavior change. This talk reframes the work your organization actually needs to do.</p>
+        <p class="topic-body">W. Edwards Deming — the statistician whose quality management principles rebuilt post-war Japan and transformed modern manufacturing — established that 94% of workplace problems are systemic, not individual. Yet most leadership development still focuses on individual behavior change. This talk reframes the work your organization actually needs to do.</p>
       </div>
       <div class="topic-card reveal">
         <div class="topic-num">03</div>
@@ -797,31 +803,31 @@ a:focus-visible, button:focus-visible {
     </div>
     <div class="testi-grid stagger-children">
       <div class="testi testi-featured reveal">
-        <p class="testi-quote">"As a facilitation team Shannon Jennings and Dino Signore are <strong>world class.</strong> Their co-facilitation techniques have been honed and perfected to complement each other's strengths, which translates to the highest reflection achieved by retreat participants. I recommend Shannon, the staff, and the Edward Lowe Foundation to all."</p>
+        <p class="testi-quote">"Dr. Shannon Jennings was a featured speaker at the REF CIO Forum retreat. She led us in experimental learning exercises. The group enjoyed the exercises while learning a bit more about themselves. Dr. Shannon Jennings <strong>skillfully facilitated the group of professionals</strong> who are not generally excited about experimental exercises. I would recommend Business Psychologist Dr. Shannon Jennings for your corporate group or team."</p>
         <div class="testi-attr">
-          <span class="testi-name">Retreat Participant</span>
-          <span class="testi-role">Edward Lowe Foundation CEO Retreat</span>
+          <span class="testi-name">Clifford Clarke</span>
+          <span class="testi-role">Facilitator Leaders — CIO Forum, REF Indiana</span>
         </div>
       </div>
       <div class="testi reveal">
-        <p class="testi-quote">"I had the great honor and privilege of working with Shannon when she was working with the Edward Lowe Foundation. She is <strong>thoughtful, organized and personable.</strong> We were very lucky to have worked with her."</p>
+        <p class="testi-quote">"I really enjoyed your presentation! I was so impressed with all of the insights we were able to pull out of a few simple activities. My teams really need this! We are in a season of restructuring and growing. Change is painful and sometimes scary. <strong>I think you may be able to help give us tools and a path to navigate.</strong>"</p>
         <div class="testi-attr">
-          <span class="testi-name">Retreat Participant</span>
-          <span class="testi-role">Edward Lowe Foundation Annual Retreat</span>
+          <span class="testi-name">Melissa Espinoza</span>
+          <span class="testi-role">Vice President of Finance, Loader Parts Source</span>
         </div>
       </div>
       <div class="testi reveal">
-        <p class="testi-quote">"She teaches you how to fish, shows you where to fish, helps you hook it, guides you on filleting it, and shows you how to cook it too. <strong>She sets herself apart by not only asking the right questions — she follows up with good ideas and how to actually get it done.</strong>"</p>
+        <p class="testi-quote">"The exercise we did was fun and thought provoking. It was refreshing to have a speaker do something <strong>engaging with us instead of just lecturing.</strong> It made the session more impactful."</p>
         <div class="testi-attr">
-          <span class="testi-name">Jordan New</span>
-          <span class="testi-role">CEO, Mid City Supply</span>
+          <span class="testi-name">Dan New</span>
+          <span class="testi-role">President/CFO, Mid-City Supply</span>
         </div>
       </div>
       <div class="testi reveal">
-        <p class="testi-quote">"Morale was low and the outlook was bleak. We have not only come through the pandemic, but our new ED, staff and Board have <strong>gained remarkable knowledge on how to work together as one unit</strong> striving for the same goal — and Hannah's House is thriving."</p>
+        <p class="testi-quote">"Working with Dr. J is enlightening. She helps us experience a practical situation from different vantages which aids in seeing reactions occur naturally. <strong>She helps us reach a deeper understanding of cause and effect</strong> and how to move forward collectively and collaboratively."</p>
         <div class="testi-attr">
-          <span class="testi-name">Susan Frucci</span>
-          <span class="testi-role">Executive Director, Hannah's House</span>
+          <span class="testi-name">Jen Sailor</span>
+          <span class="testi-role">Chief Financial and Operations Officer</span>
         </div>
       </div>
     </div>
@@ -845,15 +851,15 @@ a:focus-visible, button:focus-visible {
   <div class="footer-grid">
     <div class="footer-brand">
       <span class="footer-wordmark">Syncovate</span>
-      <p class="footer-tagline">Business psychology and systems architecture for founders and CEOs of second-stage companies — $1M to $50M.</p>
+      <p class="footer-tagline">Organizational advisory for founders and leaders of privately held, growing companies.</p>
     </div>
     <div class="footer-col">
       <h4>Services</h4>
       <ul class="footer-links">
-        <li><a href="/scotoma">Organizational Diagnostics</a></li>
+        <li><a href="/organizational-diagnostic">Organizational Diagnostics</a></li>
         <li><a href="/coaching">Coaching & Advising</a></li>
         <li><a href="/speaking">Speaking & Facilitation</a></li>
-        <li><a href="https://go.syncovatellc.com/scotoma-spotter">Scotoma Spotter™</a></li>
+        <li><a href="https://syncovatellc.com/scotoma-spotter">Scotoma Spotter™</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -862,7 +868,7 @@ a:focus-visible, button:focus-visible {
         <li><a href="/about">About Dr. J</a></li>
         <li><a href="https://www.linkedin.com/in/shannonsjennings/" target="_blank" rel="noopener">LinkedIn</a></li>
         <li><a href="tel:5745323178">574-532-3178</a></li>
-        <li><a href="/cdn-cgi/l/email-protection#12417a737c7c7d7c52416b7c717d647366775e5e513c717d7f"><span class="__cf_email__" data-cfemail="97c4fff6f9f9f8f9d7c4eef9f4f8e1f6e3f2dbdbd4b9f4f8fa">[email&#160;protected]</span></a></li>
+        <li><a href="mailto:Shannon@SyncovateLLC.com">Shannon@SyncovateLLC.com</a></li>
         <li><a href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo" target="_blank" rel="noopener">Book a Call</a></li>
       </ul>
     </div>
@@ -875,7 +881,7 @@ a:focus-visible, button:focus-visible {
 
 <button class="back-to-top" aria-label="Back to top">↑</button>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 (function(){
   'use strict';
   var progressBar = document.querySelector('.scroll-progress');
