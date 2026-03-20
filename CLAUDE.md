@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-This file provides guidance for AI assistants (Claude and others) working in this repository.
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ---
 
@@ -27,12 +27,14 @@ An organizational consulting firm offering diagnostics, executive coaching, and 
 ## Repository Structure
 
 ```
-syncovate-11/
-├── CLAUDE.md           # This file
-├── scotoma.html        # Organizational Diagnostics (flagship service)
-├── coaching.html       # Executive Coaching & Advising
-├── speaking.html       # Speaking & Facilitation
-└── about.html          # About Dr. J
+├── CLAUDE.md                       # This file
+├── index.html                      # Homepage — service overview + credibility strip
+├── organizational-diagnostic.html  # Flagship "Scotoma" diagnostic page
+├── coaching-and-advising.html      # Executive coaching & advising
+├── speaking--facilitation.html     # Speaking & facilitation
+├── about-dr-j.html                 # About Dr. J
+├── contact.html                    # Contact info (phone, email, book a call)
+├── favicon.svg                     # Site favicon
 ```
 
 Pages under development (not yet created):
@@ -48,10 +50,16 @@ Pages under development (not yet created):
 |-------|-----|-------|
 | Bronze | `#C4935A` | Primary CTA buttons, accents, hover states |
 | Bronze Hover | `#A87840` | Button hover / active state |
+| Bronze Subtle | `rgba(196,147,90,0.07)` | Light bronze tint for backgrounds |
 | Teal | `#56ADBF` | Secondary accent, highlights |
 | Charcoal Deep | `#252830` | Dark hero backgrounds, footer |
+| Charcoal | `#3D4148` | Secondary dark backgrounds |
+| Charcoal Mid | `#5C6170` | Mid-tone dark text/accents |
 | Cream | `#FAF8F5` | Light section backgrounds |
 | Warm Gray | `#F0EDE8` | Alternate light section backgrounds |
+| Text | `#3A3530` | Primary body text color |
+| Text Muted | `#7A736B` | Secondary/subdued text |
+| Border | `rgba(196,147,90,0.18)` | Subtle bronze-tinted borders |
 
 ### Typography
 
@@ -65,8 +73,10 @@ Pages under development (not yet created):
 | Purpose | URL |
 |---------|-----|
 | Book a Call (Calendly widget) | `https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo` |
-| Scotoma Quiz (lead capture) | `https://go.syncovatellc.com/scotoma-spotter` |
+| Scotoma Quiz (lead capture) | `https://spotter.syncovatellc.com/` |
 | Phone | `574-532-3178` |
+| Email | `Shannon@SyncovateLLC.com` |
+| LinkedIn | `https://www.linkedin.com/in/shannonsjennings/` |
 
 ---
 
@@ -75,16 +85,17 @@ Pages under development (not yet created):
 Every page **must** implement all of the following. Do not omit any pattern on new pages.
 
 ### 1. Scroll Progress Bar
-A thin bar fixed at the very top of the viewport that fills left-to-right as the user scrolls.
+A thin bar fixed at the very top of the viewport (height 2px, bronze-to-teal gradient) that fills left-to-right as the user scrolls.
 
 ```html
-<div class="scroll-progress" id="scrollProgress"></div>
+<div class="scroll-progress"></div>
 ```
 
 ```js
+var prog = document.querySelector('.scroll-progress');
 window.addEventListener('scroll', () => {
   const pct = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
-  document.getElementById('scrollProgress').style.width = pct + '%';
+  prog.style.width = pct + '%';
 });
 ```
 
@@ -122,21 +133,30 @@ Every content section follows this eyebrow → headline → body hierarchy:
 
 The eyebrow label is small, uppercase, letter-spaced, in bronze or teal depending on section background.
 
+### 7. Back-to-Top Button
+Longer pages include a floating back-to-top button that appears after scrolling down. Present on coaching, speaking, and about pages.
+
 ---
 
 ## Existing Pages Reference
 
-### `scotoma.html` — Organizational Diagnostics (flagship)
-The most important page. Centers on the "scotoma" metaphor (organizational blind spots). Leads to the Scotoma Quiz CTA.
+### `index.html` — Homepage
+Service overview with three-card grid (Diagnostics, Coaching, Speaking), credibility strip, about snapshot, and quotes. Entry point for the site.
 
-### `coaching.html` — Executive Coaching & Advising
-1:1 and group coaching for executives and business owners.
+### `organizational-diagnostic.html` — Organizational Diagnostics (flagship)
+The most important page. Centers on the "scotoma" metaphor (organizational blind spots). Includes symptoms grid, science section with eye diagram, diagnostic dimensions, case study walkthrough, three-tier pricing grid, and testimonials. Leads to the Scotoma Quiz CTA.
 
-### `speaking.html` — Speaking & Facilitation
+### `coaching-and-advising.html` — Executive Coaching & Advising
+1:1 and group coaching for executives and business owners. Includes service tiers (Single Session, Core Retainer, Premium Retainer).
+
+### `speaking--facilitation.html` — Speaking & Facilitation
 Keynotes, workshops, and team sessions.
 
-### `about.html` — About Dr. J
-Background, credentials, and story of Dr. Shannon Jennings.
+### `about-dr-j.html` — About Dr. J
+Background, credentials, and story of Dr. Shannon Jennings. Two-column hero, origin story, "This Is / This Isn't" comparison grid, credentials grid, and how-I-work section.
+
+### `contact.html` — Contact
+Minimal page with three-column contact card grid (phone, email, book a call).
 
 ---
 
@@ -145,6 +165,7 @@ Background, credentials, and story of Dr. Shannon Jennings.
 - Files are uploaded **manually** to Taft Systems as standalone HTML files.
 - Each `.html` file must be fully self-contained (inline `<style>` blocks acceptable; external CSS files are fine if also uploaded).
 - No server-side rendering, no routing, no APIs.
+- Nav links use **extensionless paths** (e.g., `/organizational-diagnostic` not `/organizational-diagnostic.html`) — Taft Systems handles the resolution.
 - Google Fonts are loaded via `<link>` tags in `<head>` — always include both Cormorant Garamond and DM Sans.
 
 ---
