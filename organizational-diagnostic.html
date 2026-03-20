@@ -239,36 +239,9 @@ h2.serif em{font-style:italic;color:var(--bronze);}
 .rowan-question{margin-top:48px;padding:36px 48px;border:1px solid var(--border);background:white;}
 .rowan-question p{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:22px;line-height:1.5;color:var(--charcoal);}
 
-/* ── DIFF + STEPS ── */
-.diff-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:4px;overflow:hidden;margin-top:52px;}
-.diff-card{background:var(--charcoal);padding:48px 44px;position:relative;overflow:hidden;transition:background 0.3s;}
-.diff-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--bronze);opacity:0;transition:opacity 0.3s;}
-.diff-card:hover::after{opacity:1;}
-.diff-card:hover{background:rgba(61,65,72,0.95);}
-.diff-label{font-family:'DM Sans',sans-serif;font-weight:400;font-size:10.5px;letter-spacing:0.18em;text-transform:uppercase;color:var(--bronze);margin-bottom:14px;display:block;}
-.diff-title{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:22px;color:#FDFCFA;margin-bottom:14px;}
-.diff-body{font-family:'DM Sans',sans-serif;font-weight:300;font-size:14px;line-height:1.75;color:rgba(253,252,250,0.5);}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:4px;overflow:hidden;margin-top:40px;}
-.step{background:var(--charcoal);padding:44px 40px;}
-.step-num{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:56px;color:rgba(196,147,90,0.15);line-height:1;margin-bottom:22px;display:block;}
-.step-title{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:20px;color:#FDFCFA;margin-bottom:12px;}
-.step-body{font-family:'DM Sans',sans-serif;font-weight:300;font-size:14px;line-height:1.75;color:rgba(253,252,250,0.5);}
-
-/* ── PATHWAY ── */
-.pathway{background:var(--warm-gray);padding:80px 80px 40px;}
-.pathway-title{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:28px;color:var(--charcoal);margin-bottom:16px;}
-.pathway-body{font-family:'DM Sans',sans-serif;font-weight:300;font-size:15.5px;line-height:1.8;color:var(--text);max-width:680px;}
-.pathway-flow{display:flex;align-items:stretch;margin-top:40px;border:1px solid var(--border);border-radius:4px;overflow:hidden;}
-.pathway-step{flex:1;padding:28px 32px;border-right:1px solid var(--border);background:var(--cream);transition:background 0.3s;}
-.pathway-step:last-child{border-right:none;}
-.pathway-step:hover{background:rgba(196,147,90,0.03);}
-.pathway-step-label{font-family:'DM Sans',sans-serif;font-weight:400;font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--bronze);display:block;margin-bottom:8px;}
-.pathway-step-title{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:18px;color:var(--charcoal);margin-bottom:6px;}
-.pathway-step-note{font-family:'DM Sans',sans-serif;font-weight:300;font-size:12.5px;color:var(--text-muted);line-height:1.5;}
-.pathway-arrow{display:flex;align-items:center;padding:0 12px;color:var(--bronze);opacity:0.4;font-size:18px;background:var(--cream);border-right:1px solid var(--border);}
 
 /* ── SERVICES ── */
-.services{padding:40px 80px 80px;background:var(--warm-gray);}
+.services{padding:80px 80px 80px;background:var(--warm-gray);}
 .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
 .svc{background:linear-gradient(160deg,rgba(37,40,48,0.98),rgba(50,54,64,0.95));border:1px solid rgba(196,147,90,0.1);border-top:2px solid var(--bronze);border-radius:4px;padding:48px 44px 44px;display:flex;flex-direction:column;transition:transform 0.4s cubic-bezier(0.16,1,0.3,1),box-shadow 0.4s ease,border-color 0.3s;}
 .svc:hover{transform:translateY(-6px);box-shadow:0 20px 60px rgba(0,0,0,0.25),0 0 0 1px rgba(196,147,90,0.15);border-color:rgba(196,147,90,0.25);}
@@ -337,13 +310,8 @@ body::after{content:'';position:fixed;inset:0;z-index:9000;pointer-events:none;b
   nav{padding:0 32px;}
   .nav-links{gap:24px;}
   .services-grid{grid-template-columns:1fr;gap:20px;}
-  .diff-grid,.steps{grid-template-columns:1fr;}
   .science-layout{grid-template-columns:1fr;gap:48px;}
   .footer-grid{grid-template-columns:1fr;gap:36px;}
-  .pathway-flow{flex-direction:column;}
-  .pathway-arrow{transform:rotate(90deg);padding:8px 0;border-right:none;border-bottom:1px solid var(--border);justify-content:center;}
-  .pathway-step{border-right:none;border-bottom:1px solid var(--border);}
-  .pathway{padding:80px 48px;}
 }
 @media (max-width:768px){
   .hero{padding:130px 28px 90px;min-height:90vh;}
@@ -374,7 +342,6 @@ body::after{content:'';position:fixed;inset:0;z-index:9000;pointer-events:none;b
   .eye-diagram-wrap{position:relative;top:auto;margin:0 auto;}
   .strengths-callout{flex-direction:column;gap:16px;padding:32px 28px;}
   .hero-scroll-hint{display:none;}
-  .pathway{padding:60px 28px;}
 }
 /* Diagnostic suite + final CTA responsive */
 @media (max-width:768px){
@@ -395,12 +362,12 @@ body::after{content:'';position:fixed;inset:0;z-index:9000;pointer-events:none;b
 
 <!-- NAV — matches sitewide structure -->
 <nav>
-  <a href="/" class="nav-wordmark">Syncovate</a>
+  <a href="/index" class="nav-wordmark">Syncovate</a>
   <ul class="nav-links">
     <li><a href="/organizational-diagnostic">Organizational Diagnostics</a></li>
-    <li><a href="/coaching">Coaching</a></li>
-    <li><a href="/speaking">Speaking & Facilitation</a></li>
-    <li><a href="/about">About Dr. J</a></li>
+    <li><a href="/coaching-and-advising">Coaching & Advising</a></li>
+    <li><a href="/speaking--facilitation">Speaking & Facilitation</a></li>
+    <li><a href="/about-dr-j">About Dr. J</a></li>
     <li><a href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo" class="nav-pill" target="_blank" rel="noopener">Book a Call</a></li>
   </ul>
   <button class="hamburger" aria-label="Menu" aria-expanded="false">
@@ -410,9 +377,9 @@ body::after{content:'';position:fixed;inset:0;z-index:9000;pointer-events:none;b
 
 <div class="mobile-menu">
   <a href="/organizational-diagnostic">Organizational Diagnostics</a>
-  <a href="/coaching">Coaching</a>
-  <a href="/speaking">Speaking & Facilitation</a>
-  <a href="/about">About Dr. J</a>
+  <a href="/coaching-and-advising">Coaching & Advising</a>
+  <a href="/speaking--facilitation">Speaking & Facilitation</a>
+  <a href="/about-dr-j">About Dr. J</a>
   <a href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo" class="mobile-cta" target="_blank" rel="noopener">Book a Call</a>
 </div>
 
@@ -424,7 +391,7 @@ body::after{content:'';position:fixed;inset:0;z-index:9000;pointer-events:none;b
   <h1>You already<br>know something<br>is <em>there.</em></h1>
   <p class="sub">You've caught it out of the corner of your eye. The pattern you almost named. The friction you can't locate. The strength you can't quite replicate. You just need the data to see it clearly enough to act on it.</p>
   <div class="hero-ctas">
-    <a href="https://go.syncovatellc.com/scotoma-spotter" class="btn-bronze">Take the Scotoma Spotter™ &rarr;</a>
+    <a href="https://spotter.syncovatellc.com/" class="btn-bronze">Take the Scotoma Spotter™ &rarr;</a>
     <a href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo" class="btn-ghost" target="_blank" rel="noopener">Book a 15-min clarity call &rarr;</a>
   </div>
   <p class="hero-micro">3 minutes &nbsp;·&nbsp; Personalized blind spot profile instantly</p>
@@ -569,7 +536,7 @@ body::after{content:'';position:fixed;inset:0;z-index:9000;pointer-events:none;b
           <li style="display:flex; align-items:flex-start; gap:12px; font-family:'DM Sans',sans-serif; font-weight:300; font-size:14.5px; color:var(--text);"><span style="color:var(--teal); font-weight:500; flex-shrink:0; margin-top:1px;">✓</span>Personalized result page with strategic implications</li>
           <li style="display:flex; align-items:flex-start; gap:12px; font-family:'DM Sans',sans-serif; font-weight:300; font-size:14.5px; color:var(--text);"><span style="color:var(--teal); font-weight:500; flex-shrink:0; margin-top:1px;">✓</span>Completely free — no email required to start</li>
         </ul>
-        <a href="https://go.syncovatellc.com/scotoma-spotter" class="btn-bronze">Take the Free Scotoma Spotter™ &rarr;</a>
+        <a href="https://spotter.syncovatellc.com/" class="btn-bronze">Take the Free Scotoma Spotter™ &rarr;</a>
         <p style="font-family:'DM Sans',sans-serif; font-size:11px; color:var(--text-muted); margin-top:12px; letter-spacing:0.04em;">No credit card &nbsp;·&nbsp; No sales call required &nbsp;·&nbsp; Just clarity</p>
       </div>
       <div style="text-align:right; padding-top:4px;">
@@ -662,39 +629,13 @@ body::after{content:'';position:fixed;inset:0;z-index:9000;pointer-events:none;b
   </div>
 </section>
 
-<!-- DIFFERENTIATION + STEPS -->
-<section class="section section-dark">
-  <span class="eyebrow reveal">I'm Not What You've Already Tried</span>
-  <h2 class="serif reveal">The results didn't stick because they didn't<br>touch the <em>architecture underneath.</em></h2>
-  <div class="diff-grid reveal-scale">
-    <div class="diff-card"><span class="diff-label">Not a traditional consultant</span><div class="diff-title">Strategy without the system</div><p class="diff-body">Consultants hand you a strategy. I identify why your leadership system can't execute the strategy you already have. The problem isn't your plan. It's the invisible architecture around it.</p></div>
-    <div class="diff-card"><span class="diff-label">Beyond individual coaching</span><div class="diff-title">Patterns, not persons</div><p class="diff-body">Coaching develops individuals. I work with the patterns in your leadership system that create recurring outcomes — even when you have talented, motivated people in every seat.</p></div>
-    <div class="diff-card"><span class="diff-label">A diagnostic partner</span><div class="diff-title">Inside the system</div><p class="diff-body">I go inside — talking to your people, running structured surveys, triangulating across qualitative and quantitative data. I map the whole picture. And I stay in the room.</p></div>
-  </div>
-  <span class="eyebrow reveal" style="display:block;margin-top:64px;margin-bottom:0;">How the work unfolds</span>
-  <div class="steps reveal-scale">
-    <div class="step"><span class="step-num">1</span><div class="step-title">Map the architecture</div><p class="step-body">I assess the invisible patterns shaping your outcomes — across decision-making, power flow, and structural capacity.</p></div>
-    <div class="step"><span class="step-num">2</span><div class="step-title">Facilitate your discovery</div><p class="step-body">I give you the framework and the evidence to see what these patterns are costing you and producing for you. The insight is yours.</p></div>
-    <div class="step"><span class="step-num">3</span><div class="step-title">Partner through what's next</div><p class="step-body">Some engagements end with a clear report. Some go further into decisions, structural changes, implementation. I stick around for the hard stuff.</p></div>
-  </div>
-</section>
-
-<!-- PATHWAY -->
-<div class="pathway">
-  <span class="eyebrow reveal">Engagements</span>
-  <div class="pathway-title reveal">The Pathway to Clarity</div>
-  <p class="pathway-body reveal">Every engagement is built on a foundation of data. Most clients start with the Blind Spot Scan. Your initial investment is never lost — each phase rolls directly into the next.</p>
-  <div class="pathway-flow reveal-scale">
-    <div class="pathway-step"><span class="pathway-step-label">Entry Point · $3,500</span><div class="pathway-step-title">Blind Spot Scan</div><p class="pathway-step-note">100% rolls toward Full Diagnostic if needed</p></div>
-    <div class="pathway-arrow">&rarr;</div>
-    <div class="pathway-step"><span class="pathway-step-label">Deep Audit · $15,000</span><div class="pathway-step-title">Full Diagnostic</div><p class="pathway-step-note">Roadmap becomes blueprint for implementation</p></div>
-    <div class="pathway-arrow">&rarr;</div>
-    <div class="pathway-step"><span class="pathway-step-label">Implementation · From $30,000</span><div class="pathway-step-title">Full Transformation</div><p class="pathway-step-note">Diagnostic + embedded partnership</p></div>
-  </div>
-</div>
-
 <!-- SERVICES -->
 <div class="services" id="services">
+  <div style="max-width:680px; margin-bottom:40px;">
+    <span class="eyebrow reveal">Engagements</span>
+    <h2 class="serif reveal" style="margin-bottom:16px;">The Pathway to <em>Clarity</em></h2>
+    <p class="body-copy reveal">Every engagement is built on a foundation of data. Most clients start with the Blind Spot Scan. Your initial investment is never lost — each phase rolls directly into the next.</p>
+  </div>
   <div class="services-grid reveal-scale">
     <div class="svc">
       <span class="svc-tag">Entry Point</span><span class="svc-price">$3,500</span>
@@ -711,7 +652,7 @@ body::after{content:'';position:fixed;inset:0;z-index:9000;pointer-events:none;b
       </ul>
       <div class="svc-footer">
         <div class="svc-timeline">Timeline · 2–3 weeks</div>
-        <a href="https://go.syncovatellc.com/scotoma-spotter" class="btn-svc-primary">Find Out If This Is Right for You &rarr;</a>
+        <a href="https://spotter.syncovatellc.com/" class="btn-svc-primary">Find Out If This Is Right for You &rarr;</a>
       </div>
     </div>
     <div class="svc">
@@ -796,7 +737,7 @@ body::after{content:'';position:fixed;inset:0;z-index:9000;pointer-events:none;b
         <span style="display:block; font-family:'DM Sans',sans-serif; font-size:10px; letter-spacing:0.22em; text-transform:uppercase; color:var(--teal); font-weight:500; margin-bottom:14px;">Start Here &nbsp;·&nbsp; Free</span>
         <h3 style="font-family:'Cormorant Garamond',serif; font-weight:400; font-size:28px; color:#FDFCFA; margin-bottom:12px; line-height:1.2;">Take the Scotoma Spotter™</h3>
         <p style="font-family:'DM Sans',sans-serif; font-weight:300; font-size:14px; line-height:1.8; color:rgba(253,252,250,0.5); margin-bottom:28px;">10 questions. Personalized blind spot type. Recommended next step. No sales call required to get your results.</p>
-        <a href="https://go.syncovatellc.com/scotoma-spotter" class="btn-bronze" style="width:100%; text-align:center; justify-content:center;">Take the Free Quiz &rarr;</a>
+        <a href="https://spotter.syncovatellc.com/" class="btn-bronze" style="width:100%; text-align:center; justify-content:center;">Take the Free Quiz &rarr;</a>
         <p style="font-family:'DM Sans',sans-serif; font-size:11px; color:rgba(253,252,250,0.25); margin-top:12px; text-align:center; letter-spacing:0.04em;">3 minutes &nbsp;·&nbsp; No credit card</p>
       </div>
 
@@ -826,21 +767,21 @@ body::after{content:'';position:fixed;inset:0;z-index:9000;pointer-events:none;b
   <div class="footer-grid">
     <div>
       <span class="footer-wordmark">Syncovate</span>
-      <p class="footer-tagline">Business psychology and organizational consulting for founders and CEOs of second-stage companies.</p>
+      <p class="footer-tagline">Organizational advisory for founders and leaders of privately held, growing companies.</p>
     </div>
     <div class="footer-col">
       <h4>Work</h4>
       <ul class="footer-links">
         <li><a href="/organizational-diagnostic">Organizational Diagnostics</a></li>
-        <li><a href="/coaching">Advisory & Coaching</a></li>
-        <li><a href="/speaking">Speaking & Facilitation</a></li>
-        <li><a href="https://go.syncovatellc.com/scotoma-spotter" target="_blank" rel="noopener">The Scotoma Spotter</a></li>
+        <li><a href="/coaching-and-advising">Coaching & Advising</a></li>
+        <li><a href="/speaking--facilitation">Speaking & Facilitation</a></li>
+        <li><a href="https://spotter.syncovatellc.com/" target="_blank" rel="noopener">The Scotoma Spotter</a></li>
       </ul>
     </div>
     <div class="footer-col">
       <h4>Connect</h4>
       <ul class="footer-links">
-        <li><a href="/about">About Dr. J</a></li>
+        <li><a href="/about-dr-j">About Dr. J</a></li>
         <li><a href="https://www.linkedin.com/in/shannonsjennings/" target="_blank" rel="noopener">LinkedIn</a></li>
         <li><a href="tel:5745323178">574-532-3178</a></li>
         <li><a href="mailto:Shannon@SyncovateLLC.com">Shannon@SyncovateLLC.com</a></li>
