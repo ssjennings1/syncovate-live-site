@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Dr. J — Shannon Jennings, PsyD | Syncovate</title>
+<meta name="description" content="Dr. Shannon Jennings (Dr. J) has spent 20 years learning to see what leaders can't. Organizational advisor, facilitator, and trusted thinking partner to founders and CEOs.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.syncovatellc.com/about-dr-j">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.syncovatellc.com/about-dr-j">
+<meta property="og:title" content="About Dr. J — Shannon Jennings, PsyD | Syncovate">
+<meta property="og:description" content="Dr. Shannon Jennings (Dr. J) has spent 20 years learning to see what leaders can't. Organizational advisor and trusted thinking partner to founders and CEOs.">
+<meta property="og:image" content="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/yCTzggMS1VT4xrqF3lML/media/699cf94f340118eab6af87e5.jpeg">
+<meta property="og:site_name" content="Syncovate">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About Dr. J — Shannon Jennings, PsyD | Syncovate">
+<meta name="twitter:description" content="Organizational advisor, facilitator, and trusted thinking partner to founders and CEOs.">
+<meta name="twitter:image" content="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/yCTzggMS1VT4xrqF3lML/media/699cf94f340118eab6af87e5.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bronze:#C4935A;--bronze-hover:#A87840;--bronze-subtle:rgba(196,147,90,0.07);
+  --teal:#56ADBF;--charcoal-deep:#252830;--charcoal:#3D4148;--charcoal-mid:#5C6170;
+  --cream:#FAF8F5;--warm-gray:#F0EDE8;
+  --text:#3A3530;--text-muted:#7A736B;
+  --border:rgba(196,147,90,0.18);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;font-weight:300;color:var(--text);background:var(--cream);overflow-x:hidden;}
+
+.scroll-progress{position:fixed;top:0;left:0;height:2px;width:0%;background:linear-gradient(90deg,var(--bronze),var(--teal));z-index:1000;transition:width 0.1s linear;}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;height:72px;padding:0 2.5rem;display:flex;align-items:center;justify-content:space-between;background:transparent;backdrop-filter:blur(10px);transition:background 0.45s ease,border-color 0.45s ease,box-shadow 0.45s ease,height 0.3s ease;border-bottom:1px solid transparent;}
+nav.scrolled{background:rgba(250,248,245,0.97);border-bottom:1px solid rgba(196,147,90,0.12);box-shadow:0 1px 32px rgba(0,0,0,0.06);height:64px;}
+.nav-wordmark{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:rgba(250,248,245,0.9);text-decoration:none;transition:color 0.3s;}
+nav.scrolled .nav-wordmark{color:var(--charcoal-deep);}
+.nav-links{display:flex;align-items:center;gap:2rem;list-style:none;}
+.nav-links a{font-size:0.72rem;font-weight:400;letter-spacing:0.14em;text-transform:uppercase;color:rgba(250,248,245,0.6);text-decoration:none;transition:color 0.2s;}
+.nav-links a:hover{color:var(--bronze-hover);}
+nav.scrolled .nav-links a{color:var(--text-muted);}
+nav.scrolled .nav-links a:hover{color:var(--bronze);}
+.nav-pill{font-size:0.72rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--charcoal-deep)!important;background:var(--bronze);padding:0.6rem 1.4rem;text-decoration:none;transition:background 0.2s,transform 0.2s;}
+.nav-pill:hover{background:var(--bronze-hover);transform:translateY(-1px);}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;background:none;border:none;z-index:201;}
+.hamburger span{display:block;width:22px;height:2px;background:rgba(250,248,245,0.8);transition:transform 0.3s,opacity 0.3s,background 0.3s;}
+nav.scrolled .hamburger span{background:var(--charcoal-deep);}
+.hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px);}
+.hamburger.open span:nth-child(2){opacity:0;}
+.hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px);}
+.mobile-menu{display:none;position:fixed;inset:0;background:var(--charcoal-deep);z-index:199;flex-direction:column;justify-content:center;align-items:center;gap:2rem;opacity:0;transition:opacity 0.3s;}
+.mobile-menu.open{display:flex;opacity:1;}
+.mobile-menu a{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:400;color:rgba(250,248,245,0.7);text-decoration:none;transition:color 0.2s;}
+.mobile-menu a:hover{color:var(--bronze-hover);}
+.mobile-menu .mobile-cta{font-family:'DM Sans',sans-serif;font-size:0.8rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--charcoal-deep);background:var(--bronze);padding:1rem 2rem;margin-top:1rem;}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(40px);transition:opacity 0.9s cubic-bezier(0.16,1,0.3,1),transform 0.9s cubic-bezier(0.16,1,0.3,1);}
+.reveal.visible{opacity:1;transform:translateY(0);}
+.reveal-scale{opacity:0;transform:scale(0.96);transition:opacity 0.9s cubic-bezier(0.16,1,0.3,1),transform 0.9s cubic-bezier(0.16,1,0.3,1);}
+.reveal-scale.visible{opacity:1;transform:scale(1);}
+.stagger-children .reveal:nth-child(1){transition-delay:0s;}
+.stagger-children .reveal:nth-child(2){transition-delay:0.12s;}
+.stagger-children .reveal:nth-child(3){transition-delay:0.24s;}
+.stagger-children .reveal:nth-child(4){transition-delay:0.36s;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:none;}}
+
+/* HERO */
+.hero{min-height:80vh;background:var(--charcoal-deep);display:flex;flex-direction:column;justify-content:flex-end;padding:9rem 6rem 6rem;position:relative;overflow:hidden;}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(196,147,90,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(196,147,90,0.03) 1px,transparent 1px);background-size:80px 80px;pointer-events:none;}
+.hero-glow{position:absolute;top:0;right:0;width:700px;height:700px;background:radial-gradient(circle,rgba(196,147,90,0.05) 0%,transparent 65%);pointer-events:none;}
+.hero-inner{max-width:1100px;display:grid;grid-template-columns:1.4fr 1fr;gap:8rem;align-items:end;}
+.hero-left{}
+.hero-eyebrow{font-size:0.65rem;font-weight:500;letter-spacing:0.28em;text-transform:uppercase;color:var(--bronze);display:block;margin-bottom:2rem;opacity:0;animation:fadeUp 0.7s ease 0.2s forwards;}
+.hero h1{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(42px,5.5vw,76px);line-height:1.05;color:#FDFCFA;margin-bottom:2rem;opacity:0;animation:fadeUp 0.8s ease 0.35s forwards;}
+.hero h1 em{font-style:italic;color:var(--bronze);}
+.hero-sub{font-size:clamp(0.9rem,1.3vw,1rem);font-weight:300;line-height:1.9;color:rgba(253,252,250,0.45);max-width:520px;margin-bottom:2.5rem;opacity:0;animation:fadeUp 0.8s ease 0.5s forwards;}
+.hero-cta{opacity:0;animation:fadeUp 0.8s ease 0.65s forwards;}
+.btn-bronze{display:inline-block;font-size:11.5px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:var(--charcoal-deep);background:var(--bronze);padding:16px 36px;text-decoration:none;transition:all 0.2s;box-shadow:0 2px 16px rgba(196,147,90,0.2);}
+.btn-bronze:hover{background:var(--bronze-hover);transform:translateY(-2px);box-shadow:0 6px 28px rgba(196,147,90,0.3);}
+.hero-photo{position:relative;opacity:0;animation:fadeUp 0.9s ease 0.4s forwards;}
+.hero-photo img{width:100%;display:block;filter:grayscale(5%);}
+.hero-photo::after{content:'';position:absolute;inset:0;border:1px solid rgba(196,147,90,0.15);}
+.hero-line{position:absolute;bottom:0;left:0;width:40%;height:1px;background:linear-gradient(90deg,var(--bronze),transparent);}
+
+/* ORIGIN */
+.origin{padding:8rem 6rem;background:var(--cream);}
+.origin-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 2fr;gap:8rem;align-items:start;}
+.origin-label{font-size:0.62rem;font-weight:500;letter-spacing:0.24em;text-transform:uppercase;color:var(--bronze);display:block;margin-bottom:1rem;position:sticky;top:8rem;}
+.origin-content h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(1.8rem,3vw,2.5rem);line-height:1.15;color:var(--charcoal);margin-bottom:2.5rem;}
+.origin-content h2 em{font-style:italic;color:var(--bronze);}
+.origin-p{font-size:0.95rem;line-height:1.95;color:var(--text-muted);margin-bottom:1.5rem;}
+.origin-p strong{color:var(--text);font-weight:500;}
+
+/* WHAT THIS IS / ISN'T */
+.this-is{padding:7rem 6rem;background:var(--charcoal-deep);}
+.this-is-inner{max-width:1100px;margin:0 auto;}
+.this-is h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(1.8rem,3vw,2.4rem);line-height:1.15;color:#FDFCFA;margin-bottom:0.75rem;}
+.this-is-sub{font-size:0.88rem;color:rgba(253,252,250,0.35);margin-bottom:3.5rem;}
+.this-is-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(196,147,90,0.1);}
+.this-is-col{background:var(--charcoal-deep);padding:2.5rem;}
+.this-is-col-header{font-size:0.62rem;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:var(--bronze);display:block;margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid rgba(196,147,90,0.15);}
+.this-is-col:last-child .this-is-col-header{color:rgba(253,252,250,0.25);}
+.this-is-item{font-size:0.9rem;line-height:1.65;color:rgba(253,252,250,0.55);padding:1rem 0;border-bottom:1px solid rgba(253,252,250,0.05);}
+.this-is-item:last-child{border-bottom:none;}
+.this-is-col:first-child .this-is-item{color:rgba(253,252,250,0.75);}
+
+/* CREDENTIALS */
+.creds{padding:8rem 6rem;background:var(--warm-gray);}
+.creds-inner{max-width:1100px;margin:0 auto;}
+.creds-header{margin-bottom:4rem;}
+.creds-header h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(1.8rem,3vw,2.4rem);line-height:1.15;color:var(--charcoal);margin-bottom:0.75rem;}
+.creds-header p{font-size:0.9rem;color:var(--text-muted);max-width:480px;line-height:1.75;}
+.creds-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);}
+.cred-card{background:var(--cream);padding:2rem 1.75rem;}
+.cred-card-title{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:var(--charcoal);margin-bottom:0.75rem;line-height:1.2;}
+.cred-card-body{font-size:0.82rem;line-height:1.75;color:var(--text-muted);}
+
+/* PULL QUOTE */
+.pull-quote{padding:6rem 6rem;background:var(--cream);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.pull-quote-inner{max-width:800px;margin:0 auto;text-align:center;}
+.pull-quote-text{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:clamp(1.3rem,2.2vw,1.7rem);line-height:1.6;color:var(--charcoal);margin-bottom:1.75rem;}
+.pull-quote-attr{font-size:0.75rem;font-weight:400;letter-spacing:0.12em;color:var(--text-muted);}
+
+/* HOW I WORK */
+.how{padding:8rem 6rem;background:var(--cream);}
+.how-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1.5fr;gap:8rem;align-items:start;}
+.how-left h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(1.8rem,3vw,2.5rem);line-height:1.15;color:var(--charcoal);margin-bottom:2rem;}
+.how-left h2 em{font-style:italic;color:var(--bronze);}
+.how-p{font-size:0.95rem;line-height:1.95;color:var(--text-muted);margin-bottom:1.25rem;}
+.how-p strong{color:var(--text);font-weight:500;}
+.how-cta{margin-top:2rem;}
+.how-right{}
+.how-quote{padding:2.5rem;background:var(--charcoal-deep);border-left:3px solid var(--bronze);margin-bottom:2rem;}
+.how-quote p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.2rem;line-height:1.65;color:rgba(253,252,250,0.78);margin-bottom:1rem;}
+.how-quote-attr{font-size:0.72rem;color:rgba(253,252,250,0.3);letter-spacing:0.1em;}
+
+/* CLOSING */
+.closing{padding:8rem 6rem;background:var(--charcoal-deep);text-align:center;position:relative;overflow:hidden;}
+.closing::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:1px;height:60px;background:var(--bronze);opacity:0.3;}
+.closing h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(2rem,3.5vw,2.8rem);line-height:1.15;color:#FDFCFA;max-width:700px;margin:0 auto 1.5rem;}
+.closing h2 em{font-style:italic;color:var(--bronze);}
+.closing-body{font-size:0.95rem;line-height:1.85;color:rgba(253,252,250,0.4);max-width:520px;margin:0 auto 3rem;}
+.btn-text-light{font-size:0.85rem;font-weight:300;color:rgba(253,252,250,0.4);text-decoration:none;border-bottom:1px solid rgba(253,252,250,0.15);padding-bottom:1px;transition:color 0.2s,border-color 0.2s;}
+.btn-text-light:hover{color:var(--bronze);border-color:var(--bronze);}
+
+/* FOOTER */
+footer{background:#14161A;padding:5rem 3rem 2.5rem;border-top:1px solid rgba(196,147,90,0.08);}
+.footer-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:4rem;margin-bottom:4rem;}
+.footer-brand{display:flex;flex-direction:column;gap:20px;}
+.footer-wordmark{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:rgba(250,248,245,0.7);}
+.footer-tagline{font-family:'DM Sans',sans-serif;font-weight:300;font-size:0.85rem;line-height:1.75;color:rgba(250,248,245,0.3);max-width:280px;}
+.footer-col h4{font-size:0.62rem;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:rgba(250,248,245,0.35);margin-bottom:1.25rem;}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:0.65rem;}
+.footer-links a{font-size:0.85rem;color:rgba(250,248,245,0.4);text-decoration:none;transition:color 0.2s;}
+.footer-links a:hover{color:var(--bronze);}
+.footer-bottom{max-width:1100px;margin:0 auto;padding-top:2rem;border-top:1px solid rgba(250,248,245,0.06);display:flex;justify-content:space-between;flex-wrap:wrap;gap:0.5rem;}
+.footer-copy{font-size:0.72rem;color:rgba(250,248,245,0.2);letter-spacing:0.05em;}
+
+@media(max-width:900px){
+  .hero-inner{grid-template-columns:1fr;gap:3rem;}
+  .hero-photo{display:none;}
+  .origin-inner,.how-inner{grid-template-columns:1fr;gap:3rem;}
+  .origin-label{position:static;}
+  .creds-grid{grid-template-columns:repeat(2,1fr);}
+  .this-is-grid{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr;gap:36px;}
+  footer{padding:48px 28px 32px;}
+  .footer-bottom{flex-direction:column;gap:8px;text-align:center;}
+}
+@media(max-width:1024px){
+  nav{padding:0 1.25rem;height:60px;}
+  .nav-links{display:none;}
+  .hamburger{display:flex;}
+  .hero,.origin,.this-is,.creds,.pull-quote,.how,.closing{padding-left:1.75rem;padding-right:1.75rem;}
+  .creds-grid{grid-template-columns:1fr;}
+}
+
+/* ── ACCESSIBILITY ── */
+a:focus-visible,button:focus-visible{outline:2px solid var(--bronze);outline-offset:3px;}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  .reveal,.reveal-scale{transition:none;opacity:1;transform:none;}
+}
+</style>
+</head>
+<body>
+<div class="scroll-progress"></div>
+
+<nav>
+  <a href="/index" class="nav-wordmark">Syncovate</a>
+  <ul class="nav-links">
+    <li><a href="/organizational-diagnostic">Organizational Diagnostics</a></li>
+    <li><a href="/coaching-and-advising">Coaching & Advising</a></li>
+    <li><a href="/speaking--facilitation">Speaking & Facilitation</a></li>
+    <li><a href="/about-dr-j">About Dr. J</a></li>
+    <li><a href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo" class="nav-pill" target="_blank" rel="noopener">Book a Call</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu">
+  <a href="/organizational-diagnostic">Organizational Diagnostics</a>
+  <a href="/coaching-and-advising">Coaching & Advising</a>
+  <a href="/speaking--facilitation">Speaking & Facilitation</a>
+  <a href="/about-dr-j">About Dr. J</a>
+  <a href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo" class="mobile-cta" target="_blank" rel="noopener">Book a Call</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <span class="hero-eyebrow">Dr. Shannon Jennings · Dr. J</span>
+      <h1>I've spent 20 years learning to see<br><em>what leaders can't.</em></h1>
+      <p class="hero-sub">The closer you are to something, the harder it is to see it clearly. It's not just you. It's the nature of building something. "I built this thing, which also makes me the worst person to see what's broken."</p>
+      <div class="hero-cta">
+        <a href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo" class="btn-bronze" target="_blank" rel="noopener">Book a 15-Minute Call →</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/yCTzggMS1VT4xrqF3lML/media/699cf94f340118eab6af87e5.jpeg" alt="Dr. Shannon Jennings">
+    </div>
+  </div>
+  <div class="hero-line"></div>
+</section>
+
+<!-- ORIGIN STORY -->
+<section class="origin">
+  <div class="origin-inner">
+    <div>
+      <span class="origin-label reveal">Origin Story</span>
+    </div>
+    <div class="origin-content">
+      <h2 class="reveal">I've never fit in one box.<br><em>It's just who I am.</em></h2>
+      <p class="origin-p reveal">I've always been drawn to the most complex systems I could find — and to the question underneath them: why do smart people, in well-intentioned systems, keep producing the same broken results?</p>
+      <p class="origin-p reveal">The a-ha came when I was working with families in high-conflict situations. Divorce. Custody disputes. Cases where the stakes were someone's children and future. What I kept finding — and have never stopped finding since — is that the presenting problem is almost never the real problem. The structure around the people is. The unspoken rules. What everyone agrees on behind closed doors versus what actually happens in the hallway.</p>
+      <p class="origin-p reveal">I carried that into organizational work — first at the Edward Lowe Foundation, designing and facilitating peer-learning retreats for founders and CEOs. That's where I learned what peer groups do that nothing else can: put leaders at the same table as people living the same problems, with no agenda other than to see more clearly. I believed in the model enough to lead one myself. I still do.</p>
+      <p class="origin-p reveal">Along the way I sat inside family businesses where the succession conversation was also a family conversation — where the org chart and the dinner table were the same table. That kind of work requires a different kind of trust. You have to be inside both systems at once to be useful in either one.</p>
+      <p class="origin-p reveal">The PsyD in Business & Organizational Leadership put rigor around what 20 years of closed doors had already taught me. The APA Council seat added a different dimension — I now vote on the direction of applied psychology as a field. It's not a résumé line. It's how I make sure I'm bringing the sharpest possible version of this work into every room.</p>
+      <p class="origin-p reveal">Twenty years. Hundreds of closed doors. The question hasn't changed. Neither has the answer: you can't fix what you can't see from inside it. My job is to be the person who can see it — and stay until something actually shifts.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT THIS IS / ISN'T -->
+<section class="this-is">
+  <div class="this-is-inner">
+    <h2 class="reveal">What working with me looks like —<br><em>and what it doesn't.</em></h2>
+    <p class="this-is-sub reveal">The work is specific. So is who it's for.</p>
+    <div class="this-is-grid reveal">
+      <div class="this-is-col">
+        <span class="this-is-col-header">This is</span>
+        <div class="this-is-item">A thinking partnership built around your real decisions</div>
+        <div class="this-is-item">Direct, honest assessment — including the uncomfortable parts</div>
+        <div class="this-is-item">Work that integrates psychology, strategy, and organizational dynamics</div>
+        <div class="this-is-item">Long-term relationship when the situation calls for it</div>
+        <div class="this-is-item">Grounded in 20 years of real organizational work</div>
+      </div>
+      <div class="this-is-col">
+        <span class="this-is-col-header">This isn't</span>
+        <div class="this-is-item">A curriculum you work through on a schedule</div>
+        <div class="this-is-item">Validation dressed up as coaching</div>
+        <div class="this-is-item">Therapy. That's a different practice.</div>
+        <div class="this-is-item">A retainer that runs past its usefulness</div>
+        <div class="this-is-item">Theory from someone who hasn't been in the room</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CREDENTIALS -->
+<section class="creds">
+  <div class="creds-inner">
+    <div class="creds-header">
+      <h2 class="reveal">The short version of a long record.</h2>
+      <p class="reveal">20 years. Multiple disciplines. One through-line.</p>
+    </div>
+      <div class="creds-grid">
+        <div class="cred-card reveal">
+          <h3 class="cred-card-title">PsyD, Business & Organizational Leadership</h3>
+          <p class="cred-card-body">Doctoral-level training in how organizations function and how people inside them behave — not just individually, but systemically.</p>
+        </div>
+        <div class="cred-card reveal">
+          <h3 class="cred-card-title">APA Council Representative</h3>
+          <p class="cred-card-body">Elected to represent Division 13 — Society of Consulting Psychology — on the American Psychological Association's Council of Representatives. 2025–2027.</p>
+        </div>
+        <div class="cred-card reveal">
+          <h3 class="cred-card-title">Fellow, Strategic Doing Institute</h3>
+          <p class="cred-card-body">Peer-selected fellowship in Strategic Doing — an agile methodology for navigating complex, networked challenges. Practitioner-certified and faculty-level.</p>
+        </div>
+        <div class="cred-card reveal">
+          <h3 class="cred-card-title">Edward Lowe Foundation</h3>
+          <p class="cred-card-body">Five years designing and facilitating peer-learning retreats for founders, leadership teams, and nonprofit executives at one of the country's premier entrepreneurial learning centers.</p>
+        </div>
+        <div class="cred-card reveal">
+          <h3 class="cred-card-title">200+ Retreats & Strategy Sessions</h3>
+          <p class="cred-card-body">Across industries — manufacturing, family business, nonprofit, healthcare, professional services, tech. The facilitation record is the credential.</p>
+        </div>
+        <div class="cred-card reveal">
+          <h3 class="cred-card-title">Pixel Perspectives+ 360 Certified</h3>
+          <p class="cred-card-body">Certified administrator of a multi-rater feedback tool that surfaces how leaders impact others — giving clients an outside view of what the people around them are already seeing.</p>
+        </div>
+      </div>
+  </div>
+</section>
+
+<!-- PULL QUOTE -->
+<div class="pull-quote">
+  <div class="pull-quote-inner reveal">
+    <p class="pull-quote-text">"Dr. Jennings played a key role in creating and implementing our strategic plan and organizational alignment. Her ability to synthesize complex organizational dynamics into actionable strategy made a measurable difference in how we operate."</p>
+    <p class="pull-quote-attr">— Willy Veldman, President, Veldman's Inc.</p>
+  </div>
+</div>
+
+<!-- HOW I WORK -->
+<section class="how">
+  <div class="how-inner">
+    <div class="how-left">
+      <h2 class="reveal">I'm not a vendor.<br><em>I'm a thinking partner.</em></h2>
+      <p class="how-p reveal">The work looks different depending on what you need. Sometimes it's a single session to get clarity on a decision that's been sitting too long. Sometimes it's a year of monthly calls that become the one place you can think out loud without consequences. Sometimes it's bringing me in to facilitate a group that's stopped being honest with each other.</p>
+      <p class="how-p reveal"><strong>What stays consistent: I don't soften what I find. I don't disappear when it gets hard. And I don't keep going past the point where I'm genuinely useful.</strong></p>
+      <p class="how-p reveal">If that sounds like what you've been looking for, the 15-minute call is the right next step.</p>
+      <div class="how-cta reveal">
+        <a href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo" class="btn-bronze" target="_blank" rel="noopener">Book a 15-Minute Call →</a>
+      </div>
+    </div>
+    <div class="how-right">
+      <div class="how-quote reveal">
+        <p>"Working with Dr. J gave me much-needed clarity on family business issues I'd been circling for months. She looked at the problem objectively in a way no one inside the situation could. I left with a real path forward."</p>
+        <p class="how-quote-attr">— Jay Groninger</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section class="closing">
+  <h2 class="reveal">If this sounds like<br><em>what you've been looking for —</em></h2>
+  <p class="closing-body reveal">The 15-minute call is the right first step. Tell me what's happening. I'll tell you honestly whether I'm the right fit — and if I'm not, I'll point you toward who is.</p>
+  <div class="reveal" style="display:flex;justify-content:center;gap:1.5rem;flex-wrap:wrap;">
+    <a href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo" class="btn-bronze" target="_blank" rel="noopener">Book a 15-Minute Call →</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <span class="footer-wordmark">Syncovate</span>
+      <p class="footer-tagline">Organizational advisory for founders and leaders of privately held, growing companies.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Work</h4>
+      <ul class="footer-links">
+        <li><a href="/organizational-diagnostic">Organizational Diagnostics</a></li>
+        <li><a href="/coaching-and-advising">Coaching & Advising</a></li>
+        <li><a href="/speaking--facilitation">Speaking & Facilitation</a></li>
+        <li><a href="https://spotter.syncovatellc.com/">The Scotoma Spotter</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul class="footer-links">
+        <li><a href="/about-dr-j">About Dr. J</a></li>
+        <li><a href="https://www.linkedin.com/in/shannonsjennings/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="tel:5745323178">574-532-3178</a></li>
+        <li><a href="mailto:Shannon@SyncovateLLC.com">Shannon@SyncovateLLC.com</a></li>
+        <li><a href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo" target="_blank" rel="noopener">Book a Call</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 Syncovate LLC · Niles, Michigan</span>
+    <span class="footer-copy">Business Psychology × Systems Architecture</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  'use strict';
+  var prog=document.querySelector('.scroll-progress');
+  var nav=document.querySelector('nav');
+  var ham=document.querySelector('.hamburger');
+  var mob=document.querySelector('.mobile-menu');
+  function onScroll(){
+    var h=document.documentElement.scrollHeight-window.innerHeight;
+    if(prog&&h>0)prog.style.width=(window.scrollY/h*100)+'%';
+    if(nav)nav.classList.toggle('scrolled',window.scrollY>60);
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+  if(ham&&mob){
+    ham.addEventListener('click',function(){
+      var open=ham.classList.toggle('open');
+      ham.setAttribute('aria-expanded',open);
+      mob.classList.toggle('open');
+      document.body.style.overflow=open?'hidden':'';
+    });
+    mob.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click',function(){
+        ham.classList.remove('open');mob.classList.remove('open');document.body.style.overflow='';
+      });
+    });
+    document.addEventListener('keydown',function(e){
+      if(e.key==='Escape'){ham.classList.remove('open');mob.classList.remove('open');document.body.style.overflow='';}
+    });
+  }
+  var els=document.querySelectorAll('.reveal');
+  function showAll(){els.forEach(function(el){el.classList.add('visible');});}
+  if('IntersectionObserver' in window){
+    var obs=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});
+    },{threshold:0,rootMargin:'0px'});
+    els.forEach(function(el){obs.observe(el);});
+    setTimeout(function(){
+      var hidden=document.querySelectorAll('.reveal:not(.visible)');
+      if(hidden.length)showAll();
+    },1500);
+  } else {showAll();}
+})();
+</script>
+</body>
+</html>
