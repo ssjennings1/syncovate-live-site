@@ -25,8 +25,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bronze: #C4935A;
-  --bronze-hover: #A87840;
+  --bronze: #BF8756;
+  --bronze-hover: #A3703E;
   --bronze-subtle: rgba(196,147,90,0.07);
   --teal: #56ADBF;
   --charcoal-deep: #252830;
@@ -140,13 +140,15 @@ nav.scrolled .hamburger span{background:var(--charcoal-deep);}
 
 /* ── QUOTES ── */
 .quotes{padding:7rem 6rem;background:var(--warm-gray);}
-.quotes-inner{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:3rem;}
+.quotes-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:2.25rem;}
 .quote-card{padding:2.75rem;background:var(--cream);}
 .quote-card:first-child{background:var(--charcoal-deep);}
 .quote-text{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:1.15rem;line-height:1.7;color:var(--charcoal);margin-bottom:1.5rem;}
 .quote-card:first-child .quote-text{color:rgba(253,252,250,0.82);}
 .quote-attr{font-size:0.72rem;font-weight:400;letter-spacing:0.12em;color:var(--text-muted);border-top:1px solid var(--border);padding-top:1rem;}
 .quote-card:first-child .quote-attr{color:rgba(253,252,250,0.3);border-color:rgba(196,147,90,0.15);}
+.quote-role{display:block;font-size:0.68rem;letter-spacing:0.1em;color:var(--text-muted);opacity:0.7;margin-top:0.25rem;}
+.quote-card:first-child .quote-role{color:rgba(253,252,250,0.25);}
 
 /* ── CREDIBILITY BAR ── */
 .cred-bar{padding:2.5rem 6rem;background:var(--cream);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
@@ -323,6 +325,10 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bronze);outline-off
     <div class="quote-card reveal">
       <p class="quote-text">"Dr. J brings fresh perspectives and ways to better understand the complexity of the human brain, business, and the world around us. She's not just smart about organizations — she's changed how I think about leading mine."</p>
       <p class="quote-attr">— Tyler Kanczuzewski</p>
+    </div>
+    <div class="quote-card reveal">
+      <p class="quote-text">"She listens — really listens — and then, like a hammer to a nail, she says her piece. Her greatest strength is building trust without ever taking sides. She sees the end goal clearly and doesn't get distracted by feelings or emotions. That's what gets people to open up and say the things that actually need to be said."</p>
+      <p class="quote-attr">— Chase Meeks<span class="quote-role">Senior Accounts Manager, G&amp;G Hauling &amp; Excavating, Inc.</span></p>
     </div>
   </div>
 </section>

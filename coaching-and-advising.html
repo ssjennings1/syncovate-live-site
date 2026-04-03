@@ -88,8 +88,8 @@
 
 <style>
   :root {
-    --bronze: #C4935A;
-    --bronze-hover: #A87840;
+    --bronze: #BF8756;
+    --bronze-hover: #A3703E;
     --bronze-subtle: rgba(196,147,90,0.07);
     --teal: #56ADBF;
     --charcoal: #3D4148;
@@ -694,6 +694,59 @@
   }
   .btn-bronze:hover { background: var(--bronze-hover); transform: translateY(-2px); }
 
+  /* TESTIMONIAL PULL QUOTES */
+  .testi-pull {
+    padding: 5.5rem 5rem;
+    text-align: center;
+  }
+
+  .testi-pull--warm { background: var(--warm-gray); }
+  .testi-pull--cream { background: var(--cream); }
+
+  .testi-pull-inner {
+    max-width: 740px;
+    margin: 0 auto;
+  }
+
+  .testi-pull-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: clamp(1.15rem, 2vw, 1.4rem);
+    line-height: 1.7;
+    color: var(--charcoal);
+    margin-bottom: 1.75rem;
+  }
+
+  .testi-pull-text strong {
+    font-style: normal;
+    font-weight: 600;
+    color: var(--charcoal-deep);
+  }
+
+  .testi-pull-attr {
+    font-size: 0.72rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border);
+    padding-top: 1rem;
+    display: inline-block;
+  }
+
+  .testi-pull-role {
+    display: block;
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+    opacity: 0.7;
+    margin-top: 0.25rem;
+  }
+
+  @media (max-width: 900px) {
+    .testi-pull { padding: 4rem 2rem; }
+  }
+
   /* CLOSING */
   .closing {
     padding: 7rem 5rem;
@@ -888,7 +941,7 @@
     <li><a href="/coaching-and-advising">Coaching & Advising</a></li>
     <li><a href="/speaking--facilitation">Speaking & Facilitation</a></li>
     <li><a href="/about-dr-j">About Dr. J</a></li>
-    <li><a href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo" class="nav-pill" target="_blank" rel="noopener">Book a 15-Min Call</a></li>
+    <li><a href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo" class="nav-pill" target="_blank" rel="noopener">Book a Call</a></li>
   </ul>
   <button class="hamburger" aria-label="Open menu" aria-expanded="false">
     <span></span><span></span><span></span>
@@ -972,6 +1025,17 @@
   </div>
 </section>
 
+<!-- TESTIMONIAL: Josh DeMeulenaere -->
+<section class="testi-pull testi-pull--warm">
+  <div class="testi-pull-inner reveal">
+    <p class="testi-pull-text">"Dr. J is the right fit if you built your leadership through doing, not through an MBA. She never talked down to me or assumed I didn't know things. Running a startup is hard, and she helped me develop a way of thinking that catches problems before they turn into bigger ones. <strong>I came away with tools that changed how I show up</strong> and strengthened how I communicate with my partners and my team."</p>
+    <p class="testi-pull-attr">
+      &mdash; Josh DeMeulenaere
+      <span class="testi-pull-role">Vice President Electrical Services, K2 Power Solutions</span>
+    </p>
+  </div>
+</section>
+
 <!-- WHO IT'S FOR -->
 <section class="who" id="who">
   <div class="who-inner">
@@ -1002,6 +1066,17 @@
       </div>
 
     </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL: Jordan New -->
+<section class="testi-pull testi-pull--warm">
+  <div class="testi-pull-inner reveal">
+    <p class="testi-pull-text">"She sets herself apart by not only asking the right questions &mdash; <strong>she follows up with good ideas and how to actually get it done.</strong> The breadth of what she covers is impressive, but it doesn't feel overwhelming. It feels like having a partner who's in it with you."</p>
+    <p class="testi-pull-attr">
+      &mdash; Jordan New
+      <span class="testi-pull-role">CEO, Mid City Supply</span>
+    </p>
   </div>
 </section>
 
@@ -1063,6 +1138,17 @@
       <p class="pricing-cta-note">Not sure which fits? 15 minutes. If we click, we build from there.</p>
       <a href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo" class="btn-bronze" target="_blank" rel="noopener">Book Your 15-Min Call</a>
     </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL: Christen Carter -->
+<section class="testi-pull testi-pull--warm">
+  <div class="testi-pull-inner reveal">
+    <p class="testi-pull-text">"The StrengthsFinder workshop with Shannon had many lasting effects. Our newest employee told me it was really good to learn more about herself and her new co-workers. It helped her understand what strengths she could bring to the table and how to approach her new co-workers. <strong>The whole team gets along pretty amazingly,</strong> and I'm sure understanding each of our strengths has really helped."</p>
+    <p class="testi-pull-attr">
+      &mdash; Christen Carter
+      <span class="testi-pull-role">President/Owner, Busy Beaver Button Co.</span>
+    </p>
   </div>
 </section>
 
