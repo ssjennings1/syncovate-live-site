@@ -48,8 +48,8 @@ Pages under development (not yet created):
 
 | Token | Hex | Usage |
 |-------|-----|-------|
-| Bronze | `#C4935A` | Primary CTA buttons, accents, hover states |
-| Bronze Hover | `#A87840` | Button hover / active state |
+| Bronze | `#BF8756` | Primary CTA buttons, accents, hover states |
+| Bronze Hover | `#A3703E` | Button hover / active state |
 | Bronze Subtle | `rgba(196,147,90,0.07)` | Light bronze tint for backgrounds |
 | Teal | `#56ADBF` | Secondary accent, highlights |
 | Charcoal Deep | `#252830` | Dark hero backgrounds, footer |
