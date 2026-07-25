@@ -5,505 +5,1010 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The General Environment Scan | Syncovate</title>
 <meta name="description" content="A team scanning guide: what's coming at you from outside, and what your team makes of it. From The Saturday Seed by Dr. J.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --bronze:#BF8756;
-    --teal:#56ADBF;
-    --charcoal:#252830;
-    --cream:#FAF8F5;
-    --warmgray:#F0EDE8;
-    --display:'Cormorant Garamond', Georgia, serif;
-    --body:'DM Sans', -apple-system, sans-serif;
-  }
-  *{margin:0;padding:0;box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{
-    font-family:var(--body);
-    background:var(--cream);
-    color:var(--charcoal);
-    line-height:1.65;
-    font-size:17px;
-  }
-  .wrap{max-width:720px;margin:0 auto;padding:0 24px;}
+:root {
+  --bronze: #BF8756;
+  --bronze-hover: #A3703E;
+  --bronze-subtle: rgba(196,147,90,0.07);
+  --teal: #56ADBF;
+  --charcoal-deep: #252830;
+  --charcoal: #3D4148;
+  --charcoal-mid: #5C6170;
+  --cream: #FAF8F5;
+  --warm-gray: #F0EDE8;
+  --text: #3A3530;
+  --text-muted: #7A736B;
+  --border: rgba(196,147,90,0.18);
+  --display: 'Cormorant Garamond', Georgia, serif;
+  --body: 'DM Sans', -apple-system, sans-serif;
+}
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--body);
+  font-weight: 300;
+  color: var(--text);
+  background: var(--cream);
+  overflow-x: hidden;
+  line-height: 1.7;
+  font-size: 17px;
+}
 
-  /* ---------- Masthead ---------- */
-  .masthead{padding:56px 0 0;}
-  .kicker{
-    font-family:var(--body);
-    font-weight:700;
-    font-size:12px;
-    letter-spacing:3px;
-    text-transform:uppercase;
-    color:var(--bronze);
-  }
-  h1{
-    font-family:var(--display);
-    font-weight:600;
-    font-size:clamp(38px,7vw,58px);
-    line-height:1.05;
-    margin:14px 0 18px;
-    letter-spacing:.5px;
-  }
-  .dek{
-    font-size:clamp(18px,3vw,21px);
-    font-weight:400;
-    max-width:34ch;
-    color:var(--charcoal);
-  }
-  .dek em{font-style:normal;color:var(--bronze);}
-  .rule{border:none;border-top:2px solid var(--charcoal);margin:36px 0 0;}
+/* ── SCROLL PROGRESS ── */
+.scroll-progress {
+  position: fixed; top: 0; left: 0;
+  height: 2px; width: 0%;
+  background: linear-gradient(90deg, var(--bronze), var(--teal));
+  z-index: 1000;
+  transition: width 0.1s linear;
+}
 
-  /* ---------- Sections ---------- */
-  section{padding:44px 0 8px;}
-  h2{
-    font-family:var(--display);
-    font-weight:600;
-    font-size:clamp(26px,4.5vw,32px);
-    letter-spacing:.5px;
-    margin-bottom:16px;
-  }
-  p{margin-bottom:16px;max-width:62ch;}
-  strong{font-weight:700;}
+/* ── NAV (minimal) ── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  height: 72px; padding: 0 2.5rem;
+  display: flex; align-items: center; justify-content: space-between;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  transition: background 0.45s ease, border-color 0.45s ease, box-shadow 0.45s ease, height 0.3s ease;
+  border-bottom: 1px solid transparent;
+}
+nav.scrolled {
+  background: rgba(250,248,245,0.97);
+  border-bottom: 1px solid rgba(196,147,90,0.12);
+  box-shadow: 0 1px 32px rgba(0,0,0,0.06);
+  height: 64px;
+}
+.nav-wordmark {
+  font-family: var(--display);
+  font-size: 1.2rem; font-weight: 600;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: rgba(250,248,245,0.9);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+nav.scrolled .nav-wordmark { color: var(--charcoal-deep); }
+.nav-cta {
+  font-family: var(--body);
+  font-size: 0.72rem; font-weight: 500;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--charcoal-deep);
+  background: var(--bronze);
+  padding: 0.6rem 1.4rem;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background 0.2s, transform 0.2s;
+}
+.nav-cta:hover { background: var(--bronze-hover); transform: translateY(-1px); }
+.hamburger {
+  display: none; flex-direction: column; gap: 5px;
+  cursor: pointer; padding: 8px;
+  background: none; border: none; z-index: 201;
+}
+.hamburger span {
+  display: block; width: 22px; height: 2px;
+  background: rgba(250,248,245,0.8);
+  transition: transform 0.3s, opacity 0.3s, background 0.3s;
+}
+nav.scrolled .hamburger span { background: var(--charcoal-deep); }
+.hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+.mobile-menu {
+  display: none; position: fixed; inset: 0;
+  background: var(--charcoal-deep); z-index: 199;
+  flex-direction: column; justify-content: center; align-items: center;
+  gap: 2rem; opacity: 0; transition: opacity 0.3s;
+}
+.mobile-menu.open { display: flex; opacity: 1; }
+.mobile-menu a {
+  font-family: var(--display);
+  font-size: 1.6rem; font-weight: 400;
+  color: rgba(250,248,245,0.7);
+  text-decoration: none; transition: color 0.2s;
+}
+.mobile-menu a:hover { color: var(--bronze); }
+.mobile-menu .mobile-cta {
+  font-family: var(--body);
+  font-size: 0.8rem; font-weight: 500;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--charcoal-deep);
+  background: var(--bronze);
+  padding: 1rem 2rem; margin-top: 1rem;
+  border-radius: 3px;
+}
 
-  .lede{
-    font-size:19px;
-    font-weight:500;
-  }
+/* ── SHARED ── */
+.section { padding: 100px 0; }
+.section-inner { max-width: 760px; margin: 0 auto; padding: 0 32px; }
+.section-wide { max-width: 860px; margin: 0 auto; padding: 0 32px; }
+.section-dark { background: var(--charcoal-deep); color: #FDFCFA; }
+.section-mid { background: var(--warm-gray); }
+.eyebrow {
+  display: block;
+  font-family: var(--body);
+  font-weight: 500; font-size: 11px;
+  letter-spacing: 0.24em; text-transform: uppercase;
+  color: var(--bronze);
+  margin-bottom: 20px;
+}
+.serif-heading {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(34px, 4.5vw, 52px);
+  line-height: 1.1;
+  color: var(--charcoal);
+  margin-bottom: 28px;
+  letter-spacing: -0.01em;
+}
+.section-dark .serif-heading { color: #FDFCFA; }
+.section-dark .eyebrow { color: var(--bronze); }
+.body-copy {
+  font-family: var(--body);
+  font-weight: 300; font-size: 16.5px;
+  line-height: 1.82; color: var(--text);
+  max-width: 620px; margin-bottom: 18px;
+}
+.body-copy:last-child { margin-bottom: 0; }
+.section-dark .body-copy { color: rgba(253,252,250,0.6); }
 
-  /* ---------- How to run it ---------- */
-  .run-block{margin:8px 0 4px;}
-  .run-block p{margin-bottom:18px;}
-  .run-label{color:var(--bronze);font-weight:700;}
+/* ── REVEAL ANIMATIONS ── */
+@keyframes fadeUp { from { opacity:0; transform:translateY(22px); } to { opacity:1; transform:none; } }
+@keyframes glowDrift { 0%,100% { transform:translate(0,0) scale(1); } 50% { transform:translate(-30px,20px) scale(1.05); } }
+@keyframes scrollPulse { 0%,100% { opacity:0.3; transform:scaleY(0.6); transform-origin:top; } 50% { opacity:0.8; transform:scaleY(1); } }
 
-  /* ---------- Rules callout ---------- */
-  .rules{
-    background:var(--warmgray);
-    border-left:4px solid var(--teal);
-    padding:26px 28px;
-    margin:34px 0 10px;
-    border-radius:0 4px 4px 0;
-  }
-  .rules-title{
-    font-family:var(--body);
-    font-weight:700;
-    font-size:12px;
-    letter-spacing:2.5px;
-    text-transform:uppercase;
-    color:var(--charcoal);
-    margin-bottom:14px;
-  }
-  .rules p{margin-bottom:12px;font-size:16px;}
-  .rules p:last-child{margin-bottom:0;}
-  .rules .rname{font-weight:700;color:var(--charcoal);}
+.reveal {
+  opacity: 0; transform: translateY(40px);
+  transition: opacity 0.9s cubic-bezier(0.16,1,0.3,1), transform 0.9s cubic-bezier(0.16,1,0.3,1);
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal-scale {
+  opacity: 0; transform: scale(0.96);
+  transition: opacity 0.9s cubic-bezier(0.16,1,0.3,1), transform 0.9s cubic-bezier(0.16,1,0.3,1);
+}
+.reveal-scale.visible { opacity: 1; transform: scale(1); }
 
-  /* ---------- Category cards ---------- */
-  .cat{
-    border-top:1px solid #d9d3ca;
-    padding:40px 0 34px;
-  }
-  .cat-head{display:flex;align-items:baseline;gap:16px;margin-bottom:6px;}
-  .cat-num{
-    font-family:var(--display);
-    font-weight:500;
-    font-style:italic;
-    font-size:30px;
-    color:var(--bronze);
-    min-width:30px;
-  }
-  .cat-name{
-    font-family:var(--display);
-    font-weight:600;
-    font-size:clamp(24px,4vw,29px);
-    letter-spacing:.3px;
-  }
-  .cat-friendly{
-    font-family:var(--body);
-    font-size:15px;
-    font-weight:500;
-    letter-spacing:1.5px;
-    text-transform:uppercase;
-    color:var(--bronze);
-    margin:0 0 14px 46px;
-  }
-  .cat > p{margin-left:46px;}
-  .starters{
-    margin:18px 0 0 46px;
-  }
-  .starters-label{
-    font-size:12px;
-    font-weight:700;
-    letter-spacing:2px;
-    text-transform:uppercase;
-    color:var(--teal);
-    margin-bottom:10px;
-  }
-  .starters ul{list-style:none;}
-  .starters li{
-    padding:9px 0 9px 22px;
-    position:relative;
-    max-width:58ch;
-  }
-  .starters li::before{
-    content:"";
-    position:absolute;
-    left:0;top:19px;
-    width:9px;height:9px;
-    border:2px solid var(--bronze);
-    border-radius:50%;
-  }
-  .notes{
-    margin:22px 0 0 46px;
-  }
-  .notes-label{
-    font-size:12px;
-    font-weight:700;
-    letter-spacing:2px;
-    text-transform:uppercase;
-    color:var(--charcoal);
-    margin-bottom:4px;
-  }
-  .notes-lines{display:none;}
+/* ── HERO ── */
+.hero {
+  min-height: 100vh;
+  background: var(--charcoal-deep);
+  padding: 180px 80px 140px;
+  display: flex; flex-direction: column; justify-content: center;
+  position: relative; overflow: hidden;
+}
+.hero-grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(196,147,90,0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(196,147,90,0.035) 1px, transparent 1px);
+  background-size: 72px 72px;
+  pointer-events: none;
+}
+.hero-glow {
+  position: absolute; top: 15%; right: 8%;
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(196,147,90,0.08) 0%, rgba(86,173,191,0.02) 40%, transparent 70%);
+  pointer-events: none;
+  animation: glowDrift 12s ease-in-out infinite;
+}
+.hero .eyebrow { opacity: 0; animation: fadeUp 0.7s ease 0.05s forwards; }
+.hero h1 {
+  font-family: var(--display);
+  font-weight: 300;
+  font-size: clamp(48px, 7vw, 96px);
+  line-height: 0.96;
+  color: #FDFCFA;
+  max-width: 700px;
+  margin-bottom: 36px;
+  letter-spacing: -0.02em;
+  opacity: 0; animation: fadeUp 0.9s ease 0.2s forwards;
+}
+.hero h1 em { font-style: italic; color: var(--bronze); }
+.hero .sub {
+  font-family: var(--body);
+  font-weight: 300; font-size: 18px; line-height: 1.9;
+  max-width: 480px;
+  color: rgba(253,252,250,0.45);
+  margin-bottom: 0;
+  opacity: 0; animation: fadeUp 0.8s ease 0.4s forwards;
+}
+.hero-line {
+  position: absolute; bottom: 0; left: 0;
+  width: 38%; height: 1px;
+  background: linear-gradient(90deg, var(--bronze), transparent);
+}
+.hero-scroll-hint {
+  position: absolute; bottom: 44px; left: 50%; transform: translateX(-50%);
+  display: flex; flex-direction: column; align-items: center; gap: 10px;
+  opacity: 0; animation: fadeUp 1s ease 1.2s forwards;
+}
+.hero-scroll-hint span {
+  font-family: var(--body);
+  font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+  color: rgba(253,252,250,0.2);
+}
+.scroll-line {
+  width: 1px; height: 40px;
+  background: linear-gradient(to bottom, var(--bronze), transparent);
+  animation: scrollPulse 2s ease-in-out infinite;
+}
 
-  @media (max-width:560px){
-    .cat-friendly, .cat > p, .starters, .notes{margin-left:0;}
-    .cat-head{gap:12px;}
-  }
+/* ── LEDE ── */
+.lede {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(26px, 3.5vw, 36px);
+  line-height: 1.3;
+  color: var(--charcoal);
+  margin-bottom: 24px;
+  max-width: 580px;
+}
 
-  /* ---------- Synthesis ---------- */
-  .synthesis{
-    background:var(--charcoal);
-    color:var(--cream);
-    border-radius:4px;
-    padding:38px 34px;
-    margin:48px 0 8px;
-  }
-  .synthesis h2{color:var(--cream);margin-bottom:4px;}
-  .synthesis .sub{color:var(--teal);font-size:15px;margin-bottom:24px;}
-  .syn-item{margin-bottom:22px;}
-  .syn-item:last-child{margin-bottom:0;}
-  .syn-name{
-    font-size:12px;
-    font-weight:700;
-    letter-spacing:2.5px;
-    text-transform:uppercase;
-    color:var(--bronze);
-    margin-bottom:4px;
-  }
-  .syn-item p{color:var(--cream);margin-bottom:0;font-size:16.5px;}
+/* ── APPROACH CARDS ── */
+.approach-grid {
+  display: flex; flex-direction: column;
+  gap: 16px; margin: 36px 0 32px;
+}
+.approach-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--bronze);
+  border-radius: 0 4px 4px 0;
+  padding: 32px 36px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.approach-card:hover {
+  transform: translateX(4px);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+}
+.approach-label {
+  font-family: var(--body);
+  font-weight: 700; font-size: 12px;
+  letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--bronze);
+  margin-bottom: 10px; display: block;
+}
+.approach-card p {
+  font-family: var(--body);
+  font-weight: 300; font-size: 16px; line-height: 1.8;
+  color: var(--text); max-width: 60ch; margin: 0;
+}
+.approach-note {
+  margin-top: 28px;
+}
+.approach-note p {
+  font-family: var(--body);
+  font-weight: 300; font-size: 16.5px; line-height: 1.8;
+  color: var(--text); max-width: 60ch; margin-bottom: 16px;
+}
+.approach-note p:last-child { margin-bottom: 0; }
+.approach-note strong { font-weight: 700; color: var(--charcoal-deep); }
 
-  /* ---------- Download / print button ---------- */
-  .dl{
-    display:flex;
-    justify-content:center;
-    margin:52px 0 8px;
-  }
-  .dl button{
-    font-family:var(--body);
-    font-weight:700;
-    font-size:15px;
-    letter-spacing:1px;
-    text-transform:uppercase;
-    color:var(--cream);
-    background:var(--bronze);
-    border:none;
-    border-radius:3px;
-    padding:16px 34px;
-    cursor:pointer;
-    transition:background .15s ease;
-  }
-  .dl button:hover{background:#a9743f;}
-  .dl button:focus-visible{outline:3px solid var(--teal);outline-offset:3px;}
-  .dl-note{text-align:center;font-size:14px;color:#6b6e76;margin-top:10px;}
+/* ── RULES STRIP ── */
+.rules-strip {
+  background: var(--charcoal-deep);
+  padding: 80px 0;
+}
+.rules-strip .section-inner { max-width: 760px; }
+.rules-strip .eyebrow { color: var(--teal); margin-bottom: 36px; }
+.rule-item { margin-bottom: 28px; }
+.rule-item:last-child { margin-bottom: 0; }
+.rule-num {
+  font-family: var(--display);
+  font-weight: 300; font-size: 48px;
+  color: rgba(196,147,90,0.15);
+  line-height: 1; margin-bottom: 8px;
+}
+.rule-name {
+  font-family: var(--display);
+  font-weight: 600; font-size: clamp(22px, 3vw, 28px);
+  color: #FDFCFA;
+  margin-bottom: 8px;
+}
+.rule-item p {
+  font-family: var(--body);
+  font-weight: 300; font-size: 16px; line-height: 1.8;
+  color: rgba(253,252,250,0.55);
+  max-width: 56ch;
+}
 
-  /* ---------- Footer ---------- */
-  footer{
-    margin-top:56px;
-    padding:26px 0 40px;
-    border-top:1px solid #d9d3ca;
-  }
-  .foot-row{
-    display:flex;
-    justify-content:space-between;
-    align-items:baseline;
-    flex-wrap:wrap;
-    gap:8px;
-  }
-  .foot-mark{
-    font-family:var(--display);
-    font-weight:600;
-    font-size:17px;
-    letter-spacing:2.5px;
-    color:var(--charcoal);
-  }
-  .foot-url{
-    font-family:var(--body);
-    font-weight:500;
-    font-size:15px;
-    color:var(--bronze);
-    text-decoration:none;
-  }
-  .foot-url:hover{text-decoration:underline;}
+/* ── CATEGORY SECTION ── */
+.cat-section { background: var(--warm-gray); padding: 100px 0 80px; }
+.cat-section-header { margin-bottom: 56px; }
+.cat-grid { display: flex; flex-direction: column; gap: 20px; }
 
-  /* ---------- Print ---------- */
-  @media print{
-    @page{margin:.7in;}
-    body{background:#fff;font-size:12.5px;line-height:1.5;color:#000;}
-    .wrap{max-width:100%;padding:0;}
-    .masthead{padding-top:0;}
-    h1{font-size:34px;}
-    .dek{font-size:15px;}
-    section{padding:20px 0 4px;}
-    h2{font-size:21px;}
-    .rules{border-left-color:#000;background:#f2f2f2;padding:16px 18px;margin:18px 0 6px;}
-    .cat{padding:16px 0 14px;break-inside:avoid;}
-    .cat-num{font-size:20px;}
-    .cat-name{font-size:18px;}
-    .cat-friendly{font-size:11px;margin-bottom:8px;}
-    .starters li{padding:4px 0 4px 18px;}
-    .starters li::before{top:10px;width:7px;height:7px;}
-    .notes-lines{
-      display:block;
-      margin-top:6px;
-    }
-    .notes-lines div{
-      border-bottom:1px solid #b9b9b9;
-      height:26px;
-    }
-    .synthesis{
-      background:#fff;
-      color:#000;
-      border:2px solid #000;
-      border-radius:0;
-      padding:18px 20px;
-      break-inside:avoid;
-      margin:24px 0 6px;
-    }
-    .synthesis h2{color:#000;}
-    .synthesis .sub{color:#000;}
-    .syn-name{color:#000;}
-    .syn-item p{color:#000;}
-    .syn-lines{display:block;margin-top:6px;}
-    .syn-lines div{border-bottom:1px solid #b9b9b9;height:24px;}
-    .dl{display:none;}
-    footer{margin-top:28px;padding:14px 0 0;}
-    a[href]::after{content:"";}
-  }
-  .syn-lines{display:none;}
+.cat-card {
+  background: var(--cream);
+  border: 1px solid rgba(196,147,90,0.1);
+  border-radius: 4px;
+  padding: 44px 48px 40px;
+  position: relative; overflow: hidden;
+  transition: transform 0.35s cubic-bezier(0.16,1,0.3,1), box-shadow 0.35s ease, border-color 0.3s;
+}
+.cat-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0;
+  width: 3px; height: 0;
+  background: var(--bronze);
+  transition: height 0.4s ease;
+}
+.cat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 48px rgba(0,0,0,0.06), 0 0 0 1px rgba(196,147,90,0.1);
+  border-color: rgba(196,147,90,0.2);
+}
+.cat-card:hover::before { height: 100%; }
 
-  @media (prefers-reduced-motion: reduce){
-    html{scroll-behavior:auto;}
+.cat-icon {
+  color: var(--bronze);
+  margin-bottom: 20px;
+  opacity: 0.7;
+}
+.cat-icon svg { display: block; }
+
+.cat-header {
+  display: flex; align-items: baseline; gap: 14px;
+  margin-bottom: 4px;
+}
+.cat-num {
+  font-family: var(--display);
+  font-weight: 300; font-style: italic;
+  font-size: 42px; line-height: 1;
+  color: var(--bronze); opacity: 0.25;
+}
+.cat-name {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: clamp(26px, 4vw, 32px);
+  letter-spacing: 0.01em;
+  color: var(--charcoal);
+}
+.cat-friendly {
+  font-family: var(--body);
+  font-size: 11px; font-weight: 500;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--bronze);
+  margin-bottom: 16px; display: block;
+}
+.cat-body {
+  font-family: var(--body);
+  font-weight: 300; font-size: 16px; line-height: 1.8;
+  color: var(--text); max-width: 58ch;
+  margin-bottom: 24px;
+}
+.starters { margin: 0; }
+.starters-label {
+  font-size: 10px; font-weight: 700;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--teal); margin-bottom: 12px;
+}
+.starters ul { list-style: none; }
+.starters li {
+  padding: 10px 0 10px 24px;
+  position: relative;
+  font-family: var(--body);
+  font-weight: 300; font-size: 15px; line-height: 1.65;
+  color: var(--text-muted);
+  max-width: 56ch;
+}
+.starters li::before {
+  content: "";
+  position: absolute; left: 0; top: 20px;
+  width: 8px; height: 8px;
+  border: 1.5px solid var(--bronze);
+  border-radius: 50%;
+}
+.notes {
+  margin-top: 24px;
+}
+.notes-label {
+  font-size: 10px; font-weight: 700;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--charcoal-mid);
+  margin-bottom: 4px;
+}
+.notes-lines { display: none; }
+
+/* ── WHEN DONE ── */
+.closing-statement {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: clamp(22px, 3vw, 28px);
+  line-height: 1.35;
+  color: var(--charcoal);
+  margin-top: 8px;
+}
+
+/* ── SYNTHESIS ── */
+.synthesis { background: var(--charcoal-deep); padding: 100px 0; }
+.synthesis .section-inner { max-width: 760px; }
+.syn-sub {
+  font-family: var(--body);
+  font-size: 15px; font-weight: 300;
+  color: var(--teal);
+  margin-bottom: 40px;
+}
+.syn-item { margin-bottom: 32px; }
+.syn-item:last-child { margin-bottom: 0; }
+.syn-name {
+  font-size: 11px; font-weight: 700;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--bronze); margin-bottom: 6px;
+}
+.syn-item p {
+  font-family: var(--body);
+  font-weight: 300; font-size: 16.5px; line-height: 1.7;
+  color: rgba(253,252,250,0.6); margin: 0;
+}
+.syn-lines { display: none; }
+
+/* ── FINAL CTA ── */
+.final-cta {
+  background: var(--charcoal-deep);
+  padding: 0 0 120px;
+  text-align: center;
+  position: relative;
+}
+.final-cta::before {
+  content: '';
+  display: block; width: 1px; height: 64px;
+  background: linear-gradient(to bottom, var(--bronze), transparent);
+  margin: 0 auto 56px;
+  opacity: 0.4;
+}
+.final-cta-inner { max-width: 560px; margin: 0 auto; padding: 0 32px; }
+.final-cta h2 {
+  font-family: var(--display);
+  font-weight: 300;
+  font-size: clamp(32px, 4.5vw, 48px);
+  color: #FDFCFA; line-height: 1.1;
+  letter-spacing: -0.01em;
+  margin-bottom: 16px;
+}
+.final-cta h2 em { font-style: italic; color: var(--bronze); }
+.final-cta p {
+  font-family: var(--body);
+  font-weight: 300; font-size: 16px; line-height: 1.7;
+  color: rgba(253,252,250,0.4);
+  max-width: 420px; margin: 0 auto 44px;
+}
+.cta-buttons {
+  display: flex; justify-content: center;
+  gap: 16px; flex-wrap: wrap;
+}
+.btn-print {
+  font-family: var(--body);
+  font-weight: 500; font-size: 12px;
+  letter-spacing: 0.13em; text-transform: uppercase;
+  color: var(--charcoal-deep);
+  background: var(--bronze);
+  border: none; border-radius: 3px;
+  padding: 16px 32px;
+  cursor: pointer;
+  box-shadow: 0 2px 16px rgba(196,147,90,0.2);
+  transition: background 0.3s, transform 0.25s, box-shadow 0.3s;
+}
+.btn-print:hover {
+  background: var(--bronze-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 28px rgba(196,147,90,0.3);
+}
+.btn-call {
+  font-family: var(--body);
+  font-weight: 400; font-size: 13px;
+  color: rgba(253,252,250,0.4);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(253,252,250,0.18);
+  padding: 16px 8px 2px;
+  letter-spacing: 0.04em;
+  transition: color 0.2s, border-color 0.2s;
+  align-self: center;
+}
+.btn-call:hover { color: var(--bronze); border-color: var(--bronze); }
+.cta-note {
+  font-family: var(--body);
+  font-size: 13px; font-weight: 300;
+  color: rgba(253,252,250,0.2);
+  margin-top: 18px;
+}
+
+/* ── FOOTER ── */
+footer {
+  background: #14161A;
+  border-top: 1px solid rgba(196,147,90,0.08);
+  padding: 32px 2.5rem;
+}
+.foot-row {
+  display: flex; justify-content: space-between;
+  align-items: center; flex-wrap: wrap; gap: 12px;
+  max-width: 860px; margin: 0 auto;
+}
+.foot-mark {
+  font-family: var(--display);
+  font-weight: 600; font-size: 15px;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: rgba(253,252,250,0.4);
+}
+.foot-url {
+  font-family: var(--body);
+  font-weight: 400; font-size: 14px;
+  color: var(--bronze); text-decoration: none;
+  transition: color 0.2s;
+}
+.foot-url:hover { text-decoration: underline; }
+
+/* ── FILM GRAIN ── */
+body::after {
+  content: '';
+  position: fixed; inset: 0; z-index: 9000;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");
+  background-repeat: repeat; background-size: 180px;
+  opacity: 0.45; mix-blend-mode: multiply;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  nav { padding: 0 20px; height: 60px; }
+  .nav-cta { display: none; }
+  .hamburger { display: flex; }
+  .hero { padding: 130px 28px 90px; min-height: 90vh; }
+  .hero h1 { font-size: clamp(40px, 10vw, 64px); }
+  .hero .sub { font-size: 16px; }
+  .hero-scroll-hint { display: none; }
+  .section { padding: 72px 0; }
+  .section-inner, .section-wide { padding: 0 24px; }
+  .approach-card { padding: 24px 24px; }
+  .rules-strip { padding: 60px 0; }
+  .rule-num { font-size: 36px; }
+  .cat-section { padding: 72px 0 56px; }
+  .cat-card { padding: 32px 28px 28px; }
+  .cat-num { font-size: 32px; }
+  .synthesis { padding: 72px 0; }
+  .final-cta { padding: 0 0 80px; }
+  footer { padding: 28px 20px; }
+}
+@media (min-width: 769px) {
+  .hamburger { display: none; }
+}
+
+/* ── ACCESSIBILITY ── */
+a:focus-visible, button:focus-visible { outline: 2px solid var(--bronze); outline-offset: 3px; }
+
+/* ── PRINT ── */
+@media print {
+  @page { margin: 0.7in; }
+  body { background: #fff; font-size: 12.5px; line-height: 1.5; color: #000; }
+  body::after { display: none; }
+  .scroll-progress, nav, .mobile-menu, .hero-grid, .hero-glow, .hero-line, .hero-scroll-hint { display: none; }
+  .hero {
+    min-height: auto; padding: 0; background: #fff;
+    justify-content: flex-start;
   }
+  .hero .eyebrow { opacity: 1; animation: none; color: #000; font-size: 10px; margin-bottom: 8px; }
+  .hero h1 { opacity: 1; animation: none; color: #000; font-size: 32px; margin-bottom: 12px; }
+  .hero h1 em { color: #000; }
+  .hero .sub { opacity: 1; animation: none; color: #555; font-size: 14px; }
+  .section { padding: 24px 0 8px; }
+  .section-inner, .section-wide { max-width: 100%; padding: 0; }
+  .reveal, .reveal-scale { opacity: 1; transform: none; transition: none; }
+  .lede { font-size: 18px; }
+  .serif-heading { font-size: 22px; margin-bottom: 12px; }
+  .body-copy { font-size: 12.5px; }
+  .approach-grid { margin: 12px 0; gap: 8px; }
+  .approach-card { padding: 14px 18px; border-left-color: #000; background: #f8f8f8; }
+  .approach-label { font-size: 9px; margin-bottom: 4px; color: #000; }
+  .approach-card p { font-size: 12px; }
+  .rules-strip { background: #fff; padding: 20px 0; border-top: 2px solid #000; border-bottom: 2px solid #000; }
+  .rules-strip .eyebrow { color: #000; margin-bottom: 16px; }
+  .rule-num { display: none; }
+  .rule-name { color: #000; font-size: 16px; }
+  .rule-item p { color: #333; font-size: 12px; }
+  .cat-section { background: #fff; padding: 20px 0; }
+  .cat-section-header { margin-bottom: 16px; }
+  .cat-grid { gap: 4px; }
+  .cat-card {
+    padding: 16px 0; background: #fff;
+    border: none; border-top: 1px solid #ccc;
+    border-radius: 0; break-inside: avoid;
+  }
+  .cat-card::before { display: none; }
+  .cat-icon { display: none; }
+  .cat-num { font-size: 20px; opacity: 0.5; }
+  .cat-name { font-size: 18px; }
+  .cat-friendly { font-size: 9px; margin-bottom: 8px; }
+  .cat-body { font-size: 12px; margin-bottom: 12px; }
+  .starters-label { font-size: 8px; margin-bottom: 6px; color: #000; }
+  .starters li { padding: 4px 0 4px 18px; font-size: 12px; }
+  .starters li::before { top: 10px; width: 6px; height: 6px; border-color: #000; }
+  .notes-lines {
+    display: block; margin-top: 8px;
+  }
+  .notes-lines div {
+    border-bottom: 1px solid #b9b9b9;
+    height: 24px;
+  }
+  .closing-statement { font-size: 16px; }
+  .synthesis {
+    background: #fff; color: #000;
+    border: 2px solid #000; border-radius: 0;
+    padding: 20px 0; break-inside: avoid;
+    margin-top: 16px;
+  }
+  .synthesis .section-inner { padding: 0 20px; }
+  .synthesis .serif-heading { color: #000; }
+  .syn-sub { color: #000; }
+  .syn-name { color: #000; }
+  .syn-item p { color: #333; }
+  .syn-lines {
+    display: block; margin-top: 6px;
+  }
+  .syn-lines div {
+    border-bottom: 1px solid #b9b9b9;
+    height: 22px;
+  }
+  .final-cta { display: none; }
+  footer { background: #fff; border-top: 1px solid #ccc; padding: 14px 0 0; margin-top: 20px; }
+  .foot-mark { color: #000; }
+  .foot-url { color: #000; }
+  a[href]::after { content: ""; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal, .reveal-scale { transition: none; opacity: 1; transform: none; }
+  .hero .eyebrow, .hero h1, .hero .sub, .hero-scroll-hint { animation: none; opacity: 1; }
+  .hero-glow { animation: none; }
+  .scroll-line { animation: none; }
+}
 </style>
 </head>
 <body>
 
-<div class="wrap">
+<div class="scroll-progress"></div>
 
-  <header class="masthead">
-    <div class="kicker">A Saturday Seed Working Guide</div>
-    <h1>The General Environment&nbsp;Scan</h1>
-    <p class="dek">What's coming at you from outside, and what your team makes of it.</p>
-    <hr class="rule">
-  </header>
+<!-- NAV — minimal masthead -->
+<nav>
+  <a href="/" class="nav-wordmark">Syncovate</a>
+  <a href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo" class="nav-cta" target="_blank" rel="noopener">Book a Call</a>
+  <button class="hamburger" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
 
-  <section>
-    <h2>Before you start</h2>
-    <p class="lede">This is not solo homework. Do not fill this out alone at your desk.</p>
-    <p>The seven categories below are a way of looking at the world outside your walls: what's changing out there, and what it might mean for your company, your people, your customers, and everybody you depend on.</p>
-    <p>Getting the information down is useful. But the real value is in the conversation. When your team works through this together, out loud, they end up with the same picture in their heads. That's worth more than the list.</p>
-  </section>
+<div class="mobile-menu">
+  <a href="/">Home</a>
+  <a href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo" class="mobile-cta" target="_blank" rel="noopener">Book a Call</a>
+</div>
 
-  <section>
-    <h2>How to run it</h2>
-    <div class="run-block">
-      <p>Break your team into small groups. Give each group one or two categories to own, then have them report out to the whole room.</p>
-      <p><span class="run-label">Live in the room.</span> This is how I usually run it, inside a strategy session. Groups get real time to work their categories, not five minutes. They talk it through, write down what they know and what they're not sure about, and then present to everybody. It moves, and the room feeds off each other.</p>
-      <p><span class="run-label">Or send them out first.</span> If you want harder information, give the groups a week before you meet. This is public information and most of it is free. Economic reports from your state and your region. What the experts in your area are saying, at the university, the chamber, the trade association. And when it applies to you, what the big publicly traded companies in or around your world are telling their investors, because they pay people a lot of money to see what's coming, and they publish it.</p>
-      <p><span class="run-label">Use your library.</span> Most people forget this one. Your public library will likely have access to business and market research databases you would otherwise pay for, and often you can get in from home with a library card. Many libraries also have a librarian who can help you dig, or can point you to other resources. Worth a phone call before you spend money on this.</p>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <span class="eyebrow">A Saturday Seed Working Guide</span>
+  <h1>The General<br>Environment <em>Scan</em></h1>
+  <p class="sub">What's coming at you from outside, and what your team makes of it.</p>
+  <div class="hero-line"></div>
+  <div class="hero-scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- BEFORE YOU START -->
+<section class="section">
+  <div class="section-inner reveal">
+    <span class="eyebrow">Before you start</span>
+    <p class="lede">This is not solo homework.<br>Do not fill this out alone at your desk.</p>
+    <p class="body-copy">The seven categories below are a way of looking at the world outside your walls: what's changing out there, and what it might mean for your company, your people, your customers, and everybody you depend on.</p>
+    <p class="body-copy">Getting the information down is useful. But the real value is in the conversation. When your team works through this together, out loud, they end up with the same picture in their heads. That's worth more than the list.</p>
+  </div>
+</section>
+
+<!-- HOW TO RUN IT -->
+<section class="section" style="padding-top:0;">
+  <div class="section-inner">
+    <div class="reveal">
+      <span class="eyebrow">How to run it</span>
+      <h2 class="serif-heading" style="font-size:clamp(26px,3.5vw,36px);margin-bottom:16px;">Break your team into small groups.</h2>
+      <p class="body-copy">Give each group one or two categories to own, then have them report out to the whole room.</p>
+    </div>
+
+    <div class="approach-grid">
+      <div class="approach-card reveal">
+        <span class="approach-label">Live in the room</span>
+        <p>This is how I usually run it, inside a strategy session. Groups get real time to work their categories, not five minutes. They talk it through, write down what they know and what they're not sure about, and then present to everybody. It moves, and the room feeds off each other.</p>
+      </div>
+      <div class="approach-card reveal">
+        <span class="approach-label">Or send them out first</span>
+        <p>If you want harder information, give the groups a week before you meet. This is public information and most of it is free. Economic reports from your state and your region. What the experts in your area are saying, at the university, the chamber, the trade association. And when it applies to you, what the big publicly traded companies in or around your world are telling their investors, because they pay people a lot of money to see what's coming, and they publish it.</p>
+      </div>
+      <div class="approach-card reveal">
+        <span class="approach-label">Use your library</span>
+        <p>Most people forget this one. Your public library will likely have access to business and market research databases you would otherwise pay for, and often you can get in from home with a library card. Many libraries also have a librarian who can help you dig, or can point you to other resources. Worth a phone call before you spend money on this.</p>
+      </div>
+    </div>
+
+    <div class="approach-note reveal">
       <p>Either way, the report-out is the part that matters. Each group takes their turn: here's what we looked at, here's what we found, here's what we think it might mean for us. Then the rest of the room asks questions and adds what they know.</p>
-      <p><span class="run-label">Your job in the report-out</span> is not to correct anybody or supply the right answer. Ask good questions. Let the room work.</p>
+      <p><strong>Your job in the report-out</strong> is not to correct anybody or supply the right answer. Ask good questions. Let the room work.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TWO RULES — dark strip -->
+<section class="rules-strip">
+  <div class="section-inner reveal">
+    <span class="eyebrow">Two rules for the room</span>
+    <div class="rule-item">
+      <div class="rule-num">1</div>
+      <div class="rule-name">Suspend judgment.</div>
+      <p>You're not deciding yet whether something is good news or bad news. The same fact can be a threat or an opportunity depending on the company. Just get it on the page.</p>
+    </div>
+    <div class="rule-item">
+      <div class="rule-num">2</div>
+      <div class="rule-name">Watch for weak signals.</div>
+      <p>Don't just collect established facts. Pay attention to the weird, unexpected, or seemingly minor shifts you've noticed lately that make you a little uncomfortable.</p>
+    </div>
+  </div>
+</section>
+
+<!-- THE SEVEN CATEGORIES -->
+<section class="cat-section" aria-label="The seven categories">
+  <div class="section-wide">
+    <div class="cat-section-header reveal">
+      <span class="eyebrow">The Seven Categories</span>
+      <h2 class="serif-heading">Scan the world outside<br>your walls.</h2>
     </div>
 
-    <div class="rules">
-      <div class="rules-title">Two rules for the room</div>
-      <p><span class="rname">1. Suspend judgment.</span> You're not deciding yet whether something is good news or bad news. The same fact can be a threat or an opportunity depending on the company. Just get it on the page.</p>
-      <p><span class="rname">2. Watch for weak signals.</span> Don't just collect established facts. Pay attention to the weird, unexpected, or seemingly minor shifts you've noticed lately that make you a little uncomfortable.</p>
+    <div class="cat-grid">
+
+      <!-- 1. Demographic -->
+      <article class="cat-card reveal">
+        <div class="cat-icon"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="13" cy="18" r="7.5" stroke="currentColor" stroke-width="1.5"/><circle cx="23" cy="18" r="7.5" stroke="currentColor" stroke-width="1.5"/></svg></div>
+        <div class="cat-header"><span class="cat-num">1</span><span class="cat-name">Demographic</span></div>
+        <span class="cat-friendly">The people</span>
+        <p class="cat-body">Who lives and works around you, and how that's shifting. Population going up or down. People getting older or younger. Where they're moving to and from. Who has money to spend and who doesn't.</p>
+        <div class="starters">
+          <div class="starters-label">Thought starters</div>
+          <ul>
+            <li>Is our county growing or shrinking, and what does the projection say ten years out?</li>
+            <li>What's happening to the age of our workforce, and who's coming up behind them?</li>
+            <li>Where is household income around here headed?</li>
+          </ul>
+        </div>
+        <div class="notes">
+          <div class="notes-label">Notes</div>
+          <div class="notes-lines"><div></div><div></div><div></div><div></div></div>
+        </div>
+      </article>
+
+      <!-- 2. Economic -->
+      <article class="cat-card reveal">
+        <div class="cat-icon"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="9" y1="28" x2="9" y2="20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="18" y1="28" x2="18" y2="14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="27" y1="28" x2="27" y2="8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+        <div class="cat-header"><span class="cat-num">2</span><span class="cat-name">Economic</span></div>
+        <span class="cat-friendly">The money</span>
+        <p class="cat-body">Where the economy is headed in the places you do business. Interest rates, material costs, wages, whether people are spending or sitting on their hands.</p>
+        <div class="starters">
+          <div class="starters-label">Thought starters</div>
+          <ul>
+            <li>What are the regional forecasts saying about our part of the country?</li>
+            <li>What's the outlook on interest rates, and what does that do to the people who buy from us?</li>
+            <li>What's happening to wages around here, and can we still compete for people?</li>
+          </ul>
+        </div>
+        <div class="notes">
+          <div class="notes-label">Notes</div>
+          <div class="notes-lines"><div></div><div></div><div></div><div></div></div>
+        </div>
+      </article>
+
+      <!-- 3. Political / Legal -->
+      <article class="cat-card reveal">
+        <div class="cat-icon"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="5" y="5" width="26" height="26" rx="1" stroke="currentColor" stroke-width="1.5"/><line x1="18" y1="5" x2="18" y2="31" stroke="currentColor" stroke-width="1.5"/><line x1="5" y1="18" x2="31" y2="18" stroke="currentColor" stroke-width="1.5"/></svg></div>
+        <div class="cat-header"><span class="cat-num">3</span><span class="cat-name">Political / Legal</span></div>
+        <span class="cat-friendly">The rules</span>
+        <p class="cat-body">The laws, regulations, codes, and permits you operate under, plus the people and groups pushing to change them. Local, state, and federal.</p>
+        <div class="starters">
+          <div class="starters-label">Thought starters</div>
+          <ul>
+            <li>What rule or code changes are working their way toward us?</li>
+            <li>What's on the ballot or in front of the legislature that touches our work?</li>
+            <li>Who's making decisions that affect us, and are we paying any attention to them?</li>
+          </ul>
+        </div>
+        <div class="notes">
+          <div class="notes-label">Notes</div>
+          <div class="notes-lines"><div></div><div></div><div></div><div></div></div>
+        </div>
+      </article>
+
+      <!-- 4. Socio-cultural -->
+      <article class="cat-card reveal">
+        <div class="cat-icon"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="18" cy="8" r="3.5" stroke="currentColor" stroke-width="1.5"/><circle cx="8" cy="27" r="3.5" stroke="currentColor" stroke-width="1.5"/><circle cx="28" cy="27" r="3.5" stroke="currentColor" stroke-width="1.5"/><line x1="18" y1="11.5" x2="8" y2="23.5" stroke="currentColor" stroke-width="1"/><line x1="18" y1="11.5" x2="28" y2="23.5" stroke="currentColor" stroke-width="1"/><line x1="11.5" y1="27" x2="24.5" y2="27" stroke="currentColor" stroke-width="1"/></svg></div>
+        <div class="cat-header"><span class="cat-num">4</span><span class="cat-name">Socio-cultural</span></div>
+        <span class="cat-friendly">How people live</span>
+        <p class="cat-body">What people believe, expect, and value, and how that's changing. How they want to work. How they want to buy. What they'll put up with and what they won't.</p>
+        <div class="starters">
+          <div class="starters-label">Thought starters</div>
+          <ul>
+            <li>What do people expect from a company like ours that they didn't expect five years ago?</li>
+            <li>What are younger workers looking for, and where are they finding it?</li>
+            <li>What's changing about how people around here want to buy?</li>
+          </ul>
+        </div>
+        <div class="notes">
+          <div class="notes-label">Notes</div>
+          <div class="notes-lines"><div></div><div></div><div></div><div></div></div>
+        </div>
+      </article>
+
+      <!-- 5. Technological -->
+      <article class="cat-card reveal">
+        <div class="cat-icon"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><polygon points="18,3 31,11 31,25 18,33 5,25 5,11" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
+        <div class="cat-header"><span class="cat-num">5</span><span class="cat-name">Technological</span></div>
+        <span class="cat-friendly">The tools</span>
+        <p class="cat-body">New tools, new methods, new equipment, and the people creating them. Some of it makes you faster. Some of it makes what you do less valuable.</p>
+        <div class="starters">
+          <div class="starters-label">Thought starters</div>
+          <ul>
+            <li>What part of our work will a machine or software do cheaper within a few years?</li>
+            <li>Where are competitors using tools that let them run leaner or move faster than us?</li>
+            <li>What have we bought in the last two years that nobody uses?</li>
+          </ul>
+        </div>
+        <div class="notes">
+          <div class="notes-label">Notes</div>
+          <div class="notes-lines"><div></div><div></div><div></div><div></div></div>
+        </div>
+      </article>
+
+      <!-- 6. Global -->
+      <article class="cat-card reveal">
+        <div class="cat-icon"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="18" cy="18" r="13" stroke="currentColor" stroke-width="1.5"/><ellipse cx="18" cy="18" rx="6" ry="13" stroke="currentColor" stroke-width="1"/><line x1="5" y1="18" x2="31" y2="18" stroke="currentColor" stroke-width="1"/></svg></div>
+        <div class="cat-header"><span class="cat-num">6</span><span class="cat-name">Global</span></div>
+        <span class="cat-friendly">The wide world</span>
+        <p class="cat-body">Markets, supply chains, and events beyond your borders. You may not sell overseas, but your materials, your equipment, and your prices travel.</p>
+        <div class="starters">
+          <div class="starters-label">Thought starters</div>
+          <ul>
+            <li>What's happening with tariffs, trade rules, or currency that touches what we buy?</li>
+            <li>What global disruption would hurt us most, and how would we find out it was coming?</li>
+            <li>Is there demand for what we do somewhere we've never looked?</li>
+          </ul>
+        </div>
+        <div class="notes">
+          <div class="notes-label">Notes</div>
+          <div class="notes-lines"><div></div><div></div><div></div><div></div></div>
+        </div>
+      </article>
+
+      <!-- 7. Physical -->
+      <article class="cat-card reveal">
+        <div class="cat-icon"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="2,28 12,10 19,20 24,13 34,28" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="cat-header"><span class="cat-num">7</span><span class="cat-name">Physical</span></div>
+        <span class="cat-friendly">The ground under you</span>
+        <p class="cat-body">The actual physical world you work in. Weather, land, water, energy, buildings, roads. What's changing about the conditions you operate in.</p>
+        <div class="starters">
+          <div class="starters-label">Thought starters</div>
+          <ul>
+            <li>What weather or seasonal patterns are different than they used to be?</li>
+            <li>What's happening to the cost or availability of energy, water, or land here?</li>
+            <li>What's planned for the roads, utilities, and land around us?</li>
+          </ul>
+        </div>
+        <div class="notes">
+          <div class="notes-label">Notes</div>
+          <div class="notes-lines"><div></div><div></div><div></div><div></div></div>
+        </div>
+      </article>
+
     </div>
-  </section>
+  </div>
+</section>
 
-  <section aria-label="The seven categories">
+<!-- WHEN YOU'RE DONE -->
+<section class="section">
+  <div class="section-inner reveal">
+    <span class="eyebrow">When you're done</span>
+    <p class="body-copy">Look at what your team put on the page. Some of it will turn into an opportunity, something out there you could use. Some of it will turn into a threat, something that could get in your way. You'll sort that out later.</p>
+    <p class="body-copy">For now, notice two things. You know more about the outside world than you did an hour ago. And your team just practiced thinking through something messy together and landing in the same place.</p>
+    <p class="closing-statement">That second one is the skill. This was the practice.</p>
+  </div>
+</section>
 
-    <article class="cat">
-      <div class="cat-head"><span class="cat-num">1</span><span class="cat-name">Demographic</span></div>
-      <div class="cat-friendly">The people</div>
-      <p>Who lives and works around you, and how that's shifting. Population going up or down. People getting older or younger. Where they're moving to and from. Who has money to spend and who doesn't.</p>
-      <div class="starters">
-        <div class="starters-label">Thought starters</div>
-        <ul>
-          <li>Is our county growing or shrinking, and what does the projection say ten years out?</li>
-          <li>What's happening to the age of our workforce, and who's coming up behind them?</li>
-          <li>Where is household income around here headed?</li>
-        </ul>
-      </div>
-      <div class="notes">
-        <div class="notes-label">Notes</div>
-        <div class="notes-lines"><div></div><div></div><div></div><div></div></div>
-      </div>
-    </article>
-
-    <article class="cat">
-      <div class="cat-head"><span class="cat-num">2</span><span class="cat-name">Economic</span></div>
-      <div class="cat-friendly">The money</div>
-      <p>Where the economy is headed in the places you do business. Interest rates, material costs, wages, whether people are spending or sitting on their hands.</p>
-      <div class="starters">
-        <div class="starters-label">Thought starters</div>
-        <ul>
-          <li>What are the regional forecasts saying about our part of the country?</li>
-          <li>What's the outlook on interest rates, and what does that do to the people who buy from us?</li>
-          <li>What's happening to wages around here, and can we still compete for people?</li>
-        </ul>
-      </div>
-      <div class="notes">
-        <div class="notes-label">Notes</div>
-        <div class="notes-lines"><div></div><div></div><div></div><div></div></div>
-      </div>
-    </article>
-
-    <article class="cat">
-      <div class="cat-head"><span class="cat-num">3</span><span class="cat-name">Political / Legal</span></div>
-      <div class="cat-friendly">The rules</div>
-      <p>The laws, regulations, codes, and permits you operate under, plus the people and groups pushing to change them. Local, state, and federal.</p>
-      <div class="starters">
-        <div class="starters-label">Thought starters</div>
-        <ul>
-          <li>What rule or code changes are working their way toward us?</li>
-          <li>What's on the ballot or in front of the legislature that touches our work?</li>
-          <li>Who's making decisions that affect us, and are we paying any attention to them?</li>
-        </ul>
-      </div>
-      <div class="notes">
-        <div class="notes-label">Notes</div>
-        <div class="notes-lines"><div></div><div></div><div></div><div></div></div>
-      </div>
-    </article>
-
-    <article class="cat">
-      <div class="cat-head"><span class="cat-num">4</span><span class="cat-name">Socio-cultural</span></div>
-      <div class="cat-friendly">How people live</div>
-      <p>What people believe, expect, and value, and how that's changing. How they want to work. How they want to buy. What they'll put up with and what they won't.</p>
-      <div class="starters">
-        <div class="starters-label">Thought starters</div>
-        <ul>
-          <li>What do people expect from a company like ours that they didn't expect five years ago?</li>
-          <li>What are younger workers looking for, and where are they finding it?</li>
-          <li>What's changing about how people around here want to buy?</li>
-        </ul>
-      </div>
-      <div class="notes">
-        <div class="notes-label">Notes</div>
-        <div class="notes-lines"><div></div><div></div><div></div><div></div></div>
-      </div>
-    </article>
-
-    <article class="cat">
-      <div class="cat-head"><span class="cat-num">5</span><span class="cat-name">Technological</span></div>
-      <div class="cat-friendly">The tools</div>
-      <p>New tools, new methods, new equipment, and the people creating them. Some of it makes you faster. Some of it makes what you do less valuable.</p>
-      <div class="starters">
-        <div class="starters-label">Thought starters</div>
-        <ul>
-          <li>What part of our work will a machine or software do cheaper within a few years?</li>
-          <li>Where are competitors using tools that let them run leaner or move faster than us?</li>
-          <li>What have we bought in the last two years that nobody uses?</li>
-        </ul>
-      </div>
-      <div class="notes">
-        <div class="notes-label">Notes</div>
-        <div class="notes-lines"><div></div><div></div><div></div><div></div></div>
-      </div>
-    </article>
-
-    <article class="cat">
-      <div class="cat-head"><span class="cat-num">6</span><span class="cat-name">Global</span></div>
-      <div class="cat-friendly">The wide world</div>
-      <p>Markets, supply chains, and events beyond your borders. You may not sell overseas, but your materials, your equipment, and your prices travel.</p>
-      <div class="starters">
-        <div class="starters-label">Thought starters</div>
-        <ul>
-          <li>What's happening with tariffs, trade rules, or currency that touches what we buy?</li>
-          <li>What global disruption would hurt us most, and how would we find out it was coming?</li>
-          <li>Is there demand for what we do somewhere we've never looked?</li>
-        </ul>
-      </div>
-      <div class="notes">
-        <div class="notes-label">Notes</div>
-        <div class="notes-lines"><div></div><div></div><div></div><div></div></div>
-      </div>
-    </article>
-
-    <article class="cat">
-      <div class="cat-head"><span class="cat-num">7</span><span class="cat-name">Physical</span></div>
-      <div class="cat-friendly">The ground under you</div>
-      <p>The actual physical world you work in. Weather, land, water, energy, buildings, roads. What's changing about the conditions you operate in.</p>
-      <div class="starters">
-        <div class="starters-label">Thought starters</div>
-        <ul>
-          <li>What weather or seasonal patterns are different than they used to be?</li>
-          <li>What's happening to the cost or availability of energy, water, or land here?</li>
-          <li>What's planned for the roads, utilities, and land around us?</li>
-        </ul>
-      </div>
-      <div class="notes">
-        <div class="notes-label">Notes</div>
-        <div class="notes-lines"><div></div><div></div><div></div><div></div></div>
-      </div>
-    </article>
-
-  </section>
-
-  <section>
-    <h2>When you're done</h2>
-    <p>Look at what your team put on the page. Some of it will turn into an opportunity, something out there you could use. Some of it will turn into a threat, something that could get in your way. You'll sort that out later.</p>
-    <p>For now, notice two things. You know more about the outside world than you did an hour ago. And your team just practiced thinking through something messy together and landing in the same place.</p>
-    <p><strong>That second one is the skill. This was the practice.</strong></p>
-  </section>
-
-  <div class="synthesis">
-    <h2>The synthesis</h2>
-    <div class="sub">Work through these together after the report-outs.</div>
-    <div class="syn-item">
+<!-- SYNTHESIS -->
+<section class="synthesis">
+  <div class="section-inner">
+    <div class="reveal">
+      <span class="eyebrow">After the report-outs</span>
+      <h2 class="serif-heading">The synthesis</h2>
+      <p class="syn-sub">Work through these together after the report-outs.</p>
+    </div>
+    <div class="syn-item reveal">
       <div class="syn-name">The top three surprises</div>
       <p>What did we hear today that challenged what we thought we knew?</p>
       <div class="syn-lines"><div></div><div></div><div></div></div>
     </div>
-    <div class="syn-item">
+    <div class="syn-item reveal">
       <div class="syn-name">The blind spot</div>
       <p>Which of the seven categories do we know the least about as a team?</p>
       <div class="syn-lines"><div></div><div></div></div>
     </div>
-    <div class="syn-item">
+    <div class="syn-item reveal">
       <div class="syn-name">The watchlist</div>
       <p>What two things out there do we need to keep an eye on before our next strategy session?</p>
       <div class="syn-lines"><div></div><div></div></div>
     </div>
   </div>
+</section>
 
-  <div class="dl">
-    <button type="button" onclick="window.print()">Download the printable version</button>
-  </div>
-  <p class="dl-note">Opens your print dialog. Choose "Save as PDF" to keep a copy, with room to write under every category.</p>
-
-  <footer>
-    <div class="foot-row">
-      <span class="foot-mark">SYNCOVATE</span>
-      <a class="foot-url" href="https://syncovatellc.com">syncovatellc.com</a>
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="final-cta-inner reveal">
+    <h2>Take it into<br>the <em>room.</em></h2>
+    <p>Save the guide for your next strategy session. Or if you want help running it, let's talk.</p>
+    <div class="cta-buttons">
+      <button type="button" class="btn-print" onclick="window.print()">Save as PDF</button>
+      <a href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo" class="btn-call" target="_blank" rel="noopener">Book a call with Dr. J</a>
     </div>
-  </footer>
+    <p class="cta-note">The button opens your print dialog — choose "Save as PDF" to keep a copy with room to write.</p>
+  </div>
+</section>
 
-</div>
+<!-- FOOTER -->
+<footer>
+  <div class="foot-row">
+    <span class="foot-mark">Syncovate</span>
+    <a class="foot-url" href="https://syncovatellc.com">syncovatellc.com</a>
+  </div>
+</footer>
+
+<script>
+(function() {
+  var prog = document.querySelector('.scroll-progress');
+  var nav = document.querySelector('nav');
+  window.addEventListener('scroll', function() {
+    var pct = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+    prog.style.width = pct + '%';
+    nav.classList.toggle('scrolled', window.scrollY > 50);
+  });
+
+  var hamburger = document.querySelector('.hamburger');
+  var mobileMenu = document.querySelector('.mobile-menu');
+  hamburger.addEventListener('click', function() {
+    var isOpen = hamburger.classList.toggle('open');
+    mobileMenu.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  });
+  mobileMenu.querySelectorAll('a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    });
+  });
+
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.reveal, .reveal-scale').forEach(function(el) {
+    observer.observe(el);
+  });
+})();
+</script>
 
 </body>
 </html>
