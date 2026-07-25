@@ -9,7 +9,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
-<noscript><style>.reveal{opacity:1;transform:none;}</style></noscript>
 <style>
 :root {
   --bronze: #BF8756;
@@ -34,7 +33,6 @@ body {
   font-weight: 300;
   color: var(--text);
   background: var(--cream);
-  overflow-x: hidden;
   line-height: 1.7;
   font-size: 17px;
 }
@@ -45,14 +43,12 @@ nav {
   height: 72px; padding: 0 2.5rem;
   display: flex; align-items: center;
   background: transparent;
-  transition: background 0.45s ease, border-color 0.45s ease, box-shadow 0.45s ease, height 0.3s ease;
+  transition: background 0.4s ease, border-color 0.4s ease;
   border-bottom: 1px solid transparent;
 }
 nav.scrolled {
   background: rgba(250,248,245,0.97);
   border-bottom: 1px solid rgba(191,135,86,0.12);
-  box-shadow: 0 1px 32px rgba(0,0,0,0.06);
-  height: 64px;
 }
 .nav-wordmark {
   font-family: var(--display);
@@ -65,24 +61,24 @@ nav.scrolled {
 nav.scrolled .nav-wordmark { color: var(--charcoal-deep); }
 
 /* ── SHARED ── */
-.section { padding: 100px 0; }
-.section-inner { max-width: 760px; margin: 0 auto; padding: 0 32px; }
-.section-wide { max-width: 860px; margin: 0 auto; padding: 0 32px; }
+.section { padding: 80px 0; }
+.section-inner { max-width: 700px; margin: 0 auto; padding: 0 32px; }
+.section-wide { max-width: 800px; margin: 0 auto; padding: 0 32px; }
 .eyebrow {
   display: block;
   font-family: var(--body);
   font-weight: 500; font-size: 11px;
   letter-spacing: 0.24em; text-transform: uppercase;
   color: var(--bronze);
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 .serif-heading {
   font-family: var(--display);
   font-weight: 400;
-  font-size: clamp(34px, 4.5vw, 52px);
-  line-height: 1.1;
+  font-size: clamp(30px, 4vw, 44px);
+  line-height: 1.15;
   color: var(--charcoal);
-  margin-bottom: 28px;
+  margin-bottom: 24px;
   letter-spacing: -0.01em;
 }
 .body-copy {
@@ -93,125 +89,73 @@ nav.scrolled .nav-wordmark { color: var(--charcoal-deep); }
 }
 .body-copy:last-child { margin-bottom: 0; }
 
-/* ── REVEAL ANIMATIONS ── */
-@keyframes fadeUp { from { opacity:0; transform:translateY(22px); } to { opacity:1; transform:none; } }
-@keyframes glowDrift { 0%,100% { transform:translate(0,0) scale(1); } 50% { transform:translate(-30px,20px) scale(1.05); } }
-@keyframes scrollPulse { 0%,100% { opacity:0.3; transform:scaleY(0.6); transform-origin:top; } 50% { opacity:0.8; transform:scaleY(1); } }
-
-.reveal {
-  opacity: 0; transform: translateY(40px);
-  transition: opacity 0.9s cubic-bezier(0.16,1,0.3,1), transform 0.9s cubic-bezier(0.16,1,0.3,1);
-}
-.reveal.visible { opacity: 1; transform: translateY(0); }
-
 /* ── HERO ── */
 .hero {
-  min-height: 60vh;
   background: var(--charcoal-deep);
-  padding: 140px 80px 100px;
-  display: flex; flex-direction: column; justify-content: center;
-  position: relative; overflow: hidden;
+  padding: 120px 80px 72px;
+  position: relative;
 }
-.hero-grid {
-  position: absolute; inset: 0;
-  background-image:
-    linear-gradient(rgba(191,135,86,0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(191,135,86,0.035) 1px, transparent 1px);
-  background-size: 72px 72px;
-  pointer-events: none;
-}
-.hero-glow {
-  position: absolute; top: 15%; right: 8%;
-  width: 600px; height: 600px;
-  background: radial-gradient(circle, rgba(191,135,86,0.08) 0%, rgba(86,173,191,0.02) 40%, transparent 70%);
-  pointer-events: none;
-  animation: glowDrift 12s ease-in-out infinite;
-}
-.hero .eyebrow { opacity: 0; animation: fadeUp 0.7s ease 0.05s forwards; }
+.hero .eyebrow { color: rgba(191,135,86,0.6); }
 .hero h1 {
   font-family: var(--display);
   font-weight: 300;
-  font-size: clamp(48px, 7vw, 96px);
-  line-height: 0.96;
+  font-size: clamp(42px, 6vw, 72px);
+  line-height: 1.0;
   color: #FDFCFA;
-  max-width: 700px;
-  margin-bottom: 36px;
+  max-width: 600px;
+  margin-bottom: 24px;
   letter-spacing: -0.02em;
-  opacity: 0; animation: fadeUp 0.9s ease 0.2s forwards;
 }
 .hero h1 em { font-style: italic; color: var(--bronze); }
 .hero .sub {
   font-family: var(--body);
-  font-weight: 300; font-size: 18px; line-height: 1.9;
-  max-width: 480px;
-  color: rgba(253,252,250,0.45);
-  margin-bottom: 0;
-  opacity: 0; animation: fadeUp 0.8s ease 0.4s forwards;
+  font-weight: 300; font-size: 17px; line-height: 1.8;
+  max-width: 460px;
+  color: rgba(253,252,250,0.4);
 }
-.hero-line {
-  position: absolute; bottom: 0; left: 0;
-  width: 38%; height: 1px;
-  background: linear-gradient(90deg, var(--bronze), transparent);
-}
-.hero-scroll-hint {
-  position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%);
-  display: flex; flex-direction: column; align-items: center; gap: 10px;
-  opacity: 0; animation: fadeUp 1s ease 1.2s forwards;
-}
-.hero-scroll-hint span {
-  font-family: var(--body);
-  font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
-  color: rgba(253,252,250,0.2);
-}
-.scroll-line {
-  width: 1px; height: 32px;
-  background: linear-gradient(to bottom, var(--bronze), transparent);
-  animation: scrollPulse 2s ease-in-out infinite;
+.hero-rule {
+  width: 48px; height: 1px;
+  background: var(--bronze);
+  margin-top: 40px;
+  opacity: 0.4;
 }
 
 /* ── LEDE ── */
 .lede {
   font-family: var(--display);
   font-weight: 400;
-  font-size: clamp(26px, 3.5vw, 36px);
-  line-height: 1.3;
+  font-size: clamp(24px, 3.2vw, 32px);
+  line-height: 1.35;
   color: var(--charcoal);
   margin-bottom: 24px;
-  max-width: 580px;
+  max-width: 540px;
 }
 
 /* ── APPROACH CARDS ── */
 .approach-grid {
   display: flex; flex-direction: column;
-  gap: 16px; margin: 36px 0 32px;
+  gap: 14px; margin: 32px 0 28px;
 }
 .approach-card {
   background: white;
   border: 1px solid var(--border);
   border-left: 3px solid var(--bronze);
   border-radius: 0 4px 4px 0;
-  padding: 32px 36px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.approach-card:hover {
-  transform: translateX(4px);
-  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+  padding: 28px 32px;
 }
 .approach-label {
   font-family: var(--body);
   font-weight: 700; font-size: 12px;
   letter-spacing: 0.15em; text-transform: uppercase;
   color: var(--bronze);
-  margin-bottom: 10px; display: block;
+  margin-bottom: 8px; display: block;
 }
 .approach-card p {
   font-family: var(--body);
   font-weight: 300; font-size: 16px; line-height: 1.8;
   color: var(--text); max-width: 60ch; margin: 0;
 }
-.approach-note {
-  margin-top: 28px;
-}
+.approach-note { margin-top: 28px; }
 .approach-note p {
   font-family: var(--body);
   font-weight: 300; font-size: 16.5px; line-height: 1.8;
@@ -223,23 +167,23 @@ nav.scrolled .nav-wordmark { color: var(--charcoal-deep); }
 /* ── RULES STRIP ── */
 .rules-strip {
   background: var(--charcoal-deep);
-  padding: 80px 0;
+  padding: 64px 0;
 }
-.rules-strip .section-inner { max-width: 760px; }
-.rules-strip .eyebrow { color: var(--teal); margin-bottom: 36px; }
-.rule-item { margin-bottom: 28px; }
+.rules-strip .section-inner { max-width: 700px; }
+.rules-strip .eyebrow { color: var(--teal); margin-bottom: 32px; }
+.rule-item { margin-bottom: 24px; }
 .rule-item:last-child { margin-bottom: 0; }
 .rule-num {
   font-family: var(--display);
-  font-weight: 300; font-size: 48px;
+  font-weight: 300; font-size: 42px;
   color: rgba(191,135,86,0.15);
-  line-height: 1; margin-bottom: 8px;
+  line-height: 1; margin-bottom: 6px;
 }
 .rule-name {
   font-family: var(--display);
-  font-weight: 600; font-size: clamp(22px, 3vw, 28px);
+  font-weight: 600; font-size: clamp(20px, 2.8vw, 26px);
   color: #FDFCFA;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 .rule-item p {
   font-family: var(--body);
@@ -249,53 +193,39 @@ nav.scrolled .nav-wordmark { color: var(--charcoal-deep); }
 }
 
 /* ── CATEGORY SECTION ── */
-.cat-section { background: var(--warm-gray); padding: 100px 0 80px; }
-.cat-section-header { margin-bottom: 56px; }
-.cat-grid { display: flex; flex-direction: column; gap: 20px; }
+.cat-section { background: var(--warm-gray); padding: 80px 0; }
+.cat-section-header { margin-bottom: 48px; }
+.cat-grid { display: flex; flex-direction: column; gap: 16px; }
 
 .cat-card {
   background: var(--cream);
   border: 1px solid rgba(191,135,86,0.1);
-  border-radius: 4px;
-  padding: 44px 48px 40px;
-  position: relative; overflow: hidden;
-  transition: transform 0.35s cubic-bezier(0.16,1,0.3,1), box-shadow 0.35s ease, border-color 0.3s;
+  border-left: 3px solid var(--bronze);
+  border-radius: 0 4px 4px 0;
+  padding: 36px 40px 32px;
 }
-.cat-card::before {
-  content: '';
-  position: absolute; top: 0; left: 0;
-  width: 3px; height: 0;
-  background: var(--bronze);
-  transition: height 0.4s ease;
-}
-.cat-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 48px rgba(0,0,0,0.06), 0 0 0 1px rgba(191,135,86,0.1);
-  border-color: rgba(191,135,86,0.2);
-}
-.cat-card:hover::before { height: 100%; }
 
 .cat-icon {
   color: var(--bronze);
-  margin-bottom: 20px;
-  opacity: 0.7;
+  margin-bottom: 16px;
+  opacity: 0.6;
 }
 .cat-icon svg { display: block; }
 
 .cat-header {
-  display: flex; align-items: baseline; gap: 14px;
+  display: flex; align-items: baseline; gap: 12px;
   margin-bottom: 4px;
 }
 .cat-num {
   font-family: var(--display);
   font-weight: 300; font-style: italic;
-  font-size: 42px; line-height: 1;
-  color: var(--bronze); opacity: 0.25;
+  font-size: 36px; line-height: 1;
+  color: var(--bronze); opacity: 0.2;
 }
 .cat-name {
   font-family: var(--display);
   font-weight: 600;
-  font-size: clamp(26px, 4vw, 32px);
+  font-size: clamp(24px, 3.5vw, 30px);
   letter-spacing: 0.01em;
   color: var(--charcoal);
 }
@@ -304,23 +234,23 @@ nav.scrolled .nav-wordmark { color: var(--charcoal-deep); }
   font-size: 11px; font-weight: 500;
   letter-spacing: 0.2em; text-transform: uppercase;
   color: var(--bronze);
-  margin-bottom: 16px; display: block;
+  margin-bottom: 14px; display: block;
 }
 .cat-body {
   font-family: var(--body);
   font-weight: 300; font-size: 16px; line-height: 1.8;
   color: var(--text); max-width: 58ch;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 .starters { margin: 0; }
 .starters-label {
   font-size: 10px; font-weight: 700;
   letter-spacing: 0.2em; text-transform: uppercase;
-  color: var(--teal); margin-bottom: 12px;
+  color: var(--teal); margin-bottom: 10px;
 }
 .starters ul { list-style: none; }
 .starters li {
-  padding: 10px 0 10px 24px;
+  padding: 8px 0 8px 22px;
   position: relative;
   font-family: var(--body);
   font-weight: 300; font-size: 15px; line-height: 1.65;
@@ -329,14 +259,12 @@ nav.scrolled .nav-wordmark { color: var(--charcoal-deep); }
 }
 .starters li::before {
   content: "";
-  position: absolute; left: 0; top: 20px;
-  width: 8px; height: 8px;
+  position: absolute; left: 0; top: 18px;
+  width: 7px; height: 7px;
   border: 1.5px solid var(--bronze);
   border-radius: 50%;
 }
-.notes {
-  margin-top: 24px;
-}
+.notes { margin-top: 20px; }
 .notes-label {
   font-size: 10px; font-weight: 700;
   letter-spacing: 0.2em; text-transform: uppercase;
@@ -356,16 +284,16 @@ nav.scrolled .nav-wordmark { color: var(--charcoal-deep); }
 }
 
 /* ── SYNTHESIS ── */
-.synthesis { background: var(--charcoal-deep); padding: 100px 0; }
-.synthesis .section-inner { max-width: 760px; }
+.synthesis { background: var(--charcoal-deep); padding: 80px 0; }
+.synthesis .section-inner { max-width: 700px; }
 .synthesis .serif-heading { color: #FDFCFA; }
 .syn-sub {
   font-family: var(--body);
   font-size: 15px; font-weight: 300;
   color: var(--teal);
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
-.syn-item { margin-bottom: 32px; }
+.syn-item { margin-bottom: 28px; }
 .syn-item:last-child { margin-bottom: 0; }
 .syn-name {
   font-size: 11px; font-weight: 700;
@@ -381,33 +309,25 @@ nav.scrolled .nav-wordmark { color: var(--charcoal-deep); }
 
 /* ── FINAL CTA ── */
 .final-cta {
-  background: var(--charcoal-deep);
-  padding: 0 0 120px;
+  background: var(--warm-gray);
+  padding: 64px 0;
   text-align: center;
-  position: relative;
 }
-.final-cta::before {
-  content: '';
-  display: block; width: 1px; height: 64px;
-  background: linear-gradient(to bottom, var(--bronze), transparent);
-  margin: 0 auto 56px;
-  opacity: 0.4;
-}
-.final-cta-inner { max-width: 560px; margin: 0 auto; padding: 0 32px; }
+.final-cta-inner { max-width: 520px; margin: 0 auto; padding: 0 32px; }
 .final-cta h2 {
   font-family: var(--display);
   font-weight: 300;
-  font-size: clamp(32px, 4.5vw, 48px);
-  color: #FDFCFA; line-height: 1.1;
+  font-size: clamp(28px, 4vw, 40px);
+  color: var(--charcoal); line-height: 1.15;
   letter-spacing: -0.01em;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 .final-cta h2 em { font-style: italic; color: var(--bronze); }
 .final-cta p {
   font-family: var(--body);
   font-weight: 300; font-size: 16px; line-height: 1.7;
-  color: rgba(253,252,250,0.4);
-  max-width: 420px; margin: 0 auto 44px;
+  color: var(--text-muted);
+  max-width: 400px; margin: 0 auto 36px;
 }
 .cta-buttons {
   display: flex; justify-content: center;
@@ -417,26 +337,21 @@ nav.scrolled .nav-wordmark { color: var(--charcoal-deep); }
   font-family: var(--body);
   font-weight: 500; font-size: 12px;
   letter-spacing: 0.13em; text-transform: uppercase;
-  color: var(--charcoal-deep);
+  color: white;
   background: var(--bronze);
   border: none; border-radius: 3px;
-  padding: 16px 32px;
+  padding: 14px 28px;
   cursor: pointer;
-  box-shadow: 0 2px 16px rgba(191,135,86,0.2);
-  transition: background 0.3s, transform 0.25s, box-shadow 0.3s;
+  transition: background 0.2s;
 }
-.btn-print:hover {
-  background: var(--bronze-hover);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 28px rgba(191,135,86,0.3);
-}
+.btn-print:hover { background: var(--bronze-hover); }
 .btn-call {
   font-family: var(--body);
   font-weight: 400; font-size: 13px;
-  color: rgba(253,252,250,0.4);
+  color: var(--text-muted);
   text-decoration: none;
-  border-bottom: 1px solid rgba(253,252,250,0.18);
-  padding: 16px 8px 2px;
+  border-bottom: 1px solid var(--border);
+  padding: 14px 8px 2px;
   letter-spacing: 0.04em;
   transition: color 0.2s, border-color 0.2s;
   align-self: center;
@@ -445,8 +360,8 @@ nav.scrolled .nav-wordmark { color: var(--charcoal-deep); }
 .cta-note {
   font-family: var(--body);
   font-size: 13px; font-weight: 300;
-  color: rgba(253,252,250,0.2);
-  margin-top: 18px;
+  color: var(--text-muted);
+  margin-top: 14px;
 }
 
 /* ── FOOTER ── */
@@ -458,7 +373,7 @@ footer {
 .foot-row {
   display: flex; justify-content: space-between;
   align-items: center; flex-wrap: wrap; gap: 12px;
-  max-width: 860px; margin: 0 auto;
+  max-width: 800px; margin: 0 auto;
 }
 .foot-mark {
   font-family: var(--display);
@@ -473,33 +388,20 @@ footer {
 }
 .foot-url:hover { text-decoration: underline; }
 
-/* ── FILM GRAIN ── */
-body::after {
-  content: '';
-  position: fixed; inset: 0; z-index: 9000;
-  pointer-events: none;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");
-  background-repeat: repeat; background-size: 180px;
-  opacity: 0.45; mix-blend-mode: multiply;
-}
-
 /* ── RESPONSIVE ── */
 @media (max-width: 768px) {
   nav { padding: 0 20px; height: 60px; }
-  .hero { padding: 120px 28px 72px; min-height: auto; }
-  .hero h1 { font-size: clamp(40px, 10vw, 64px); }
-  .hero .sub { font-size: 16px; }
-  .hero-scroll-hint { display: none; }
-  .section { padding: 72px 0; }
+  .hero { padding: 100px 24px 56px; }
+  .section { padding: 56px 0; }
   .section-inner, .section-wide { padding: 0 24px; }
-  .approach-card { padding: 24px 24px; }
-  .rules-strip { padding: 60px 0; }
-  .rule-num { font-size: 36px; }
-  .cat-section { padding: 72px 0 56px; }
-  .cat-card { padding: 32px 28px 28px; }
-  .cat-num { font-size: 32px; }
-  .synthesis { padding: 72px 0; }
-  .final-cta { padding: 0 0 80px; }
+  .approach-card { padding: 22px 22px; }
+  .rules-strip { padding: 48px 0; }
+  .rule-num { font-size: 32px; }
+  .cat-section { padding: 56px 0; }
+  .cat-card { padding: 28px 24px 24px; }
+  .cat-num { font-size: 28px; }
+  .synthesis { padding: 56px 0; }
+  .final-cta { padding: 48px 0; }
   footer { padding: 28px 20px; }
 }
 
@@ -510,19 +412,17 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--bronze); outlin
 @media print {
   @page { margin: 0.7in; }
   body { background: #fff; font-size: 12.5px; line-height: 1.5; color: #000; }
-  body::after { display: none; }
-  nav, .hero-grid, .hero-glow, .hero-line, .hero-scroll-hint { display: none; }
+  nav { display: none; }
   .hero {
-    min-height: auto; padding: 0; background: #fff;
-    justify-content: flex-start;
+    padding: 0; background: #fff;
   }
-  .hero .eyebrow { opacity: 1; animation: none; color: #000; font-size: 10px; margin-bottom: 8px; }
-  .hero h1 { opacity: 1; animation: none; color: #000; font-size: 32px; margin-bottom: 12px; }
+  .hero .eyebrow { color: #000; font-size: 10px; margin-bottom: 8px; }
+  .hero h1 { color: #000; font-size: 32px; margin-bottom: 12px; }
   .hero h1 em { color: #000; }
-  .hero .sub { opacity: 1; animation: none; color: #555; font-size: 14px; }
+  .hero .sub { color: #555; font-size: 14px; }
+  .hero-rule { display: none; }
   .section { padding: 24px 0 8px; }
   .section-inner, .section-wide { max-width: 100%; padding: 0; }
-  .reveal { opacity: 1; transform: none; transition: none; }
   .lede { font-size: 18px; }
   .serif-heading { font-size: 22px; margin-bottom: 12px; }
   .body-copy { font-size: 12.5px; }
@@ -543,7 +443,6 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--bronze); outlin
     border: none; border-top: 1px solid #ccc;
     border-radius: 0; break-inside: avoid;
   }
-  .cat-card::before { display: none; }
   .cat-icon { display: none; }
   .cat-num { font-size: 20px; opacity: 0.5; }
   .cat-name { font-size: 18px; }
@@ -587,37 +486,27 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--bronze); outlin
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .reveal { transition: none; opacity: 1; transform: none; }
-  .hero .eyebrow, .hero h1, .hero .sub, .hero-scroll-hint { animation: none; opacity: 1; }
-  .hero-glow { animation: none; }
-  .scroll-line { animation: none; }
 }
 </style>
 </head>
 <body>
 
-<!-- NAV — wordmark only -->
+<!-- NAV -->
 <nav>
   <a href="/" class="nav-wordmark">Syncovate</a>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-grid"></div>
-  <div class="hero-glow"></div>
   <span class="eyebrow">A Saturday Seed Working Guide</span>
   <h1>The General<br>Environment <em>Scan</em></h1>
   <p class="sub">What's coming at you from outside, and what your team makes of it.</p>
-  <div class="hero-line"></div>
-  <div class="hero-scroll-hint">
-    <span>Scroll</span>
-    <div class="scroll-line"></div>
-  </div>
+  <div class="hero-rule"></div>
 </section>
 
 <!-- BEFORE YOU START -->
 <section class="section">
-  <div class="section-inner reveal">
+  <div class="section-inner">
     <span class="eyebrow">Before you start</span>
     <p class="lede">This is not solo homework.<br>Do not fill this out alone at your desk.</p>
     <p class="body-copy">The seven categories below are a way of looking at the world outside your walls: what's changing out there, and what it might mean for your company, your people, your customers, and everybody you depend on.</p>
@@ -628,37 +517,35 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--bronze); outlin
 <!-- HOW TO RUN IT -->
 <section class="section" style="padding-top:0;">
   <div class="section-inner">
-    <div class="reveal">
-      <span class="eyebrow">How to run it</span>
-      <h2 class="serif-heading" style="font-size:clamp(26px,3.5vw,36px);margin-bottom:16px;">Break your team into small groups.</h2>
-      <p class="body-copy">Give each group one or two categories to own, then have them report out to the whole room.</p>
-    </div>
+    <span class="eyebrow">How to run it</span>
+    <h2 class="serif-heading" style="font-size:clamp(24px,3.2vw,32px);margin-bottom:14px;">Break your team into small groups.</h2>
+    <p class="body-copy">Give each group one or two categories to own, then have them report out to the whole room.</p>
 
     <div class="approach-grid">
-      <div class="approach-card reveal">
+      <div class="approach-card">
         <span class="approach-label">Live in the room</span>
         <p>This is how I usually run it, inside a strategy session. Groups get real time to work their categories, not five minutes. They talk it through, write down what they know and what they're not sure about, and then present to everybody. It moves, and the room feeds off each other.</p>
       </div>
-      <div class="approach-card reveal">
+      <div class="approach-card">
         <span class="approach-label">Or send them out first</span>
         <p>If you want harder information, give the groups a week before you meet. This is public information and most of it is free. Economic reports from your state and your region. What the experts in your area are saying, at the university, the chamber, the trade association. And when it applies to you, what the big publicly traded companies in or around your world are telling their investors, because they pay people a lot of money to see what's coming, and they publish it.</p>
       </div>
-      <div class="approach-card reveal">
+      <div class="approach-card">
         <span class="approach-label">Use your library</span>
         <p>Most people forget this one. Your public library will likely have access to business and market research databases you would otherwise pay for, and often you can get in from home with a library card. Many libraries also have a librarian who can help you dig, or can point you to other resources. Worth a phone call before you spend money on this.</p>
       </div>
     </div>
 
-    <div class="approach-note reveal">
+    <div class="approach-note">
       <p>Either way, the report-out is the part that matters. Each group takes their turn: here's what we looked at, here's what we found, here's what we think it might mean for us. Then the rest of the room asks questions and adds what they know.</p>
       <p><strong>Your job in the report-out</strong> is not to correct anybody or supply the right answer. Ask good questions. Let the room work.</p>
     </div>
   </div>
 </section>
 
-<!-- TWO RULES — dark strip -->
+<!-- TWO RULES -->
 <section class="rules-strip">
-  <div class="section-inner reveal">
+  <div class="section-inner">
     <span class="eyebrow">Two rules for the room</span>
     <div class="rule-item">
       <div class="rule-num">1</div>
@@ -676,7 +563,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--bronze); outlin
 <!-- THE SEVEN CATEGORIES -->
 <section class="cat-section" aria-label="The seven categories">
   <div class="section-wide">
-    <div class="cat-section-header reveal">
+    <div class="cat-section-header">
       <span class="eyebrow">The Seven Categories</span>
       <h2 class="serif-heading">Scan the world outside<br>your walls.</h2>
     </div>
@@ -684,7 +571,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--bronze); outlin
     <div class="cat-grid">
 
       <!-- 1. Demographic -->
-      <article class="cat-card reveal">
+      <article class="cat-card">
         <div class="cat-icon"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="13" cy="18" r="7.5" stroke="currentColor" stroke-width="1.5"/><circle cx="23" cy="18" r="7.5" stroke="currentColor" stroke-width="1.5"/></svg></div>
         <div class="cat-header"><span class="cat-num">1</span><span class="cat-name">Demographic</span></div>
         <span class="cat-friendly">The people</span>
@@ -704,7 +591,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--bronze); outlin
       </article>
 
       <!-- 2. Economic -->
-      <article class="cat-card reveal">
+      <article class="cat-card">
         <div class="cat-icon"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="9" y1="28" x2="9" y2="20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="18" y1="28" x2="18" y2="14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="27" y1="28" x2="27" y2="8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
         <div class="cat-header"><span class="cat-num">2</span><span class="cat-name">Economic</span></div>
         <span class="cat-friendly">The money</span>
@@ -724,7 +611,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--bronze); outlin
       </article>
 
       <!-- 3. Political / Legal -->
-      <article class="cat-card reveal">
+      <article class="cat-card">
         <div class="cat-icon"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="5" y="5" width="26" height="26" rx="1" stroke="currentColor" stroke-width="1.5"/><line x1="18" y1="5" x2="18" y2="31" stroke="currentColor" stroke-width="1.5"/><line x1="5" y1="18" x2="31" y2="18" stroke="currentColor" stroke-width="1.5"/></svg></div>
         <div class="cat-header"><span class="cat-num">3</span><span class="cat-name">Political / Legal</span></div>
         <span class="cat-friendly">The rules</span>
@@ -744,7 +631,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--bronze); outlin
       </article>
 
       <!-- 4. Socio-cultural -->
-      <article class="cat-card reveal">
+      <article class="cat-card">
         <div class="cat-icon"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="18" cy="8" r="3.5" stroke="currentColor" stroke-width="1.5"/><circle cx="8" cy="27" r="3.5" stroke="currentColor" stroke-width="1.5"/><circle cx="28" cy="27" r="3.5" stroke="currentColor" stroke-width="1.5"/><line x1="18" y1="11.5" x2="8" y2="23.5" stroke="currentColor" stroke-width="1"/><line x1="18" y1="11.5" x2="28" y2="23.5" stroke="currentColor" stroke-width="1"/><line x1="11.5" y1="27" x2="24.5" y2="27" stroke="currentColor" stroke-width="1"/></svg></div>
         <div class="cat-header"><span class="cat-num">4</span><span class="cat-name">Socio-cultural</span></div>
         <span class="cat-friendly">How people live</span>
@@ -764,7 +651,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--bronze); outlin
       </article>
 
       <!-- 5. Technological -->
-      <article class="cat-card reveal">
+      <article class="cat-card">
         <div class="cat-icon"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><polygon points="18,3 31,11 31,25 18,33 5,25 5,11" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
         <div class="cat-header"><span class="cat-num">5</span><span class="cat-name">Technological</span></div>
         <span class="cat-friendly">The tools</span>
@@ -784,7 +671,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--bronze); outlin
       </article>
 
       <!-- 6. Global -->
-      <article class="cat-card reveal">
+      <article class="cat-card">
         <div class="cat-icon"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="18" cy="18" r="13" stroke="currentColor" stroke-width="1.5"/><ellipse cx="18" cy="18" rx="6" ry="13" stroke="currentColor" stroke-width="1"/><line x1="5" y1="18" x2="31" y2="18" stroke="currentColor" stroke-width="1"/></svg></div>
         <div class="cat-header"><span class="cat-num">6</span><span class="cat-name">Global</span></div>
         <span class="cat-friendly">The wide world</span>
@@ -804,7 +691,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--bronze); outlin
       </article>
 
       <!-- 7. Physical -->
-      <article class="cat-card reveal">
+      <article class="cat-card">
         <div class="cat-icon"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="2,28 12,10 19,20 24,13 34,28" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <div class="cat-header"><span class="cat-num">7</span><span class="cat-name">Physical</span></div>
         <span class="cat-friendly">The ground under you</span>
@@ -829,7 +716,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--bronze); outlin
 
 <!-- WHEN YOU'RE DONE -->
 <section class="section">
-  <div class="section-inner reveal">
+  <div class="section-inner">
     <span class="eyebrow">When you're done</span>
     <p class="body-copy">Look at what your team put on the page. Some of it will turn into an opportunity, something out there you could use. Some of it will turn into a threat, something that could get in your way. You'll sort that out later.</p>
     <p class="body-copy">For now, notice two things. You know more about the outside world than you did an hour ago. And your team just practiced thinking through something messy together and landing in the same place.</p>
@@ -840,22 +727,20 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--bronze); outlin
 <!-- SYNTHESIS -->
 <section class="synthesis">
   <div class="section-inner">
-    <div class="reveal">
-      <span class="eyebrow">After the report-outs</span>
-      <h2 class="serif-heading">The synthesis</h2>
-      <p class="syn-sub">Work through these together after the report-outs.</p>
-    </div>
-    <div class="syn-item reveal">
+    <span class="eyebrow">After the report-outs</span>
+    <h2 class="serif-heading">The synthesis</h2>
+    <p class="syn-sub">Work through these together after the report-outs.</p>
+    <div class="syn-item">
       <div class="syn-name">The top three surprises</div>
       <p>What did we hear today that challenged what we thought we knew?</p>
       <div class="syn-lines"><div></div><div></div><div></div></div>
     </div>
-    <div class="syn-item reveal">
+    <div class="syn-item">
       <div class="syn-name">The blind spot</div>
       <p>Which of the seven categories do we know the least about as a team?</p>
       <div class="syn-lines"><div></div><div></div></div>
     </div>
-    <div class="syn-item reveal">
+    <div class="syn-item">
       <div class="syn-name">The watchlist</div>
       <p>What two things out there do we need to keep an eye on before our next strategy session?</p>
       <div class="syn-lines"><div></div><div></div></div>
@@ -865,8 +750,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--bronze); outlin
 
 <!-- FINAL CTA -->
 <section class="final-cta">
-  <div class="final-cta-inner reveal">
-    <h2>Take it into<br>the <em>room.</em></h2>
+  <div class="final-cta-inner">
+    <h2>Take it into the <em>room.</em></h2>
     <p>Save the guide for your next strategy session. Or if you want help running it, let's talk.</p>
     <div class="cta-buttons">
       <button type="button" class="btn-print" onclick="window.print()">Save as PDF</button>
@@ -890,19 +775,6 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--bronze); outlin
   window.addEventListener('scroll', function() {
     nav.classList.toggle('scrolled', window.scrollY > 50);
   }, { passive: true });
-
-  var observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-
-  document.querySelectorAll('.reveal').forEach(function(el) {
-    observer.observe(el);
-  });
 })();
 </script>
 
