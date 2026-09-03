@@ -12,7 +12,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.syncovatellc.com/">
 <meta property="og:title" content="Dr. J — Organizational Advisor | Syncovate">
-<meta property="og:description" content="The higher you climb, the fewer people tell you the truth. You're the bottleneck and the last to know — Dr. J helps CEOs find the pattern and build a company that runs on purpose, not by workaround.">
+<meta property="og:description" content="Every decision waits on you, and the company's gotten too big to see all of it. You're the bottleneck and the last to know — at the same time. That's what happens when a company outgrows its founder. Dr. J can help.">
 <meta property="og:image" content="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/yCTzggMS1VT4xrqF3lML/media/699cf94f340118eab6af87e5.jpeg">
 <meta property="og:site_name" content="Syncovate">
 <meta property="og:locale" content="en_US">
@@ -78,104 +78,80 @@ nav.scrolled .hamburger span{background:var(--charcoal-deep);}
 .stagger-children .reveal:nth-child(2){transition-delay:0.12s;}
 .stagger-children .reveal:nth-child(3){transition-delay:0.24s;}
 .stagger-children .reveal:nth-child(4){transition-delay:0.36s;}
+.stagger-children .reveal:nth-child(5){transition-delay:0.48s;}
+.stagger-children .reveal:nth-child(6){transition-delay:0.6s;}
 
 @keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:none;}}
-@keyframes pulse{0%,100%{opacity:0.35;}50%{opacity:0.8;}}
 
-/* ── HERO ── */
-.hero{min-height:100vh;background:var(--charcoal-deep);display:flex;flex-direction:column;justify-content:center;padding:9rem 6rem 6rem;position:relative;overflow:hidden;}
-.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(196,147,90,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(196,147,90,0.03) 1px,transparent 1px);background-size:80px 80px;pointer-events:none;}
-.hero-glow{position:absolute;top:10%;right:5%;width:600px;height:600px;background:radial-gradient(circle,rgba(196,147,90,0.06) 0%,transparent 65%);pointer-events:none;}
-.hero-eyebrow{font-size:0.65rem;font-weight:500;letter-spacing:0.28em;text-transform:uppercase;color:var(--bronze);margin-bottom:2.5rem;opacity:0;animation:fadeUp 0.7s ease 0.2s forwards;}
-.hero h1{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(52px,7vw,96px);line-height:0.96;color:#FDFCFA;max-width:820px;margin-bottom:2.5rem;opacity:0;animation:fadeUp 0.8s ease 0.35s forwards;}
-.hero h1 em{font-style:italic;color:var(--bronze);}
-.hero-sub{font-size:clamp(0.95rem,1.4vw,1.1rem);font-weight:300;line-height:1.85;color:rgba(253,252,250,0.5);max-width:560px;margin-bottom:3rem;opacity:0;animation:fadeUp 0.8s ease 0.55s forwards;}
-.hero-ctas{display:flex;align-items:center;gap:1.75rem;flex-wrap:wrap;opacity:0;animation:fadeUp 0.8s ease 0.7s forwards;}
 .btn-bronze{display:inline-block;font-size:11.5px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:var(--charcoal-deep);background:var(--bronze);padding:16px 36px;text-decoration:none;transition:all 0.2s;box-shadow:0 2px 16px rgba(196,147,90,0.2);}
 .btn-bronze:hover{background:var(--bronze-hover);transform:translateY(-2px);box-shadow:0 6px 28px rgba(196,147,90,0.3);}
 .btn-text{font-size:0.85rem;font-weight:300;color:rgba(253,252,250,0.4);text-decoration:none;border-bottom:1px solid rgba(253,252,250,0.15);padding-bottom:1px;transition:color 0.2s,border-color 0.2s;}
 .btn-text:hover{color:var(--bronze);border-color:var(--bronze);}
-.hero-line{position:absolute;bottom:0;left:0;width:33%;height:1px;background:linear-gradient(90deg,var(--bronze),transparent);}
 
-/* ── PROOF STRIP ── */
-.proof{background:var(--charcoal);border-bottom:1px solid rgba(196,147,90,0.1);padding:1.75rem 6rem;overflow:hidden;}
-.proof-inner{display:flex;align-items:center;gap:0;white-space:nowrap;}
-.proof-item{font-size:0.65rem;font-weight:400;letter-spacing:0.18em;text-transform:uppercase;color:rgba(253,252,250,0.3);padding:0 2.5rem;border-right:1px solid rgba(196,147,90,0.12);}
-.proof-item:last-child{border-right:none;}
+/* ── OPENER (not a hero — a short read) ── */
+.opener{background:var(--charcoal-deep);padding:9rem 6rem 6rem;position:relative;overflow:hidden;}
+.opener-grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(196,147,90,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(196,147,90,0.03) 1px,transparent 1px);background-size:80px 80px;pointer-events:none;}
+.opener-glow{position:absolute;top:8%;right:5%;width:600px;height:600px;background:radial-gradient(circle,rgba(196,147,90,0.06) 0%,transparent 65%);pointer-events:none;}
+.opener-inner{max-width:740px;margin:0 auto;position:relative;}
+.opener-eyebrow{font-size:0.65rem;font-weight:500;letter-spacing:0.28em;text-transform:uppercase;color:var(--bronze);margin-bottom:2.75rem;display:block;}
+.opener-headline{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(2.2rem,5vw,3.6rem);line-height:1.15;color:#FDFCFA;margin-bottom:2.25rem;}
+.opener-line{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(1.05rem,2vw,1.3rem);line-height:1.75;color:rgba(253,252,250,0.55);margin-bottom:1.5rem;}
+.opener-line-peak{font-style:italic;color:var(--bronze);font-size:clamp(1.3rem,2.4vw,1.7rem);margin-bottom:1.5rem;}
+.opener-line-summary{font-family:'DM Sans',sans-serif;font-weight:300;font-size:0.95rem;color:rgba(253,252,250,0.4);margin-bottom:0;}
+.opener-graphic{margin:3.5rem 0;padding:3rem 2.5rem;border:1px dashed rgba(196,147,90,0.3);border-radius:4px;text-align:center;background:rgba(196,147,90,0.03);}
+.opener-graphic span{font-size:0.78rem;letter-spacing:0.04em;color:rgba(253,252,250,0.35);font-style:italic;line-height:1.6;display:block;}
+.opener-cta-lead{font-size:1rem;line-height:1.7;color:rgba(253,252,250,0.7);margin-bottom:1.75rem;}
+.opener-ctas{display:flex;}
 
-/* ── INTRO ── */
-.intro{padding:8rem 6rem;background:var(--cream);}
-.intro-wrap{max-width:720px;margin:0 auto;}
-.intro-wrap h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(2rem,3.5vw,2.8rem);line-height:1.15;color:var(--charcoal);margin-bottom:2rem;}
-.intro-wrap h2 em{font-style:italic;color:var(--bronze);}
-.intro-p{font-size:0.98rem;line-height:1.9;color:var(--text-muted);margin-bottom:1.25rem;}
-.intro-p strong{color:var(--text);font-weight:500;}
+/* ── HOW TO WORK WITH ME ── */
+.work{padding:7rem 6rem 8rem;background:var(--cream);}
+.work-header{max-width:1100px;margin:0 auto 3.5rem;}
+.work-header h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(2rem,3.5vw,2.8rem);line-height:1.15;color:var(--charcoal);}
+.work-header h2 em{font-style:italic;color:var(--bronze);}
+.work-inner{max-width:1100px;margin:0 auto;display:flex;flex-direction:column;gap:2px;background:var(--border);}
+.work-block{background:var(--warm-gray);padding:3.25rem;display:grid;grid-template-columns:1.3fr 1fr;gap:3rem;align-items:start;}
+.work-label{font-size:0.62rem;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:var(--bronze);display:block;margin-bottom:1rem;}
+.work-h3{font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:600;color:var(--charcoal);margin-bottom:1rem;line-height:1.2;}
+.work-body{font-size:0.92rem;line-height:1.85;color:var(--text-muted);margin-bottom:1.5rem;}
+.work-link{font-size:0.7rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--bronze);border-bottom:1px solid rgba(196,147,90,0.3);padding-bottom:1px;text-decoration:none;}
+.work-testimonial{padding:2rem 2.25rem;background:#fff;border-left:3px solid var(--bronze);align-self:stretch;}
+.work-testimonial p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1rem;line-height:1.65;color:var(--charcoal);margin-bottom:1rem;}
+.work-testimonial-attr{font-size:0.68rem;font-weight:500;letter-spacing:0.1em;color:var(--text-muted);}
+.work-testimonial-role{display:block;font-size:0.65rem;color:var(--text-muted);opacity:0.7;margin-top:0.25rem;letter-spacing:0.06em;}
 
-.intro-symptoms-wrap{max-width:1100px;margin:3rem auto 0;}
-.intro-symptoms-lead{font-size:0.98rem;color:var(--text);font-weight:500;margin-bottom:1.5rem;}
-.intro-symptoms-grid{display:grid;grid-template-columns:1fr 1fr;border:1px solid rgba(196,147,90,0.15);border-radius:4px;overflow:hidden;}
-.intro-symptom{display:flex;gap:1rem;align-items:flex-start;padding:1.6rem 2.25rem;border-right:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--warm-gray);transition:background 0.25s,transform 0.2s;}
-.intro-symptom:hover{background:#fff;transform:translateX(4px);}
-.intro-symptom:nth-child(even){border-right:none;}
-.intro-symptom:nth-last-child(-n+2){border-bottom:none;}
-.intro-symptom-mark{flex-shrink:0;width:6px;height:6px;border-radius:50%;background:var(--bronze);margin-top:0.6rem;}
-.intro-symptom-text{font-size:0.92rem;line-height:1.65;color:var(--text);}
-
-.intro-callout-wrap{max-width:760px;margin:3.5rem auto 0;}
-.intro-callout{padding:2.5rem 3rem;background:var(--charcoal-deep);border-left:3px solid var(--bronze);}
-.intro-callout p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.3rem;line-height:1.6;color:rgba(253,252,250,0.82);}
-
-/* ── THREE CARDS ── */
-.cards{padding:0 6rem 8rem;background:var(--cream);}
-.cards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);}
-.card{background:var(--warm-gray);padding:3rem 2.5rem;text-decoration:none;display:block;border-top:2px solid transparent;transition:border-color 0.25s,background 0.25s;}
-.card:hover{border-color:var(--bronze);background:#fff;}
-.card-label{font-size:0.62rem;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:var(--bronze);display:block;margin-bottom:1.25rem;}
-.card-h3{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:600;color:var(--charcoal);margin-bottom:1rem;line-height:1.15;}
-.card-body{font-size:0.88rem;line-height:1.8;color:var(--text-muted);margin-bottom:1.75rem;}
-.card-link{font-size:0.7rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--bronze);border-bottom:1px solid rgba(196,147,90,0.3);padding-bottom:1px;}
-
-/* ── ABOUT SNAPSHOT ── */
-.about-snap{padding:8rem 6rem;background:var(--charcoal-deep);}
-.about-snap-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1.2fr;gap:8rem;align-items:center;}
-.about-img-wrap{position:relative;}
-.about-img-wrap img{width:100%;display:block;filter:grayscale(8%);}
-.about-img-wrap::after{content:'';position:absolute;inset:0;border:1px solid rgba(196,147,90,0.15);}
-.about-snap-text{}
-.about-snap-eyebrow{font-size:0.62rem;font-weight:500;letter-spacing:0.26em;text-transform:uppercase;color:var(--bronze);display:block;margin-bottom:1.5rem;}
-.about-snap-text h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(1.8rem,3vw,2.5rem);line-height:1.2;color:rgba(253,252,250,0.9);margin-bottom:2rem;}
-.about-snap-text h2 em{font-style:italic;color:var(--bronze);}
-.about-snap-p{font-size:0.92rem;line-height:1.9;color:rgba(253,252,250,0.45);margin-bottom:1.25rem;}
-.about-snap-link{display:inline-block;margin-top:0.75rem;font-size:0.7rem;font-weight:400;letter-spacing:0.16em;text-transform:uppercase;color:var(--bronze);text-decoration:none;border-bottom:1px solid rgba(196,147,90,0.35);padding-bottom:2px;transition:border-color 0.2s;}
-.about-snap-link:hover{border-color:var(--bronze);}
-
-/* ── QUOTES ── */
-.quotes{padding:7rem 6rem;background:var(--warm-gray);}
-.quotes-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:2.25rem;}
-.quote-card{padding:2.75rem;background:var(--cream);display:flex;flex-direction:column;justify-content:space-between;}
-.quote-card:first-child{background:var(--charcoal-deep);}
-.quote-text{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:1.15rem;line-height:1.7;color:var(--charcoal);margin-bottom:1.5rem;}
-.quote-card:first-child .quote-text{color:rgba(253,252,250,0.82);}
-.quote-attr{font-size:0.72rem;font-weight:400;letter-spacing:0.12em;color:var(--text-muted);border-top:1px solid var(--border);padding-top:1rem;}
-.quote-card:first-child .quote-attr{color:rgba(253,252,250,0.3);border-color:rgba(196,147,90,0.15);}
-.quote-role{display:block;font-size:0.68rem;letter-spacing:0.1em;color:var(--text-muted);opacity:0.7;margin-top:0.25rem;}
-.quote-card:first-child .quote-role{color:rgba(253,252,250,0.25);}
-
-/* ── CREDIBILITY BAR ── */
-.cred-bar{padding:2.5rem 6rem;background:var(--cream);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
-.cred-bar-inner{display:flex;flex-wrap:wrap;gap:0;justify-content:center;}
-.cred-item{font-size:0.62rem;font-weight:400;letter-spacing:0.18em;text-transform:uppercase;color:var(--text-muted);padding:0.5rem 2rem;border-right:1px solid var(--border);}
-.cred-item:last-child{border-right:none;}
+/* ── MEET DR. J ── */
+.meet{padding:8rem 6rem;background:var(--charcoal-deep);}
+.meet-top{max-width:1100px;margin:0 auto 4rem;display:grid;grid-template-columns:1fr 1.2fr;gap:6rem;align-items:center;}
+.meet-img-wrap{position:relative;}
+.meet-img-wrap img{width:100%;display:block;filter:grayscale(8%);}
+.meet-img-wrap::after{content:'';position:absolute;inset:0;border:1px solid rgba(196,147,90,0.15);}
+.meet-eyebrow{font-size:0.62rem;font-weight:500;letter-spacing:0.26em;text-transform:uppercase;color:var(--bronze);display:block;margin-bottom:1.5rem;}
+.meet-h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(1.8rem,3vw,2.5rem);line-height:1.2;color:rgba(253,252,250,0.9);margin-bottom:1.5rem;}
+.meet-h2 em{font-style:italic;color:var(--bronze);}
+.meet-p-lead{font-size:0.95rem;line-height:1.9;color:rgba(253,252,250,0.5);}
+.meet-body{max-width:720px;margin:0 auto;}
+.meet-p{font-size:0.95rem;line-height:1.9;color:rgba(253,252,250,0.45);margin-bottom:1.25rem;}
+.meet-callout-wrap{max-width:760px;margin:2.75rem auto 0;}
+.meet-callout{padding:2.5rem 3rem;background:rgba(196,147,90,0.06);border-left:3px solid var(--bronze);}
+.meet-callout p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.3rem;line-height:1.6;color:rgba(253,252,250,0.82);}
+.meet-testimonial-wrap{max-width:820px;margin:3.75rem auto 0;text-align:center;}
+.meet-testimonial p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.3rem,2.3vw,1.7rem);line-height:1.65;color:rgba(253,252,250,0.9);margin-bottom:1.5rem;}
+.meet-testimonial-attr{font-size:0.78rem;font-weight:500;letter-spacing:0.12em;color:var(--bronze);}
+.meet-testimonial-role{display:block;font-size:0.7rem;color:rgba(253,252,250,0.35);margin-top:0.35rem;letter-spacing:0.08em;}
+.meet-strips{max-width:1100px;margin:4rem auto 0;padding-top:3rem;border-top:1px solid rgba(196,147,90,0.1);}
+.meet-strip-row{display:flex;flex-wrap:wrap;justify-content:center;margin-bottom:1.25rem;}
+.meet-strip-row:last-child{margin-bottom:0;}
+.meet-strip-item{font-size:0.62rem;font-weight:400;letter-spacing:0.18em;text-transform:uppercase;color:rgba(253,252,250,0.3);padding:0.4rem 1.75rem;border-right:1px solid rgba(196,147,90,0.12);}
+.meet-strip-item:last-child{border-right:none;}
+.meet-cta{text-align:center;margin-top:3rem;}
 
 /* ── CLOSING CTA ── */
 .closing{padding:8rem 6rem;background:var(--charcoal-deep);text-align:center;position:relative;overflow:hidden;}
 .closing::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:1px;height:60px;background:var(--bronze);opacity:0.3;}
 .closing h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(2.2rem,4vw,3.2rem);line-height:1.15;color:#FDFCFA;max-width:600px;margin:0 auto 1.5rem;}
 .closing h2 em{font-style:italic;color:var(--bronze);}
-.closing-body{font-size:0.95rem;line-height:1.85;color:rgba(253,252,250,0.4);max-width:500px;margin:0 auto 3rem;}
+.closing-body{font-size:0.95rem;line-height:1.85;color:rgba(253,252,250,0.4);max-width:520px;margin:0 auto 3rem;}
 .closing-btns{display:flex;justify-content:center;gap:1.25rem;flex-wrap:wrap;}
-.btn-ghost-light{font-size:0.78rem;font-weight:300;color:rgba(253,252,250,0.4);text-decoration:none;border:1px solid rgba(253,252,250,0.15);padding:0.85rem 2rem;transition:border-color 0.2s,color 0.2s;}
-.btn-ghost-light:hover{border-color:var(--bronze);color:var(--bronze);}
 
 /* ── FOOTER ── */
 footer{background:#14161A;padding:5rem 3rem 2.5rem;border-top:1px solid rgba(196,147,90,0.08);}
@@ -190,26 +166,19 @@ footer{background:#14161A;padding:5rem 3rem 2.5rem;border-top:1px solid rgba(196
 .footer-copy{font-size:0.72rem;color:rgba(250,248,245,0.2);letter-spacing:0.05em;}
 
 @media(max-width:900px){
-  .about-snap-inner,.quotes-inner{grid-template-columns:1fr;gap:3.5rem;}
-  .intro-symptoms-grid{grid-template-columns:1fr;}
-  .intro-symptom{border-right:none !important;}
-  .intro-symptom:last-child{border-bottom:none;}
-  .cards-grid{grid-template-columns:1fr;}
+  .meet-top{grid-template-columns:1fr;gap:3.5rem;}
+  .work-block{grid-template-columns:1fr;gap:2rem;}
   .footer-grid{grid-template-columns:1fr;gap:36px;}
   footer{padding:48px 28px 32px;}
   .footer-bottom{flex-direction:column;gap:8px;text-align:center;}
-  .proof-inner{flex-direction:column;align-items:flex-start;gap:0.75rem;}
-  .proof-item{border-right:none;padding:0.25rem 0;}
-  .cred-bar-inner{gap:0.5rem;}
-  .cred-item{border-right:none;}
+  .meet-strip-item{border-right:none;padding:0.3rem 1rem;}
 }
 @media(max-width:1024px){
   nav{padding:0 1.25rem;height:60px;}
   .nav-links{display:none;}
   .hamburger{display:flex;}
-  .hero,.intro,.cards,.about-snap,.quotes,.closing{padding-left:1.75rem;padding-right:1.75rem;}
-  .cred-bar,.proof{padding-left:1.75rem;padding-right:1.75rem;}
-  .hero h1{font-size:clamp(38px,10vw,56px);}
+  .opener,.work,.meet,.closing{padding-left:1.75rem;padding-right:1.75rem;}
+  .opener-headline{font-size:clamp(1.9rem,8vw,2.6rem);}
 }
 
 /* ── ACCESSIBILITY ── */
@@ -247,135 +216,139 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bronze);outline-off
   <a href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo" class="mobile-cta" target="_blank" rel="noopener">Book a Call</a>
 </div>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-grid"></div>
-  <div class="hero-glow"></div>
-  <span class="hero-eyebrow">Dr. J — Organizational Advisor & Diagnostic Partner</span>
-  <h1>The higher you climb, the fewer people tell you the truth.</h1>
-  <p class="hero-sub">So here's one. Every decision waits on you, and half of what's happening in your company never reaches your desk. You're the bottleneck and the last to know — at the same time. Together we find the pattern and start building a company that runs on purpose, not by workaround.</p>
-  <div class="hero-ctas">
-    <a href="/coaching-and-advising" class="btn-bronze">See How I Work →</a>
-    <a href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo" class="btn-text" target="_blank" rel="noopener">Book a 15-Minute Call</a>
+<!-- OPENER (not a hero — a short read, each line gets its own space) -->
+<section class="opener">
+  <div class="opener-grid-bg"></div>
+  <div class="opener-glow"></div>
+  <div class="opener-inner">
+    <span class="opener-eyebrow">Dr. J — Organizational Advisor & Diagnostic Partner</span>
+    <p class="opener-headline reveal">Every decision waits on you.</p>
+    <p class="opener-line reveal">Meanwhile, the company's gotten too big to see all of it. So you rely on your people to tell you what's going on.</p>
+    <p class="opener-line reveal">But their jobs depend on you. So they're careful.</p>
+    <p class="opener-line reveal">Right when you most need somebody to give it to you straight, you're the last person anyone gives it to straight.</p>
+    <p class="opener-line-peak reveal">You're the bottleneck and the last to know. At the same time.</p>
+    <p class="opener-line-summary reveal">That's what happens when a company outgrows its founder.</p>
+
+    <!-- GRAPHIC PLACEHOLDER — Shannon is building this in Design.
+         Two curves over company growth: "waits on you" rises, "what you can see" falls;
+         they cross at "company outgrows its founder"; shaded region to the right =
+         bottleneck and last to know. Swap this block for the real graphic. -->
+    <div class="opener-graphic reveal-scale">
+      <span>[Graphic — company growth curves crossing at "outgrows its founder" — in progress]</span>
+    </div>
+
+    <p class="opener-cta-lead reveal">If that sounds like you, let's talk. I can probably help.</p>
+    <div class="opener-ctas reveal">
+      <a href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo" class="btn-bronze" target="_blank" rel="noopener">Book a 15-Minute Call</a>
+    </div>
   </div>
-  <div class="hero-line"></div>
 </section>
 
-<!-- PROOF STRIP -->
-<div class="proof">
-  <div class="proof-inner">
-    <span class="proof-item">PsyD, Business &amp; Organizational Leadership</span>
-    <span class="proof-item">Pixel Perspectives+ 360 Certified</span>
-    <span class="proof-item">Fellow, Strategic Doing Institute</span>
-    <span class="proof-item">200+ Retreats Facilitated</span>
-    <span class="proof-item">20 Years Working with Leaders</span>
+<!-- HOW TO WORK WITH ME -->
+<section class="work">
+  <div class="work-header">
+    <h2 class="reveal">How to work<em> with me.</em></h2>
   </div>
-</div>
+  <div class="work-inner">
 
-<!-- INTRO -->
-<section class="intro">
-  <div class="intro-wrap">
-    <h2 class="reveal">You used to know everything.<em> Now you decide everything.</em></h2>
-    <p class="intro-p reveal">Those aren't the same thing, and somewhere along the way one quietly replaced the other. When the company was small, you saw all of it — every customer, every job, every fire. Now it's bigger than one person can see, so your people see it for you, and they hand you the parts they think you can handle.</p>
-    <p class="intro-p reveal">Nobody's lying to you. They think they're doing their job. But there's an old story about an emperor and a set of clothes, and it doesn't end with the emperor figuring it out on his own.</p>
+    <div class="work-block reveal">
+      <div>
+        <span class="work-label">Coaching &amp; Advising</span>
+        <h3 class="work-h3">One-on-one coaching and advising.</h3>
+        <p class="work-body">For owners and senior leaders. Whether that's a single session to get unstuck or a standing call twice a month, we cover what's in front of you. It'll be one of the most valuable meetings of your month.</p>
+        <a href="/coaching-and-advising" class="work-link">See How It Works →</a>
+      </div>
+      <div class="work-testimonial">
+        <p>"Dr. J provided me with much needed clarity on family business related issues. I'm thankful for all the time and effort she expended working with me. I'd recommend her counsel to anyone dealing with family and/or business related problems."</p>
+        <span class="work-testimonial-attr">— Jay Groninger<br><span class="work-testimonial-role">Civil Engineer, G&amp;G Hauling and Excavating</span></span>
+      </div>
+    </div>
+
+    <div class="work-block reveal">
+      <div>
+        <span class="work-label">Speaking &amp; Facilitation</span>
+        <h3 class="work-h3">Bring me in for your team.</h3>
+        <p class="work-body">Keynotes, retreats, lunch-and-learns, working sessions. Built around what your group needs to shift — and no death by PowerPoint. 200+ sessions, and every time, somebody tells the owner it was the best thing they did all year.</p>
+        <a href="/speaking--facilitation" class="work-link">Bring Dr. J In →</a>
+      </div>
+      <!-- NEEDS CONFIRMATION: is this an actual quote on file (anonymized), or a placeholder? -->
+      <div class="work-testimonial">
+        <p>"I feel the most empowered I have in five years in this role."</p>
+        <span class="work-testimonial-attr">— A participant<br><span class="work-testimonial-role">After a team session</span></span>
+      </div>
+    </div>
+
+    <div class="work-block reveal">
+      <div>
+        <span class="work-label">Organizational Diagnostic</span>
+        <h3 class="work-h3">Start with the whole picture.</h3>
+        <p class="work-body">Truth is, most people don't hire me for the full organizational diagnostic — we usually find the pattern in coaching. But if you don't want to waste time, start here. I come in, look at the whole thing, and tell you what's going on. Then whatever we do next is the right size for what you need — not a guess.</p>
+        <a href="/organizational-diagnostic" class="work-link">Start Here →</a>
+      </div>
+      <div class="work-testimonial">
+        <p>"Dr. J has so much experience and knowledge around family business, business psychology, and regenerative leadership. It's a joy working with her and the Syncovate team. She continually provides fresh perspectives, and ways to better understand the complexity of the human brain, business and the world!"</p>
+        <span class="work-testimonial-attr">— Tyler Kanczuzewski<br><span class="work-testimonial-role">VP of Sustainability, Inovateus Solar</span></span>
+      </div>
+    </div>
+
   </div>
+</section>
 
-  <div class="intro-symptoms-wrap">
-    <p class="intro-symptoms-lead reveal">Here's what it looks like from where you sit:</p>
-    <div class="intro-symptoms-grid stagger-children">
-      <div class="intro-symptom reveal"><span class="intro-symptom-mark"></span><span class="intro-symptom-text">Meetings that produce motion but not movement.</span></div>
-      <div class="intro-symptom reveal"><span class="intro-symptom-mark"></span><span class="intro-symptom-text">A leadership team that agrees in the room and does their own thing once they leave.</span></div>
-      <div class="intro-symptom reveal"><span class="intro-symptom-mark"></span><span class="intro-symptom-text">You keep hearing "we have a communication problem."</span></div>
-      <div class="intro-symptom reveal"><span class="intro-symptom-mark"></span><span class="intro-symptom-text">Two of your best people keep coming to you about the other — and it's yours to fix.</span></div>
-      <div class="intro-symptom reveal"><span class="intro-symptom-mark"></span><span class="intro-symptom-text">Someone in a role they can't grow into, and everyone knows it.</span></div>
-      <div class="intro-symptom reveal"><span class="intro-symptom-mark"></span><span class="intro-symptom-text">Everyone's waiting on you. You feel like you're waiting on them.</span></div>
+<!-- MEET DR. J -->
+<section class="meet">
+  <div class="meet-top">
+    <div class="meet-img-wrap reveal">
+      <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/yCTzggMS1VT4xrqF3lML/media/699cf94f340118eab6af87e5.jpeg" alt="Dr. Shannon Jennings">
+    </div>
+    <div>
+      <span class="meet-eyebrow reveal">Meet Dr. J</span>
+      <h2 class="meet-h2 reveal">Somebody who really listens.<em> Then tells you straight.</em></h2>
+      <p class="meet-p-lead reveal">Your team watches what you react to. Your family's tired of hearing about it. Your peers are competitors. That's the gap I work in.</p>
     </div>
   </div>
 
-  <div class="intro-wrap">
-    <p class="intro-p reveal">Nobody's doing anything wrong. It's a pattern — and it's impossible to spot from the middle of it.</p>
-    <p class="intro-p reveal"><strong>We find the gap between where you think you are and where you actually are. Then we figure out the next best step — and take it.</strong></p>
+  <div class="meet-body">
+    <p class="meet-p reveal">I'm a business psychologist and a clinician, and I've spent my career inside leadership teams. I can see what's going on between your people and what it's doing to your results, and I know how to work with people through the hard parts, not around them.</p>
+    <p class="meet-p reveal">For a lot of owners, our calls become the one room where they don't have to be the one with the answers.</p>
   </div>
 
-  <div class="intro-callout-wrap">
-    <div class="intro-callout reveal-scale">
+  <div class="meet-callout-wrap">
+    <div class="meet-callout reveal-scale">
       <p>"In twenty years of this work, I've never walked into a leadership system where the blind spot was created by bad intentions. It's almost always good intentions — and the assumptions that grew up quietly underneath them."</p>
     </div>
   </div>
-</section>
 
-<!-- THREE CARDS -->
-<div class="cards">
-  <div class="cards-grid stagger-children">
-    <a href="/organizational-diagnostic" class="card reveal">
-      <span class="card-label">Find the Pattern</span>
-      <h3 class="card-h3">Organizational Diagnostic</h3>
-      <p class="card-body">We map what's driving your results — the problems you can't see from where you sit, and the strengths you've stopped noticing.</p>
-      <span class="card-link">Start Here →</span>
-    </a>
-    <a href="/coaching-and-advising" class="card reveal">
-      <span class="card-label">Build What's Missing</span>
-      <h3 class="card-h3">Advisory & Coaching</h3>
-      <p class="card-body">One-on-one work with owners and senior leaders. A single clarity session or ongoing work — built around the decisions in front of you, not a curriculum.</p>
-      <span class="card-link">See How It Works →</span>
-    </a>
-    <a href="/speaking--facilitation" class="card reveal">
-      <span class="card-label">Move the Group</span>
-      <h3 class="card-h3">Speaking & Facilitation</h3>
-      <p class="card-body">Keynotes, retreats, and working sessions built around what your group needs to shift. 200+ sessions.</p>
-      <span class="card-link">Bring Dr. J In →</span>
-    </a>
+  <div class="meet-testimonial-wrap reveal-scale">
+    <div class="meet-testimonial">
+      <p>"She listens — really listens — and then, like a hammer to a nail, she says her piece. Her greatest strength is building trust without ever taking sides. She sees the end goal clearly and doesn't get distracted by feelings or emotions. That's what gets people to open up and say the things that actually need to be said."</p>
+      <span class="meet-testimonial-attr">— Chase Meeks<br><span class="meet-testimonial-role">Senior Accounts Manager, G&amp;G Hauling &amp; Excavating, Inc.</span></span>
+    </div>
   </div>
-</div>
 
-<!-- ABOUT SNAPSHOT -->
-<section class="about-snap">
-  <div class="about-snap-inner">
-    <div class="about-img-wrap reveal">
-      <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/yCTzggMS1VT4xrqF3lML/media/699cf94f340118eab6af87e5.jpeg" alt="Dr. Shannon Jennings">
+  <div class="meet-strips">
+    <div class="meet-strip-row">
+      <span class="meet-strip-item">PsyD, Business &amp; Organizational Leadership</span>
+      <span class="meet-strip-item">Pixel Perspectives+ 360 Certified</span>
+      <span class="meet-strip-item">Fellow, Strategic Doing Institute</span>
+      <span class="meet-strip-item">200+ Retreats Facilitated</span>
+      <span class="meet-strip-item">20 Years Working with Leaders</span>
     </div>
-    <div class="about-snap-text">
-      <span class="about-snap-eyebrow reveal">Meet Dr. J</span>
-      <h2 class="reveal">Somebody has<em> to say it.</em></h2>
-      <p class="about-snap-p reveal">Your team watches what you react to. Your board wants confidence. Your peers are competitors. There's no one left who will tell you the thing you actually need to hear — or ask the question that cracks the problem open.</p>
-      <p class="about-snap-p reveal">That's the gap I work in. I'm trained as a business psychologist and a clinician, with twenty years inside leadership teams. I can see what's going on between your people and what it's doing to your results — and I know how to work with people through the hard parts, not around them.</p>
-      <p class="about-snap-p reveal">Sometimes that's a single session to get clarity on a decision that's been sitting too long. Sometimes it's a year of calls that become the one room where you don't have to be the one with the answers.</p>
-      <a href="/about-dr-j" class="about-snap-link reveal">Learn More About Dr. J →</a>
+    <div class="meet-strip-row">
+      <span class="meet-strip-item">Edward Lowe Foundation</span>
+      <span class="meet-strip-item">Society of Consulting Psychology</span>
+      <span class="meet-strip-item">Strategic Doing Institute</span>
     </div>
+  </div>
+
+  <div class="meet-cta reveal">
+    <a href="/about-dr-j" class="btn-bronze">Learn More About Dr. J →</a>
   </div>
 </section>
-
-<!-- QUOTES -->
-<section class="quotes">
-  <div class="quotes-inner">
-    <div class="quote-card reveal">
-      <p class="quote-text">"Dr. J provided me with much needed clarity on family business related issues. I'm thankful for all the time and effort she expended working with me. I'd recommend her counsel to anyone dealing with family and/or business related problems."</p>
-      <p class="quote-attr">— Jay Groninger<span class="quote-role">Civil Engineer, G&amp;G Hauling and Excavating</span></p>
-    </div>
-    <div class="quote-card reveal">
-      <p class="quote-text">"Dr. J has so much experience and knowledge around family business, business psychology, and regenerative leadership. It's a joy working with her and the Syncovate team. She continually provides fresh perspectives, and ways to better understand the complexity of the human brain, business and the world!"</p>
-      <p class="quote-attr">— Tyler Kanczuzewski<span class="quote-role">VP of Sustainability, Inovateus Solar</span></p>
-    </div>
-    <div class="quote-card reveal">
-      <p class="quote-text">"She listens — really listens — and then, like a hammer to a nail, she says her piece. Her greatest strength is building trust without ever taking sides. She sees the end goal clearly and doesn't get distracted by feelings or emotions. That's what gets people to open up and say the things that actually need to be said."</p>
-      <p class="quote-attr">— Chase Meeks<span class="quote-role">Senior Accounts Manager, G&amp;G Hauling &amp; Excavating, Inc.</span></p>
-    </div>
-  </div>
-</section>
-
-<!-- CREDIBILITY BAR -->
-<div class="cred-bar">
-  <div class="cred-bar-inner">
-    <span class="cred-item">Edward Lowe Foundation</span>
-    <span class="cred-item">Society of Consulting Psychology</span>
-    <span class="cred-item">Strategic Doing Institute</span>
-  </div>
-</div>
 
 <!-- CLOSING CTA -->
 <section class="closing">
-  <h2 class="reveal">You don't have to<br><em>be the last to know.</em></h2>
-  <p class="closing-body reveal">A 15-minute call is usually enough to figure out the next step.</p>
+  <h2 class="reveal">Not sure<br><em>where to start?</em></h2>
+  <p class="closing-body reveal">Let's talk. If I can help, I'll tell you. If I can't, I can probably point you to someone who can — or at least help you get clear on what you need and how to ask for it.</p>
   <div class="closing-btns reveal">
     <a href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo" class="btn-bronze" target="_blank" rel="noopener">Book a 15-Minute Call →</a>
   </div>
@@ -450,7 +423,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bronze);outline-off
     });
   }
 
-  var els = document.querySelectorAll('.reveal');
+  var els = document.querySelectorAll('.reveal, .reveal-scale');
   function showAll(){ els.forEach(function(el){ el.classList.add('visible'); }); }
   if('IntersectionObserver' in window){
     var obs = new IntersectionObserver(function(entries){
@@ -458,7 +431,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bronze);outline-off
     }, {threshold:0, rootMargin:'0px'});
     els.forEach(function(el){ obs.observe(el); });
     setTimeout(function(){
-      var hidden = document.querySelectorAll('.reveal:not(.visible)');
+      var hidden = document.querySelectorAll('.reveal:not(.visible), .reveal-scale:not(.visible)');
       if(hidden.length) showAll();
     }, 1500);
   } else { showAll(); }
