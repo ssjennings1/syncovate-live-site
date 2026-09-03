@@ -119,8 +119,10 @@ Elements animate in as they enter the viewport using an `IntersectionObserver`.
 
 Apply these classes to section containers, cards, and content blocks. Never add them to the `<nav>` or `<footer>`.
 
-### 5. Dark Hero with Radial Bronze Glow
-All hero sections use `background: #252830` with a radial gradient overlay centered behind the headline, using a semi-transparent bronze (`rgba(196, 147, 90, 0.15)` or similar).
+### 5. Dark Opening Section (Bronze Glow, Flexible Structure)
+Every page opens with a dark section — `background: #252830` with a radial gradient overlay using a semi-transparent bronze (`rgba(196, 147, 90, 0.15)` or similar) — to keep the moody, grounded feel consistent site-wide.
+
+The *structure* inside that dark opener is not fixed to a single-headline hero. Default to a headline + subhead unless the page's job calls for something else. The real test: a visitor should be able to scan the opener fast and answer "is this the person I'm looking for, and do they have the skills I need" — not just admire it. If a big headline doesn't serve that, don't force it. The homepage's opener (a short sequence of individually-revealed statement lines building to a point, no single H1) is a deliberate departure from the classic hero and is the reference example for when to break the template.
 
 ### 6. Section Copy Structure
 Every content section follows this eyebrow → headline → body hierarchy:
@@ -141,7 +143,7 @@ Longer pages include a floating back-to-top button that appears after scrolling 
 ## Existing Pages Reference
 
 ### `index.html` — Homepage
-Service overview with three-card grid (Diagnostics, Coaching, Speaking), credibility strip, about snapshot, and quotes. Entry point for the site.
+Entry point for the site. Opens with a "not a hero" sequence of short revealed lines (see pattern 5) instead of a single headline, leading into a "How to Work With Me" section (coaching, speaking, and the diagnostic, each with its own embedded testimonial), a Meet Dr. J section carrying the largest testimonial treatment on the page plus the credential/institution strips, and a closing CTA.
 
 ### `organizational-diagnostic.html` — Organizational Diagnostics (flagship)
 The most important page. Centers on the "scotoma" metaphor (organizational blind spots). Includes symptoms grid, science section with eye diagram, diagnostic dimensions, case study walkthrough, three-tier pricing grid, and testimonials. Leads to the Scotoma Quiz CTA.
@@ -237,7 +239,7 @@ Scope examples: `scotoma`, `coaching`, `speaking`, `about`, `nav`, `global`
 ## AI Assistant Guidelines
 
 1. **Read before editing** — always read the full file before making changes.
-2. **Match existing patterns exactly** — every page must have all five design patterns (scroll bar, nav scroll state, hamburger, reveal animations, dark hero). Never skip one.
+2. **Match existing patterns exactly** — every page must have the sitewide mechanics (scroll bar, nav scroll state, hamburger, reveal animations) and a dark opening section. Never skip the mechanics. The opener's internal content structure (single headline vs. a short-line sequence, etc.) is a judgment call in service of fast visitor comprehension, not a fixed template — see pattern 5.
 3. **Brand consistency** — use only the defined color tokens and fonts. No improvising with new colors or typefaces.
 4. **No frameworks** — do not introduce React, Vue, Alpine, Tailwind, or any external library. Pure HTML/CSS/JS only.
 5. **Self-contained files** — each `.html` must work when opened standalone in a browser with no local server.
