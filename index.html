@@ -105,17 +105,25 @@ nav.scrolled .hamburger span{background:var(--charcoal-deep);}
 
 /* ── INTRO ── */
 .intro{padding:8rem 6rem;background:var(--cream);}
-.intro-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:8rem;align-items:start;}
-.intro-left h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(2rem,3.5vw,2.8rem);line-height:1.15;color:var(--charcoal);margin-bottom:2.5rem;}
-.intro-left h2 em{font-style:italic;color:var(--bronze);}
-.intro-p{font-size:0.95rem;line-height:1.9;color:var(--text-muted);margin-bottom:1.25rem;}
+.intro-wrap{max-width:720px;margin:0 auto;}
+.intro-wrap h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(2rem,3.5vw,2.8rem);line-height:1.15;color:var(--charcoal);margin-bottom:2rem;}
+.intro-wrap h2 em{font-style:italic;color:var(--bronze);}
+.intro-p{font-size:0.98rem;line-height:1.9;color:var(--text-muted);margin-bottom:1.25rem;}
 .intro-p strong{color:var(--text);font-weight:500;}
-.intro-right{padding-top:0.5rem;}
-.intro-callout{padding:2.5rem;background:var(--charcoal-deep);border-left:3px solid var(--bronze);}
-.intro-callout p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.4rem;line-height:1.55;color:rgba(253,252,250,0.82);}
-.intro-list{list-style:none;margin:1.5rem 0;display:flex;flex-direction:column;gap:0.85rem;}
-.intro-list li{display:flex;gap:1rem;align-items:flex-start;font-size:0.95rem;line-height:1.7;color:var(--text-muted);}
-.intro-list li::before{content:'';flex-shrink:0;margin-top:0.55rem;width:20px;height:1px;background:var(--bronze);}
+
+.intro-symptoms-wrap{max-width:1100px;margin:3rem auto 0;}
+.intro-symptoms-lead{font-size:0.98rem;color:var(--text);font-weight:500;margin-bottom:1.5rem;}
+.intro-symptoms-grid{display:grid;grid-template-columns:1fr 1fr;border:1px solid rgba(196,147,90,0.15);border-radius:4px;overflow:hidden;}
+.intro-symptom{display:flex;gap:1rem;align-items:flex-start;padding:1.6rem 2.25rem;border-right:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--warm-gray);transition:background 0.25s,transform 0.2s;}
+.intro-symptom:hover{background:#fff;transform:translateX(4px);}
+.intro-symptom:nth-child(even){border-right:none;}
+.intro-symptom:nth-last-child(-n+2){border-bottom:none;}
+.intro-symptom-mark{flex-shrink:0;width:6px;height:6px;border-radius:50%;background:var(--bronze);margin-top:0.6rem;}
+.intro-symptom-text{font-size:0.92rem;line-height:1.65;color:var(--text);}
+
+.intro-callout-wrap{max-width:760px;margin:3.5rem auto 0;}
+.intro-callout{padding:2.5rem 3rem;background:var(--charcoal-deep);border-left:3px solid var(--bronze);}
+.intro-callout p{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.3rem;line-height:1.6;color:rgba(253,252,250,0.82);}
 
 /* ── THREE CARDS ── */
 .cards{padding:0 6rem 8rem;background:var(--cream);}
@@ -144,7 +152,7 @@ nav.scrolled .hamburger span{background:var(--charcoal-deep);}
 /* ── QUOTES ── */
 .quotes{padding:7rem 6rem;background:var(--warm-gray);}
 .quotes-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:2.25rem;}
-.quote-card{padding:2.75rem;background:var(--cream);}
+.quote-card{padding:2.75rem;background:var(--cream);display:flex;flex-direction:column;justify-content:space-between;}
 .quote-card:first-child{background:var(--charcoal-deep);}
 .quote-text{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:1.15rem;line-height:1.7;color:var(--charcoal);margin-bottom:1.5rem;}
 .quote-card:first-child .quote-text{color:rgba(253,252,250,0.82);}
@@ -182,7 +190,10 @@ footer{background:#14161A;padding:5rem 3rem 2.5rem;border-top:1px solid rgba(196
 .footer-copy{font-size:0.72rem;color:rgba(250,248,245,0.2);letter-spacing:0.05em;}
 
 @media(max-width:900px){
-  .intro-inner,.about-snap-inner,.quotes-inner{grid-template-columns:1fr;gap:3.5rem;}
+  .about-snap-inner,.quotes-inner{grid-template-columns:1fr;gap:3.5rem;}
+  .intro-symptoms-grid{grid-template-columns:1fr;}
+  .intro-symptom{border-right:none !important;}
+  .intro-symptom:last-child{border-bottom:none;}
   .cards-grid{grid-template-columns:1fr;}
   .footer-grid{grid-template-columns:1fr;gap:36px;}
   footer{padding:48px 28px 32px;}
@@ -263,34 +274,39 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bronze);outline-off
 
 <!-- INTRO -->
 <section class="intro">
-  <div class="intro-inner">
-    <div class="intro-left">
-      <h2 class="reveal">You used to know everything.<em> Now you decide everything.</em></h2>
-      <p class="intro-p reveal">Those aren't the same thing, and somewhere along the way one quietly replaced the other. When the company was small, you saw all of it — every customer, every job, every fire. Now it's bigger than one person can see, so your people see it for you, and they hand you the parts they think you can handle.</p>
-      <p class="intro-p reveal">Nobody's lying to you. They think they're doing their job. But there's an old story about an emperor and a set of clothes, and it doesn't end with the emperor figuring it out on his own.</p>
-      <p class="intro-p reveal">Here's what it looks like from where you sit:</p>
-      <ul class="intro-list reveal">
-        <li>Meetings that produce motion but not movement.</li>
-        <li>A leadership team that agrees in the room and does their own thing once they leave.</li>
-        <li>You keep hearing "we have a communication problem."</li>
-        <li>Two of your best people keep coming to you about the other — and it's yours to fix.</li>
-        <li>Someone in a role they can't grow into, and everyone knows it.</li>
-        <li>Everyone's waiting on you. You feel like you're waiting on them.</li>
-      </ul>
-      <p class="intro-p reveal">Nobody's doing anything wrong. It's a pattern — and it's impossible to spot from the middle of it.</p>
-      <p class="intro-p reveal"><strong>We find the gap between where you think you are and where you actually are. Then we figure out the next best step — and take it.</strong></p>
+  <div class="intro-wrap">
+    <h2 class="reveal">You used to know everything.<em> Now you decide everything.</em></h2>
+    <p class="intro-p reveal">Those aren't the same thing, and somewhere along the way one quietly replaced the other. When the company was small, you saw all of it — every customer, every job, every fire. Now it's bigger than one person can see, so your people see it for you, and they hand you the parts they think you can handle.</p>
+    <p class="intro-p reveal">Nobody's lying to you. They think they're doing their job. But there's an old story about an emperor and a set of clothes, and it doesn't end with the emperor figuring it out on his own.</p>
+  </div>
+
+  <div class="intro-symptoms-wrap">
+    <p class="intro-symptoms-lead reveal">Here's what it looks like from where you sit:</p>
+    <div class="intro-symptoms-grid stagger-children">
+      <div class="intro-symptom reveal"><span class="intro-symptom-mark"></span><span class="intro-symptom-text">Meetings that produce motion but not movement.</span></div>
+      <div class="intro-symptom reveal"><span class="intro-symptom-mark"></span><span class="intro-symptom-text">A leadership team that agrees in the room and does their own thing once they leave.</span></div>
+      <div class="intro-symptom reveal"><span class="intro-symptom-mark"></span><span class="intro-symptom-text">You keep hearing "we have a communication problem."</span></div>
+      <div class="intro-symptom reveal"><span class="intro-symptom-mark"></span><span class="intro-symptom-text">Two of your best people keep coming to you about the other — and it's yours to fix.</span></div>
+      <div class="intro-symptom reveal"><span class="intro-symptom-mark"></span><span class="intro-symptom-text">Someone in a role they can't grow into, and everyone knows it.</span></div>
+      <div class="intro-symptom reveal"><span class="intro-symptom-mark"></span><span class="intro-symptom-text">Everyone's waiting on you. You feel like you're waiting on them.</span></div>
     </div>
-    <div class="intro-right">
-      <div class="intro-callout reveal">
-        <p>"In twenty years of this work, I've never walked into a leadership system where the blind spot was created by bad intentions. It's almost always good intentions — and the assumptions that grew up quietly underneath them."</p>
-      </div>
+  </div>
+
+  <div class="intro-wrap">
+    <p class="intro-p reveal">Nobody's doing anything wrong. It's a pattern — and it's impossible to spot from the middle of it.</p>
+    <p class="intro-p reveal"><strong>We find the gap between where you think you are and where you actually are. Then we figure out the next best step — and take it.</strong></p>
+  </div>
+
+  <div class="intro-callout-wrap">
+    <div class="intro-callout reveal-scale">
+      <p>"In twenty years of this work, I've never walked into a leadership system where the blind spot was created by bad intentions. It's almost always good intentions — and the assumptions that grew up quietly underneath them."</p>
     </div>
   </div>
 </section>
 
 <!-- THREE CARDS -->
 <div class="cards">
-  <div class="cards-grid stagger">
+  <div class="cards-grid stagger-children">
     <a href="/organizational-diagnostic" class="card reveal">
       <span class="card-label">Find the Pattern</span>
       <h3 class="card-h3">Organizational Diagnostic</h3>
