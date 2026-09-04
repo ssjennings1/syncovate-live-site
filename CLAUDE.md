@@ -16,6 +16,14 @@ An organizational consulting firm offering diagnostics, executive coaching, and 
 
 ---
 
+## Where We Left Off
+
+**2026-09-04** — Rebuilt `about-dr-j.html` copy top to bottom (cut the six-paragraph origin story down to a short "How I Got Here," added a "What I'm Good At" Q&A section, replaced the old pull-quote + "I'm not a vendor" section with a three-testimonial grid, tightened This Is/This Isn't, condensed the credentials grid into a short record list, fixed hero sizing on mobile). Also made a few small copy edits on `index.html` (homepage). Pushed to branch `claude/live-site-errors-otlixf`, commit `01452f6`. No PR opened yet — Shannon uploads to Taft Systems manually.
+
+Next: nothing queued. Update this note (or delete it once it's stale) at the start of the next session's work.
+
+---
+
 ## Tech Stack
 
 - **Vanilla HTML, CSS, JavaScript only** — no frameworks, no bundlers, no build step.
