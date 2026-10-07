@@ -31,13 +31,22 @@ An organizational consulting firm offering diagnostics, executive coaching, and 
 ├── index.html                      # Homepage — service overview + credibility strip
 ├── organizational-diagnostic.html  # Flagship "Scotoma" diagnostic page
 ├── coaching-and-advising.html      # Executive coaching & advising
-├── speaking--facilitation.html     # Speaking & facilitation
-├── about-dr-j.html                 # About Dr. J
+├── speaking.html                   # Speaking & facilitation (live at /speaking)
+├── about-dr-j.html                 # Meet Dr. J (nav label is "Meet Dr. J")
 ├── contact.html                    # Contact info (phone, email, book a call)
+├── saturday-seed-blocks.html       # Reference copy of Saturday Seed blocks (not standalone)
 ├── favicon.svg                     # Site favicon
 ```
 
-Pages under development (not yet created):
+### Source of truth
+
+**Taft is the source of truth, not this repo.** The live site is the Taft website named **"Syncovate"**. As of 2026-10-07 the six pages above were checked against the published site and match it. Before editing, confirm the repo still matches live (fetch `https://syncovatellc.com/<path>` and compare); if Taft has moved ahead, update the repo first.
+
+Live nav: Organizational Diagnostics, Coaching & Advising, Speaking & Facilitation, Meet Dr. J, Field Notes (`https://syncovatellc.com/prism-blog`, a separate Taft blog), and a Book a Call button.
+
+Not in the repo (live in Taft, intentionally):
+- **Saturday Seed** (`/saturday-seed`) is built from separate Taft blocks plus a Taft form. `saturday-seed-blocks.html` is a reference copy only. The live page currently has no `<title>` or meta description.
+- **Internal Analysis**, **Trusted Advisor Sales Page**, **Blind Spot Cost Diagram** — work in progress, not published at working URLs. Ignore until told otherwise.
 - Sales pages for courses/programs (payment triggers + tracking TBD)
 
 ---
@@ -60,6 +69,8 @@ Pages under development (not yet created):
 | Text | `#3A3530` | Primary body text color |
 | Text Muted | `#7A736B` | Secondary/subdued text |
 | Border | `rgba(196,147,90,0.18)` | Subtle bronze-tinted borders |
+
+> **Open question — two bronzes are live.** Homepage, About, and Coaching use `#BF8756` (hover `#A3703E`). Organizational Diagnostic, Speaking, and Contact still use the older `#C4935A` (hover `#A87840`). The Diagnostic page also uses white button text; the others use charcoal. Decide which is the brand color, then standardize in Taft. Until then, do not "fix" one page to match another without asking.
 
 ### Typography
 
@@ -134,7 +145,7 @@ Every content section follows this eyebrow → headline → body hierarchy:
 The eyebrow label is small, uppercase, letter-spaced, in bronze or teal depending on section background.
 
 ### 7. Back-to-Top Button
-Longer pages include a floating back-to-top button that appears after scrolling down. Present on coaching, speaking, and about pages.
+Longer pages include a floating back-to-top button that appears after scrolling down. Currently on the coaching and speaking pages (the live About page does not have one).
 
 ---
 
@@ -149,10 +160,10 @@ The most important page. Centers on the "scotoma" metaphor (organizational blind
 ### `coaching-and-advising.html` — Executive Coaching & Advising
 1:1 and group coaching for executives and business owners. Includes service tiers (Single Session, Core Retainer, Premium Retainer).
 
-### `speaking--facilitation.html` — Speaking & Facilitation
+### `speaking.html` — Speaking & Facilitation
 Keynotes, workshops, and team sessions.
 
-### `about-dr-j.html` — About Dr. J
+### `about-dr-j.html` — Meet Dr. J
 Background, credentials, and story of Dr. Shannon Jennings. Two-column hero, origin story, "This Is / This Isn't" comparison grid, credentials grid, and how-I-work section.
 
 ### `contact.html` — Contact
