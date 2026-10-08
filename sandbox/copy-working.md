@@ -21,7 +21,7 @@ Shannon's current copy for the new site (Taft "Syncovate LLC DRAFT"). Supersedes
 
 ## Still open (placeholders, blocks launch)
 
-- Single Session buy link: product exists in Taft ("On-Demand Single Session (via calendars)", slug `single-session`); need its buy-link URL.
+- Single Session buy link: done (Taft calendar booking link).
 - Team Session buy link: no product by that name. Closest is "Syncovate Power Hour (and a half)". Decide: reuse it, or create a "Team Session" product at $1,500.
 - Prices on the Taft products have not been checked against the copy.
 
@@ -202,7 +202,7 @@ Some leaders want a standing partner, someone in their corner between the big mo
 **Single Session · $750**
 When something's pressing and you need to think it through with someone who gets it. One 90-minute session, a written summary with next steps, no commitment.
 Good for: a stuck decision, a hard conversation coming up, or finding out what it's like to work with me.
-[Talk First] → [booking link] · [Book It] → **TODO: single-session buy link**
+[Talk First] → [booking link] · [Book It] → https://link.syncovatellc.com/widget/booking/qPTZ7uQpwZfnM4X74qqK
 
 **Trusted Advisor · $1,500/month · Most Popular**
 A standing partner for leaders who want someone to think with and a straight answer when they need one.
