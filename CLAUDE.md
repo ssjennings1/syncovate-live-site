@@ -55,7 +55,7 @@ Live nav: Organizational Diagnostics, Coaching & Advising, Speaking & Facilitati
 
 **Launch plan (2026-10-08):** the **sandbox** (Taft site "Syncovate LLC DRAFT") will *replace* the current site; it is not a patch on it. Until then the current pages stay as published. At launch:
 - `/organizational-diagnostic` redirects to `/how-i-work`, and `/speaking` 301-redirects to `/workshops` (Speaking is replaced by Workshops & Retreats in the new site). Create the redirects in Taft only when the new site is live, not before.
-- Current sandbox copy lives in `sandbox/copy-working.md` (supersedes `copy-for-review.md`). Open placeholders: Single Session and Team Session buy links.
+- Current sandbox copy lives in `sandbox/copy-working.md` (supersedes `copy-for-review.md`). Buy links for Single Session and Team Session are filled in.
 - The phone number becomes `269-293-4442` everywhere.
 - The Scotoma quiz (Scotoma Spotter) becomes its own funnel page *after* the focused site is deployed; until then leave existing links to `spotter.syncovatellc.com` alone.
 

@@ -19,11 +19,11 @@ Shannon's current copy for the new site (Taft "Syncovate LLC DRAFT"). Supersedes
 - Clifford Clarke's quote reads "experiential" (the live site's "experimental" was a typo; confirmed by Shannon).
 - Company names settled: K2 Power Solutions and G & G Hauling & Excavating (as written on their own sites; no "Inc.").
 
-## Still open (placeholders, blocks launch)
+## Buy links and prices (resolved)
 
 - Single Session buy link: done (Taft calendar booking link).
-- Team Session buy link: no product by that name. Closest is "Syncovate Power Hour (and a half)". Decide: reuse it, or create a "Team Session" product at $1,500.
-- Prices on the Taft products have not been checked against the copy.
+- Team Session buy link: done (Power Hour (and a half) payment link, $1,500).
+- Taft prices checked: Single Session $750, Team Session $1,500, Strategy Session updated to $7,500 (full day).
 
 ---
 
@@ -251,7 +251,7 @@ When a leadership team stops being honest with each other, it costs you in ways 
 **A Team Session · from $1,500**
 A tried-and-true, ninety-minute session on the psychology of leadership: communication, blind spots, working better together, and the conversations that don't happen in regular meetings. Low commitment, high signal.
 Good for: a leadership team that's gone quiet, a new management layer, or a first look at whether I'm the right fit.
-[Talk First] → [booking link] · [Book It] → **TODO: team-session buy link (one product, shared with /workshops)** · [See all workshops & retreats] → /workshops
+[Talk First] → [booking link] · [Book It] → https://link.syncovatellc.com/payment-link/6ac7d2c0c0e70c7fefb7355e · [See all workshops & retreats] → /workshops
 
 From there, it grows into whatever the room needs.
 
@@ -311,7 +311,7 @@ Tried and true, ready to go. You bring the space and the snacks. I bring the res
 
 **Your Go-To Power Move** — What's underneath the dynamics on your team, and how you learned it. Every leader has a default lever they reach for when the pressure spikes. Position, expertise, relationships, force of personality. In this session, leaders map where they learned theirs, usually long before they had a title, and then look at how it shows up with their team today. It gets real fast. People walk out knowing their own default, where it stops working, and one other lever to practice. Pairs with the Power Isn't a Dirty Word keynote.
 
-[Talk First] → [booking link] · [Book It] → **TODO: team-session buy link (same product as /how-i-work)**
+[Talk First] → [booking link] · [Book It] → https://link.syncovatellc.com/payment-link/6ac7d2c0c0e70c7fefb7355e
 
 ### Testimonials — Team Sessions
 
