@@ -23,8 +23,6 @@ Page copy:
 **Tab title:** How I Work — Leadership Coaching, Team Facilitation & Retreats | Syncovate
 **Search description:** Work with Dr. J one-on-one or bring her in for your team — sessions, retreats, and workshops for owners of growing companies. From $750.
 
-### Opening
-
 # How I work with owners and their teams.
 
 When people ask why they should work with me, I come back to one thing: being heard.
@@ -34,8 +32,6 @@ When people ask why they should work with me, I come back to one thing: being he
 At heart, I'm a listener. That's where my training started. It's not where I stopped. Being heard opens the door. What you do next is what changes things. That takes tools, and it takes someone who will help you get all the way to action.
 
 For twenty years I've done this work with founders, CEOs, and leadership teams. Trades, manufacturing, family business, professional services. The conversations are different every time. The pattern underneath them rarely is.
-
-### Who finds their way here
 
 ## Who finds their way here.
 
@@ -58,8 +54,6 @@ The business comes with history, and so does your seat at the table. The people 
 "I want to honor what was built and still make it mine."
 "Dr. J provided me with much needed clarity on family business related issues. She was able to look at the problem objectively and gave me numerous resources to be better able to solve the problem. I'd recommend her counsel to anyone dealing with family and/or business related problems." — Jay Groninger, Civil Engineer, G & G Hauling & Excavating
 
-### Not sure where to start
-
 ## Not sure where to start?
 
 Happens all the time. That's what the 15-minute call is for. You don't have time to read a long website, and I don't want to write one. We talk, we figure it out. Phone, Zoom, or longer over coffee.
@@ -73,8 +67,6 @@ Not ready for a call yet? Subscribe to the Saturday Seed. One leadership idea yo
 
 [Book a 15-Minute Call] → [booking link]
 [Get the Saturday Seed] → /saturday-seed
-
-### Work with me directly
 
 ## Work with me directly.
 
@@ -102,14 +94,9 @@ Good for: a succession, a sale, a reorganization, or a season where the calls ca
 
 Hiring me for someone on your team or in your family? We scope that together on the first call. And if that someone is you, reading this because the owner sent you: this is what the work looks like.
 
-### Testimonials — one-on-one
-
 "Dr. J is the right fit if you built your leadership through doing, not through an MBA. She never talked down to me or assumed I didn't know things. Spearheading a startup business is difficult — Dr. J helped me develop a thought process that effectively and accurately rectifies situations before they become larger issues. I came away with tools that changed how I show up and strengthened my communication style with my partners and team." — Josh DeMeulenaere, VP Electrical Services, K2 Power Solutions
 
-
 What this is: advising focused on leadership, decision-making, communication, and how your company runs. What this isn't: psychotherapy or crisis care. If you're in acute distress or need clinical treatment, I'll help you find the right support.
-
-### It doesn't matter what we call it
 
 ## It doesn't matter what we call it.
 
@@ -122,8 +109,6 @@ Coaching, advising, consulting, facilitation. The label matters a lot less than 
 **You leave with something every time.** Insight without action is just a nice conversation. Once the smoke clears, we figure out the next real move together. No forty-page deck. No jargon. Just what's next.
 
 **You did it. Not me.** That's the part I love most and get the least credit for. You had this in you the whole time. You needed a partner and the space to think. I bring both.
-
-### Bring me in for your team
 
 ## Bring me in for your team.
 
@@ -145,13 +130,9 @@ From there, it grows into whatever the room needs.
 - A manufacturer's supervisor-development pilot that started as one session and grew into a company-wide rollout.
 - A CEO peer forum that left with a decision instead of just a good conversation.
 
-### Testimonials — team
-
 "Working with Dr. J is enlightening. She helps us experience a practical situation from different vantages, which aids in seeing reactions occur naturally. She helps us reach a deeper understanding of cause and effect, and how to move forward collectively and collaboratively." — Jen Sailor, Chief Financial and Operations Officer, Indiana Trust Wealth Management
 
 "I feel the most empowered I have in five years in this role." — A participant, after a team session
-
-### Close
 
 ## Let's talk.
 

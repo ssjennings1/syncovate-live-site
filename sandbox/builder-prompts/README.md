@@ -8,6 +8,10 @@ Prompts for building the new Syncovate site in Taft's AI page builder. Built fro
 3. In the same conversation, paste one page prompt at a time, in order: 01-home, 02-how-i-work, 03-workshops, 04-meet-dr-j, 05-contact, 06-saturday-seed.
 4. Build the header and footer once as global sections, then reuse them.
 
+## Two ways to run it
+- **Fixed layout:** `00-master-brief.md` plus the page prompts. The builder follows the layout I described. Closest to the pages in `sandbox/`.
+- **Open design:** `00-master-brief-open-design.md` plus `01-home-open-design.md`. The words are fixed; the builder decides the design inside your brand. Home only so far. If you like it, I'll make the other five.
+
 ## What to watch for
 - AI builders like to rewrite copy. After each page, compare it with the page prompt. When you tell me the page is built, I can fetch it and check the wording against `copy-working.md`.
 - The Saturday Seed form should be your real Taft form, not one the builder invents.

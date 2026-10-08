@@ -1,20 +1,14 @@
-# Page prompt: Home
+# Page prompt (open design): Home
 
-(Paste the master brief first, in the same conversation. Then paste everything below this line.)
+(Paste the open-design master brief first, in the same conversation. Then paste everything below this line.)
 
 ---
 
-Build the Home page for the Syncovate site, following the master brief. Use the copy below EXACTLY as written; do not rephrase or add anything. Words in [Brackets] are buttons or form elements. Lines like "Address", "Tab title", and "Search description" are page settings, not page copy.
+Design and build the Home page. The copy below is fixed and must appear exactly as written, in this order. Everything about how it looks is up to you. Words in [Brackets] are buttons. "Address," "Tab title," and "Search description" are page settings, not page copy.
 
-Layout:
-1. Hero (cream): small label line, very large Cormorant headline with the last sentence in italic bronze, a lede paragraph, two buttons side by side (primary + secondary), a small muted note under them.
-2. A thin strip of four stats (big serif number or word over a small caption) between hairline rules.
-3. Two-column section "Hard to see from the inside": left = heading, paragraph, and a large serif pull quote with a bronze left border; right = the small lead line "Here's what that looks like:" and the five items as large serif lines separated by hairline rules.
-4. Warm gray band "Two ways we work together": two big linked rows. Each row: small teal label, serif title, short paragraph, and a text link with an arrow on the right.
-5. Two-column about section: Dr. J's headshot on the left (4:5), text on the right, ending with a "Meet Dr. J" text link.
-6. Warm gray band with the three testimonials in three columns, then a quiet line of three organization names (text for now; if real logos are available in the media library, use them in grayscale).
-7. Closing band (warm gray): heading, paragraph, two buttons, small email line.
-Image slot (optional): none. Keep Home type-led and calm.
+What this page needs to do: in the first few seconds, an owner who feels like everything runs through them should think "this person gets my situation." Then it should make them curious about what Dr. J sees that they can't, introduce the two ways of working together, let them meet her briefly, and show proof. End with a warm invitation to talk.
+
+Things to give some visual presence (your choice how): the opening headline; the idea that a company outgrows the way it was built; the five signs ("Here's what that looks like"); the two ways of working together; the testimonials; the logo.
 
 Page copy:
 
