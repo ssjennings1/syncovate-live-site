@@ -11,7 +11,7 @@ Shannon's current copy for the new site (Taft "Syncovate LLC DRAFT"). Supersedes
 - Melissa Espinoza: Vice President of Finance, Loader Parts Source.
 - Sandy Harvey: CFO, EarthWay Products Inc.
 - Jen Sailor: Chief Financial and Operations Officer (CFOO), Indiana Trust Wealth Management.
-- Viki Brown's quote is from a public Google review. Denise Feece's quote is from Senja.
+- Viki Brown's quote is from a public Google review. Denise Feece's quote (Senja) was cut from Workshops: too general for the hero spot. Dan New's quote is now the Workshops hero quote.
 - Bio sheet PDF and headshots ZIP are cut from Meet Dr. J.
 - One Team Session product serves both How I Work and Workshops.
 - Testimonial placement (2026-10-08): Chase Meeks (middle manager) and Jay Groninger (second gen) sit under their columns in "Who finds their way here" on How I Work; Tyler Kanczuzewski (second gen) replaces Chase on Meet Dr. J; Christen Carter (StrengthsFinder) joins Custom Leadership Retreats; the "empowered in five years" participant quote joins the team section of How I Work; Susan Frucci's opening line "Morale was low and the outlook was bleak." is restored.
@@ -298,7 +298,7 @@ Hands-on sessions for owners and their teams. Real conversations, no death by Po
 
 [Book a 15-Minute Call]
 
-"Our experience with Syncovate was interactive and very applicable to help us explore some interesting topics on things that provide some great insight into real life business problems." — Denise Feece, CFO/COO, Sequel Wire and Cable *(source: Senja)*
+"The exercise we did was fun and thought provoking. It was refreshing to have a speaker do something engaging with us instead of just lecturing. It made the session more impactful." — Dan New, President / CFO, Mid-City Supply Co.
 
 ### Team Sessions
 
@@ -315,8 +315,6 @@ Tried and true, ready to go. You bring the space and the snacks. I bring the res
 [Talk First] → [booking link] · [Book It] → https://link.syncovatellc.com/payment-link/6ac7d2c0c0e70c7fefb7355e
 
 ### Testimonials — Team Sessions
-
-"The exercise we did was fun and thought provoking. It was refreshing to have a speaker do something engaging with us instead of just lecturing. It made the session more impactful." — Dan New, President / CFO, Mid-City Supply Co.
 
 "Dr. Shannon Jennings was a featured speaker at the REF CIO Forum retreat. She led us in experiential learning exercises. The group enjoyed the exercises while learning a bit more about themselves. Dr. Shannon Jennings skillfully facilitated the group of professionals who are not generally excited about experiential exercises. I would recommend Business Psychologist Dr. Shannon Jennings for your corporate group or team." — Clifford Clarke, REF Indiana, Facilitator Leaders – CIO Forum
 
