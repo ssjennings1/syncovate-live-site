@@ -238,7 +238,8 @@ Scope examples: `scotoma`, `coaching`, `speaking`, `about`, `nav`, `global`
 
 ## Branch Strategy
 
-- `main` — production-ready; matches what is live on Taft Systems.
+- Git is **storage and history only**. Nothing is published from here; the site goes live only when pages are pasted or uploaded in Taft. `main` is the latest saved copy of the live site, not a deploy trigger.
+- `main` — latest saved copy of what is live on Taft Systems.
 - `feat/<page-or-feature>` — new pages or major features.
 - `fix/<description>` — bug/layout fixes.
 - `copy/<page>` — copy-only edits.
