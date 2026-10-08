@@ -407,7 +407,7 @@ Here's what all those rooms taught me: when you build something, you're in it. T
 
 My doctorate in business psychology put real, evidence-based structure around what a decade of closed doors had already taught me. Leaders with the best of intentions, working incredibly hard, and their teams fracturing anyway. Everyone assumed it was a people problem. Fix the difficult personality, hire better talent.
 
-Look closer and it's rarely a people problem. It's how the company is built, and you can't see that from inside it. Not because anything's wrong with you. Because you're inside it. My job is to be the person who can, and to stay in the room until something moves.
+Look closer and it's rarely a problem with your people. It's what happens when a company grows past the way it was built. When you were small, you knew every customer and every promise because you were in all of it. Now there are layers between you and the front line, and four of your people touch an account you used to handle with a handshake. Every yes that won you work early on is a promise somebody else is keeping. The experts you hired from bigger companies are working the way you always have, because that's what you asked of them. The picture of the business you carry around was accurate when you built it. It's drifted since, and you're the last person who'd notice, because you're standing in the middle of it. That's the part I can see from the outside, and I stay in the room until something moves.
 
 ### Direct. Not one-sided. In it with you.
 
