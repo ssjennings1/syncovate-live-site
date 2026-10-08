@@ -51,9 +51,9 @@ An organizational consulting firm offering diagnostics, executive coaching, and 
 
 Live nav: Organizational Diagnostics, Coaching & Advising, Speaking & Facilitation, Meet Dr. J, Field Notes (`https://syncovatellc.com/prism-blog`, a separate Taft blog), and a Book a Call button.
 
-**Direction (2026-10-08): moving away from diagnostic language.** It was tried for about a year and did not land. The Syncovate LLC DRAFT site folds Coaching and the Diagnostic into one **How I Work** page and drops "diagnostic" and "scotoma" as the lead offer. Treat `organizational-diagnostic.html` as a page being retired, not the flagship: do not polish it, and do not write new copy that leads with diagnostics or scotoma. The "flagship" label further down describes the current live site, not the plan.
+**Direction (2026-10-08): moving away from diagnostic language.** It was tried for about a year and did not land. The **sandbox** (Taft site "Syncovate LLC DRAFT") folds Coaching and the Diagnostic into one **How I Work** page and drops "diagnostic" and "scotoma" as the lead offer. Treat `organizational-diagnostic.html` as a page being retired, not the flagship: do not polish it, and do not write new copy that leads with diagnostics or scotoma. The "flagship" label further down describes the current live site, not the plan.
 
-**Launch plan (2026-10-08):** the **Syncovate LLC DRAFT** site will *replace* the current site; it is not a patch on it. Until then the current pages stay as published. At launch:
+**Launch plan (2026-10-08):** the **sandbox** (Taft site "Syncovate LLC DRAFT") will *replace* the current site; it is not a patch on it. Until then the current pages stay as published. At launch:
 - `/organizational-diagnostic` redirects to `/how-i-work` (create the redirect in Taft only when the new site is live, not before).
 - The phone number becomes `269-293-4442` everywhere.
 - The Scotoma quiz (Scotoma Spotter) becomes its own funnel page *after* the focused site is deployed; until then leave existing links to `spotter.syncovatellc.com` alone.
@@ -86,7 +86,7 @@ Not in the repo (live in Taft, intentionally):
 
 > **Decision (2026-10-08): `#BF8756` is the brand bronze, hover `#A3703E`.** Homepage, About, and Coaching already use it. Organizational Diagnostic, Speaking, and Contact are still live with the older `#C4935A` (hover `#A87840`) and need updating in Taft. Until they are, the repo copies match live (old bronze) on purpose. The Diagnostic page also uses white button text where the other pages use charcoal; that is still undecided. The `rgba(196,147,90,…)` tints and borders are shared by every page and are not part of this change.
 
-> **Decision (2026-10-08): leave `574-532-3178` on the current live site for now.** When the new site replaces it, use `269-293-4442`, the number connected to the CRM. The Syncovate LLC DRAFT site already uses it. The repo copies match live on purpose.
+> **Decision (2026-10-08): leave `574-532-3178` on the current live site for now.** When the new site replaces it, use `269-293-4442`, the number connected to the CRM. The sandbox already uses it. The repo copies match live on purpose.
 
 ### Typography
 
