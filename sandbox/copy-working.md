@@ -275,7 +275,7 @@ From there, it grows into whatever the room needs.
 
 ## Let's talk.
 
-You can't get to know me from a website (at least not one anyone wants to read). Let's sit down, coffee if you're local or a call if you're not. We figure out what you need, a session for your team, a standing partnership, or something in between, and go from there.
+Let's sit down, coffee if you're local or a call if you're not. We figure out what you need, a session for your team, a standing partnership, or something in between, and go from there.
 
 [Book a 15-Minute Call] [Grab Coffee in Michiana]
 
@@ -399,7 +399,7 @@ I learned that early, working with families in the hardest situations. Divorce, 
 
 I carried that into business at the Edward Lowe Foundation, running peer retreats for entrepreneurs and CEOs. Their whole mission was to champion the entrepreneurial spirit, and I'm still living it more than a decade after I left. These companies matter. The ones growing in your town, hiring locally, sponsoring the Little League, putting money back in. They hold communities together, especially now. That's who I've built my work around.
 
-Here's what all those rooms taught me: when you build something, you're in it. The business and the person aren't two separate things. Your money, your identity, your relationships, how you sleep, all of it is tied up in the thing you made. That's true for the contractor and the manufacturer and the professional-services owner, and it gets even more tangled in a family business, where the succession talk is also a family talk and the dinner table and the org chart are the same table. You have to see the whole picture to be any real use. That's the work I love most.
+Here's what all those rooms taught me: when you build something, you're in it. The business and the person aren't two separate things. Your money, your identity, your relationships, how you sleep, all of it is tied up in the thing you made. That's true for the contractor and the manufacturer and the professional-services owner, and it gets even more tangled in a family business, where the succession talk is also a family talk and the dinner table and the org chart are the same table. You have to see all of it to be any real use. That's the work I love most.
 
 ### Why a Business Psychologist?
 
@@ -444,7 +444,7 @@ The work takes whatever shape the situation calls for. One session to get a stuc
 
 I'm based in Niles, Michigan, and I'm in rooms across the South Bend–Elkhart region, Kalamazoo to Fort Wayne, regularly. For everything else, I work virtually with owners across the country.
 
-You can't get to know me from a website (at least not one anyone wants to read). Let's sit down, coffee if you're local or a call if you're not. Tell me what's happening. I'll tell you honestly whether I'm the right fit, and if I'm not, I'll point you toward who is.
+Let's sit down, coffee if you're local or a call if you're not. Tell me what's happening. I'll tell you honestly whether I'm the right fit, and if I'm not, I'll point you toward who is.
 
 [Book a 15-Minute Call] [Grab Coffee in Michiana]
 
