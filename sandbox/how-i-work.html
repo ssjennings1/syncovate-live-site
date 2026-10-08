@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How I Work — Leadership Coaching, Team Facilitation &amp; Retreats | Syncovate</title>
+<meta name="description" content="Work with Dr. J one-on-one or bring her in for your team — sessions, retreats, and workshops for owners of growing companies. From $750.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   SYNCOVATE — HOME
+   Design system: Brand Bible v1.8 (locked)
+   Cormorant Garamond (headings) / DM Sans (body)
+   Never #C4935A.
+   ============================================================ */
+:root{
+  --sy-gold:      #BF8756;
+  --sy-gold-deep: #9E6D41;
+  --sy-teal:      #56ADBF;
+  --sy-teal-deep: #3F8C9D;
+  --sy-charcoal:  #252830;
+  --sy-charcoal2: #3D4148;
+  --sy-cream:     #FAF8F5;
+  --sy-warmgray:  #F0EDE8;
+  --sy-white:     #FFFFFF;
+  --sy-ink:       #33363E;
+  --sy-ink-soft:  #6A6E76;
+  --sy-rule:      rgba(61,65,72,0.14);
+  --sy-serif:     'Cormorant Garamond', Georgia, serif;
+  --sy-sans:      'DM Sans', system-ui, -apple-system, sans-serif;
+  --wrap:         1120px;
+  --wrap-text:    680px;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--sy-sans);
+  font-weight:300;
+  font-size:17px;
+  line-height:1.75;
+  color:var(--sy-ink);
+  background:var(--sy-cream);
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible{outline:2px solid var(--sy-gold);outline-offset:3px}
+p{max-width:var(--wrap-text)}
+strong{font-weight:500;color:var(--sy-charcoal)}
+
+/* ---------- Type ---------- */
+.overline{
+  font-family:var(--sy-sans);
+  font-size:12.5px;
+  font-weight:500;
+  letter-spacing:0.08em;
+  color:var(--sy-gold-deep);
+  margin:0 0 18px;
+}
+h1.overline{font-size:12.5px;line-height:1.4}
+.display{
+  font-family:var(--sy-serif);
+  font-weight:500;
+  font-size:clamp(38px,5.4vw,66px);
+  line-height:1.08;
+  letter-spacing:-0.01em;
+  color:var(--sy-charcoal);
+  max-width:15ch;
+}
+.display em,h2 em{font-style:italic;font-weight:500;color:var(--sy-gold-deep)}
+h2{
+  font-family:var(--sy-serif);
+  font-weight:500;
+  font-size:clamp(30px,3.6vw,44px);
+  line-height:1.14;
+  color:var(--sy-charcoal);
+  max-width:20ch;
+  margin-bottom:22px;
+}
+h3{
+  font-family:var(--sy-serif);
+  font-weight:500;
+  font-size:26px;
+  line-height:1.2;
+  color:var(--sy-charcoal);
+}
+.lede{font-size:19px;line-height:1.7;color:var(--sy-charcoal2)}
+
+/* ---------- Layout ---------- */
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 32px}
+.section{padding:104px 0}
+.section-tint{background:var(--sy-warmgray)}
+.rule{border:0;border-top:1px solid var(--sy-rule)}
+
+/* ---------- Buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  font-family:var(--sy-sans);font-weight:500;font-size:14px;
+  letter-spacing:0.02em;line-height:1;
+  padding:17px 30px;border-radius:2px;
+  transition:background .18s ease,color .18s ease,border-color .18s ease,transform .12s ease;
+  white-space:nowrap;
+}
+.btn:active{transform:translateY(1px)}
+.btn-gold{background:var(--sy-gold);color:var(--sy-white);border:1px solid var(--sy-gold)}
+.btn-gold:hover{background:var(--sy-gold-deep);border-color:var(--sy-gold-deep)}
+.btn-line{background:transparent;color:var(--sy-charcoal);border:1px solid var(--sy-charcoal2)}
+.btn-line:hover{border-color:var(--sy-teal-deep);color:var(--sy-teal-deep)}
+.textlink{
+  color:var(--sy-teal-deep);
+  border-bottom:1px solid rgba(86,173,191,0.45);
+  padding-bottom:1px;
+  transition:border-color .18s ease,color .18s ease;
+}
+.textlink:hover{color:var(--sy-gold-deep);border-color:var(--sy-gold)}
+
+/* ---------- Nav ---------- */
+.nav{
+  position:sticky;top:0;z-index:50;
+  background:rgba(250,248,245,0.94);
+  backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--sy-rule);
+}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:24px}
+.brand{
+  font-family:var(--sy-serif);font-weight:600;font-size:22px;
+  letter-spacing:0.08em;text-transform:uppercase;color:var(--sy-charcoal);
+}
+.nav-links{display:flex;align-items:center;gap:32px;list-style:none}
+.nav-links a{font-size:14.5px;font-weight:400;color:var(--sy-charcoal2);padding:6px 0;border-bottom:1px solid transparent;transition:border-color .18s}
+.nav-links a:hover,.nav-links a[aria-current]{color:var(--sy-charcoal);border-bottom-color:var(--sy-gold)}
+.nav-cta{display:flex;align-items:center;gap:14px}
+.nav-cta .btn{padding:13px 22px;font-size:13.5px}
+.nav-toggle{
+  display:none;background:none;border:1px solid var(--sy-rule);
+  width:44px;height:44px;border-radius:2px;cursor:pointer;
+  align-items:center;justify-content:center;flex-direction:column;gap:5px;
+}
+.nav-toggle span{display:block;width:20px;height:1.5px;background:var(--sy-charcoal);transition:transform .2s,opacity .2s}
+
+/* ---------- Hero ---------- */
+.hero{padding:120px 0 96px}
+.hero .lede{margin:30px 0 40px;max-width:600px}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.cta-note{margin-top:22px;font-size:15.5px;color:var(--sy-ink-soft);max-width:560px}
+.cta-note a{color:var(--sy-teal-deep)}
+
+/* ---------- Credentials strip ---------- */
+.creds{border-top:1px solid var(--sy-rule);border-bottom:1px solid var(--sy-rule)}
+.creds .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.cred{padding:34px 28px 32px;border-left:1px solid var(--sy-rule)}
+.cred:first-child{border-left:0;padding-left:0}
+.cred b{display:block;font-family:var(--sy-serif);font-weight:500;font-size:30px;line-height:1;color:var(--sy-charcoal);margin-bottom:10px}
+.cred span{font-size:13.5px;color:var(--sy-ink-soft);line-height:1.45;display:block}
+
+/* ---------- Problem ---------- */
+.problem-grid{display:grid;grid-template-columns:1.05fr 0.95fr;gap:72px;align-items:start}
+.signals{list-style:none;margin:8px 0 0;border-top:1px solid var(--sy-rule)}
+.signals li{
+  padding:20px 0 20px 30px;border-bottom:1px solid var(--sy-rule);
+  font-family:var(--sy-serif);font-size:23px;line-height:1.3;color:var(--sy-charcoal);
+  position:relative;
+}
+.signals li::before{content:"";position:absolute;left:0;top:32px;width:14px;height:1px;background:var(--sy-gold)}
+.problem-close{margin-top:34px;font-size:18px;line-height:1.65;color:var(--sy-charcoal);font-weight:400}
+.pull{
+  margin-top:72px;padding-left:32px;border-left:2px solid var(--sy-gold);
+  font-family:var(--sy-serif);font-style:italic;font-weight:400;
+  font-size:clamp(24px,2.6vw,31px);line-height:1.38;color:var(--sy-charcoal);max-width:820px;
+}
+
+/* ---------- Ways in ---------- */
+.ways{list-style:none;border-top:1px solid var(--sy-rule);margin-top:8px}
+.ways li{border-bottom:1px solid var(--sy-rule)}
+.ways a{
+  display:grid;grid-template-columns:260px 1fr auto;gap:40px;align-items:baseline;
+  padding:34px 0;transition:padding-left .2s ease;
+}
+.ways a:hover{padding-left:10px}
+.ways a:hover h3{color:var(--sy-gold-deep)}
+.ways .tag{font-size:13px;font-weight:500;color:var(--sy-teal-deep);letter-spacing:0.04em;display:block;margin-bottom:6px}
+.ways p{font-size:16px;color:var(--sy-ink);line-height:1.65;max-width:520px}
+.ways .go{font-size:14px;font-weight:500;color:var(--sy-charcoal2);white-space:nowrap}
+.ways-note{margin-top:28px;font-size:15.5px;color:var(--sy-ink-soft)}
+
+/* ---------- About ---------- */
+.about-grid{display:grid;grid-template-columns:440px 1fr;gap:80px;align-items:center}
+.portrait{
+  aspect-ratio:4/5;background:var(--sy-warmgray) center/cover no-repeat;
+  border-radius:2px;
+}
+.about-copy p+p{margin-top:20px}
+.about-copy .kicker{font-family:var(--sy-serif);font-size:24px;line-height:1.35;color:var(--sy-charcoal);margin-top:28px}
+.about-copy .textlink{display:inline-block;margin-top:30px;font-weight:500;font-size:15px}
+
+/* ---------- Testimonials ---------- */
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.quote{border-top:1px solid var(--sy-gold);padding-top:26px}
+.quote p{font-family:var(--sy-serif);font-size:21px;line-height:1.4;color:var(--sy-charcoal);font-style:italic}
+.quote cite{display:block;font-style:normal;margin-top:18px;font-size:14px;color:var(--sy-ink-soft);line-height:1.5}
+.quote cite b{font-weight:500;color:var(--sy-charcoal2);display:block}
+.affil{margin-top:72px;padding-top:32px;border-top:1px solid var(--sy-rule);display:flex;flex-wrap:wrap;gap:12px 40px;font-size:14px;color:var(--sy-ink-soft)}
+
+/* ---------- Closing ---------- */
+.close{background:var(--sy-warmgray);padding:112px 0}
+.close .inner{max-width:720px}
+.close h2{max-width:none;margin-bottom:26px}
+.close .lede{color:var(--sy-charcoal);margin-bottom:40px;font-size:20px;line-height:1.65}
+.close .cta-note{margin-top:24px}
+
+/* ---------- Saturday Seed ---------- */
+.seed{
+  display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;
+  padding:0 0 56px;margin-bottom:56px;border-bottom:1px solid var(--sy-rule);
+}
+.seed-name{font-family:var(--sy-serif)!important;font-size:30px!important;font-weight:500!important;letter-spacing:0!important;margin-bottom:8px!important}
+.seed p{font-size:16px;color:var(--sy-ink);max-width:36ch}
+.seed-form{display:flex;gap:10px}
+.seed-form input{
+  flex:1;min-width:0;font-family:var(--sy-sans);font-size:15px;font-weight:300;
+  padding:15px 16px;border:1px solid var(--sy-charcoal2);border-radius:2px;
+  background:var(--sy-white);color:var(--sy-charcoal);
+}
+.seed-form input:focus{outline:2px solid var(--sy-gold);outline-offset:2px;border-color:var(--sy-gold)}
+.seed-form input::placeholder{color:var(--sy-ink-soft)}
+.seed-form .btn{padding:15px 24px;cursor:pointer}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (max-width:840px){.seed{grid-template-columns:1fr;gap:20px}}
+@media (max-width:520px){.seed-form{flex-direction:column}.seed-form .btn{width:100%}}
+
+/* ---------- Footer ---------- */
+.footer{padding:64px 0 40px;border-top:1px solid var(--sy-rule)}
+.footer .top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:48px}
+.footer .brand{font-size:19px}
+.footer .tag{margin-top:14px;font-size:15px;color:var(--sy-ink-soft);max-width:34ch;line-height:1.6}
+.footer h4{font-family:var(--sy-sans);font-weight:500;font-size:13px;color:var(--sy-charcoal);margin-bottom:14px;letter-spacing:0.04em}
+.footer ul{list-style:none}
+.footer li{margin-bottom:10px;font-size:15px}
+.footer li a{color:var(--sy-ink);border-bottom:1px solid transparent;transition:border-color .18s}
+.footer li a:hover{border-bottom-color:var(--sy-gold)}
+.footer .bottom{margin-top:56px;padding-top:24px;border-top:1px solid var(--sy-rule);font-size:13.5px;color:var(--sy-ink-soft);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+/* ---------- Reveal (single, quiet) ---------- */
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease}
+.reveal.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width:1024px){
+  .problem-grid{grid-template-columns:1fr;gap:48px}
+  .about-grid{grid-template-columns:360px 1fr;gap:56px}
+  .quotes{grid-template-columns:1fr;gap:36px}
+  .ways a{grid-template-columns:220px 1fr auto;gap:28px}
+}
+@media (max-width:840px){
+  .section{padding:80px 0}
+  .hero{padding:88px 0 72px}
+  .nav-links{display:none}
+  .nav-toggle{display:flex}
+  .nav.open .nav-links{
+    display:flex;flex-direction:column;align-items:flex-start;gap:0;
+    position:absolute;left:0;right:0;top:76px;
+    background:var(--sy-cream);border-bottom:1px solid var(--sy-rule);
+    padding:12px 32px 20px;
+  }
+  .nav.open .nav-links a{display:block;padding:14px 0;font-size:17px;width:100%;border-bottom:1px solid var(--sy-rule)}
+  .nav-cta .btn{display:inline-flex}
+  .creds .wrap{grid-template-columns:1fr 1fr}
+  .cred{padding:24px 20px}
+  .cred:nth-child(odd){border-left:0;padding-left:0}
+  .cred:nth-child(-n+2){border-bottom:1px solid var(--sy-rule)}
+  .about-grid{grid-template-columns:1fr;gap:40px}
+  .portrait{max-width:420px}
+  .ways a{grid-template-columns:1fr;gap:10px;padding:28px 0}
+  .ways .go{margin-top:4px}
+  .footer .top{grid-template-columns:1fr;gap:36px}
+}
+@media (max-width:520px){
+  .wrap{padding:0 22px}
+  .nav.open .nav-links{padding:12px 22px 20px}
+  .display{font-size:38px}
+  .signals li{font-size:20px}
+  .btn{width:100%}
+  .cta-row{flex-direction:column;align-items:stretch}
+}
+ol.mini{list-style:none;counter-reset:mini;margin:16px 0 26px;max-width:640px}ol.mini li{counter-increment:mini;position:relative;padding:12px 0 12px 44px;border-top:1px solid var(--sy-rule);font-size:17px}ol.mini li:last-child{border-bottom:1px solid var(--sy-rule)}ol.mini li::before{content:counter(mini,decimal-leading-zero);position:absolute;left:0;top:13px;font-family:var(--sy-serif);font-size:20px;color:var(--sy-gold)}.offer .actions{align-items:center}
+</style>
+<style>
+/* ---------- How I Work — page-specific ---------- */
+.open{padding:112px 0 88px}
+.open .display{margin-bottom:36px}
+.open blockquote{
+  font-family:var(--sy-serif);font-style:italic;font-weight:400;
+  font-size:21px;line-height:1.45;color:var(--sy-charcoal);
+  max-width:620px;margin:0 0 34px;padding-left:24px;border-left:2px solid var(--sy-gold);
+}
+.open blockquote cite{display:block;font-family:var(--sy-sans);font-style:normal;font-size:13.5px;color:var(--sy-ink-soft);margin-top:12px}
+.open p+p{margin-top:18px}
+.open .bridge{font-family:var(--sy-serif);font-size:25px;line-height:1.35;color:var(--sy-charcoal);margin:30px 0 18px;max-width:640px}
+
+.lead-line{font-family:var(--sy-serif);font-size:24px;line-height:1.35;color:var(--sy-charcoal);max-width:640px;margin-bottom:14px}
+
+.offer{
+  background:var(--sy-white);border:1px solid var(--sy-rule);border-radius:2px;
+  padding:40px 40px 36px;margin:40px 0 44px;max-width:760px;position:relative;
+}
+.offer.featured{border-color:var(--sy-gold)}
+.offer .price-row{display:flex;align-items:baseline;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:12px}
+.offer h3{font-size:28px}
+.offer .price{font-family:var(--sy-serif);font-size:26px;color:var(--sy-gold-deep);white-space:nowrap}
+.offer .price small{font-family:var(--sy-sans);font-size:14px;color:var(--sy-ink-soft);margin-left:4px}
+.offer p{font-size:16.5px}
+.offer ul{margin:16px 0 0;padding-left:0;list-style:none}
+.offer li{position:relative;padding-left:22px;margin-bottom:8px;font-size:16px;line-height:1.6}
+.offer li::before{content:"";position:absolute;left:0;top:13px;width:10px;height:1px;background:var(--sy-gold)}
+.offer .good{margin-top:18px;font-size:15px;color:var(--sy-ink-soft);font-style:italic}
+.offer .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.offer .actions .btn{padding:14px 22px;font-size:13.5px}
+.badge{
+  position:absolute;top:-13px;left:40px;background:var(--sy-gold);color:var(--sy-white);
+  font-size:11.5px;font-weight:500;letter-spacing:0.06em;padding:6px 12px;border-radius:2px;
+}
+
+.grow{list-style:none;margin:8px 0 0;max-width:760px;border-top:1px solid var(--sy-rule)}
+.grow li{display:grid;grid-template-columns:200px 1fr;gap:28px;padding:20px 0;border-bottom:1px solid var(--sy-rule)}
+.grow b{font-family:var(--sy-serif);font-weight:500;font-size:22px;color:var(--sy-charcoal);line-height:1.2}
+.grow span{font-size:16px;line-height:1.65}
+
+.looked{margin-top:44px;max-width:760px}
+.looked p.kick{font-size:15px;color:var(--sy-ink-soft);margin-bottom:10px}
+.looked ul{list-style:none}
+.looked li{position:relative;padding:14px 0 14px 30px;font-family:var(--sy-serif);font-size:22px;line-height:1.3;color:var(--sy-charcoal);border-top:1px solid var(--sy-rule)}
+.looked li:last-child{border-bottom:1px solid var(--sy-rule)}
+.looked li::before{content:"";position:absolute;left:0;top:27px;width:14px;height:1px;background:var(--sy-gold)}
+
+.feels-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:72px;align-items:start}
+.steps{list-style:none;counter-reset:step}
+.steps li{padding:26px 0;border-top:1px solid var(--sy-rule);display:grid;grid-template-columns:44px 1fr;gap:16px}
+.steps li:last-child{border-bottom:1px solid var(--sy-rule)}
+.steps li::before{counter-increment:step;content:counter(step,decimal-leading-zero);font-family:var(--sy-serif);font-size:20px;color:var(--sy-gold);line-height:1.3;padding-top:3px}
+.steps h3{font-size:24px;margin-bottom:8px}
+.steps p{font-size:16px;line-height:1.7}
+
+.tiers{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:40px;align-items:start}
+.tiers .offer{margin:0;max-width:none;height:100%}
+.tiers .offer.featured{grid-column:1 / -1}
+.note-line{margin-top:18px;font-size:15.5px;color:var(--sy-ink-soft)}
+
+.who{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:8px}
+.who h3{font-size:24px;margin-bottom:10px}
+.who .lab{font-size:13px;font-weight:500;color:var(--sy-teal-deep);letter-spacing:0.04em;display:block;margin-bottom:12px}
+.who p{font-size:16px;line-height:1.7}
+
+@media (max-width:1024px){
+  .feels-grid{grid-template-columns:1fr;gap:40px}
+  .who{grid-template-columns:1fr;gap:32px}
+}
+@media (max-width:840px){
+  .open{padding:88px 0 64px}
+  .tiers{grid-template-columns:1fr}
+  .grow li{grid-template-columns:1fr;gap:8px}
+  .offer{padding:32px 26px 30px}
+  .badge{left:26px}
+}
+@media (max-width:520px){
+  .offer .actions .btn{width:100%}
+  .quotes{grid-template-columns:1fr}
+}
+.kick{font-size:13px;font-weight:500;color:var(--sy-teal-deep);letter-spacing:0.04em;margin-bottom:10px}
+.voice{font-family:var(--sy-serif);font-style:italic;font-size:19px;line-height:1.4;color:var(--sy-gold-deep);margin-top:16px}
+.quote.solo{max-width:720px;margin-top:48px}
+.boundary{margin-top:36px;font-size:14.5px;color:var(--sy-ink-soft);max-width:720px;line-height:1.65}
+.boundary strong{color:var(--sy-charcoal2)}
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="https://syncovatellc.com/">Syncovate</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="https://syncovatellc.com/">Home</a></li>
+      <li><a href="https://syncovatellc.com/how-i-work" aria-current="page">How I Work</a></li>
+      <li><a href="https://syncovatellc.com/workshops">Workshops &amp; Retreats</a></li>
+      <li><a href="https://syncovatellc.com/prism-blog">Field Notes</a></li>
+      <li><a href="https://syncovatellc.com/meet-dr-j">Meet Dr. J</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="btn btn-gold" href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo">Let's Talk</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ OPEN ============ -->
+<section class="open">
+  <div class="wrap">
+    <h1 class="overline">How I work with owners and their teams</h1>
+    <p class="display">When people ask why they should work with me, I come back to one thing: <em>being heard.</em></p>
+    <blockquote>"It is astonishing how elements that seem insoluble become soluble when someone listens."<cite>— Carl Rogers</cite></blockquote>
+    <p>At heart, I'm a listener. That's where my training started. It's not where I stopped. Being heard opens the door. What you do next is what changes things. That takes tools, and it takes someone who will help you get all the way to action.</p>
+    <p>For twenty years I've done this work with founders, CEOs, and leadership teams. Trades, manufacturing, family business, professional services. The conversations are different every time. The pattern underneath them rarely is.</p>
+  </div>
+</section>
+
+<!-- ============ WHO FINDS THEIR WAY HERE ============ -->
+<section class="section section-tint" id="who">
+  <div class="wrap">
+    <h2 class="reveal">Who finds their way here.</h2>
+    <p class="reveal">Usually it's the owner who calls me. Sometimes it's for themselves, and sometimes it's for someone they're counting on, who then comes here to check me out. Either way, if you see yourself below, I'm probably the right fit.</p>
+    <div class="who reveal" style="margin-top:36px">
+      <div>
+        <span class="lab">The Founder / CEO</span>
+        <h3>You used to have the answers. Now you're not so sure.</h3>
+        <p>Whether you started the business from scratch or built it from a solid foundation, you got it here with your own know-how and hard work. Now a lot of people build their lives around it. You used to know every job and every number. Now you're managing managers, and a wrong call that once cost you a bad week lands on thirty families. We slow the big calls down, look at them from every side, and you walk out knowing what you're deciding and why.</p>
+        <p class="voice">"I used to make the call and move on. Now I sit with stuff, and I'm not sure I'm even looking at the right thing."</p>
+      </div>
+      <div>
+        <span class="lab">The Middle Manager</span>
+        <h3>Great at the work. New to leading it at this level.</h3>
+        <p>You moved up because you're the best at what you do. Foreman to operations manager. Field to the office. Line lead to section lead. One store to several. The work you were great at didn't change. What changed is that now you lead the people doing it, and you're figuring that out on the job, while the job keeps coming. We build your toolbox together: how to run a meeting, give feedback, set expectations, and handle the conversations you've been avoiding. Practical stuff you can use the same week.</p>
+        <p class="voice">"I know my stuff. I just don't always know how to get people to follow me."</p>
+      </div>
+      <div>
+        <span class="lab">The Rising Gen</span>
+        <h3>You're not just stepping into what your family built. You're stepping into their expectations.</h3>
+        <p>The business comes with history, and so does your seat at the table. The people before you built it one way. You see where it needs to go next. Every decision you make also feels like a conversation with them, whether they're in the room or not. I've spent twenty years with families where the family and the business are the same thing, and I don't take sides. We sort out what's worth keeping, what's yours to change, and how to talk about both.</p>
+        <p class="voice">"I want to honor what was built and still make it mine."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NOT SURE WHERE TO START ============ -->
+<section class="section" id="start">
+  <div class="wrap">
+    <h2 class="reveal">Not sure where to start?</h2>
+    <p class="reveal">Happens all the time. That's what the 15-minute call is for. You don't have time to read a long website, and I don't want to write one. We talk, we figure it out. Phone, Zoom, or longer over coffee.</p>
+    <p class="reveal" style="margin-top:22px"><strong>Here's how it goes:</strong></p>
+    <ol class="mini reveal">
+      <li>We talk for 15 minutes.</li>
+      <li>If it's a fit, I tell you what I'd suggest and what the investment looks like.</li>
+      <li>You decide. No proposal deck, no pressure.</li>
+    </ol>
+    <p class="reveal">Not ready for a call yet? Subscribe to the Saturday Seed. One leadership idea you can put into play Monday, and a real sense of how I think, one week at a time. Book the call when you're ready.</p>
+    <div class="cta-row reveal" style="margin-top:30px">
+      <a class="btn btn-gold" href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo">Book a 15-Minute Call</a>
+      <a class="btn btn-line" href="https://syncovatellc.com/saturday-seed">Get the Saturday Seed</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORK WITH ME DIRECTLY ============ -->
+<section class="section section-tint" id="advisory">
+  <div class="wrap">
+    <h2 class="reveal">Work with me directly.</h2>
+    <p class="reveal">Some leaders want a standing partner, someone in their corner between the big moments. You text me when something comes up: a conversation that went sideways, a hire you're on the fence about, a family issue that's bleeding into the business. We work it in real time or hold it for our next session. No homework packets. No assessments for the sake of assessments. Just the work that matters right now.</p>
+
+    <div class="tiers reveal">
+      <div class="offer featured">
+        <span class="badge">Most Popular</span>
+        <div class="price-row">
+          <h3>Trusted Advisor</h3>
+          <span class="price">$1,500<small>/ month</small></span>
+        </div>
+        <p>A standing partner for leaders who want someone to think with and a straight answer when they need one.</p>
+        <ul>
+          <li>Two 90-minute sessions a month</li>
+          <li>Text me between sessions and we work it in real time</li>
+          <li>Business, leadership, and the whole person, because for you they're not separate</li>
+          <li>Month-to-month, easy to pause or resume</li>
+        </ul>
+        <p class="good">Good for: leaders driving change who want a consistent sounding board and someone to keep them honest.</p>
+        <div class="actions">
+          <a class="btn btn-gold" href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo">Talk First</a>
+          <a class="btn btn-line" href="https://link.syncovatellc.com/payment-link/68b849c521970953fbe18f26">Book It</a>
+        </div>
+      </div>
+
+      <div class="offer">
+        <div class="price-row">
+          <h3>Single Session</h3>
+          <span class="price">$750</span>
+        </div>
+        <p>When something's pressing and you need to think it through with someone who gets it. One 90-minute session, a written summary with next steps, no commitment.</p>
+        <p class="good">Good for: a stuck decision, a hard conversation coming up, or finding out what it's like to work with me.</p>
+        <div class="actions">
+          <a class="btn btn-gold" href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo">Talk First</a>
+          <!-- GHL: point at the Single Session product checkout once its buy link exists -->
+          <a class="btn btn-line" href="#TODO-single-session-product">Book It</a>
+        </div>
+      </div>
+
+      <div class="offer">
+        <div class="price-row">
+          <h3>On-Call Advisor</h3>
+          <span class="price">$3,000<small>/ month</small></span>
+        </div>
+        <p>For leaders in the thick of it who need real access, fast. Sessions as often as you need them, short-notice scheduling, priority messaging beyond business hours, and hands-on help in the moment.</p>
+        <p class="good">Good for: a succession, a sale, a reorganization, or a season where the calls can't wait two weeks.</p>
+        <div class="actions">
+          <a class="btn btn-gold" href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo">Talk First</a>
+        </div>
+      </div>
+    </div>
+    <p class="reveal" style="margin-top:32px">Hiring me for someone on your team or in your family? We scope that together on the first call. And if that someone is you, reading this because the owner sent you: this is what the work looks like.</p>
+    <div class="quotes reveal" style="grid-template-columns:1fr 1fr;margin-top:48px">
+      <div class="quote">
+        <p>"Dr. J is the right fit if you built your leadership through doing, not through an MBA. She never talked down to me or assumed I didn't know things. Spearheading a startup business is difficult — Dr. J helped me develop a thought process that effectively and accurately rectifies situations before they become larger issues. I came away with tools that changed how I show up and strengthened my communication style with my partners and team."</p>
+        <cite><b>Josh DeMeulenaere</b>VP Electrical Services, K2 Power Solutions</cite>
+      </div>
+      <div class="quote">
+        <p>"Dr. J provided me with much needed clarity on family business related issues. She was able to look at the problem objectively and gave me numerous resources to be better able to solve the problem. I'd recommend her counsel to anyone dealing with family and/or business related problems."</p>
+        <cite><b>Jay Groninger</b>Civil Engineer, G&amp;G Hauling &amp; Excavating, Inc.</cite>
+      </div>
+    </div>
+    <p class="boundary reveal"><strong>What this is:</strong> advising focused on leadership, decision-making, communication, and how your company runs. <strong>What this isn't:</strong> psychotherapy or crisis care. If you're in acute distress or need clinical treatment, I'll help you find the right support.</p>
+  </div>
+</section>
+
+<!-- ============ WHAT WE CALL IT ============ -->
+<section class="section" id="feels">
+  <div class="wrap">
+    <div class="feels-grid">
+      <div class="reveal">
+        <h2>It doesn't matter what we call it.</h2>
+        <p>Coaching, advising, consulting, facilitation. The label matters a lot less than what you walk out with. Here's what that looks like, whether it's a room of twelve or one-on-one.</p>
+      </div>
+      <ol class="steps reveal">
+        <li><div><h3>You feel heard. Really heard.</h3><p>Not managed. Not judged. I'm curious about what you're seeing, what you're carrying, and the thing you almost said but didn't. I ask questions until the picture gets clear.</p></div></li>
+        <li><div><h3>You see something you couldn't see before.</h3><p>Not because I told you what it was. Because together we connected the dots: things you've said, things your people have said, things that happened years ago and are still showing up today. Then you see it, and it's obvious.</p></div></li>
+        <li><div><h3>You leave with something every time.</h3><p>Insight without action is just a nice conversation. Once the smoke clears, we figure out the next real move together. No forty-page deck. No jargon. Just what's next.</p></div></li>
+        <li><div><h3>You did it. Not me.</h3><p>That's the part I love most and get the least credit for. You had this in you the whole time. You needed a partner and the space to think. I bring both.</p></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BRING ME IN FOR YOUR TEAM ============ -->
+<section class="section section-tint" id="team">
+  <div class="wrap">
+    <h2 class="reveal">Bring me in for your team.</h2>
+    <p class="reveal">When a leadership team stops being honest with each other, it costs you in ways that never show up on a report: decisions that stall, good people who go quiet, the same meeting over and over. Facilitation is my favorite thing to do, and if the work is bigger than one person, it's the easiest place for us to start. You provide the room and the snacks. I bring a session I've run many times, your people leave with something they can use Monday, and you get a real feel for how I work. No death by PowerPoint.</p>
+
+    <div class="offer reveal">
+      <div class="price-row">
+        <h3>A Team Session</h3>
+        <span class="price">from $1,500</span>
+      </div>
+      <p>A tried-and-true, ninety-minute session on the psychology of leadership: communication, blind spots, working better together, and the conversations that don't happen in regular meetings. Low commitment, high signal.</p>
+      <p class="good">Good for: a leadership team that's gone quiet, a new management layer, or a first look at whether I'm the right fit.</p>
+      <div class="actions">
+        <a class="btn btn-gold" href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo">Talk First</a>
+        <!-- GHL: point at the Team Session product checkout once its buy link exists (same product as /workshops) -->
+        <a class="btn btn-line" href="#TODO-team-session-product">Book It</a>
+        <a class="btn btn-line" href="https://syncovatellc.com/workshops">See all workshops &amp; retreats</a>
+      </div>
+    </div>
+
+    <p class="reveal">From there, it grows into whatever the room needs.</p>
+    <ul class="grow reveal">
+      <li><b>Workshops</b><span>Leadership development for your managers, built for the room you have, not a generic audience.</span></li>
+      <li><b>Retreats</b><span>Where the conversations that have been circling for months finally land, and the group leaves with decisions, not just a nice experience.</span></li>
+      <li><b>Strategy sessions</b><span>Where the team doesn't just talk about a problem. They build the solution in the room and walk out with something they can use.</span></li>
+    </ul>
+
+    <div class="looked reveal">
+      <p class="kick">What that's looked like:</p>
+      <ul>
+        <li>A nonprofit board that moved from working <em>in</em> the organization to governing it.</li>
+        <li>A manufacturer's supervisor-development pilot that started as one session and grew into a company-wide rollout.</li>
+        <li>A CEO peer forum that left with a decision instead of just a good conversation.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROOF ============ -->
+<section class="section">
+  <div class="wrap">
+    <div class="quotes reveal" style="grid-template-columns:1fr">
+      <div class="quote">
+        <p>"Working with Dr. J is enlightening. She helps us experience a practical situation from different vantages, which aids in seeing reactions occur naturally. She helps us reach a deeper understanding of cause and effect, and how to move forward collectively and collaboratively."</p>
+        <cite><b>Jen Sailor</b>Chief Financial and Operations Officer, Indiana Trust Wealth Management</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLOSING ============ -->
+<section class="close" id="lets-talk">
+  <div class="wrap">
+    <div class="inner reveal">
+      <h2>Let's talk.</h2>
+      <p class="lede">You can't get to know me from a website (at least not one anyone wants to read). Let's sit down, coffee if you're local or a call if you're not. We figure out what you need, a session for your team, a standing partnership, or something in between, and go from there.</p>
+      <div class="cta-row">
+  <a class="btn btn-gold" href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo">Book a 15-Minute Call</a>
+  <a class="btn btn-line" href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo">Grab Coffee in Michiana</a>
+</div>
+      <p class="cta-note">Or <a class="textlink" href="mailto:Shannon@SyncovateLLC.com">email me</a> a few times that work and we'll find a spot.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="seed">
+      <div>
+        <h4 class="seed-name">Saturday Seed</h4>
+        <p>One leadership idea you can put into play Monday. Every Saturday. No pitch.</p>
+      </div>
+      <!-- GHL: replace this form with your Saturday Seed form embed. Keep the .seed-form class on the wrapper so the layout holds. -->
+      <form class="seed-form" action="#" method="post" onsubmit="return false">
+        <label class="sr" for="seedEmail">Email address</label>
+        <input id="seedEmail" type="email" name="email" placeholder="your@email.com" required>
+        <button class="btn btn-gold" type="submit">Subscribe</button>
+      </form>
+    </div>
+    <div class="top">
+      <div>
+        <div class="brand">Syncovate</div>
+        <p class="tag">Business psychology for founders and owner-operators of growing, privately held companies. Based in Niles, Michigan. Working with leaders across Michiana and nationwide.</p>
+      </div>
+      <div>
+        <h4>Work</h4>
+        <ul>
+          <li><a href="https://syncovatellc.com/how-i-work">How I Work</a></li>
+          <li><a href="https://syncovatellc.com/workshops">Workshops &amp; Retreats</a></li>
+          <li><a href="https://syncovatellc.com/prism-blog">Field Notes</a></li>
+          <li><a href="https://syncovatellc.com/saturday-seed">Saturday Seed</a></li>
+          <li><a href="https://spotter.syncovatellc.com/">The Scotoma Spotter™</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://syncovatellc.com/meet-dr-j">Meet Dr. J</a></li>
+          <li><a href="https://syncovatellc.com/contact">Contact</a></li>
+          <li><a href="https://www.linkedin.com/in/shannonsjennings/">LinkedIn</a></li>
+          <li><a href="tel:2692934442">269-293-4442</a></li>
+          <li><a href="mailto:Shannon@SyncovateLLC.com">Shannon@SyncovateLLC.com</a></li>
+          <li><a href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo">Let's Talk</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>© 2026 Syncovate LLC · Niles, Michigan</span>
+      <span>Dr. Shannon S. Jennings</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var nav=document.getElementById('nav'),t=document.getElementById('navToggle');
+  if(t){t.addEventListener('click',function(){
+    var open=nav.classList.toggle('open');
+    t.setAttribute('aria-expanded',open?'true':'false');
+    t.setAttribute('aria-label',open?'Close menu':'Open menu');
+  });}
+  var els=document.querySelectorAll('.reveal');
+  function showAll(){els.forEach(function(e){e.classList.add('on');});}
+  if(!('IntersectionObserver' in window)){showAll();return;}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('on');io.unobserve(en.target);}});
+  },{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(e){io.observe(e);});
+  setTimeout(showAll,1000);
+})();
+</script>
+</body>
+</html>
