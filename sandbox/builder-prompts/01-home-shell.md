@@ -20,13 +20,15 @@ Colors: bronze #BF8756 (hover #A3703E), teal #56ADBF, deep charcoal #252830, cha
 - Mobile-first: everything stacks cleanly on phones, with generous spacing and no overflow.
 - Leave button link fields blank (do not invent links). In the page SEO settings leave title, description, author, keywords, and social image blank, and do not set noindex. Do NOT build a header or footer.
 
-## Content slots, in this order (you decide how each is designed)
-1. **Opening statement:** [LABEL], [HEADLINE] followed by [ITALIC SENTENCE] (the italic sentence should be visually emphasized), [LEDE], two buttons [BUTTON 1 LABEL] (primary) and [BUTTON 2 LABEL] (secondary), and [NOTE].
-2. **Four credentials:** [STAT 1 NUMBER] + [STAT 1 CAPTION], through 4.
-3. **A problem section:** [HEADLINE], [PARAGRAPH], a standout [PULL QUOTE], [LEAD LINE], and five numbered items [ITEM 1] through [ITEM 5].
-4. **Two offers:** [HEADLINE], then two parallel blocks, each with [LABEL], [TITLE] (a card title), [PARAGRAPH], and a link-style button [LINK LABEL]; plus one muted [NOTE] beneath.
-5. **About me:** a portrait image slot (leave it empty, 4:5, I will add my photo), [HEADLINE], [PARAGRAPH 1], [PARAGRAPH 2], [PARAGRAPH 3], and a link-style button [LINK LABEL].
-6. **Three testimonials:** [QUOTE 1] with [NAME 1] and [ROLE 1], through 3; then three small text labels [ORG 1], [ORG 2], [ORG 3] (text only).
-7. **Closing invitation:** [HEADLINE], [PARAGRAPH], two buttons [BUTTON 1 LABEL] and [BUTTON 2 LABEL], and [EMAIL LINE].
+## Build exactly these seven sections, in this order
+Each is its own full-width section. Design each one however you like, but build all seven, in this order, with exactly this content and nothing else.
 
-Use your best judgment on how many sections to split these into, what goes dark or light, where to use scale, icons, color blocks, gradients, overlapping elements, or motion. When in doubt, choose the bolder and more beautiful option, but never add words.
+1. **Hero.** [LABEL] (small line above), [HEADLINE] followed by [ITALIC SENTENCE] (visually emphasized), [LEDE], two buttons side by side [BUTTON 1 LABEL] (primary) and [BUTTON 2 LABEL] (secondary), and a small [NOTE] beneath.
+2. **Credentials strip.** Four items side by side, each [STAT 1 NUMBER] with [STAT 1 CAPTION], through [STAT 4 NUMBER] and [STAT 4 CAPTION].
+3. **Hard to see from the inside.** [HEADLINE], [PARAGRAPH], one standout [PULL QUOTE], then [LEAD LINE] and a numbered list of five items [ITEM 1] through [ITEM 5].
+4. **Two ways we work together.** [HEADLINE], then two parallel blocks (cards or panels). Each block has [LABEL], [TITLE] (card title), [PARAGRAPH], and a link-style button [LINK LABEL]. One muted [NOTE] beneath both.
+5. **About.** A portrait image slot (leave it empty, 4:5, I will add my photo), [HEADLINE], [PARAGRAPH 1], [PARAGRAPH 2], [PARAGRAPH 3], and a link-style button [LINK LABEL].
+6. **Testimonials.** Three testimonials, each [QUOTE N] with [NAME N] and [ROLE N] (N = 1, 2, 3). Beneath them, one quiet row of three text labels [ORG 1], [ORG 2], [ORG 3].
+7. **Closing invitation.** [HEADLINE], [PARAGRAPH], two buttons [BUTTON 1 LABEL] and [BUTTON 2 LABEL], and [EMAIL LINE].
+
+Do not add, merge, rename, or reorder sections, and do not add any other section (no extra calls to action, no FAQ, no footer, no navigation). Your creative freedom is in how each of these seven looks, not in what they contain.
