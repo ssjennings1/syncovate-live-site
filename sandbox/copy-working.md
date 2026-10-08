@@ -387,7 +387,7 @@ Shannon@SyncovateLLC.com · 269-293-4442
 *Dr. Shannon S. Jennings · Dr. J*
 # I love the way entrepreneurs think.
 
-I've spent my whole career around people who built something from nothing, and I never get tired of it. The way their brains work, connecting a supplier problem to something their kid said to a podcast they half-heard. That energizes me. It's what gets me out of bed Monday morning, excited to see what the week brings.
+I've spent my career around people who built something from nothing, and I never get tired of it. The way their brains work, connecting a supplier problem to something their kid said to a podcast they half-heard. That energizes me. It's what gets me out of bed Monday morning, excited to see what the week brings.
 
 [Let's Talk] → [booking link]
 
