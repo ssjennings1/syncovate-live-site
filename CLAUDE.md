@@ -70,7 +70,7 @@ Not in the repo (live in Taft, intentionally):
 | Text Muted | `#7A736B` | Secondary/subdued text |
 | Border | `rgba(196,147,90,0.18)` | Subtle bronze-tinted borders |
 
-> **Open question — two bronzes are live.** Homepage, About, and Coaching use `#BF8756` (hover `#A3703E`). Organizational Diagnostic, Speaking, and Contact still use the older `#C4935A` (hover `#A87840`). The Diagnostic page also uses white button text; the others use charcoal. Decide which is the brand color, then standardize in Taft. Until then, do not "fix" one page to match another without asking.
+> **Decision (2026-10-08): `#BF8756` is the brand bronze, hover `#A3703E`.** Homepage, About, and Coaching already use it. Organizational Diagnostic, Speaking, and Contact are still live with the older `#C4935A` (hover `#A87840`) and need updating in Taft. Until they are, the repo copies match live (old bronze) on purpose. The Diagnostic page also uses white button text where the other pages use charcoal; that is still undecided. The `rgba(196,147,90,…)` tints and borders are shared by every page and are not part of this change.
 
 ### Typography
 
