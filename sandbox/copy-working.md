@@ -17,7 +17,7 @@ Shannon's current copy for the new site (Taft "Syncovate LLC DRAFT"). Supersedes
 - Testimonial placement (2026-10-08): Chase Meeks (middle manager) and Jay Groninger (second gen) sit under their columns in "Who finds their way here" on How I Work; Tyler Kanczuzewski (second gen) replaces Chase on Meet Dr. J; Christen Carter (StrengthsFinder) joins Custom Leadership Retreats; the "empowered in five years" participant quote joins the team section of How I Work; Susan Frucci's opening line "Morale was low and the outlook was bleak." is restored.
 - Retail is dropped as a gap. Keynotes have not been given yet, so the keynote block stays "available for keynotes" with no testimonial.
 - Clifford Clarke's quote reads "experiential" (the live site's "experimental" was a typo; confirmed by Shannon).
-- To confirm: official company names (K2 Power Solutions, G&G Hauling & Excavating, Inc.) should be fixed once and used everywhere.
+- Company names settled: K2 Power Solutions and G & G Hauling & Excavating (as written on their own sites; no "Inc.").
 
 ## Still open (placeholders, blocks launch)
 
@@ -169,13 +169,13 @@ Whether you started the business from scratch or built it from a solid foundatio
 ### Great at the work. New to leading it at this level.
 You moved up because you're the best at what you do. Foreman to operations manager. Field to the office. Line lead to section lead. One store to several. The work you were great at didn't change. What changed is that now you lead the people doing it, and you're figuring that out on the job, while the job keeps coming. We build your toolbox together: how to run a meeting, give feedback, set expectations, and handle the conversations you've been avoiding. Practical stuff you can use the same week.
 "I know my stuff. I just don't always know how to get people to follow me."
-"She listens — really listens — and then, like a hammer to a nail, she says her piece. Her greatest strength is building trust without ever taking sides. She sees the end goal clearly and doesn't get distracted by feelings or emotions. That's what gets people to open up and say the things that actually need to be said." — Chase Meeks, Senior Accounts Manager, G&G Hauling & Excavating, Inc.
+"She listens — really listens — and then, like a hammer to a nail, she says her piece. Her greatest strength is building trust without ever taking sides. She sees the end goal clearly and doesn't get distracted by feelings or emotions. That's what gets people to open up and say the things that actually need to be said." — Chase Meeks, Senior Accounts Manager, G & G Hauling & Excavating
 
 **The Rising Gen**
 ### You're not just stepping into what your family built. You're stepping into their expectations.
 The business comes with history, and so does your seat at the table. The people before you built it one way. You see where it needs to go next. Every decision you make also feels like a conversation with them, whether they're in the room or not. I've spent twenty years with families where the family and the business are the same thing, and I don't take sides. We sort out what's worth keeping, what's yours to change, and how to talk about both.
 "I want to honor what was built and still make it mine."
-"Dr. J provided me with much needed clarity on family business related issues. She was able to look at the problem objectively and gave me numerous resources to be better able to solve the problem. I'd recommend her counsel to anyone dealing with family and/or business related problems." — Jay Groninger, Civil Engineer, G&G Hauling & Excavating, Inc.
+"Dr. J provided me with much needed clarity on family business related issues. She was able to look at the problem objectively and gave me numerous resources to be better able to solve the problem. I'd recommend her counsel to anyone dealing with family and/or business related problems." — Jay Groninger, Civil Engineer, G & G Hauling & Excavating
 
 ### Not sure where to start
 
