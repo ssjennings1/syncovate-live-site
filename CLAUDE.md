@@ -46,6 +46,11 @@ Live nav: Organizational Diagnostics, Coaching & Advising, Speaking & Facilitati
 
 **Direction (2026-10-08): moving away from diagnostic language.** It was tried for about a year and did not land. The Syncovate LLC DRAFT site folds Coaching and the Diagnostic into one **How I Work** page and drops "diagnostic" and "scotoma" as the lead offer. Treat `organizational-diagnostic.html` as a page being retired, not the flagship: do not polish it, and do not write new copy that leads with diagnostics or scotoma. The "flagship" label further down describes the current live site, not the plan.
 
+**Launch plan (2026-10-08):** the **Syncovate LLC DRAFT** site will *replace* the current site; it is not a patch on it. Until then the current pages stay as published. At launch:
+- `/organizational-diagnostic` redirects to `/how-i-work` (create the redirect in Taft only when the new site is live, not before).
+- The phone number becomes `269-293-4442` everywhere.
+- The Scotoma quiz (Scotoma Spotter) becomes its own funnel page *after* the focused site is deployed; until then leave existing links to `spotter.syncovatellc.com` alone.
+
 Not in the repo (live in Taft, intentionally):
 - **Saturday Seed** (`/saturday-seed`) is built from separate Taft blocks plus a Taft form. `saturday-seed-blocks.html` is a reference copy only. The live page currently has no `<title>` or meta description.
 - **Internal Analysis**, **Trusted Advisor Sales Page**, **Blind Spot Cost Diagram** — work in progress, not published at working URLs. Ignore until told otherwise.
@@ -74,7 +79,7 @@ Not in the repo (live in Taft, intentionally):
 
 > **Decision (2026-10-08): `#BF8756` is the brand bronze, hover `#A3703E`.** Homepage, About, and Coaching already use it. Organizational Diagnostic, Speaking, and Contact are still live with the older `#C4935A` (hover `#A87840`) and need updating in Taft. Until they are, the repo copies match live (old bronze) on purpose. The Diagnostic page also uses white button text where the other pages use charcoal; that is still undecided. The `rgba(196,147,90,…)` tints and borders are shared by every page and are not part of this change.
 
-> **Decision (2026-10-08): the phone number is `269-293-4442`.** The currently published pages still show the old `574-532-3178` (the repo copies match live on purpose until Taft is updated). The Syncovate LLC DRAFT site already uses the new number.
+> **Decision (2026-10-08): leave `574-532-3178` on the current live site for now.** When the new site replaces it, use `269-293-4442`, the number connected to the CRM. The Syncovate LLC DRAFT site already uses it. The repo copies match live on purpose.
 
 ### Typography
 
@@ -89,7 +94,7 @@ Not in the repo (live in Taft, intentionally):
 |---------|-----|
 | Book a Call (Calendly widget) | `https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo` |
 | Scotoma Quiz (lead capture) | `https://spotter.syncovatellc.com/` |
-| Phone | `269-293-4442` (decided 2026-10-08; tel link `tel:2692934442`, schema `+12692934442`) |
+| Phone | Live site today: `574-532-3178`. **At launch of the new site: `269-293-4442`** (the number connected to the CRM; tel `tel:2692934442`, schema `+12692934442`) |
 | Email | `Shannon@SyncovateLLC.com` |
 | LinkedIn | `https://www.linkedin.com/in/shannonsjennings/` |
 
