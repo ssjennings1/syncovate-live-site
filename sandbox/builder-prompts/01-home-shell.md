@@ -24,6 +24,9 @@ Buttons: rectangular, 2px radius. Primary = bronze fill, white text. Secondary =
 
 Cards: white, soft shadow, 1px light border, 32px padding. No stars, no quote-mark icons, no avatar circles, no stock photos of people, no animation beyond a light fade-up.
 
+## Brand signature (apply on every section)
+This must feel beautiful and unmistakably like one brand, not a template. Keep these repeating details consistent: the last phrase of a headline set in italic bronze; small teal letter-spaced labels above headlines; a thin bronze line as the only decorative rule; generous whitespace (never crowd a section); one soft shadow style on all cards; the bronze offset frame behind the portrait; hairline rules between list rows. Align everything to one grid, keep margins and paddings identical from section to section, and keep every card in a row the same height. Nothing decorative beyond these. If a section feels busy, remove something rather than add something.
+
 ## Sections, in order
 1. **Hero** (dark charcoal, no image): small label [LABEL], very large headline [HEADLINE] with the last sentence set in italic bronze [ITALIC SENTENCE], paragraph [LEDE], two buttons side by side [BUTTON 1 LABEL] (primary) and [BUTTON 2 LABEL] (secondary), small muted line [NOTE]. A thin bronze-to-teal line along the bottom edge.
 2. **Stats strip** (white band, hairline rules): four equal columns, each a bronze serif [STAT 1 NUMBER] over a small [STAT 1 CAPTION] (through 4).
