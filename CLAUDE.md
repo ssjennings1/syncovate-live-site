@@ -36,6 +36,13 @@ An organizational consulting firm offering diagnostics, executive coaching, and 
 ├── contact.html                    # Contact info (phone, email, book a call)
 ├── saturday-seed-blocks.html       # Reference copy of Saturday Seed blocks (not standalone)
 ├── favicon.svg                     # Site favicon
+├── tools/
+│   ├── extract_live.py             # Lift a page's code out of a saved live Taft page (undoes Cloudflare email masking)
+│   └── launch_check.py             # Mechanical pre-launch checks on a folder of pages
+└── .claude/commands/
+    ├── check-live.md               # /check-live    — compare repo to the published site (read-only)
+    ├── launch-check.md             # /launch-check  — pre-launch checklist for the new site
+    └── finish-site.md              # /finish-site   — build the next page of the new site
 ```
 
 ### Source of truth
