@@ -14,6 +14,9 @@ Shannon's current copy for the new site (Taft "Syncovate LLC DRAFT"). Supersedes
 - Viki Brown's quote is from a public Google review. Denise Feece's quote is from Senja.
 - Bio sheet PDF and headshots ZIP are cut from Meet Dr. J.
 - One Team Session product serves both How I Work and Workshops.
+- Testimonial placement (2026-10-08): Chase Meeks (middle manager) and Jay Groninger (second gen) sit under their columns in "Who finds their way here" on How I Work; Tyler Kanczuzewski (second gen) replaces Chase on Meet Dr. J; Christen Carter (StrengthsFinder) joins Custom Leadership Retreats; the "empowered in five years" participant quote joins the team section of How I Work; Susan Frucci's opening line "Morale was low and the outlook was bleak." is restored.
+- Retail is dropped as a gap. Keynotes have not been given yet, so the keynote block stays "available for keynotes" with no testimonial.
+- To confirm: Clifford Clarke's quote reads "experiential" here; the live site has "experimental" (likely a typo). Official company names (Mid-City Supply, K2 Power Solutions, G&G Hauling & Excavating, Inc.) should be fixed once and used everywhere.
 
 ## Still open (placeholders, blocks launch)
 
@@ -165,11 +168,13 @@ Whether you started the business from scratch or built it from a solid foundatio
 ### Great at the work. New to leading it at this level.
 You moved up because you're the best at what you do. Foreman to operations manager. Field to the office. Line lead to section lead. One store to several. The work you were great at didn't change. What changed is that now you lead the people doing it, and you're figuring that out on the job, while the job keeps coming. We build your toolbox together: how to run a meeting, give feedback, set expectations, and handle the conversations you've been avoiding. Practical stuff you can use the same week.
 "I know my stuff. I just don't always know how to get people to follow me."
+"She listens — really listens — and then, like a hammer to a nail, she says her piece. Her greatest strength is building trust without ever taking sides. She sees the end goal clearly and doesn't get distracted by feelings or emotions. That's what gets people to open up and say the things that actually need to be said." — Chase Meeks, Senior Accounts Manager, G&G Hauling & Excavating, Inc.
 
 **The Rising Gen**
 ### You're not just stepping into what your family built. You're stepping into their expectations.
 The business comes with history, and so does your seat at the table. The people before you built it one way. You see where it needs to go next. Every decision you make also feels like a conversation with them, whether they're in the room or not. I've spent twenty years with families where the family and the business are the same thing, and I don't take sides. We sort out what's worth keeping, what's yours to change, and how to talk about both.
 "I want to honor what was built and still make it mine."
+"Dr. J provided me with much needed clarity on family business related issues. She was able to look at the problem objectively and gave me numerous resources to be better able to solve the problem. I'd recommend her counsel to anyone dealing with family and/or business related problems." — Jay Groninger, Civil Engineer, G&G Hauling & Excavating, Inc.
 
 ### Not sure where to start
 
@@ -219,7 +224,6 @@ Hiring me for someone on your team or in your family? We scope that together on 
 
 "Dr. J is the right fit if you built your leadership through doing, not through an MBA. She never talked down to me or assumed I didn't know things. Spearheading a startup business is difficult — Dr. J helped me develop a thought process that effectively and accurately rectifies situations before they become larger issues. I came away with tools that changed how I show up and strengthened my communication style with my partners and team." — Josh DeMeulenaere, VP Electrical Services, K2 Power Solutions
 
-"Dr. J provided me with much needed clarity on family business related issues. She was able to look at the problem objectively and gave me numerous resources to be better able to solve the problem. I'd recommend her counsel to anyone dealing with family and/or business related problems." — Jay Groninger, Civil Engineer, G&G Hauling & Excavating, Inc.
 
 What this is: advising focused on leadership, decision-making, communication, and how your company runs. What this isn't: psychotherapy or crisis care. If you're in acute distress or need clinical treatment, I'll help you find the right support.
 
@@ -262,6 +266,8 @@ From there, it grows into whatever the room needs.
 ### Testimonials — team
 
 "Working with Dr. J is enlightening. She helps us experience a practical situation from different vantages, which aids in seeing reactions occur naturally. She helps us reach a deeper understanding of cause and effect, and how to move forward collectively and collaboratively." — Jen Sailor, Chief Financial and Operations Officer, Indiana Trust Wealth Management
+
+"I feel the most empowered I have in five years in this role." — A participant, after a team session
 
 ### Close
 
@@ -342,7 +348,9 @@ Sometimes it's a leadership team that needs to get on the same page. Sometimes i
 
 [Talk First] → [booking link]
 
-"We have not only come through the pandemic, but our new ED, Staff and Board have gained remarkable knowledge on how to work together as one unit striving for the same goal and Hannah's House is thriving." — Susan Frucci, Executive Director, Hannah's House
+"Morale was low and the outlook was bleak. We have not only come through the pandemic, but our new ED, Staff and Board have gained remarkable knowledge on how to work together as one unit striving for the same goal and Hannah's House is thriving." — Susan Frucci, Executive Director, Hannah's House
+
+"The StrengthsFinder workshop with Shannon had many lasting effects. Our newest employee told me it was really good to learn more about herself and her new co-workers. It helped her understand what strengths she could bring to the table and how to approach her new co-workers. The whole team gets along pretty amazingly, and I'm sure understanding each of our strengths has really helped." — Christen Carter, President/Owner, Busy Beaver Button Co.
 
 ### Nonprofit Boards
 
@@ -419,9 +427,7 @@ The work takes whatever shape the situation calls for. One session to get a stuc
 
 ### Testimonial
 
-"She listens — really listens — and then, like a hammer to a nail, she says her piece. Her greatest strength is building trust without ever taking sides. She sees the end goal clearly and doesn't get distracted by feelings or emotions. That's what gets people to open up and say the things that actually need to be said." — Chase Meeks, Senior Accounts Manager, G&G Hauling & Excavating, Inc.
-
-*(Jordan New's quote moved to Home only. This page now has one testimonial; consider adding a second.)*
+"Dr. J has so much experience and knowledge around family business, business psychology, and regenerative leadership. It's a joy working with her and the Syncovate team. She continually provides fresh perspectives, and ways to better understand the complexity of the human brain, business and the world!" — Tyler Kanczuzewski, VP of Sustainability, Inovateus Solar
 
 ### Credentials
 
