@@ -6,7 +6,7 @@ Shannon's current copy for the new site (Taft "Syncovate LLC DRAFT"). Supersedes
 
 - Speaking is replaced by **Workshops & Retreats** at `/workshops`. At launch, `/speaking` 301-redirects to `/workshops` and `/organizational-diagnostic` redirects to `/how-i-work`. Create redirects in Taft only once the new site is live.
 - Jordan New's "fishing" quote is on Home only (removed from Meet Dr. J).
-- "Mid-City Supply" is spelled with the hyphen everywhere.
+- The official name is "Mid-City Supply Co." (hyphen, with "Co.") everywhere.
 - Meet Dr. J keeps "a decade of closed doors" (a decade as a therapist, then a decade as a business psychologist).
 - Melissa Espinoza: Vice President of Finance, Loader Parts Source.
 - Sandy Harvey: CFO, EarthWay Products Inc.
@@ -16,7 +16,7 @@ Shannon's current copy for the new site (Taft "Syncovate LLC DRAFT"). Supersedes
 - One Team Session product serves both How I Work and Workshops.
 - Testimonial placement (2026-10-08): Chase Meeks (middle manager) and Jay Groninger (second gen) sit under their columns in "Who finds their way here" on How I Work; Tyler Kanczuzewski (second gen) replaces Chase on Meet Dr. J; Christen Carter (StrengthsFinder) joins Custom Leadership Retreats; the "empowered in five years" participant quote joins the team section of How I Work; Susan Frucci's opening line "Morale was low and the outlook was bleak." is restored.
 - Retail is dropped as a gap. Keynotes have not been given yet, so the keynote block stays "available for keynotes" with no testimonial.
-- To confirm: Clifford Clarke's quote reads "experiential" here; the live site has "experimental" (likely a typo). Official company names (Mid-City Supply, K2 Power Solutions, G&G Hauling & Excavating, Inc.) should be fixed once and used everywhere.
+- To confirm: Clifford Clarke's quote reads "experiential" here; the live site has "experimental" (likely a typo). Official company names (Mid-City Supply Co., K2 Power Solutions, G&G Hauling & Excavating, Inc.) should be fixed once and used everywhere.
 
 ## Still open (placeholders, blocks launch)
 
@@ -115,7 +115,7 @@ Sometimes that's one session to unstick a decision that's been sitting too long.
 
 ### Testimonials — Home
 
-"I was trying to describe what it's like working with Dr. J and I kept coming back to one thing: she teaches you how to fish, shows you where to fish, helps you hook it, guides you on filleting it, and shows you how to cook it too. She sets herself apart by not only asking the right questions — she follows up with good ideas and how to actually get it done. The breadth of what she covers is impressive, but it doesn't feel overwhelming. It feels like having a partner who's in it with you." — Jordan New, CEO, Mid-City Supply
+"I was trying to describe what it's like working with Dr. J and I kept coming back to one thing: she teaches you how to fish, shows you where to fish, helps you hook it, guides you on filleting it, and shows you how to cook it too. She sets herself apart by not only asking the right questions — she follows up with good ideas and how to actually get it done. The breadth of what she covers is impressive, but it doesn't feel overwhelming. It feels like having a partner who's in it with you." — Jordan New, CEO, Mid-City Supply Co.
 
 "Dr. J was great to work with. We learned a lot about how our frontline can feel blind at times leading to disengagement. We also learned a lot about middle management not focusing on the frontline enough, leading to frustration. And even top leaders not being able to communicate properly or be heard was a huge eye opener as well. I definitely learned a lot from this experience and would recommend it to any organization." — Anthony Kulikowski, Owner, Five Star Painting
 
@@ -314,7 +314,7 @@ Tried and true, ready to go. You bring the space and the snacks. I bring the res
 
 ### Testimonials — Team Sessions
 
-"The exercise we did was fun and thought provoking. It was refreshing to have a speaker do something engaging with us instead of just lecturing. It made the session more impactful." — Dan New, President / CFO, Mid-City Supply
+"The exercise we did was fun and thought provoking. It was refreshing to have a speaker do something engaging with us instead of just lecturing. It made the session more impactful." — Dan New, President / CFO, Mid-City Supply Co.
 
 "Dr. Shannon Jennings was a featured speaker at the REF CIO Forum retreat. She led us in experiential learning exercises. The group enjoyed the exercises while learning a bit more about themselves. Dr. Shannon Jennings skillfully facilitated the group of professionals who are not generally excited about experiential exercises. I would recommend Business Psychologist Dr. Shannon Jennings for your corporate group or team." — Clifford Clarke, REF Indiana, Facilitator Leaders – CIO Forum
 
