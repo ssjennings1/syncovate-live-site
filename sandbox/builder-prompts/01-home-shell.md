@@ -16,24 +16,31 @@ Use only native builder elements: sections, rows, columns, headings, paragraphs,
 Use H1 once (the hero headline). Use H2 only for section headlines and H3 only for card titles. Everything else (small labels, stat numbers, quotes, names, roles, list items) is a paragraph, not a heading.
 
 ## Look
-Calm, editorial, lots of whitespace. Use the brand colors already in the theme: bronze #BF8756 (buttons, accents, hover #A3703E), teal #56ADBF (tiny labels only), deep charcoal #252830 (dark bands), charcoal #3D4148, cream #FAF8F5 (page), warm gray #F0EDE8 (alternate bands), white cards. Italic accent color #9E6D41 on light backgrounds, #BF8756 on dark. Fonts: Cormorant Garamond for headings, DM Sans for everything else. Do not use any other font.
+Confident, editorial, with strong contrast and generous whitespace. Use the brand colors already in the theme: bronze #BF8756 (buttons, accents, hover #A3703E), teal #56ADBF (tiny labels only), deep charcoal #252830 (dark bands), charcoal #3D4148, cream #FAF8F5 (page), warm gray #F0EDE8 (alternate bands), white cards. Italic accent color #9E6D41 on light backgrounds, #BF8756 on dark. Fonts: Cormorant Garamond for headings, DM Sans for everything else. Do not use any other font.
 
-Type sizes (desktop / phone): hero headline 64px / 38px; section headlines 44px / 32px; card titles 28px / 24px; stat numbers 36px / 30px; list lines 24px / 20px; body 17px / 16px; small labels 13px, letter-spaced. Section padding about 100px top and bottom on desktop, 70px on phones. Content width about 1120px; text blocks no wider than 680px.
+Type sizes (desktop / phone): hero headline 72px / 42px; section headlines 44px / 32px; card titles 28px / 24px; stat numbers 44px / 32px; list lines 24px / 20px; body 17px / 16px; small labels 13px, letter-spaced. Section padding about 100px top and bottom on desktop, 70px on phones. Content width about 1120px; text blocks no wider than 680px.
 
 Buttons: rectangular, 2px radius. Primary = bronze fill, white text. Secondary = transparent with a 1px outline. On dark sections the secondary outline and text are cream.
 
-Cards: white, soft shadow, 1px light border, 32px padding. No stars, no quote-mark icons, no avatar circles, no stock photos of people, no animation beyond a light fade-up.
+Cards: white, soft shadow, 1px light border, 32px padding. No stars, no quote-mark icons, no avatar circles, no stock photos of people.
 
 ## Brand signature (apply on every section)
-This must feel beautiful and unmistakably like one brand, not a template. Keep these repeating details consistent: the last phrase of a headline set in italic bronze; small teal letter-spaced labels above headlines; a thin bronze line as the only decorative rule; generous whitespace (never crowd a section); one soft shadow style on all cards; the bronze offset frame behind the portrait; hairline rules between list rows. Align everything to one grid, keep margins and paddings identical from section to section, and keep every card in a row the same height. Nothing decorative beyond these. If a section feels busy, remove something rather than add something.
+This must look rich, confident, and unmistakably like one brand. Not plain, not a template. Use these on every section:
+- **Contrast and rhythm:** alternate dark and light bands so the page has a clear rhythm as you scroll. Dark bands use a soft vertical gradient from #252830 to #3D4148, not flat black.
+- **Scale:** oversized serif headlines and numerals. Let type be the hero. Use very large italic bronze phrases, and give the five numerals 01 to 05 real size (56px) in bronze.
+- **Depth:** one consistent layered shadow on every card, a thin bronze top border on cards, and cards that lift slightly on hover (use the builder's built-in hover effect, subtle).
+- **Color:** bronze is used boldly in one full-width band (the stats strip), teal in small icon chips and labels. Do not leave teal out.
+- **Icons:** one small built-in icon from the builder's icon set, in a teal rounded chip, at the top of each of the two "Two ways" cards. No other icons.
+- **Detail:** a thin bronze-to-teal line along the bottom of the hero, the bronze offset frame behind the portrait, hairline rules between list rows, generous whitespace, and a light fade-up as sections enter.
+Align everything to one grid, keep spacing identical from section to section, and keep every card in a row the same height.
 
 ## Sections, in order
-1. **Hero** (dark charcoal, no image): small label [LABEL], very large headline [HEADLINE] with the last sentence set in italic bronze [ITALIC SENTENCE], paragraph [LEDE], two buttons side by side [BUTTON 1 LABEL] (primary) and [BUTTON 2 LABEL] (secondary), small muted line [NOTE]. A thin bronze-to-teal line along the bottom edge.
-2. **Stats strip** (white band, hairline rules): four equal columns, each a bronze serif [STAT 1 NUMBER] over a small [STAT 1 CAPTION] (through 4).
-3. **Hard to see** (cream): two columns. Left: [HEADLINE], [PARAGRAPH], and a white card holding a large serif italic [PULL QUOTE] with a bronze left border. Right: small lead line [LEAD LINE], then five rows, each with an italic bronze numeral 01 to 05 and a large serif [ITEM N], separated by hairline rules.
-4. **Two ways** (warm gray): [HEADLINE], then two equal cards side by side. Card 1 is white with a bronze top border; card 2 is deep charcoal with a teal top border and cream text. Each card: small [LABEL], H3 [TITLE], [PARAGRAPH], and a text-style link button [LINK LABEL] with an arrow. Under the cards, one muted line [NOTE].
+1. **Hero** (deep charcoal gradient, no image): small label [LABEL], very large headline [HEADLINE] (72px desktop, 42px phone) with the last sentence in italic bronze [ITALIC SENTENCE], paragraph [LEDE], two buttons side by side [BUTTON 1 LABEL] (primary) and [BUTTON 2 LABEL] (secondary, cream outline), small muted line [NOTE]. A thin bronze-to-teal line along the bottom edge.
+2. **Stats strip** (full-width BRONZE #BF8756 band): four equal columns, each a large serif [STAT 1 NUMBER] in white (44px) over a small [STAT 1 CAPTION] in deep charcoal, separated by thin white vertical rules (through 4).
+3. **Hard to see** (cream): two columns. Left: [HEADLINE], [PARAGRAPH], and a white card holding a large serif italic [PULL QUOTE] with a thick bronze left border and soft shadow. Right: small lead line [LEAD LINE], then five rows, each with a large italic bronze numeral 01 to 05 and a large serif [ITEM N], separated by hairline rules.
+4. **Two ways** (deep charcoal gradient): [HEADLINE] in white, then two equal white cards side by side, each with a teal icon chip at the top, a bronze top border, small [LABEL], H3 [TITLE], [PARAGRAPH], and a text-style link button [LINK LABEL] with an arrow. Cards lift on hover. Under the cards, one muted cream line [NOTE].
 5. **About** (cream): two columns. Left: an image placeholder, 4:5 portrait, 2px radius, soft shadow, with a bronze offset frame behind it (leave it empty; I will add my photo). Right: [HEADLINE], [PARAGRAPH 1], [PARAGRAPH 2], [PARAGRAPH 3], and a text link [LINK LABEL].
-6. **Testimonials** (warm gray): three equal white cards with a thin bronze top border. Each: serif italic [QUOTE N], a hairline, then [NAME N] and [ROLE N] in small muted text. Below, one quiet row of three text labels [ORG 1] [ORG 2] [ORG 3] (text only, no logos).
-7. **Closing** (dark charcoal): [HEADLINE], [PARAGRAPH], two buttons [BUTTON 1 LABEL] and [BUTTON 2 LABEL], small line [EMAIL LINE].
+6. **Testimonials** (warm gray): three equal white cards with a bronze top border and a soft shadow. Each: serif italic [QUOTE N], a hairline, then [NAME N] and [ROLE N] in small muted text. Below, one quiet row of three text labels [ORG 1] [ORG 2] [ORG 3] (text only, no logos).
+7. **Closing** (deep charcoal gradient): [HEADLINE] in white, [PARAGRAPH], two buttons [BUTTON 1 LABEL] and [BUTTON 2 LABEL], small line [EMAIL LINE].
 
 Do NOT build a header or footer. Do not add any sections beyond these seven. Leave button link fields blank (do not invent links). In the page SEO settings leave title, description, author, keywords, and social image blank, and do not set noindex.
