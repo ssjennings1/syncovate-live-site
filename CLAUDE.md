@@ -254,8 +254,8 @@ Scope examples: `scotoma`, `coaching`, `speaking`, `about`, `nav`, `global`
 
 ## Branch Strategy
 
-- Git is **storage and history only**. Nothing is published from here; the site goes live only when pages are pasted or uploaded in Taft. `main` is the latest saved copy of the live site, not a deploy trigger.
-- `main` — latest saved copy of what is live on Taft Systems.
+- Git is **storage and history only**. Nothing is published from here; the site goes live only when pages are pasted or uploaded in Taft. the default branch is the latest saved copy of the live site, not a deploy trigger.
+- **There is no `main` branch on GitHub.** The repo's default branch is `claude/claude-md-mmm50o5uik1z6hz3-E5x9B`; treat it as the latest saved copy of what is live on Taft Systems. Older branches (`claude/live-site-errors-otlixf` = the Sept 4 About-page rebuild, `claude/customer-model-landing-page-td0oh8` = July Scan page, and others) are history only; their content that is live today is already in the default branch.
 - `feat/<page-or-feature>` — new pages or major features.
 - `fix/<description>` — bug/layout fixes.
 - `copy/<page>` — copy-only edits.
