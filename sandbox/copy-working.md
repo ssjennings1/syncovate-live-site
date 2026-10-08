@@ -15,6 +15,7 @@ Shannon's current copy for the new site (Taft "Syncovate LLC DRAFT"). Supersedes
 - Bio sheet PDF and headshots ZIP are cut from Meet Dr. J.
 - One Team Session product serves both How I Work and Workshops.
 - Testimonial placement (2026-10-08): Chase Meeks (middle manager) and Jay Groninger (second gen) sit under their columns in "Who finds their way here" on How I Work; Tyler Kanczuzewski (second gen) replaces Chase on Meet Dr. J; Christen Carter (StrengthsFinder) joins Custom Leadership Retreats; the "empowered in five years" participant quote joins the team section of How I Work; Susan Frucci's opening line "Morale was low and the outlook was bleak." is restored.
+- Photos: Home and Meet Dr. J both use "Shannon Jennings 2026 Headshot" (864x1080, Taft library, 4:5 to match the portrait frame). Newer Sept 3 portraits ("headshot on porch", "_78A0492.JPG") not used yet; not viewed.
 - Retail is dropped as a gap. Keynotes have not been given yet, so the keynote block stays "available for keynotes" with no testimonial.
 - Clifford Clarke's quote reads "experiential" (the live site's "experimental" was a typo; confirmed by Shannon).
 - Company names settled: K2 Power Solutions and G & G Hauling & Excavating (as written on their own sites; no "Inc.").
