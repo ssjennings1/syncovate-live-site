@@ -24,5 +24,6 @@ Steps:
 4. **Redirects (TAFT connector, read first):** list current redirects with `fetch-redirects-list` (limit 20). Report whether `/organizational-diagnostic` and `/speaking` already redirect. **Do not create or change a redirect until Shannon says the new site is live**, and then only with her approval of the exact operation.
 5. **Report** as a short go / no-go: what is clear, what blocks launch, and what is her call. Plain language, no jargon.
 6. After launch (only when she says it is live): run `/check-live`-style verification against the new site and confirm the redirect works by requesting `/organizational-diagnostic` and `/speaking`.
+7. **Search tags (after launch):** fetch each new page (`/`, `/how-i-work`, `/workshops`, `/meet-dr-j`, `/contact`, `/saturday-seed`) and check that `<link rel="canonical">` points to that page's own address (not `/homepage`) and that `og:title` / `og:description` match the page's tab title and search description in `sandbox/copy-working.md`. Taft adds these tags itself from each page's SEO settings, so do not add canonical or Open Graph tags in the page code. `/saturday-seed` has had no title, description, or canonical in Taft before: confirm those are filled in.
 
 Never open a pull request unless asked. Never push to `main`.
