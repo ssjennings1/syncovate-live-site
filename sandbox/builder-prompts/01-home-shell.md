@@ -1,46 +1,32 @@
-# Page prompt: Home, LAYOUT ONLY (shell), native Taft elements
+# Page prompt: Home, DESIGN FREEDOM + LOCKED WORDS (shell)
 
 Paste this alone in a fresh builder conversation.
 
 ---
 
-Build the layout for a website Home page using only Taft's own page-builder elements. I will type all the words myself afterward, so DO NOT WRITE ANY COPY.
+Design a beautiful, original Home page for a business psychology consultant, using only Taft's own page-builder elements. You have full creative freedom over the design: composition, layout, section backgrounds, gradients, spacing, scale, icons, card styles, hover effects, and imagery from the builder's library. Surprise me. Make it rich, distinctive, and memorable, not a template. The audience is founders and owner-operators of trades, manufacturing, and family businesses, so it should feel warm, grounded, and confident, never corporate or flashy.
 
-## Words
-Every text element contains only a short bracketed label such as [HEADLINE], [PARAGRAPH], [BUTTON 1 LABEL], [STAT 1 NUMBER], [QUOTE 1], [NAME 1]. Do not add taglines, testimonials, statistics, names, logos, claims, or descriptions. The only non-bracket text allowed is the digits 01 to 05 on the numbered list. Where a label would be empty, leave the bracket label in it.
+## The one thing you may NOT be creative with: the words
+I will type all the words myself afterward, so DO NOT WRITE ANY COPY. Every text element contains only a short bracketed label such as [HEADLINE], [PARAGRAPH], [BUTTON 1 LABEL], [STAT 1 NUMBER], [QUOTE 1], [NAME 1]. Do not invent taglines, testimonials, statistics, names, logos, claims, company names, or descriptions. Do not rename or reword the labels. Every label listed below must appear exactly once, in the order given, and nothing else may appear. The only non-bracket text allowed is digits for numbering.
 
-## Elements
-Use only native builder elements: sections, rows, columns, headings, paragraphs, buttons, bullet lists, dividers, images, and the built-in icon element. Do NOT use custom code blocks, HTML or CSS embeds, hand-drawn SVGs, or generated images. Every piece of text must be its own editable heading, paragraph, or button so I can click it and change it. Do not use image-based text.
+## Fixed brand (do not change)
+Colors: bronze #BF8756 (hover #A3703E), teal #56ADBF, deep charcoal #252830, charcoal #3D4148, cream #FAF8F5, warm gray #F0EDE8, white. Italic accent #9E6D41 on light backgrounds, #BF8756 on dark. Fonts: Cormorant Garamond for headings, DM Sans for everything else. Do not use any other font or any color outside these. Buttons are rectangular with a 2px radius; primary is bronze with white text.
 
-## Heading tags
-Use H1 once (the hero headline). Use H2 only for section headlines and H3 only for card titles. Everything else (small labels, stat numbers, quotes, names, roles, list items) is a paragraph, not a heading.
+## Build rules
+- Use only native builder elements: sections, rows, columns, headings, paragraphs, buttons, bullet lists, dividers, images, and the built-in icon element. Do NOT use custom code blocks, HTML or CSS embeds, hand-drawn SVGs, or AI-generated images. No stock photos of people, no star ratings, no avatar circles.
+- Every piece of text must be its own editable heading, paragraph, or button. No text baked into images.
+- Heading tags: H1 once (hero headline), H2 for section headlines, H3 for card titles. Everything else (labels, numbers, quotes, names, roles, list items) is a paragraph.
+- Type sizes must stay sensible: hero headline no larger than 72px desktop / 42px phone; section headlines 40 to 48px desktop / 30 to 34px phone; body 17px / 16px.
+- Mobile-first: everything stacks cleanly on phones, with generous spacing and no overflow.
+- Leave button link fields blank (do not invent links). In the page SEO settings leave title, description, author, keywords, and social image blank, and do not set noindex. Do NOT build a header or footer.
 
-## Look
-Confident, editorial, with strong contrast and generous whitespace. Use the brand colors already in the theme: bronze #BF8756 (buttons, accents, hover #A3703E), teal #56ADBF (tiny labels only), deep charcoal #252830 (dark bands), charcoal #3D4148, cream #FAF8F5 (page), warm gray #F0EDE8 (alternate bands), white cards. Italic accent color #9E6D41 on light backgrounds, #BF8756 on dark. Fonts: Cormorant Garamond for headings, DM Sans for everything else. Do not use any other font.
+## Content slots, in this order (you decide how each is designed)
+1. **Opening statement:** [LABEL], [HEADLINE] followed by [ITALIC SENTENCE] (the italic sentence should be visually emphasized), [LEDE], two buttons [BUTTON 1 LABEL] (primary) and [BUTTON 2 LABEL] (secondary), and [NOTE].
+2. **Four credentials:** [STAT 1 NUMBER] + [STAT 1 CAPTION], through 4.
+3. **A problem section:** [HEADLINE], [PARAGRAPH], a standout [PULL QUOTE], [LEAD LINE], and five numbered items [ITEM 1] through [ITEM 5].
+4. **Two offers:** [HEADLINE], then two parallel blocks, each with [LABEL], [TITLE] (a card title), [PARAGRAPH], and a link-style button [LINK LABEL]; plus one muted [NOTE] beneath.
+5. **About me:** a portrait image slot (leave it empty, 4:5, I will add my photo), [HEADLINE], [PARAGRAPH 1], [PARAGRAPH 2], [PARAGRAPH 3], and a link-style button [LINK LABEL].
+6. **Three testimonials:** [QUOTE 1] with [NAME 1] and [ROLE 1], through 3; then three small text labels [ORG 1], [ORG 2], [ORG 3] (text only).
+7. **Closing invitation:** [HEADLINE], [PARAGRAPH], two buttons [BUTTON 1 LABEL] and [BUTTON 2 LABEL], and [EMAIL LINE].
 
-Type sizes (desktop / phone): hero headline 72px / 42px; section headlines 44px / 32px; card titles 28px / 24px; stat numbers 44px / 32px; list lines 24px / 20px; body 17px / 16px; small labels 13px, letter-spaced. Section padding about 100px top and bottom on desktop, 70px on phones. Content width about 1120px; text blocks no wider than 680px.
-
-Buttons: rectangular, 2px radius. Primary = bronze fill, white text. Secondary = transparent with a 1px outline. On dark sections the secondary outline and text are cream.
-
-Cards: white, soft shadow, 1px light border, 32px padding. No stars, no quote-mark icons, no avatar circles, no stock photos of people.
-
-## Brand signature (apply on every section)
-This must look rich, confident, and unmistakably like one brand. Not plain, not a template. Use these on every section:
-- **Contrast and rhythm:** alternate dark and light bands so the page has a clear rhythm as you scroll. Dark bands use a soft vertical gradient from #252830 to #3D4148, not flat black.
-- **Scale:** oversized serif headlines and numerals. Let type be the hero. Use very large italic bronze phrases, and give the five numerals 01 to 05 real size (56px) in bronze.
-- **Depth:** one consistent layered shadow on every card, a thin bronze top border on cards, and cards that lift slightly on hover (use the builder's built-in hover effect, subtle).
-- **Color:** bronze is used boldly in one full-width band (the stats strip), teal in small icon chips and labels. Do not leave teal out.
-- **Icons:** one small built-in icon from the builder's icon set, in a teal rounded chip, at the top of each of the two "Two ways" cards. No other icons.
-- **Detail:** a thin bronze-to-teal line along the bottom of the hero, the bronze offset frame behind the portrait, hairline rules between list rows, generous whitespace, and a light fade-up as sections enter.
-Align everything to one grid, keep spacing identical from section to section, and keep every card in a row the same height.
-
-## Sections, in order
-1. **Hero** (deep charcoal gradient, no image): small label [LABEL], very large headline [HEADLINE] (72px desktop, 42px phone) with the last sentence in italic bronze [ITALIC SENTENCE], paragraph [LEDE], two buttons side by side [BUTTON 1 LABEL] (primary) and [BUTTON 2 LABEL] (secondary, cream outline), small muted line [NOTE]. A thin bronze-to-teal line along the bottom edge.
-2. **Stats strip** (full-width BRONZE #BF8756 band): four equal columns, each a large serif [STAT 1 NUMBER] in white (44px) over a small [STAT 1 CAPTION] in deep charcoal, separated by thin white vertical rules (through 4).
-3. **Hard to see** (cream): two columns. Left: [HEADLINE], [PARAGRAPH], and a white card holding a large serif italic [PULL QUOTE] with a thick bronze left border and soft shadow. Right: small lead line [LEAD LINE], then five rows, each with a large italic bronze numeral 01 to 05 and a large serif [ITEM N], separated by hairline rules.
-4. **Two ways** (deep charcoal gradient): [HEADLINE] in white, then two equal white cards side by side, each with a teal icon chip at the top, a bronze top border, small [LABEL], H3 [TITLE], [PARAGRAPH], and a text-style link button [LINK LABEL] with an arrow. Cards lift on hover. Under the cards, one muted cream line [NOTE].
-5. **About** (cream): two columns. Left: an image placeholder, 4:5 portrait, 2px radius, soft shadow, with a bronze offset frame behind it (leave it empty; I will add my photo). Right: [HEADLINE], [PARAGRAPH 1], [PARAGRAPH 2], [PARAGRAPH 3], and a text link [LINK LABEL].
-6. **Testimonials** (warm gray): three equal white cards with a bronze top border and a soft shadow. Each: serif italic [QUOTE N], a hairline, then [NAME N] and [ROLE N] in small muted text. Below, one quiet row of three text labels [ORG 1] [ORG 2] [ORG 3] (text only, no logos).
-7. **Closing** (deep charcoal gradient): [HEADLINE] in white, [PARAGRAPH], two buttons [BUTTON 1 LABEL] and [BUTTON 2 LABEL], small line [EMAIL LINE].
-
-Do NOT build a header or footer. Do not add any sections beyond these seven. Leave button link fields blank (do not invent links). In the page SEO settings leave title, description, author, keywords, and social image blank, and do not set noindex.
+Use your best judgment on how many sections to split these into, what goes dark or light, where to use scale, icons, color blocks, gradients, overlapping elements, or motion. When in doubt, choose the bolder and more beautiful option, but never add words.
