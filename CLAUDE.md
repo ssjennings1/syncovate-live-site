@@ -44,6 +44,8 @@ An organizational consulting firm offering diagnostics, executive coaching, and 
 
 Live nav: Organizational Diagnostics, Coaching & Advising, Speaking & Facilitation, Meet Dr. J, Field Notes (`https://syncovatellc.com/prism-blog`, a separate Taft blog), and a Book a Call button.
 
+**Direction (2026-10-08): moving away from diagnostic language.** It was tried for about a year and did not land. The Syncovate LLC DRAFT site folds Coaching and the Diagnostic into one **How I Work** page and drops "diagnostic" and "scotoma" as the lead offer. Treat `organizational-diagnostic.html` as a page being retired, not the flagship: do not polish it, and do not write new copy that leads with diagnostics or scotoma. The "flagship" label further down describes the current live site, not the plan.
+
 Not in the repo (live in Taft, intentionally):
 - **Saturday Seed** (`/saturday-seed`) is built from separate Taft blocks plus a Taft form. `saturday-seed-blocks.html` is a reference copy only. The live page currently has no `<title>` or meta description.
 - **Internal Analysis**, **Trusted Advisor Sales Page**, **Blind Spot Cost Diagram** — work in progress, not published at working URLs. Ignore until told otherwise.
