@@ -33,7 +33,7 @@ Shannon's current copy for the new site (Taft "Syncovate LLC DRAFT"). Supersedes
 - Home hero overline is "Syncovate · Business Psychology" (was the SEO title). Home cards are "One-on-one / Advising" and "Your team, your room / Workshops & Retreats".
 - Meet Dr. J "Why a Business Psychologist?" second paragraph cut to two short paragraphs. Close no longer repeats the coffee line.
 - Workshops: "dynamics" removed from Your Go-To Power Move; Sandy Harvey quote cut (seven testimonials remain).
-- Portrait is now the real Sept 3 porch photo (sandbox/assets/dr-j-porch-portrait.jpg, 1200x1500, 4:5). The AI "Shannon Jennings 2026 Headshot" is retired from the site. AT PASTE: upload the JPG to the Taft media library and replace `assets/dr-j-porch-portrait.jpg` in index.html and meet-dr-j.html with the hosted URL.
+- Two portraits, one per page: Home uses the Sept 3 porch photo (sandbox/assets/dr-j-porch-portrait.jpg, 1200x1500); Meet Dr. J uses the "Shannon Jennings 2026 Headshot" (sandbox/assets/dr-j-2026-headshot.jpg, 864x1080 — Shannon's face, AI-styled outfit and room; already in the Taft library as media/699cf94f340118eab6af87e5.jpeg). AT PASTE: upload the porch JPG to Taft and replace `assets/dr-j-porch-portrait.jpg` in index.html with its hosted URL; in meet-dr-j.html replace `assets/dr-j-2026-headshot.jpg` with the existing library URL.
 - Favicon: sandbox/assets/favicon.svg (logo S on charcoal). AT PASTE: upload to Taft site settings.
 - Footer: The Scotoma Spotter™ link removed on every page (quiz stays live at spotter.syncovatellc.com; not advertised on the new site).
 
