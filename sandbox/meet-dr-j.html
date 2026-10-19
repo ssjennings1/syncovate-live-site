@@ -432,6 +432,18 @@ h3{
 .brand svg{display:block;height:20px;width:auto}
 .footer .brand svg{height:52px}
 @media (max-width:640px){.brand svg{height:17px}.footer .brand svg{height:44px}}
+
+/* ---------- Meet: cutout hero ---------- */
+.hero{padding-bottom:0}
+.hero-grid{grid-template-columns:1fr 440px;align-items:end;gap:48px}
+.hero-grid>div:first-child{padding-bottom:112px}
+.cutout{margin:0;justify-self:end;width:100%;max-width:440px;line-height:0}
+.cutout img{display:block;width:100%;height:auto;filter:drop-shadow(0 30px 40px rgba(0,0,0,0.45))}
+@media (max-width:840px){
+  .hero-grid{grid-template-columns:1fr;align-items:end;gap:8px}
+  .hero-grid>div:first-child{padding-bottom:36px}
+  .cutout{justify-self:center;max-width:300px}
+}
 </style>
 </head>
 <body>
@@ -469,7 +481,7 @@ h3{
         <a class="btn btn-gold" href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo">Let's Talk</a>
       </div>
     </div>
-    <div class="portrait" role="img" aria-label="Dr. Shannon Jennings" style="background-image:url('assets/dr-j-2026-headshot.jpg')"></div>
+    <figure class="cutout"><img src="assets/dr-j-chair-cutout.webp" alt="Dr. Shannon Jennings, sitting on a folding chair" width="600" height="1300"></figure>
   </div>
 </section>
 
