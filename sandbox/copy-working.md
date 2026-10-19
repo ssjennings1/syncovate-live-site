@@ -512,3 +512,11 @@ Every Saturday morning, one idea for owners and leaders of growing companies. Sm
 - Welcome to No Man's Land.
 
 Every seed ends the same way: hit reply and tell me what came up. I read every one.
+
+## Status 2026-10-19 evening (voice pass)
+
+- Shannon reviewed the voice-pass copy. Home, How I Work, Workshops, Contact, Seed: OK as of tonight. **Meet Dr. J: still to review line by line — pick up here next session.**
+- One portrait on the site: the porch photo on Meet Dr. J (framed). Home has no photo; its "Meet Dr. J" link is the click-through. The chair cutout was tried on Meet Dr. J and Home and dropped ("too weird").
+- Home "The higher you climb" section is short on purpose: truth-tellers paragraph, two-sentence "the role I've played" paragraph, the filter line, link. The shape-of-the-work lines live on Meet Dr. J only.
+- Voice rules confirmed tonight: say what they built ("grew a company with their own know-how and hard work"), not "built something real"; "around here" not "through the shop"; "someone who's been loyal to you" not "someone you love"; no reassuring extra sentence after the point lands; "role I've played" not "seat I've sat in".
+- Still parked: teal t-shirt recolor (do by hand in Canva if wanted); GitHub branch feat/sandbox-chair-photo can be deleted.
