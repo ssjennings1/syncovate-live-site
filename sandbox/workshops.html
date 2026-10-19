@@ -420,6 +420,13 @@ h3{
 .brand svg{display:block;height:20px;width:auto}
 .footer .brand svg{height:52px}
 @media (max-width:640px){.brand svg{height:17px}.footer .brand svg{height:44px}}
+
+/* ---------- Team Sessions intro with photo ---------- */
+.ts-intro{display:grid;grid-template-columns:1.05fr 0.95fr;gap:40px 56px;align-items:end;margin-bottom:48px}
+.ts-intro .formats{margin-bottom:0}
+.ts-photo{margin:0;justify-self:end;width:100%;max-width:460px}
+.ts-photo img{display:block;width:100%;height:auto;-webkit-mask-image:radial-gradient(ellipse 70% 76% at 50% 50%,#000 58%,transparent 100%);mask-image:radial-gradient(ellipse 70% 76% at 50% 50%,#000 58%,transparent 100%)}
+@media (max-width:860px){.ts-intro{grid-template-columns:1fr;gap:28px}.ts-photo{justify-self:center;max-width:340px}}
 </style>
 </head>
 <body>
@@ -462,8 +469,13 @@ h3{
 <!-- ============ TEAM SESSIONS ============ -->
 <section class="section section-tint" id="team-sessions">
   <div class="wrap">
-    <h2 class="reveal">Team Sessions <em>· from $1,500</em></h2>
-    <p class="formats reveal">Tried and true, ready to go. You bring the space and the snacks. I bring the rest. Ninety minutes each.</p>
+    <div class="ts-intro reveal">
+      <div>
+        <h2>Team Sessions <em>· from $1,500</em></h2>
+        <p class="formats">Tried and true, ready to go. You bring the space and the snacks. I bring the rest. Ninety minutes each.</p>
+      </div>
+      <figure class="ts-photo"><img src="assets/dr-j-chair.jpg" alt="Dr. J sitting on a folding chair, the kind every team session has" loading="lazy"></figure>
+    </div>
     <ul class="sessions reveal">
       <li class="session">
         <div><h3>Point the Finger</h3><p class="sub">When everyone's working hard and things still go sideways.</p></div>
