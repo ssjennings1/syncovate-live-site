@@ -374,6 +374,26 @@ h3{
 .brand svg{display:block;height:20px;width:auto}
 .footer .brand svg{height:52px}
 @media (max-width:640px){.brand svg{height:17px}.footer .brand svg{height:44px}}
+
+
+/* ---------- Home: cutout hero ---------- */
+.hero{padding:0;min-height:560px}
+.hero::before{right:6%;top:-120px;width:820px;height:820px;background:radial-gradient(circle,rgba(191,135,86,0.30) 0%,rgba(191,135,86,0.10) 42%,transparent 66%)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(360px,500px);align-items:end;gap:24px}
+.hero-grid>div:first-child{align-self:center;padding:80px 0 64px}
+.hero .display{max-width:17ch;font-size:clamp(34px,4.4vw,54px)}
+.cutout{margin:0;justify-self:end;width:100%;max-width:500px;line-height:0;padding-top:16px}
+.cutout img{display:block;width:100%;height:auto;filter:drop-shadow(0 24px 34px rgba(0,0,0,0.42))}
+.about-grid{grid-template-columns:1fr;max-width:820px}
+@media (max-width:1100px){.hero-grid{grid-template-columns:minmax(0,1fr) minmax(300px,400px)}}
+@media (max-width:840px){
+  .hero{min-height:0}
+  .hero::before{right:-120px;top:-200px;width:620px;height:620px}
+  .hero-grid{grid-template-columns:1fr;gap:0}
+  .cutout{order:-1;justify-self:center;max-width:250px;padding-top:28px;margin-bottom:-6px}
+  .cutout img{filter:drop-shadow(0 16px 24px rgba(0,0,0,0.4))}
+  .hero-grid>div:first-child{padding:0 0 56px;align-self:start}
+}
 </style>
 </head>
 <body>
@@ -402,7 +422,8 @@ h3{
 
 <!-- ============ HERO ============ -->
 <section class="hero">
-  <div class="wrap">
+  <div class="wrap hero-grid">
+    <div>
     <h1 class="overline">Syncovate · Business Psychology</h1>
     <p class="display">Everything runs through you. That's how you built it. <em>It's also what's holding it back.</em></p>
     <p class="lede">I work alongside founders and owner-operators who grew a company with their own know-how and hard work, and now have to figure out how to lead it without being the one every decision runs through. We get honest about what's going on, in the business and in how you lead it, and you walk away with something you can put into play right away. That part isn't optional with me.</p>
@@ -411,6 +432,8 @@ h3{
   <a class="btn btn-line" href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo">Grab Coffee in Michiana</a>
 </div>
     <p class="cta-note">Coffee if you're local, a call if you're not.</p>
+    </div>
+    <figure class="cutout"><img src="assets/dr-j-chair-cutout.webp" alt="Dr. Shannon Jennings" width="882" height="1100"></figure>
   </div>
 </section>
 
@@ -476,7 +499,6 @@ h3{
 <section class="section">
   <div class="wrap">
     <div class="about-grid">
-      <div class="portrait" role="img" aria-label="Dr. Shannon Jennings" style="background-image:url('assets/dr-j-porch-portrait.jpg')"></div>
       <div class="about-copy">
         <h2>The higher you climb, the fewer people <em class="accent">tell you the truth.</em></h2>
         <p>Your team watches what you react to and brings you what you want to hear, because their jobs depend on you. Your family wants you to be certain. Your customers have become friends, your peers are often your competitors, and everyone knows the image you've got to keep up. Somewhere along the way you ran out of people who will say the hard thing out loud.</p>
