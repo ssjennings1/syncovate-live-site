@@ -26,6 +26,15 @@ Shannon's current copy for the new site (Taft "Syncovate LLC DRAFT"). Supersedes
 - Team Session buy link: done (Power Hour (and a half) payment link, $1,500).
 - Taft prices checked: Single Session $750, Team Session $1,500, Strategy Session updated to $7,500 (full day).
 
+## Decisions 2026-10-19 (review pass before paste)
+
+- How I Work is the SHORT version: Rogers opening, then the three tiers, then the team session. The three persona columns, "Not sure where to start?" and the four "It doesn't matter what we call it" beats are cut (the beats live on Meet Dr. J). Chase Meeks and Jay Groninger sit with Josh DeMeulenaere under the tiers.
+- Signature lines once, not everywhere: "not one anyone wants to read" stays on Home and Contact only; "No death by PowerPoint" on the Home card and Workshops only; "coffee if you're local" in the buttons and once per page in prose.
+- Home hero overline is "Syncovate · Business Psychology" (was the SEO title). Home cards are "One-on-one / Advising" and "Your team, your room / Workshops & Retreats".
+- Meet Dr. J "Why a Business Psychologist?" second paragraph cut to two short paragraphs. Close no longer repeats the coffee line.
+- Workshops: "dynamics" removed from Your Go-To Power Move; Sandy Harvey quote cut (seven testimonials remain).
+- Footer: The Scotoma Spotter™ link removed on every page (quiz stays live at spotter.syncovatellc.com; not advertised on the new site).
+
 ---
 
 ## MENU (every page)
