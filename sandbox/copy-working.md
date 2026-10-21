@@ -520,3 +520,12 @@ Every seed ends the same way: hit reply and tell me what came up. I read every o
 - Home "The higher you climb" section is short on purpose: truth-tellers paragraph, two-sentence "the role I've played" paragraph, the filter line, link. The shape-of-the-work lines live on Meet Dr. J only.
 - Voice rules confirmed tonight: say what they built ("grew a company with their own know-how and hard work"), not "built something real"; "around here" not "through the shop"; "someone who's been loyal to you" not "someone you love"; no reassuring extra sentence after the point lands; "role I've played" not "seat I've sat in".
 - Still parked: teal t-shirt recolor (do by hand in Canva if wanted); GitHub branch feat/sandbox-chair-photo can be deleted.
+
+## Status 2026-10-21 (Meet Dr. J rebuilt)
+
+- Meet Dr. J rebuilt around the service-business about-page structure (Gill Andrews / Big Picture Copywriting read): plain hero → what it looks like when someone calls → story ("Psychology is my family business") → Tyler → Why a business psychologist? with credentials grouped Psychology / Business / Systems → four beats → Let's talk. Shannon reviewed it line by line in session; every page is now OK by her read. **Next: the paste (`PASTE-RUNBOOK.md`).**
+- Facts the site now agrees on: practice from 1998 (licensed 2001), Edward Lowe ~2005–2010, doctorate 2013. "Twenty years with owners and leaders" is accurate; the therapy years are *before* that ("close to a decade as a therapist before that"). Never "whole career" around entrepreneurs. Dad is a clinical psychologist (true of him, never of her); mom was a therapist.
+- Decisions on Meet Dr. J: beats are "I listen first" (no "say my piece" chaser), "I don't take sides" (owner's / team's / individual's), "Your experience counts" (positive form of "won't talk down"), "We work on what happens next" (action-oriented; no "text me", no "when I stop being useful"). "Helping work suck less" stays. "The picture in your head has drifted" is Home-only now. The intro is the phone call, not a repeat of Home's ten-to-forty diagnosis.
+- Lines Shannon wrote: "The fight didn't go away, but it stopped being everything." "I don't know how to *not* apply that kind of thinking" (inline italic, not a callout). "(he still calls me Star, which is always a little awkward)".
+- feat/meet-dr-j-draft is merged here; the remote branch can be deleted.
+
