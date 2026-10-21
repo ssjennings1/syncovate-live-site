@@ -15,7 +15,7 @@ Shannon's current copy for the new site (Taft "Syncovate LLC DRAFT"). Supersedes
 - Bio sheet PDF and headshots ZIP are cut from Meet Dr. J.
 - One Team Session product serves both How I Work and Workshops.
 - Testimonial placement (2026-10-08): Chase Meeks (middle manager) and Jay Groninger (second gen) sit under their columns in "Who finds their way here" on How I Work; Tyler Kanczuzewski (second gen) replaces Chase on Meet Dr. J; Christen Carter (StrengthsFinder) joins Custom Leadership Retreats; the "empowered in five years" participant quote joins the team section of How I Work; Susan Frucci's opening line "Morale was low and the outlook was bleak." is restored.
-- Photos: Home and Meet Dr. J both use "Shannon Jennings 2026 Headshot" (864x1080, Taft library, 4:5 to match the portrait frame). Newer Sept 3 portraits ("headshot on porch", "_78A0492.JPG") not used yet; not viewed.
+- Photos (superseded 2026-10-19/21, see Status): one portrait on the whole site, the porch photo (sandbox/assets/dr-j-porch-portrait.jpg, 1200x1500) in the Meet Dr. J frame. Home has no photo. The 2026 headshot and the chair cutout are not used on any page.
 - Retail is dropped as a gap. Keynotes have not been given yet, so the keynote block stays "available for keynotes" with no testimonial.
 - Clifford Clarke's quote reads "experiential" (the live site's "experimental" was a typo; confirmed by Shannon).
 - Company names settled: K2 Power Solutions and G & G Hauling & Excavating (as written on their own sites; no "Inc.").
@@ -33,7 +33,7 @@ Shannon's current copy for the new site (Taft "Syncovate LLC DRAFT"). Supersedes
 - Home hero overline is "Syncovate · Business Psychology" (was the SEO title). Home cards are "One-on-one / Advising" and "Your team, your room / Workshops & Retreats".
 - Meet Dr. J "Why a Business Psychologist?" second paragraph cut to two short paragraphs. Close no longer repeats the coffee line.
 - Workshops: "dynamics" removed from Your Go-To Power Move; Sandy Harvey quote cut (seven testimonials remain).
-- Two portraits, one per page: Home uses the Sept 3 porch photo (sandbox/assets/dr-j-porch-portrait.jpg, 1200x1500); Meet Dr. J uses the "Shannon Jennings 2026 Headshot" (sandbox/assets/dr-j-2026-headshot.jpg, 864x1080 — Shannon's face, AI-styled outfit and room; already in the Taft library as media/699cf94f340118eab6af87e5.jpeg). AT PASTE: upload the porch JPG to Taft and replace `assets/dr-j-porch-portrait.jpg` in index.html with its hosted URL; in meet-dr-j.html replace `assets/dr-j-2026-headshot.jpg` with the existing library URL.
+- Superseded the same night: one portrait on the site, the porch photo on Meet Dr. J (see Status). AT PASTE: upload `sandbox/assets/dr-j-porch-portrait.jpg` to Taft and replace `assets/dr-j-porch-portrait.jpg` in meet-dr-j.html with its hosted URL.
 - Favicon: sandbox/assets/favicon.svg (logo S on charcoal). AT PASTE: upload to Taft site settings.
 - Footer: The Scotoma Spotter™ link removed on every page (quiz stays live at spotter.syncovatellc.com; not advertised on the new site).
 
