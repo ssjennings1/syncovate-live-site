@@ -18,7 +18,7 @@ Order: Home → How I Work → Workshops → Meet Dr. J → Contact → Saturday
 3. Paste by clipboard: in the Taft tab run `fetch('https://raw.githubusercontent.com/ssjennings1/syncovate-live-site/feat/sandbox-pages/sandbox/<page>.html')` then `navigator.clipboard.writeText(...)`. Click the Code element > Open Code Editor > cmd+a, cmd+v > Save, then save the page. (This needs the repo to be public; if it goes private, paste from a local copy instead.)
 4. Meet Dr. J only: use the data-URI portrait described in step 0.
 5. SEO: set Title and Description in Taft's SEO panel (toolbar icon, document with magnifier > Content). Head tags inside a custom-code element land in the page body and do not count. Text is in each page's `<title>` and meta description. Do not set noindex.
-6. Save, then open the Taft preview on a phone. Check: nav opens, buttons go to the booking widget, the logo shows. The footer Seed form is a placeholder until the GHL form is swapped in.
+6. Save, then open the Taft preview on a phone. Check: nav opens, buttons go to the booking widget, the logo shows. The Saturday Seed page embeds the real GHL form (`Saturday Seed Sign Up Form`, id `Ri9xtq1bNLmpkOKaJUj4`). The footer box on the other pages is email-only and hands the address to `/saturday-seed` as `?email=`, so there is one form and one set of automations. Until launch the footer link points at the live site's `/saturday-seed`.
 7. Tell Claude "pasted <page>"; it fetches the preview and diffs against the repo (`/check-live` logic).
 
 ## 2. Launch (only when all six pages are pasted and checked)
