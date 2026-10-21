@@ -441,15 +441,21 @@ h3{
     <p class="display">One leadership idea you can <em>put into play Monday.</em></p>
     <p class="lede">Every Saturday morning, one idea for owners and leaders of growing companies. Small enough to read over coffee, built to grow all week.</p>
 
-    <!-- GHL: replace this form with the Saturday Seed form embed. Keep the .signup wrapper so spacing holds. -->
-    <form class="signup" action="#" method="post" onsubmit="return false">
-      <div class="row">
-        <div><label class="sr" for="seedFirst">First name</label><input id="seedFirst" type="text" name="first_name" placeholder="First name"></div>
-        <div><label class="sr" for="seedEmail">Email</label><input id="seedEmail" type="email" name="email" placeholder="Email *" required></div>
-      </div>
-      <label class="consent"><input type="checkbox" name="consent" required><span>I agree to receive The Saturday Seed and occasional emails from Syncovate LLC / Dr. J</span></label>
-      <button class="btn btn-gold" type="submit">Send me the Saturday Seed</button>
-    </form>
+    <!-- GHL form "Saturday Seed Sign Up Form" (first name, email, consent). If the footer on another page sent an address, it is passed to the form as ?email=. -->
+    <div class="signup">
+      <iframe id="inline-Ri9xtq1bNLmpkOKaJUj4" title="Saturday Seed Sign Up Form" style="width:100%;height:380px;border:none;border-radius:2px"
+        src="https://link.syncovatellc.com/widget/form/Ri9xtq1bNLmpkOKaJUj4"
+        data-layout="{'id':'INLINE'}" data-trigger-type="alwaysShow" data-trigger-value="" data-activation-type="alwaysActivated" data-activation-value="" data-deactivation-type="neverDeactivate" data-deactivation-value="" data-form-name="Saturday Seed Sign Up Form" data-height="380" data-layout-iframe-id="inline-Ri9xtq1bNLmpkOKaJUj4" data-form-id="Ri9xtq1bNLmpkOKaJUj4"></iframe>
+    </div>
+    <script>
+    (function(){
+      try{
+        var e=new URLSearchParams(location.search).get('email');
+        if(e){var f=document.getElementById('inline-Ri9xtq1bNLmpkOKaJUj4');f.src=f.src+'?email='+encodeURIComponent(e);}
+      }catch(x){}
+    })();
+    </script>
+    <script src="https://link.syncovatellc.com/js/form_embed.js"></script>
   </div>
 </section>
 
