@@ -174,6 +174,21 @@ h3{
   position:relative;
 }
 .signals li::before{content:"";position:absolute;left:0;top:32px;width:14px;height:1px;background:var(--sy-gold)}
+/* Hub diagram: the six signals all land on the owner. The list stays for phones. */
+.hub{margin:20px auto 0;max-width:600px}
+.hub-svg{display:block;width:100%;height:auto}
+.hub-svg .hb-line{stroke:var(--sy-gold);stroke-width:1.6;fill:none;stroke-linecap:round}
+.hub-svg .hb-arrow{fill:var(--sy-gold)}
+.hub-svg .hb-dot{fill:var(--sy-teal)}
+.hub-svg .hb-ring{fill:none;stroke:var(--sy-gold);stroke-width:1;opacity:.45}
+.hub-svg .hb-core{fill:var(--sy-charcoal)}
+.hub-svg .hb-you{font-family:var(--sy-serif);font-weight:500;font-size:32px;fill:var(--sy-cream)}
+.hub-svg .hb-label{font-family:var(--sy-serif);font-weight:500;font-size:22px;fill:var(--sy-charcoal)}
+.signals-alt{display:none}
+@media (max-width:640px){
+  .hub{display:none}
+  .signals-alt{display:block}
+}
 .problem-close{margin-top:34px;font-size:18px;line-height:1.65;color:var(--sy-charcoal);font-weight:400}
 .pull{
   margin-top:72px;padding-left:32px;border-left:2px solid var(--sy-gold);
@@ -456,7 +471,43 @@ h3{
       </div>
       <div>
         <p class="signals-lead">Here's what it tends to look like.</p>
-        <ul class="signals">
+        <figure class="hub reveal">
+          <svg class="hub-svg" viewBox="-30 56 660 400" role="img" aria-label="Six things that tend to show up as a company outgrows its founder, each pointing back to you: bigger customers and new directions, new leaders you're developing as you go, decisions that don't leave the meeting, problems between people landing on your desk, loyal people in roles they can't grow into, and strategy that lives only in your head.">
+            <defs>
+              <marker id="hbArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path class="hb-arrow" d="M0 0 L10 5 L0 10 Z"/></marker>
+            </defs>
+            <g aria-hidden="true">
+              <path class="hb-line" marker-end="url(#hbArrow)" d="M300 122 L300 184"/>
+              <path class="hb-line" marker-end="url(#hbArrow)" d="M410.9 186 L357.1 217"/>
+              <path class="hb-line" marker-end="url(#hbArrow)" d="M410.9 314 L357.1 283"/>
+              <path class="hb-line" marker-end="url(#hbArrow)" d="M300 378 L300 316"/>
+              <path class="hb-line" marker-end="url(#hbArrow)" d="M189.1 314 L242.9 283"/>
+              <path class="hb-line" marker-end="url(#hbArrow)" d="M189.1 186 L242.9 217"/>
+              <circle class="hb-dot" cx="300" cy="122" r="6"/>
+              <circle class="hb-dot" cx="410.9" cy="186" r="6"/>
+              <circle class="hb-dot" cx="410.9" cy="314" r="6"/>
+              <circle class="hb-dot" cx="300" cy="378" r="6"/>
+              <circle class="hb-dot" cx="189.1" cy="314" r="6"/>
+              <circle class="hb-dot" cx="189.1" cy="186" r="6"/>
+              <circle class="hb-ring" cx="300" cy="250" r="64"/>
+              <circle class="hb-core" cx="300" cy="250" r="56"/>
+              <text class="hb-you" x="300" y="261" text-anchor="middle">You</text>
+              <text class="hb-label" x="300" y="86" text-anchor="middle">Strategy that lives</text>
+              <text class="hb-label" x="300" y="110" text-anchor="middle">only in your head</text>
+              <text class="hb-label" x="428" y="181">Bigger customers,</text>
+              <text class="hb-label" x="428" y="205">new directions</text>
+              <text class="hb-label" x="428" y="309">Decisions that don't</text>
+              <text class="hb-label" x="428" y="333">leave the meeting</text>
+              <text class="hb-label" x="300" y="413" text-anchor="middle">Problems between</text>
+              <text class="hb-label" x="300" y="437" text-anchor="middle">people land on you</text>
+              <text class="hb-label" x="172" y="309" text-anchor="end">Loyal people in roles</text>
+              <text class="hb-label" x="172" y="333" text-anchor="end">they can't grow into</text>
+              <text class="hb-label" x="172" y="181" text-anchor="end">New leaders you're</text>
+              <text class="hb-label" x="172" y="205" text-anchor="end">developing as you go</text>
+            </g>
+          </svg>
+        </figure>
+        <ul class="signals signals-alt">
           <li>Bigger customers and new opportunities pulling the company in new directions.</li>
           <li>Good people promoted into leadership, and you're figuring out how to develop them as you go.</li>
           <li>Meetings that end with a decision, and then everyone goes back to what they were already doing.</li>
