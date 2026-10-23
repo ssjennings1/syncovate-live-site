@@ -5,7 +5,7 @@ Target Taft site: **"Syncovate LLC DRAFT"** (funnel id `uaG3AcvLc35TKkPcGT1J`). 
 "Syncovate Website" at launch; until then nothing here is public.
 
 ## 0. Before any page
-- [ ] Portrait: the connector can't upload media. At paste time the portrait path in `meet-dr-j.html` was swapped for a base64 data URI of `sandbox/assets/dr-j-porch-portrait.jpg` (the repo file is unchanged). Optional later: upload the JPG to the Taft media library and swap in the hosted URL.
+- [ ] Portraits (two): the connector can't upload media. At paste time swap the image path for a base64 data URI (repo files unchanged): in `meet-dr-j.html`, `assets/dr-j-porch-portrait.jpg`; in `index.html` (Home About section), `assets/dr-j-home-portrait.jpg`. Optional later: upload the JPGs to the Taft media library and swap in the hosted URLs.
 - [ ] Upload `sandbox/assets/favicon.svg` as the site favicon (Taft site settings → favicon). The pages reference `favicon.svg` by relative path; Taft's site-level favicon setting covers it.
 - [ ] Confirm the two product links still resolve: Single Session booking `…/widget/booking/qPTZ7uQpwZfnM4X74qqK`, Team Session payment `…/payment-link/6ac7d2c0c0e70c7fefb7355e`, Trusted Advisor payment `…/payment-link/68b849c521970953fbe18f26`.
 
@@ -16,7 +16,7 @@ Order: Home → How I Work → Workshops → Meet Dr. J → Contact → Saturday
    `/how-i-work`, `/workshops`, `/meet-dr-j`, `/contact`, `/saturday-seed` (Home is `/`).
 2. Each page is ONE custom-code element (Section > 1 Column Row > Code). Add the new Code element first (Taft refuses to save an empty page), then delete the old sections. The old global header ("Nav Bar Syncovate") and Footer are site-level and sync across pages; delete them once (each page carries its own nav and footer) and save through the "Section Changes Made / Global Sections" dialog.
 3. Paste by clipboard: in the Taft tab run `fetch('https://raw.githubusercontent.com/ssjennings1/syncovate-live-site/feat/sandbox-pages/sandbox/<page>.html')` then `navigator.clipboard.writeText(...)`. Click the Code element > Open Code Editor > cmd+a, cmd+v > Save, then save the page. (This needs the repo to be public; if it goes private, paste from a local copy instead.)
-4. Meet Dr. J only: use the data-URI portrait described in step 0.
+4. Home and Meet Dr. J only: use the data-URI portraits described in step 0.
 5. SEO: set Title and Description in Taft's SEO panel (toolbar icon, document with magnifier > Content). Head tags inside a custom-code element land in the page body and do not count. Text is in each page's `<title>` and meta description. Do not set noindex.
 6. Save, then open the Taft preview on a phone. Check: nav opens, buttons go to the booking widget, the logo shows. The Saturday Seed page embeds the real GHL form (`Saturday Seed Sign Up Form`, id `Ri9xtq1bNLmpkOKaJUj4`). The footer box on the other pages is email-only and hands the address to `/saturday-seed` as `?email=`, so there is one form and one set of automations. Until launch the footer link points at the live site's `/saturday-seed`.
 7. Tell Claude "pasted <page>"; it fetches the preview and diffs against the repo (`/check-live` logic).
