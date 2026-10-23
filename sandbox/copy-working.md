@@ -569,6 +569,6 @@ Shannon's direction: simpler, more direct, no jargon. Applied: "being heard isn'
 ## Decision 2026-10-24: Privacy page
 
 - The live site has no privacy or terms page (checked: /privacy, /privacy-policy, /terms, /terms-of-service all fall back to Home). This is new.
-- Every footer now links "Privacy" to /privacy (the five block pages in the bottom line next to the name; the Seed page in its own bottom line). The page itself is built in Taft (GHL privacy generator, or a short plain-language notice), with the global header and footer on. Terms: a short paragraph on the same page, no separate page.
-- Before launch: create /privacy in Taft; the Seed form's consent line should point there.
+- Two pages, /privacy and /terms, both linked from every footer's bottom line. Shannon wrote both (short, plain language); final text in `sandbox/legal/privacy.md` and `sandbox/legal/terms.md`, phone corrected to 269-293-4442. Built in Taft as normal text pages with the global header and footer on, not Custom Code, so the date and providers stay easy to edit. The GHL generator is not used.
+- Before launch: create both pages in Taft; the Seed form's consent line should point at /privacy. Shannon to confirm the providers list (Google, Zoom) and have someone qualified glance at the Limits paragraph.
 
