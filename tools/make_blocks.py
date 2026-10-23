@@ -40,8 +40,8 @@ ISOLATE = (
     ".sy-block ul,.sy-block ol{list-style:none}\n"
 )
 
-CHROME_SEL = re.compile(r"^(\.nav|\.brand|\.footer|\.seed-form|\.seed-name|\.seed\b|\.sr\b|\.seed-top|\.back)")
-HEADER_KEEP = re.compile(r"^(:root|\.wrap|\.btn|\.nav|\.brand|\.footer|\.seed-form|\.seed-name|\.seed\b|\.sr\b)")
+CHROME_SEL = re.compile(r"^(\.nav|\.brand|\.footer|\.seed-form|\.seed-name|\.seed(?![\w-])|\.sr\b|\.seed-top|\.seed-foot|\.back)")
+HEADER_KEEP = re.compile(r"^(:root|\.wrap|\.btn|\.nav|\.brand|\.footer|\.seed-form|\.seed-name|\.seed(?![\w-])|\.sr\b)")
 
 
 def split_rules(text):
@@ -100,7 +100,7 @@ def build(rules, keep):
 
 
 def page_css(src):
-    return re.search(r"<style>(.*?)</style>", src, re.S).group(1)
+    return "\n".join(re.findall(r"<style>(.*?)</style>", src, re.S))
 
 
 def write(path, text):
