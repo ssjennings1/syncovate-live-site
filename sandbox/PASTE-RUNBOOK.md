@@ -4,6 +4,18 @@ The new site lives in `sandbox/`. Taft is the source of truth once pasted. Git i
 Target Taft site: **"Syncovate LLC DRAFT"** (funnel id `uaG3AcvLc35TKkPcGT1J`). It replaces the live
 "Syncovate Website" at launch; until then nothing here is public.
 
+## NEW PROCESS (2026-10-24): header block + page middle + footer block
+Every page except Saturday Seed and Field Notes is now three Custom Code elements: the shared header block (Taft's GLOBAL header), that page's middle, and the shared footer block (Taft's GLOBAL footer). Sources: `sandbox/blocks/header-block.html`, `sandbox/blocks/footer-block.html`, `sandbox/middles/<page>.html` (see `sandbox/blocks/README.md`; regenerate with `python3 -I tools/make_blocks.py`).
+
+1. Global header: replace the existing "Nav Bar Syncovate" section content with ONE Custom Code element holding the header block.
+2. Global footer: same, with the footer block.
+3. Each page (Home, How I Work, Workshops, Meet Dr. J, Contact): its Custom Code element now holds the page MIDDLE only (no menu, no footer). The old full-page code is replaced, or the page would show two menus.
+4. Saturday Seed keeps its own header and footer. Turn the global header and footer OFF for that page (page-level setting) and leave its code as it is.
+5. Home and Meet Dr. J: swap the image path for a data URI or a Taft media-library link (Home `assets/dr-j-home-portrait.jpg`, Meet `assets/dr-j-porch-portrait.jpg`).
+6. SEO titles and descriptions stay in Taft's SEO panel. Contact embeds the Taft form "Drop us a message" (`ZF0441qk1h4lSpjDf9dH`).
+
+The per-page steps below describe the older full-page paste and are kept for reference (Saturday Seed still follows them).
+
 ## 0. Before any page
 - [ ] Portraits (two): the connector can't upload media. At paste time swap the image path for a base64 data URI (repo files unchanged): in `meet-dr-j.html`, `assets/dr-j-porch-portrait.jpg`; in `index.html` (Home About section), `assets/dr-j-home-portrait.jpg`. Optional later: upload the JPGs to the Taft media library and swap in the hosted URLs.
 - [ ] Upload `sandbox/assets/favicon.svg` as the site favicon (Taft site settings → favicon). The pages reference `favicon.svg` by relative path; Taft's site-level favicon setting covers it.
