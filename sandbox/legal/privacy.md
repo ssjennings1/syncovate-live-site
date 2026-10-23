@@ -1,6 +1,6 @@
 # Privacy Policy
 
-Syncovate LLC, last updated [date]
+Syncovate LLC, last updated October 23, 2026
 
 **What we collect.** The contact and business information you give us (name, email, phone, company), messages and notes from our work together, payment confirmations (Stripe handles card details), and basic website activity through cookies.
 

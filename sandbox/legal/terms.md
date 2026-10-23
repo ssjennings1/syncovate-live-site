@@ -1,6 +1,6 @@
 # Terms of Service
 
-Syncovate LLC, last updated [date]
+Syncovate LLC, last updated October 23, 2026
 
 By using this website or working with Syncovate LLC, you agree to these terms. If you sign a separate agreement with us, that agreement controls wherever it differs.
 
