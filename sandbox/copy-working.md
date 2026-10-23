@@ -561,3 +561,8 @@ Shannon's direction: simpler, more direct, no jargon. Applied: "being heard isn'
 - Optional later: a "What's this about?" dropdown (Working together / Speaking or workshop / Something else) to route the follow-up.
 - Site builds in Taft from a BLANK site ("Syncovate 2026"), not by gutting the DRAFT site. Saturday Seed stays in the same site at /saturday-seed with the global header and footer turned off for that page.
 
+## Parked for after launch (next week)
+
+- Contact form: add a "What's this about?" dropdown and route the follow-up by answer.
+- Diagrams of Shannon's models, so visitors can see what she does. Candidates already on the list: the No Man's Land / two-curve graphic for Home ("Hard to see from the inside"). Build as inline SVG in the page so the words stay live and the colors stay exact; the career-timeline attempts (branch `style/meet-timeline`, the funnel) showed that a graphic has to explain a model, not retell a biography.
+
