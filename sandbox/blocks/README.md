@@ -1,6 +1,6 @@
 # Header and footer blocks, plus a middle for every page
 
-Every page except Field Notes is built the same way:
+Every page except Field Notes and Saturday Seed is built the same way (Saturday Seed stays a standalone page with its own light header and footer, so it keeps its full-page file `sandbox/saturday-seed.html`):
 
     [ header block ]   one Custom Code element, in Taft's GLOBAL header
     [ page middle  ]   one Custom Code element on each page (sandbox/middles/<page>.html)
@@ -11,7 +11,7 @@ Change the menu or the footer once (in the two global blocks) and every page pic
 ## Files
 - `sandbox/blocks/header-block.html` — menu, logo, Let's Talk button, mobile menu script. Marks the current page in the menu automatically.
 - `sandbox/blocks/footer-block.html` — Saturday Seed email band, logo, link columns, copyright.
-- `sandbox/middles/index.html` (Home), `how-i-work.html`, `workshops.html`, `meet-dr-j.html`, `contact.html`, `saturday-seed.html`.
+- `sandbox/middles/index.html` (Home), `how-i-work.html`, `workshops.html`, `meet-dr-j.html`, `contact.html`.
 
 All of them are generated from the finished pages by `python3 -I tools/make_blocks.py`. Edit the page in `sandbox/`, re-run the script, and re-paste the block or middle that changed. Do not edit the generated files by hand.
 
@@ -19,7 +19,6 @@ All of them are generated from the finished pages by `python3 -I tools/make_bloc
 Every style is scoped under `.sy-block`, and each block resets the element styles around it, so nothing leaks into (or out of) the rest of the Taft page. Tested against a page with deliberately hostile global CSS. Header + middle + footer reassemble to within 0.1% of the original full pages (pixel comparison, desktop).
 
 ## Notes
-- The footer's Saturday Seed email band also shows on the Saturday Seed page itself, next to its own form. Harmless, but it can be hidden on that page if you prefer.
 - The Contact middle embeds the Taft form "Drop us a message" (id `ZF0441qk1h4lSpjDf9dH`). Fields, notifications and bot protection are set in Taft's form builder.
 - Page titles and descriptions are set in Taft's SEO panel for each page (head tags inside a Custom Code element do not count).
 - The header is `position: sticky`; in Taft's header section, turn on the section's own "sticky" setting if you want it to stay at the top while scrolling.

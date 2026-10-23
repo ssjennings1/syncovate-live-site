@@ -18,7 +18,8 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent / "sandbox"
-PAGES = ["index", "how-i-work", "workshops", "meet-dr-j", "contact", "saturday-seed"]
+# saturday-seed stays a standalone page with its own light header and footer (decided), so it has no middle.
+PAGES = ["index", "how-i-work", "workshops", "meet-dr-j", "contact"]
 
 FONTS = (
     '<link rel="preconnect" href="https://fonts.googleapis.com">\n'
