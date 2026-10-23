@@ -9,10 +9,10 @@ Every page except Saturday Seed and Field Notes is now three Custom Code element
 
 1. Global header: replace the existing "Nav Bar Syncovate" section content with ONE Custom Code element holding the header block.
 2. Global footer: same, with the footer block.
-3. Each page (Home, How I Work, Workshops, Meet Dr. J, Contact): its Custom Code element now holds the page MIDDLE only (no menu, no footer). The old full-page code is replaced, or the page would show two menus.
+3. Each page (Home, How I Work, Workshops, Meet Dr. J): its Custom Code element now holds the page MIDDLE only (no menu, no footer). The old full-page code is replaced, or the page would show two menus. Contact is three Custom Code elements in this order: `contact-1-intro`, `contact-2-form` (the card that holds only the Taft form; or use a native Taft form element here instead), `contact-3-details`.
 4. Saturday Seed keeps its own header and footer. Turn the global header and footer OFF for that page (page-level setting) and leave its code as it is.
 5. Home and Meet Dr. J: swap the image path for a data URI or a Taft media-library link (Home `assets/dr-j-home-portrait.jpg`, Meet `assets/dr-j-porch-portrait.jpg`).
-6. SEO titles and descriptions stay in Taft's SEO panel. Contact embeds the Taft form "Drop us a message" (`ZF0441qk1h4lSpjDf9dH`).
+6. SEO titles and descriptions stay in Taft's SEO panel. The Contact form block embeds the Taft form "Drop us a message" (`ZF0441qk1h4lSpjDf9dH`).
 
 The per-page steps below describe the older full-page paste and are kept for reference (Saturday Seed still follows them).
 
