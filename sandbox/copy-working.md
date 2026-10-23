@@ -531,3 +531,6 @@ Every seed ends the same way: hit reply and tell me what came up. I read every o
 - Lines Shannon wrote: "The fight didn't go away, but it stopped being everything." "I don't know how to *not* apply that kind of thinking" (inline italic, not a callout). "(he still calls me Star, which is always a little awkward)".
 - feat/meet-dr-j-draft is merged here; the remote branch can be deleted.
 
+
+### How I Work — plain-language pass (2026-10-23)
+Shannon's direction: simpler, more direct, no jargon. Applied: "being heard isn't enough" (not "door, not destination"); homework/assessments line cut; Trusted Advisor is for leaders driving a change and living through it at the same time; On-Call says "extended hours"; facilitation is "a simple, straightforward place to start"; Team Session is "A 90-minute session on leadership: communication, blind spots, assumptions, working better together…" ("blind spots" stays); Workshops line is "Training for your managers, built around your company"; Strategy sessions "builds the answer together"; "whatever your team needs" (say "the room" less; the snacks line keeps it).
