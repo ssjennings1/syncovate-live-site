@@ -542,3 +542,14 @@ Shannon's direction: simpler, more direct, no jargon. Applied: "being heard isn'
 - Deep bronze text `#8C613A` and deep teal text `#337280` replace `#9E6D41` and `#3F8C9D`; all text on all six pages passes 4.5:1 (automated check, desktop).
 - Muted text on dark sections lightened; footer placeholder lightened.
 - 2026-10-23 consistency pass: Home closing paragraph shortened to two sentences (longer version stays on Contact); Trusted Advisor bullet reads "Text me between sessions"; Workshops nonprofit board line says "governing it" to match How I Work.
+
+## Decisions 2026-10-23: design pass and copy fixes (all merged to feat/sandbox-pages)
+
+- Design merged: Home portrait (tight crop of the cardigan photo, `assets/dr-j-home-portrait.jpg`) in the About section; wider headlines and a centered hero glow (Home, How I Work, Workshops); body text weight 400; testimonial names pinned to card bottoms; larger credentials strip (Home); Meet Dr. J heading-left layout, pulled "The fight didn't go away…" line, white credential cards; How I Work hero quote card, three tiers in one row (Single Session, Trusted Advisor featured, On-Call) with larger prices, split-column sections; accessibility pass (see CLAUDE.md).
+- Copy merged: Home Advising card "a single session or someone in your corner for the long haul"; Meet Dr. J "I come in when what's stuck was built by good people…" (dropped "Nobody did anything wrong"), "kid said at breakfast or a podcast", "a stuck decision moving"; Contact "the kind of website"; Workshops "Most strategy fails in the follow-through, not the plan…" and "governing it"; Saturday Seed fragments cut; Trusted Advisor bullet "Text me between sessions"; Home closing shortened.
+- Kept as is on purpose: "second-stage companies" (Workshops keynote line); Trusted Advisor card line under "standing partner"; the two "coffee" lines on the Seed page.
+- Current therapy practice stays OFF the site. Meet Dr. J describes therapy only as the early chapter ("close to a decade").
+- Career timeline concept parked (branch `style/meet-timeline`, not merged). Replaced by a funnel of the three credential cards (branch `style/meet-funnel`, awaiting Shannon's OK).
+- Still to do before the Taft re-paste: Workshops, Contact and Saturday Seed design review; phone check of every page; re-paste from the final commit.
+- Facts still to verify by Shannon: APA Council term (2025-2027), Pixel Perspectives+ 360 certification, "post most weeks" on LinkedIn.
+
