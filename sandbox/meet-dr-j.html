@@ -473,6 +473,20 @@ h3{
   .prose>h2{position:static;margin-bottom:24px}
   .prose .beats li{grid-template-columns:1fr}
 }
+
+/* ---------- Funnel: the three ingredients come together ---------- */
+.funnel{text-align:center;margin-top:-1px}
+.funnel-svg{display:block;width:100%;height:auto}
+.funnel-svg .fn-body{fill:url(#fnlFill)}
+.funnel-svg .fn-in{fill:none;stroke:var(--sy-gold);stroke-width:2.5;stroke-linecap:round}
+.funnel-svg .fn-out{fill:none;stroke:var(--sy-teal);stroke-width:3.5;stroke-linecap:round}
+.funnel-svg .fn-head{fill:var(--sy-teal)}
+.funnel-out{font-family:var(--sy-serif);font-weight:500;font-size:clamp(24px,2.6vw,30px);line-height:1.25;color:var(--sy-charcoal);margin:10px auto 0;max-width:none}
+@media (max-width:1024px){
+  .funnel-svg{display:none}
+  .funnel{padding-top:8px}
+  .funnel::before{content:"";display:block;width:3px;height:52px;background:var(--sy-teal);margin:0 auto 16px;border-radius:2px}
+}
 </style>
 </head>
 <body>
@@ -560,6 +574,18 @@ h3{
       <div class="rec"><b>Business</b><span>Edward Lowe Foundation, five years designing and facilitating peer retreats for entrepreneurs and leadership teams</span><span>200+ retreats and working sessions across trades, manufacturing, family business, nonprofit, healthcare, and professional services</span></div>
       <div class="rec"><b>Systems</b><span>Fellow, Strategic Doing Institute, a peer-selected fellowship in a method for moving groups through complex, tangled problems</span></div>
     </div>
+  </div>
+  <div class="wrap funnel reveal">
+    <svg class="funnel-svg" viewBox="0 0 1056 214" aria-hidden="true" focusable="false">
+      <defs><linearGradient id="fnlFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#BF8756" stop-opacity="0.16"/><stop offset="1" stop-color="#56ADBF" stop-opacity="0.2"/></linearGradient></defs>
+      <path class="fn-body" d="M40 0 C40 84 486 70 514 152 H542 C570 70 1016 84 1016 0 Z"/>
+      <path class="fn-in" d="M168 0 C168 92 528 74 528 152"/>
+      <path class="fn-in" d="M528 0 V152"/>
+      <path class="fn-in" d="M888 0 C888 92 528 74 528 152"/>
+      <path class="fn-out" d="M528 152 V196"/>
+      <path class="fn-head" d="M516 192 L528 214 L540 192 Z"/>
+    </svg>
+    <p class="funnel-out">Twenty years with owners and leadership teams</p>
   </div>
 </section>
 
