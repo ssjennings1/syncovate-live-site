@@ -69,7 +69,9 @@ Meet Dr. J → /meet-dr-j · Contact → /contact · LinkedIn → https://www.li
 
 ### Hero
 
-# Everything runs through you. That's how you built it. It's also what's holding it back.
+# Everything runs through you. It built a great company. Now it's what's slowing you down.
+
+(2026-10-23: replaces "That's how you built it. It's also what's holding it back." Home also got: cut "your" from "people", cut "because you were in all of it", list lead-in now "Here's what it tends to look like from the inside.", new list item on strategy living in your head, card and closing-line trims.)
 
 Together we get clear on what's going on, in the business and in how you lead it, and you leave with ideas and tools you can put into play right away.
 
