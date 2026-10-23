@@ -26,9 +26,9 @@
    ============================================================ */
 :root{
   --sy-gold:      #BF8756;
-  --sy-gold-deep: #9E6D41;
+  --sy-gold-deep: #8C613A;
   --sy-teal:      #56ADBF;
-  --sy-teal-deep: #3F8C9D;
+  --sy-teal-deep: #337280;
   --sy-charcoal:  #252830;
   --sy-charcoal2: #3D4148;
   --sy-cream:     #FAF8F5;
@@ -429,6 +429,13 @@ h3{
 .brand svg{display:block;height:20px;width:auto}
 .footer .brand svg{height:52px}
 @media (max-width:640px){.brand svg{height:17px}.footer .brand svg{height:44px}}
+
+/* ---------- Accessibility pass: text contrast 4.5:1 or better ---------- */
+.btn-gold,.badge{color:var(--sy-charcoal)}
+.btn-gold:hover{background:#D4A574;border-color:#D4A574;color:var(--sy-charcoal)}
+.hero .micro,.hero .heroq,.close .contact,.close .where{color:rgba(250,248,245,0.8)}
+.close .contact a{color:var(--sy-teal)}
+.footer .seed-form input::placeholder{color:rgba(250,248,245,0.65)}
 </style>
 </head>
 <body>

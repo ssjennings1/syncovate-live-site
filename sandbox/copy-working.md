@@ -534,3 +534,10 @@ Every seed ends the same way: hit reply and tell me what came up. I read every o
 
 ### How I Work — plain-language pass (2026-10-23)
 Shannon's direction: simpler, more direct, no jargon. Applied: "being heard isn't enough" (not "door, not destination"); homework/assessments line cut; Trusted Advisor is for leaders driving a change and living through it at the same time; On-Call says "extended hours"; facilitation is "a simple, straightforward place to start"; Team Session is "A 90-minute session on leadership: communication, blind spots, assumptions, working better together…" ("blind spots" stays); Workshops line is "Training for your managers, built around your company"; Strategy sessions "builds the answer together"; "whatever your team needs" (say "the room" less; the snacks line keeps it).
+
+
+## Decision 2026-10-23: solid accessibility
+
+- Primary buttons use charcoal text on bronze (was white, 3.1:1; now 4.8:1). Hover is a lighter bronze `#D4A574`.
+- Deep bronze text `#8C613A` and deep teal text `#337280` replace `#9E6D41` and `#3F8C9D`; all text on all six pages passes 4.5:1 (automated check, desktop).
+- Muted text on dark sections lightened; footer placeholder lightened.
