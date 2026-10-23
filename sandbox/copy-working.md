@@ -553,3 +553,11 @@ Shannon's direction: simpler, more direct, no jargon. Applied: "being heard isn'
 - Still to do before the Taft re-paste: Workshops, Contact and Saturday Seed design review; phone check of every page; re-paste from the final commit.
 - Facts still to verify by Shannon: APA Council term (2025-2027), Pixel Perspectives+ 360 certification, "post most weeks" on LinkedIn.
 
+## Decision 2026-10-24: Contact form "Drop us a message"
+
+- Contact is three blocks: intro, the Taft form (id `ZF0441qk1h4lSpjDf9dH`, bot protection on), details (phone, LinkedIn, location). Email address is no longer on the page.
+- On-submit message (set in the form builder, shown in place, no redirect): **"Thanks, your message is in."**
+- No promise to read every message personally; the form catches vendors and requests too, not only leads. No auto-created opportunity. Workflow: notify Shannon with the message text, tag `website-contact`, task to triage. Shannon decides which become opportunities.
+- Optional later: a "What's this about?" dropdown (Working together / Speaking or workshop / Something else) to route the follow-up.
+- Site builds in Taft from a BLANK site ("Syncovate 2026"), not by gutting the DRAFT site. Saturday Seed stays in the same site at /saturday-seed with the global header and footer turned off for that page.
+
