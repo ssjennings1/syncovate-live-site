@@ -566,3 +566,9 @@ Shannon's direction: simpler, more direct, no jargon. Applied: "being heard isn'
 - Contact form: add a "What's this about?" dropdown and route the follow-up by answer.
 - Diagrams of Shannon's models, so visitors can see what she does. Candidates already on the list: the No Man's Land / two-curve graphic for Home ("Hard to see from the inside"). Build as inline SVG in the page so the words stay live and the colors stay exact; the career-timeline attempts (branch `style/meet-timeline`, the funnel) showed that a graphic has to explain a model, not retell a biography.
 
+## Decision 2026-10-24: Privacy page
+
+- The live site has no privacy or terms page (checked: /privacy, /privacy-policy, /terms, /terms-of-service all fall back to Home). This is new.
+- Every footer now links "Privacy" to /privacy (the five block pages in the bottom line next to the name; the Seed page in its own bottom line). The page itself is built in Taft (GHL privacy generator, or a short plain-language notice), with the global header and footer on. Terms: a short paragraph on the same page, no separate page.
+- Before launch: create /privacy in Taft; the Seed form's consent line should point there.
+
