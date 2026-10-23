@@ -477,6 +477,43 @@ h3{
 .hero .micro,.hero .heroq,.close .contact,.close .where{color:rgba(250,248,245,0.8)}
 .close .contact a{color:var(--sy-teal)}
 .footer .seed-form input::placeholder{color:rgba(250,248,245,0.65)}
+
+/* ---------- Layout pass: hero quote card, three tiers, split sections ---------- */
+@media (min-width:861px){
+  .open .wrap{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,0.75fr);column-gap:80px;align-items:start}
+  .open .wrap>*{grid-column:1}
+  .open .wrap>blockquote{grid-column:2;grid-row:1 / span 4;align-self:center}
+  .open .display{max-width:none}
+}
+.open blockquote{background:#fff;border:1px solid var(--sy-rule);border-top:3px solid var(--sy-gold);border-radius:2px;box-shadow:0 12px 36px rgba(37,40,48,0.07);padding:38px 34px 32px;font-size:24px;max-width:none;margin:0}
+.open blockquote cite{margin-top:20px;padding-top:16px;border-top:1px solid var(--sy-rule)}
+.tiers{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;align-items:stretch}
+.tiers .offer{display:flex;flex-direction:column;padding:34px 28px 30px}
+.tiers .offer.featured{grid-column:auto;border:2px solid var(--sy-gold);box-shadow:0 16px 44px rgba(37,40,48,0.12)}
+.tiers .offer .price-row{display:block}
+.tiers .offer .price{display:block;margin-top:8px;margin-bottom:6px;font-size:46px}
+.offer .price{font-size:36px;line-height:1.1}
+.offer .actions{margin-top:auto;padding-top:26px}
+.cols12{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;align-items:start}
+.cols12>*{grid-column:1 / -1}
+.cols12>h2{grid-column:1 / 5;grid-row:1;margin-bottom:0;font-size:clamp(30px,3vw,40px)}
+.cols12>h2+p{grid-column:5 / 13;grid-row:1}
+.advisory .hiring{grid-column:5 / 13;margin-top:32px}
+.advisory .quotes{margin-top:48px}
+.team>.offer{grid-column:1 / 7;grid-row:2 / span 2;margin:48px 0 0}
+.team>.grow-lead{grid-column:7 / 13;grid-row:2;margin-top:48px}
+.team>.grow{grid-column:7 / 13;grid-row:3;margin-top:16px}
+.team .grow li{grid-template-columns:140px 1fr;gap:20px}
+.team>.looked{margin-top:64px;max-width:none}
+@media (max-width:860px){
+  .cols12{display:block}
+  .cols12>h2{margin-bottom:22px}
+  .tiers{grid-template-columns:1fr}
+  .tiers .offer.featured{order:-1}
+  .team>.offer{margin:36px 0 0}
+  .team>.grow-lead{margin-top:36px}
+  .team .grow li{grid-template-columns:1fr;gap:8px}
+}
 </style>
 </head>
 <body>
@@ -518,11 +555,25 @@ h3{
 
 <!-- ============ WORK WITH ME DIRECTLY ============ -->
 <section class="section section-tint" id="advisory">
-  <div class="wrap">
+  <div class="wrap cols12 advisory">
     <h2 class="reveal">Work with me directly.</h2>
     <p class="reveal">Some leaders want a standing partner, somebody in their corner between the big moments. You text me when something comes up (a conversation that went sideways, a hire you're on the fence about, a family issue that is bleeding into the business), and we either work it in real time or hold it for our next session. We work on the thing that matters right now.</p>
 
     <div class="tiers reveal">
+      <div class="offer">
+        <div class="price-row">
+          <h3>Single Session</h3>
+          <span class="price">$750</span>
+        </div>
+        <p>For when something is pressing and you need to think it through with somebody who gets it. One 90-minute session, a written summary with your next steps, and no commitment beyond that.</p>
+        <p class="good">Good for: a stuck decision, a hard conversation you're dreading, or simply finding out what it's like to work with me.</p>
+        <div class="actions">
+          <a class="btn btn-gold" href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo">Talk First</a>
+          <!-- Single Session booking link (Taft calendar) -->
+          <a class="btn btn-line" href="https://link.syncovatellc.com/widget/booking/qPTZ7uQpwZfnM4X74qqK">Book It</a>
+        </div>
+      </div>
+
       <div class="offer featured">
         <span class="badge">Most Popular</span>
         <div class="price-row">
@@ -545,20 +596,6 @@ h3{
 
       <div class="offer">
         <div class="price-row">
-          <h3>Single Session</h3>
-          <span class="price">$750</span>
-        </div>
-        <p>For when something is pressing and you need to think it through with somebody who gets it. One 90-minute session, a written summary with your next steps, and no commitment beyond that.</p>
-        <p class="good">Good for: a stuck decision, a hard conversation you're dreading, or simply finding out what it's like to work with me.</p>
-        <div class="actions">
-          <a class="btn btn-gold" href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo">Talk First</a>
-          <!-- Single Session booking link (Taft calendar) -->
-          <a class="btn btn-line" href="https://link.syncovatellc.com/widget/booking/qPTZ7uQpwZfnM4X74qqK">Book It</a>
-        </div>
-      </div>
-
-      <div class="offer">
-        <div class="price-row">
           <h3>On-Call Advisor</h3>
           <span class="price">$3,000<small>/ month</small></span>
         </div>
@@ -569,8 +606,8 @@ h3{
         </div>
       </div>
     </div>
-    <p class="reveal" style="margin-top:32px">Hiring me for someone on your team or in your family? We'll scope that together on the first call. And if that someone is you, reading this because the owner sent you, welcome. This is what the work looks like, and nobody here is going to talk down to you.</p>
-    <div class="quotes reveal" style="margin-top:48px">
+    <p class="reveal hiring">Hiring me for someone on your team or in your family? We'll scope that together on the first call. And if that someone is you, reading this because the owner sent you, welcome. This is what the work looks like, and nobody here is going to talk down to you.</p>
+    <div class="quotes reveal">
       <div class="quote">
         <p>"Dr. J is the right fit if you built your leadership through doing, not through an MBA. She never talked down to me or assumed I didn't know things. Spearheading a startup business is difficult — Dr. J helped me develop a thought process that effectively and accurately rectifies situations before they become larger issues. I came away with tools that changed how I show up and strengthened my communication style with my partners and team."</p>
         <cite><b>Josh DeMeulenaere</b>VP Electrical Services, K2 Power Solutions</cite>
@@ -591,7 +628,7 @@ h3{
 
 <!-- ============ BRING ME IN FOR YOUR TEAM ============ -->
 <section class="section" id="team">
-  <div class="wrap">
+  <div class="wrap cols12 team">
     <h2 class="reveal">Bring me in for your team.</h2>
     <p class="reveal">When a leadership team stops being honest with each other, it costs you in ways that never show up on a report: decisions that stall, good people who go quiet, the same meeting over and over again. Facilitation is my favorite part of this work, and it's a simple, straightforward place to start. You provide the room and the snacks. I bring a session I've run many, many times, your people leave with something they can use on Monday, and you get a real feel for how I work before anybody commits to anything bigger.</p>
 
@@ -610,7 +647,7 @@ h3{
       </div>
     </div>
 
-    <p class="reveal">From there, it grows into whatever your team needs.</p>
+    <p class="reveal grow-lead">From there, it grows into whatever your team needs.</p>
     <ul class="grow reveal">
       <li><b>Workshops</b><span>Training for your managers, built around your company, not a generic audience.</span></li>
       <li><b>Retreats</b><span>Where the conversations that have been circling for months finally land, and the group leaves with tools instead of just a nice experience.</span></li>
