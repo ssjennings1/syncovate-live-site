@@ -541,3 +541,4 @@ Shannon's direction: simpler, more direct, no jargon. Applied: "being heard isn'
 - Primary buttons use charcoal text on bronze (was white, 3.1:1; now 4.8:1). Hover is a lighter bronze `#D4A574`.
 - Deep bronze text `#8C613A` and deep teal text `#337280` replace `#9E6D41` and `#3F8C9D`; all text on all six pages passes 4.5:1 (automated check, desktop).
 - Muted text on dark sections lightened; footer placeholder lightened.
+- 2026-10-23 consistency pass: Home closing paragraph shortened to two sentences (longer version stays on Contact); Trusted Advisor bullet reads "Text me between sessions"; Workshops nonprofit board line says "governing it" to match How I Work.
