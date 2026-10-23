@@ -91,6 +91,8 @@ Not in the repo (live in Taft, intentionally):
 
 > **Decision (2026-10-08): leave `574-532-3178` on the current live site for now.** When the new site replaces it, use `269-293-4442`, the number connected to the CRM. The sandbox already uses it. The repo copies match live on purpose.
 
+> **Decision (2026-10-23): solid accessibility.** The sandbox pages use text-safe companions to the brand colors so every piece of text meets 4.5:1 contrast: deep bronze `#8C613A` (italic accents and small labels on light backgrounds), deep teal `#337280` (links on light backgrounds), bright teal `#56ADBF` for links on charcoal, and **charcoal text on bronze buttons** (hover `#D4A574`). Bronze and teal themselves stay the accent, button, line and glow colors. Also in use: body ink `#33363E`, muted `#5E626A`, footer `#1C1E25`. Re-run the contrast audit after any color change.
+
 ### Typography
 
 | Role | Font | Notes |
