@@ -402,6 +402,38 @@ h3{
 .hero .micro,.hero .heroq,.close .contact,.close .where{color:rgba(250,248,245,0.8)}
 .close .contact a{color:var(--sy-teal)}
 .footer .seed-form input::placeholder{color:rgba(250,248,245,0.65)}
+
+/* ---------- Soft pass: light, airy, arched card ---------- */
+.contact-hero{position:relative;overflow:hidden;padding:120px 0 112px;background:var(--sy-cream)}
+.contact-hero::before{content:"";position:absolute;width:820px;height:820px;right:-200px;top:-260px;background:radial-gradient(circle,rgba(191,135,86,0.24) 0%,rgba(191,135,86,0.08) 45%,transparent 68%);pointer-events:none}
+.contact-hero::after{content:"";position:absolute;width:700px;height:700px;left:-260px;bottom:-340px;background:radial-gradient(circle,rgba(86,173,191,0.2) 0%,rgba(86,173,191,0.06) 48%,transparent 68%);pointer-events:none}
+.contact-hero .wrap{position:relative;z-index:1}
+.contact-hero .overline{color:var(--sy-gold-deep);letter-spacing:0.16em;text-transform:uppercase;font-size:12.5px}
+.contact-hero h2{font-size:clamp(56px,6.4vw,92px);line-height:1.02;color:var(--sy-charcoal);margin-bottom:0;max-width:none}
+.contact-hero h2 em{color:var(--sy-gold-deep)}
+.contact-hero .lede{margin:28px 0 40px;max-width:540px;color:var(--sy-charcoal2)}
+.contact-hero .btn{border-radius:999px;padding:17px 32px}
+.contact-hero .btn-line{border-color:var(--sy-gold-deep);color:var(--sy-gold-deep)}
+.contact-hero .btn-line:hover{background:rgba(191,135,86,0.1);border-color:var(--sy-gold-deep);color:var(--sy-gold-deep)}
+.c-card{text-align:center;background:rgba(255,255,255,0.78);border:1px solid rgba(191,135,86,0.32);border-radius:260px 260px 26px 26px;padding:0 44px 36px;box-shadow:0 30px 70px rgba(140,97,58,0.16)}
+.c-card .sprig{display:block;width:84px;height:auto;margin:48px auto 10px}
+.c-card .sprig .stem{fill:none;stroke:var(--sy-gold);stroke-width:2;stroke-linecap:round}
+.c-card .sprig .leaf path{fill:rgba(191,135,86,0.2);stroke:var(--sy-gold);stroke-width:1.6;stroke-linejoin:round}
+.c-card .ways-contact{margin:0;border-top:0}
+.c-card .ways-contact li{grid-template-columns:1fr;gap:4px;padding:22px 0;border-bottom:1px solid rgba(191,135,86,0.28)}
+.c-card .ways-contact li:last-child{border-bottom:0;padding-bottom:10px}
+.c-card .ways-contact b{font-family:var(--sy-serif);font-style:italic;font-weight:500;font-size:24px;color:var(--sy-gold-deep)}
+.c-card .ways-contact a{font-size:21px;font-weight:500}
+.c-card .ways-contact p{font-size:16px;line-height:1.6;margin:0 auto}
+.c-card .where{margin:6px auto 0;padding-top:22px;border-top:1px solid rgba(191,135,86,0.28);font-size:15px;line-height:1.6;color:var(--sy-ink-soft);max-width:none}
+@media (min-width:861px){
+  .contact-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,0.9fr);column-gap:80px;align-items:center}
+}
+@media (max-width:860px){
+  .contact-hero{padding:88px 0 72px}
+  .c-card{margin-top:52px;padding:0 24px 28px;border-radius:180px 180px 22px 22px}
+  .c-card .sprig{margin-top:40px}
+}
 </style>
 </head>
 <body>
@@ -429,25 +461,28 @@ h3{
 <main>
 
 <section class="contact-hero">
-  <div class="wrap">
+  <div class="wrap contact-grid">
+    <div class="c-main">
     <h1 class="overline">Contact</h1>
-    <h2>Let's talk.</h2>
+    <h2>Let's <em>talk.</em></h2>
     <p class="lede">You can't really get to know me from a website, and I'd rather not write the kind of website anybody would have to wade through. So let's sit down, coffee if you're local or a call if you're not. Tell me what's going on, and I'll tell you honestly whether I can help. If I can't, I'll help you find someone who can, or at least get you clearer on what you need and how to ask for it.</p>
     <div class="cta-row">
   <a class="btn btn-gold" href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo">Book a 15-Minute Call</a>
   <a class="btn btn-line" href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo">Grab Coffee in Michiana</a>
 </div>
-  </div>
-</section>
-
-<section class="section section-tint" style="padding-top:72px">
-  <div class="wrap">
-    <ul class="ways-contact reveal">
+    </div>
+    <div class="c-card reveal">
+      <svg class="sprig" viewBox="0 0 120 170" aria-hidden="true" focusable="false">
+        <path class="stem" d="M60 166 C58 128 66 92 60 20"/>
+        <g class="leaf"><path d="M59 140 C40 142 26 132 20 116 C38 112 54 122 59 140Z"/><path d="M60 120 C80 122 94 112 100 96 C82 92 66 102 60 120Z"/><path d="M59 98 C42 100 30 90 25 76 C40 72 54 82 59 98Z"/><path d="M61 76 C78 78 90 68 95 54 C80 51 66 60 61 76Z"/><path d="M60 54 C48 54 40 46 37 36 C48 34 58 42 60 54Z"/><path d="M61 32 C70 24 74 14 72 6 C64 10 60 20 61 32Z"/></g>
+      </svg>
+    <ul class="ways-contact">
       <li><b>Email</b><p><a href="mailto:Shannon@SyncovateLLC.com">Shannon@SyncovateLLC.com</a>. Send a few times that work and we'll find a spot.</p></li>
       <li><b>Phone</b><p><a href="tel:2692934442">269-293-4442</a>. If I don't pick up, I'm in a room with someone. Leave a message and I'll call back.</p></li>
       <li><b>LinkedIn</b><p><a href="https://www.linkedin.com/in/shannonsjennings/">Shannon Jennings</a>, where I post most weeks.</p></li>
     </ul>
-    <p class="where reveal">Syncovate LLC is based in Niles, Michigan. I'm in rooms across the South Bend–Elkhart region, Kalamazoo to Fort Wayne, regularly, and I work virtually with owners across the country.</p>
+    <p class="where">Syncovate LLC is based in Niles, Michigan. I'm in rooms across the South Bend–Elkhart region, Kalamazoo to Fort Wayne, regularly, and I work virtually with owners across the country.</p>
+    </div>
   </div>
 </section>
 </main>
