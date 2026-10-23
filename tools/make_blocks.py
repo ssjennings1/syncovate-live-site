@@ -96,8 +96,16 @@ def build(rules, keep):
             parts = [p.strip() for p in sel.split(",")]
             kept = [p for p in parts if keep(p)]
             if kept:
+                if any(p in ("html", "body") for p in kept):
+                    # The page's body rule becomes a .sy-block rule, and every block on a Taft page shares that
+                    # class. overflow-x:hidden there turns each block into a clip box, which cuts off the header's
+                    # open mobile menu. The Taft page body is not ours to clip, so the declaration is dropped.
+                    body = OVERFLOW_X_RE.sub("", body)
                 out.append(",".join(prefix(p) for p in kept) + "{" + body.strip() + "}")
     return "\n".join(out)
+
+
+OVERFLOW_X_RE = re.compile(r"\s*overflow-x\s*:[^;}]*;?")
 
 
 def page_css(src):
