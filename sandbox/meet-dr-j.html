@@ -410,7 +410,9 @@ h3{
 .quote{background:#fff;border:1px solid var(--sy-rule);border-top:3px solid var(--sy-gold);padding:40px 34px 34px;box-shadow:0 12px 36px rgba(37,40,48,0.07);border-radius:2px;position:relative}
 .quote::before{content:"\201C";position:absolute;top:2px;left:26px;font-family:var(--sy-serif);font-size:84px;line-height:1;color:var(--sy-gold);opacity:0.35}
 .quote p{font-size:19.5px;position:relative}
-.quote cite{margin-top:22px;padding-top:16px;border-top:1px solid var(--sy-rule)}
+.quote{display:flex;flex-direction:column}
+.quote p{margin-bottom:24px}
+.quote cite{margin-top:auto;padding-top:16px;border-top:1px solid var(--sy-rule)}
 
 .close{position:relative;background:var(--sy-charcoal);overflow:hidden}
 .close::before{content:"";position:absolute;width:760px;height:760px;left:-200px;bottom:-380px;background:radial-gradient(circle,rgba(191,135,86,0.24) 0%,transparent 66%);pointer-events:none}
