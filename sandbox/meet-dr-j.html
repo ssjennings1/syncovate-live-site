@@ -474,21 +474,29 @@ h3{
   .prose .beats li{grid-template-columns:1fr}
 }
 
-/* ---------- Career path (no dates) ---------- */
-.timeline{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:64px}
-.timeline .step{position:relative;border-top:2px solid var(--sy-gold);padding:26px 28px 0 0}
-.timeline .step::before{content:"";position:absolute;left:0;top:-8px;width:14px;height:14px;border-radius:50%;background:var(--sy-gold)}
-.timeline .step b{display:block;font-family:var(--sy-serif);font-weight:500;font-size:26px;line-height:1.2;color:var(--sy-charcoal);margin-bottom:6px}
-.timeline .step span{display:block;font-size:15.5px;line-height:1.5;color:var(--sy-ink)}
-.timeline .years{grid-column:2 / 4;position:relative;margin-top:34px;border-top:2px solid var(--sy-teal);padding:14px 0 0}
-.timeline .years::after{content:"";position:absolute;right:-1px;top:-7px;border-left:12px solid var(--sy-teal);border-top:6px solid transparent;border-bottom:6px solid transparent}
-.timeline .years span{font-size:15.5px;font-weight:500;color:var(--sy-charcoal2)}
-@media (max-width:700px){
-  .timeline{grid-template-columns:1fr;margin-top:48px}
-  .timeline .step{border-top:0;border-left:2px solid var(--sy-gold);padding:0 0 26px 24px}
-  .timeline .step::before{left:-8px;top:3px}
-  .timeline .years{grid-column:1;margin-top:0;border-top:0;border-left:2px solid var(--sy-teal);padding:2px 0 0 24px}
-  .timeline .years::after{display:none}
+/* ---------- Where the work has reached (widening circles, no dates) ---------- */
+.reach{display:grid;grid-template-columns:minmax(0,440px) minmax(0,1fr);column-gap:88px;align-items:center;margin-top:72px}
+.reach .rings{width:100%;height:auto;display:block}
+.reach .ring{fill:none;stroke:var(--sy-gold);stroke-width:1.5}
+.reach .ring1{fill:rgba(191,135,86,0.26)}
+.reach .ring2{fill:rgba(191,135,86,0.15)}
+.reach .ring3{fill:rgba(191,135,86,0.08)}
+.reach .ring4{fill:rgba(86,173,191,0.08);stroke:var(--sy-teal)}
+.reach .people{fill:var(--sy-charcoal2);opacity:0.62}
+.reach .you{fill:var(--sy-gold);stroke:#fff;stroke-width:3}
+.reach-list{list-style:none;display:grid;gap:30px}
+.reach-list li{display:grid;grid-template-columns:22px 1fr;gap:18px;align-items:start}
+.reach-list i{display:block;width:22px;height:22px;border-radius:50%;border:2px solid var(--sy-gold);margin-top:6px}
+.reach-list .k1 i{background:rgba(191,135,86,0.45)}
+.reach-list .k2 i{background:rgba(191,135,86,0.28)}
+.reach-list .k3 i{background:rgba(191,135,86,0.12)}
+.reach-list .k4 i{border-color:var(--sy-teal);background:rgba(86,173,191,0.14)}
+.reach-list b{display:block;font-family:var(--sy-serif);font-weight:500;font-size:28px;line-height:1.2;color:var(--sy-charcoal)}
+.reach-list span{display:block;margin-top:6px;font-size:16px;line-height:1.5;color:var(--sy-ink)}
+@media (max-width:860px){
+  .reach{grid-template-columns:1fr;row-gap:40px;margin-top:56px}
+  .reach .rings{max-width:380px;margin:0 auto}
+  .reach-list b{font-size:24px}
 }
 </style>
 </head>
@@ -571,11 +579,21 @@ h3{
       <p>Because in a company your size the business and the person running it were never two separate things, and most advice treats them like they are. My doctorate is in business psychology, which is a plain way of saying I study how a company and the people inside it behave as one system. So the work is psychology, business, and systems at the same time. Pull one out and you're only fixing part of the picture.</p>
     </div>
   </div>
-  <div class="wrap timeline reveal" role="group" aria-label="Career path">
-    <div class="step"><b>Therapist</b><span>Close to a decade with families</span></div>
-    <div class="step"><b>Edward Lowe Foundation</b><span>Five years designing and facilitating peer retreats</span></div>
-    <div class="step"><b>Doctorate</b><span>Business Psychology</span></div>
-    <div class="years"><span>Twenty years with owners and leadership teams</span></div>
+  <div class="wrap reach reveal" role="group" aria-label="Where the work has reached">
+    <svg class="rings" viewBox="0 0 520 520" aria-hidden="true" focusable="false">
+      <circle class="ring ring4" cx="260" cy="260" r="236"/>
+      <circle class="ring ring3" cx="260" cy="260" r="168"/>
+      <circle class="ring ring2" cx="260" cy="260" r="104"/>
+      <circle class="ring ring1" cx="260" cy="260" r="44"/>
+      <g class="people"><circle cx="233.1" cy="268.3" r="3.4"/><circle cx="283.7" cy="247.8" r="3.4"/><circle cx="270.9" cy="285.1" r="3.4"/><circle cx="201.0" cy="197.3" r="3.4"/><circle cx="318.2" cy="299.1" r="3.4"/><circle cx="239.2" cy="203.9" r="3.4"/><circle cx="350.4" cy="249.8" r="3.4"/><circle cx="292.2" cy="309.0" r="3.4"/><circle cx="200.4" cy="249.3" r="3.4"/><circle cx="334.3" cy="274.2" r="3.4"/><circle cx="178.5" cy="291.9" r="3.4"/><circle cx="179.2" cy="250.2" r="3.4"/><circle cx="116.0" cy="260.2" r="3.4"/><circle cx="133.0" cy="294.9" r="3.4"/><circle cx="413.9" cy="257.7" r="3.4"/><circle cx="338.1" cy="137.4" r="3.4"/><circle cx="208.1" cy="379.3" r="3.4"/><circle cx="229.8" cy="380.8" r="3.4"/><circle cx="273.9" cy="125.0" r="3.4"/><circle cx="404.4" cy="221.0" r="3.4"/><circle cx="389.4" cy="260.4" r="3.4"/><circle cx="376.6" cy="186.3" r="3.4"/><circle cx="394.6" cy="243.3" r="3.4"/><circle cx="388.2" cy="323.3" r="3.4"/><circle cx="356.3" cy="348.2" r="3.4"/><circle cx="297.3" cy="137.3" r="3.4"/><circle cx="132.2" cy="210.0" r="3.4"/><circle cx="313.2" cy="396.1" r="3.4"/><circle cx="290.4" cy="387.8" r="3.4"/><circle cx="471.5" cy="220.9" r="3.4"/><circle cx="187.3" cy="465.5" r="3.4"/><circle cx="308.8" cy="453.8" r="3.4"/><circle cx="387.6" cy="94.2" r="3.4"/><circle cx="439.0" cy="390.6" r="3.4"/><circle cx="288.0" cy="64.7" r="3.4"/><circle cx="206.3" cy="439.2" r="3.4"/><circle cx="434.7" cy="371.0" r="3.4"/><circle cx="269.1" cy="467.5" r="3.4"/><circle cx="120.1" cy="405.8" r="3.4"/><circle cx="456.6" cy="208.4" r="3.4"/><circle cx="66.1" cy="161.9" r="3.4"/><circle cx="338.0" cy="433.6" r="3.4"/><circle cx="440.9" cy="142.7" r="3.4"/><circle cx="260.6" cy="451.8" r="3.4"/><circle cx="245.4" cy="40.6" r="3.4"/><circle cx="332.5" cy="468.0" r="3.4"/><circle cx="413.4" cy="119.9" r="3.4"/><circle cx="94.2" cy="349.2" r="3.4"/><circle cx="474.2" cy="313.1" r="3.4"/><circle cx="250.5" cy="475.6" r="3.4"/><circle cx="99.0" cy="148.4" r="3.4"/><circle cx="355.8" cy="449.2" r="3.4"/><circle cx="435.6" cy="341.0" r="3.4"/><circle cx="58.1" cy="181.0" r="3.4"/><circle cx="112.9" cy="131.4" r="3.4"/><circle cx="427.0" cy="164.5" r="3.4"/><circle cx="453.9" cy="280.3" r="3.4"/><circle cx="84.2" cy="322.4" r="3.4"/><circle cx="89.7" cy="177.0" r="3.4"/></g>
+      <circle class="you" cx="260" cy="260" r="9"/>
+    </svg>
+    <ul class="reach-list">
+      <li class="k1"><i></i><div><b>Therapist</b><span>Close to a decade with families</span></div></li>
+      <li class="k2"><i></i><div><b>Edward Lowe Foundation</b><span>Five years designing and facilitating peer retreats</span></div></li>
+      <li class="k3"><i></i><div><b>Doctorate</b><span>Business Psychology</span></div></li>
+      <li class="k4"><i></i><div><b>Twenty years with owners and leadership teams</b></div></li>
+    </ul>
   </div>
   <div class="record groups reveal">
     <div class="wrap">
