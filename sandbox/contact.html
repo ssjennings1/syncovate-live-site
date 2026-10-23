@@ -416,7 +416,10 @@ h3{
 .contact-hero .btn-line{border-color:var(--sy-gold-deep);color:var(--sy-gold-deep)}
 .contact-hero .btn-line:hover{background:rgba(191,135,86,0.1);border-color:var(--sy-gold-deep);color:var(--sy-gold-deep)}
 @media (min-width:861px){
-  .contact-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,0.9fr);column-gap:80px;align-items:center}
+  .contact-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:64px;align-items:center}
+  .contact-grid .c-photo-wrap{margin-right:calc(-1 * max(32px, (100vw - 1056px) / 2))}
+  .contact-grid .c-photo-wrap::before{display:none}
+  .contact-grid .c-photo{border-radius:24px 0 0 24px}
 }
 @media (max-width:860px){
   .contact-hero{padding:88px 0 72px}
@@ -427,7 +430,7 @@ h3{
 /* ---------- Hero with a photo; details in three soft cards below ---------- */
 .c-photo-wrap{position:relative;margin:0}
 .c-photo-wrap::before{content:"";position:absolute;inset:18px -18px -18px 18px;border:1.5px solid rgba(191,135,86,0.45);border-radius:26px}
-.c-photo{position:relative;display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:24px;box-shadow:0 28px 64px rgba(140,97,58,0.22)}
+.c-photo{position:relative;display:block;width:100%;height:auto;aspect-ratio:870/475;object-fit:cover;border-radius:24px;box-shadow:0 28px 64px rgba(140,97,58,0.22)}
 .c-details{padding:0 0 104px;background:var(--sy-cream)}
 .c-details .ways-contact{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;max-width:none;border-top:0;margin:0}
 .c-details .ways-contact li{display:block;text-align:center;background:rgba(255,255,255,0.8);border:1px solid rgba(191,135,86,0.3);border-radius:20px;padding:32px 28px;box-shadow:0 18px 44px rgba(140,97,58,0.1)}
@@ -479,7 +482,7 @@ h3{
 </div>
     </div>
     <figure class="c-photo-wrap reveal">
-      <img class="c-photo" src="assets/coffee-hero.jpg" width="640" height="816" alt="A latte and a cinnamon roll on a wooden table at a coffee shop">
+      <img class="c-photo" src="assets/coffee-two-cups.jpg" width="870" height="475" alt="Two lattes with leaf art, one in a teal cup and one in a red cup, on a wooden table at a coffee shop">
     </figure>
   </div>
 </section>
