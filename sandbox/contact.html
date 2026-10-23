@@ -404,9 +404,9 @@ h3{
 .footer .seed-form input::placeholder{color:rgba(250,248,245,0.65)}
 
 /* ---------- Soft pass: light, airy, arched card ---------- */
-.contact-hero{position:relative;overflow:hidden;padding:120px 0 112px;background:var(--sy-cream)}
+.contact-hero{position:relative;overflow:hidden;padding:112px 0 96px;background:var(--sy-cream)}
 .contact-hero::before{content:"";position:absolute;width:820px;height:820px;right:-200px;top:-260px;background:radial-gradient(circle,rgba(191,135,86,0.24) 0%,rgba(191,135,86,0.08) 45%,transparent 68%);pointer-events:none}
-.contact-hero::after{content:"";position:absolute;width:700px;height:700px;left:-260px;bottom:-340px;background:radial-gradient(circle,rgba(86,173,191,0.2) 0%,rgba(86,173,191,0.06) 48%,transparent 68%);pointer-events:none}
+.contact-hero::after{content:"";position:absolute;width:560px;height:560px;left:-240px;bottom:-40px;background:radial-gradient(circle,rgba(86,173,191,0.2) 0%,rgba(86,173,191,0.06) 48%,transparent 68%);pointer-events:none}
 .contact-hero .wrap{position:relative;z-index:1}
 .contact-hero .overline{color:var(--sy-gold-deep);letter-spacing:0.16em;text-transform:uppercase;font-size:12.5px}
 .contact-hero h2{font-size:clamp(56px,6.4vw,92px);line-height:1.02;color:var(--sy-charcoal);margin-bottom:0;max-width:none}
@@ -415,17 +415,6 @@ h3{
 .contact-hero .btn{border-radius:999px;padding:17px 32px}
 .contact-hero .btn-line{border-color:var(--sy-gold-deep);color:var(--sy-gold-deep)}
 .contact-hero .btn-line:hover{background:rgba(191,135,86,0.1);border-color:var(--sy-gold-deep);color:var(--sy-gold-deep)}
-.c-card{text-align:center;background:rgba(255,255,255,0.78);border:1px solid rgba(191,135,86,0.32);border-radius:22px;padding:0 44px 36px;box-shadow:0 30px 70px rgba(140,97,58,0.16)}
-.c-card .sprig{display:block;width:84px;height:auto;margin:48px auto 10px}
-.c-card .sprig .stem{fill:none;stroke:var(--sy-gold);stroke-width:2;stroke-linecap:round}
-.c-card .sprig .leaf path{fill:rgba(191,135,86,0.2);stroke:var(--sy-gold);stroke-width:1.6;stroke-linejoin:round}
-.c-card .ways-contact{margin:0;border-top:0}
-.c-card .ways-contact li{grid-template-columns:1fr;gap:4px;padding:22px 0;border-bottom:1px solid rgba(191,135,86,0.28)}
-.c-card .ways-contact li:last-child{border-bottom:0;padding-bottom:10px}
-.c-card .ways-contact b{font-family:var(--sy-serif);font-style:italic;font-weight:500;font-size:24px;color:var(--sy-gold-deep)}
-.c-card .ways-contact a{font-size:21px;font-weight:500}
-.c-card .ways-contact p{font-size:16px;line-height:1.6;margin:0 auto}
-.c-card .where{margin:6px auto 0;padding-top:22px;border-top:1px solid rgba(191,135,86,0.28);font-size:15px;line-height:1.6;color:var(--sy-ink-soft);max-width:none}
 @media (min-width:861px){
   .contact-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,0.9fr);column-gap:80px;align-items:center}
 }
@@ -435,11 +424,23 @@ h3{
   .c-card .sprig{margin-top:40px}
 }
 
-/* ---------- Photo in the arch ---------- */
-.c-card{padding:14px 14px 36px}
-.c-card .c-photo{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:14px;margin:0 0 6px}
-.c-card .ways-contact,.c-card .where{margin-left:30px;margin-right:30px}
-@media (max-width:860px){.c-card{padding:12px 12px 28px}.c-card .ways-contact,.c-card .where{margin-left:14px;margin-right:14px}}
+/* ---------- Hero with a photo; details in three soft cards below ---------- */
+.c-photo-wrap{position:relative;margin:0}
+.c-photo-wrap::before{content:"";position:absolute;inset:18px -18px -18px 18px;border:1.5px solid rgba(191,135,86,0.45);border-radius:26px}
+.c-photo{position:relative;display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:24px;box-shadow:0 28px 64px rgba(140,97,58,0.22)}
+.c-details{padding:0 0 104px;background:var(--sy-cream)}
+.c-details .ways-contact{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;max-width:none;border-top:0;margin:0}
+.c-details .ways-contact li{display:block;text-align:center;background:rgba(255,255,255,0.8);border:1px solid rgba(191,135,86,0.3);border-radius:20px;padding:32px 28px;box-shadow:0 18px 44px rgba(140,97,58,0.1)}
+.c-details .ways-contact b{display:block;font-family:var(--sy-serif);font-style:italic;font-weight:500;font-size:26px;color:var(--sy-gold-deep);margin-bottom:10px}
+.c-details .ways-contact a{font-size:19px;font-weight:500}
+@media (min-width:861px){.c-details .ways-contact a{white-space:nowrap}}
+.c-details .ways-contact p{font-size:16px;line-height:1.6;margin:0 auto}
+.c-details .where{margin:40px auto 0;text-align:center;font-size:15.5px;line-height:1.65;color:var(--sy-ink-soft);max-width:640px}
+@media (max-width:860px){
+  .c-photo-wrap{margin-top:56px;max-width:440px}
+  .c-details{padding-bottom:72px}
+  .c-details .ways-contact{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
@@ -477,15 +478,19 @@ h3{
   <a class="btn btn-line" href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo">Grab Coffee in Michiana</a>
 </div>
     </div>
-    <div class="c-card reveal">
-      <img class="c-photo" src="assets/coffee-contact.jpg" width="600" height="600" alt="A latte and a cinnamon roll on a wooden table at a coffee shop">
-    <ul class="ways-contact">
+    <figure class="c-photo-wrap reveal">
+      <img class="c-photo" src="assets/coffee-hero.jpg" width="640" height="816" alt="A latte and a cinnamon roll on a wooden table at a coffee shop">
+    </figure>
+  </div>
+</section>
+<section class="c-details">
+  <div class="wrap">
+    <ul class="ways-contact reveal">
       <li><b>Email</b><p><a href="mailto:Shannon@SyncovateLLC.com">Shannon@SyncovateLLC.com</a>. Send a few times that work and we'll find a spot.</p></li>
       <li><b>Phone</b><p><a href="tel:2692934442">269-293-4442</a>. If I don't pick up, I'm in a room with someone. Leave a message and I'll call back.</p></li>
       <li><b>LinkedIn</b><p><a href="https://www.linkedin.com/in/shannonsjennings/">Shannon Jennings</a>, where I post most weeks.</p></li>
     </ul>
-    <p class="where">Syncovate LLC is based in Niles, Michigan. I'm in rooms across the South Bend–Elkhart region, Kalamazoo to Fort Wayne, regularly, and I work virtually with owners across the country.</p>
-    </div>
+    <p class="where reveal">Syncovate LLC is based in Niles, Michigan. I'm in rooms across the South Bend–Elkhart region, Kalamazoo to Fort Wayne, regularly, and I work virtually with owners across the country.</p>
   </div>
 </section>
 </main>
