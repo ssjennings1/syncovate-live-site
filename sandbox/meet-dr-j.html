@@ -496,7 +496,9 @@ h3{
   .trail-list>li::before{content:"";position:absolute;left:-11px;top:2px;width:18px;height:18px;border-radius:50%;background:var(--sy-gold);border:3px solid var(--sy-warmgray)}
   .trail-list b{display:block;font-family:var(--sy-serif);font-weight:500;font-size:24px;line-height:1.2;color:var(--sy-charcoal)}
   .trail-list span{display:block;margin-top:4px;font-size:16px;line-height:1.5;color:var(--sy-ink)}
-  .trail-list ul{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:18px}
+  .trail-list ul{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:0}
+  .trail-list ul li{padding-bottom:20px}
+  .trail-list ul li.down{margin-top:6px;padding-bottom:0}
   .trail-list ul li{padding-left:20px;border-left:3.5px solid var(--sy-gold)}
   .trail-list ul li.down{border-left-color:var(--sy-teal)}
   .trail-list>li:last-child{border-left-color:transparent;padding-bottom:0}
@@ -591,14 +593,16 @@ h3{
       <path class="head head-down" d="M1030 275 L1046 285 L1030 295 Z"/>
       <circle class="node" cx="30" cy="190" r="10"/>
       <circle class="node" cx="380" cy="190" r="10"/>
-      <circle class="node" cx="700" cy="95" r="10"/>
+      <circle class="node" cx="640" cy="95" r="10"/>
+      <circle class="node" cx="880" cy="95" r="10"/>
       <text class="t" x="30" y="238">Therapist</text>
       <text class="s" x="30" y="263">Close to a decade with families</text>
       <text class="t" x="366" y="108" text-anchor="end">Edward Lowe Foundation</text>
       <text class="s" x="366" y="134" text-anchor="end">Five years designing and</text>
       <text class="s" x="366" y="156" text-anchor="end">facilitating peer retreats</text>
-      <text class="t" x="700" y="142" text-anchor="middle">Doctorate</text>
-      <text class="s" x="700" y="167" text-anchor="middle">Business Psychology</text>
+      <text class="t" x="640" y="142" text-anchor="middle">Doctorate</text>
+      <text class="s" x="640" y="167" text-anchor="middle">Business Psychology</text>
+      <text class="t" x="880" y="142" text-anchor="middle">Syncovate Launch</text>
       <text class="t t-teal" x="540" y="255">Twenty years with owners and leadership teams</text>
     </svg>
     <ol class="trail-list">
@@ -606,6 +610,7 @@ h3{
       <li class="a"><b>Edward Lowe Foundation</b><span>Five years designing and facilitating peer retreats</span>
         <ul>
           <li class="up"><b>Doctorate</b><span>Business Psychology</span></li>
+          <li class="up"><b>Syncovate Launch</b></li>
           <li class="down"><b>Twenty years with owners and leadership teams</b></li>
         </ul>
       </li>
