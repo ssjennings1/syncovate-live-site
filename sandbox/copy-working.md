@@ -549,7 +549,7 @@ Shannon's direction: simpler, more direct, no jargon. Applied: "being heard isn'
 - Copy merged: Home Advising card "a single session or someone in your corner for the long haul"; Meet Dr. J "I come in when what's stuck was built by good people…" (dropped "Nobody did anything wrong"), "kid said at breakfast or a podcast", "a stuck decision moving"; Contact "the kind of website"; Workshops "Most strategy fails in the follow-through, not the plan…" and "governing it"; Saturday Seed fragments cut; Trusted Advisor bullet "Text me between sessions"; Home closing shortened.
 - Kept as is on purpose: "second-stage companies" (Workshops keynote line); Trusted Advisor card line under "standing partner"; the two "coffee" lines on the Seed page.
 - Current therapy practice stays OFF the site. Meet Dr. J describes therapy only as the early chapter ("close to a decade").
-- Career timeline concept parked (branch `style/meet-timeline`, not merged). Replaced by a funnel of the three credential cards (branch `style/meet-funnel`, awaiting Shannon's OK).
+- Career timeline concept parked (branch `style/meet-timeline`, not merged). A funnel of the three credential cards was tried and dropped (branch `style/meet-funnel`, not merged). Meet Dr. J has no career graphic.
 - Still to do before the Taft re-paste: Workshops, Contact and Saturday Seed design review; phone check of every page; re-paste from the final commit.
 - Facts still to verify by Shannon: APA Council term (2025-2027), Pixel Perspectives+ 360 certification, "post most weeks" on LinkedIn.
 
