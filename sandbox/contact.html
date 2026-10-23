@@ -402,6 +402,27 @@ h3{
 .hero .micro,.hero .heroq,.close .contact,.close .where{color:rgba(250,248,245,0.8)}
 .close .contact a{color:var(--sy-teal)}
 .footer .seed-form input::placeholder{color:rgba(250,248,245,0.65)}
+
+/* ---------- Layout pass: dark hero with the contact card beside it ---------- */
+.contact-hero{padding:128px 0 104px}
+.contact-hero .overline{color:var(--sy-gold)}
+.contact-hero h2{color:#fff;font-size:clamp(44px,5vw,68px);line-height:1.08;margin-bottom:0;max-width:none}
+.contact-hero .lede{margin:26px 0 38px;max-width:560px;color:rgba(250,248,245,0.84)}
+.c-card{background:#fff;border:1px solid var(--sy-rule);border-top:3px solid var(--sy-gold);border-radius:2px;padding:12px 34px 30px;box-shadow:0 24px 60px rgba(0,0,0,0.28)}
+.c-card .ways-contact{margin:0;border-top:0}
+.c-card .ways-contact li:last-child{border-bottom:0;padding-bottom:12px}
+.c-card .ways-contact li{grid-template-columns:1fr;gap:6px;padding:24px 0}
+.c-card .ways-contact b{font-size:22px}
+.c-card .ways-contact a{font-size:20px;font-weight:500}
+.c-card .ways-contact p{font-size:16px;line-height:1.6}
+.c-card .where{margin-top:6px;padding-top:22px;border-top:1px solid var(--sy-rule);font-size:15px;line-height:1.6;color:var(--sy-ink-soft);max-width:none}
+@media (min-width:861px){
+  .contact-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);column-gap:72px;align-items:center}
+}
+@media (max-width:860px){
+  .contact-hero{padding:88px 0 72px}
+  .c-card{margin-top:48px;padding:6px 24px 26px}
+}
 </style>
 </head>
 <body>
@@ -428,8 +449,9 @@ h3{
 
 <main>
 
-<section class="contact-hero">
-  <div class="wrap">
+<section class="hero contact-hero">
+  <div class="wrap contact-grid">
+    <div class="c-main">
     <h1 class="overline">Contact</h1>
     <h2>Let's talk.</h2>
     <p class="lede">You can't really get to know me from a website, and I'd rather not write the kind of website anybody would have to wade through. So let's sit down, coffee if you're local or a call if you're not. Tell me what's going on, and I'll tell you honestly whether I can help. If I can't, I'll help you find someone who can, or at least get you clearer on what you need and how to ask for it.</p>
@@ -437,17 +459,15 @@ h3{
   <a class="btn btn-gold" href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo">Book a 15-Minute Call</a>
   <a class="btn btn-line" href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo">Grab Coffee in Michiana</a>
 </div>
-  </div>
-</section>
-
-<section class="section section-tint" style="padding-top:72px">
-  <div class="wrap">
-    <ul class="ways-contact reveal">
+    </div>
+    <div class="c-card reveal">
+    <ul class="ways-contact">
       <li><b>Email</b><p><a href="mailto:Shannon@SyncovateLLC.com">Shannon@SyncovateLLC.com</a>. Send a few times that work and we'll find a spot.</p></li>
       <li><b>Phone</b><p><a href="tel:2692934442">269-293-4442</a>. If I don't pick up, I'm in a room with someone. Leave a message and I'll call back.</p></li>
       <li><b>LinkedIn</b><p><a href="https://www.linkedin.com/in/shannonsjennings/">Shannon Jennings</a>, where I post most weeks.</p></li>
     </ul>
-    <p class="where reveal">Syncovate LLC is based in Niles, Michigan. I'm in rooms across the South Bend–Elkhart region, Kalamazoo to Fort Wayne, regularly, and I work virtually with owners across the country.</p>
+    <p class="where">Syncovate LLC is based in Niles, Michigan. I'm in rooms across the South Bend–Elkhart region, Kalamazoo to Fort Wayne, regularly, and I work virtually with owners across the country.</p>
+    </div>
   </div>
 </section>
 </main>
