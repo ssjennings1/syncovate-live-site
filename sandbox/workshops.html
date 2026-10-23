@@ -436,6 +436,44 @@ h3{
 .hero .micro,.hero .heroq,.close .contact,.close .where{color:rgba(250,248,245,0.8)}
 .close .contact a{color:var(--sy-teal)}
 .footer .seed-form input::placeholder{color:rgba(250,248,245,0.65)}
+
+/* ---------- Layout pass: hero quote card, price tags, split sections, at-a-glance ---------- */
+@media (min-width:861px){
+  .hero .wrap{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,0.78fr);column-gap:72px;align-items:start}
+  .hero .wrap>*{grid-column:1}
+  .hero .display{max-width:none;font-size:clamp(40px,4.4vw,62px)}
+  .hero .wrap>.heroq{grid-column:2;grid-row:1 / span 4;align-self:center}
+}
+.hero .heroq{background:rgba(250,248,245,0.06);border:1px solid rgba(250,248,245,0.14);border-top:3px solid var(--sy-gold);border-radius:2px;padding:36px 32px 30px;font-family:var(--sy-serif);font-size:22px;line-height:1.45;color:rgba(250,248,245,0.94);max-width:none;margin:0}
+.hero .heroq span{font-family:var(--sy-sans);font-size:14px;margin-top:20px;padding-top:16px;border-top:1px solid rgba(250,248,245,0.18);color:rgba(250,248,245,0.78)}
+.price-tag{display:block;font-size:clamp(26px,2.6vw,34px);margin-top:10px}
+.glance{padding:56px 0 0}
+.glance-cards{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.glance-cards a{display:flex;flex-direction:column;height:100%;background:#fff;border:1px solid var(--sy-rule);border-top:3px solid var(--sy-gold);border-radius:2px;padding:28px 28px 24px;box-shadow:0 12px 36px rgba(37,40,48,0.06);transition:transform .18s ease,box-shadow .18s ease}
+.glance-cards a:hover{transform:translateY(-3px);box-shadow:0 18px 44px rgba(37,40,48,0.12)}
+.glance-cards h3{font-size:26px;line-height:1.2}
+.glance-cards .g-price{display:block;margin-top:8px;font-family:var(--sy-serif);font-style:italic;font-size:26px;color:var(--sy-gold-deep)}
+.glance-cards p{margin-top:12px;font-size:16px;line-height:1.55;color:var(--sy-ink)}
+.glance-cards .g-go{margin-top:auto;padding-top:16px;font-size:20px;color:var(--sy-teal-deep)}
+.cols12{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;align-items:start}
+.cols12>*{grid-column:1 / -1}
+.cols12>h2{grid-column:1 / 5;grid-row:1;margin-bottom:0;font-size:clamp(30px,3vw,40px)}
+.cols12>h2+p{grid-column:5 / 13;grid-row:1;margin-top:0}
+.w-team .sessions{margin-top:48px}
+.w-team .quotes,.w-retreats .quotes{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:56px}
+.w-strategy>.prose,.w-strategy>.cta-row,.w-strategy>.quotes,.w-retreats>.prose,.w-retreats>.cta-row{grid-column:5 / 13}
+.w-strategy>.prose,.w-retreats>.prose{margin-top:22px}
+.w-strategy>h2,.w-retreats>h2{grid-row:1 / span 4}
+.cols12>h2+p{margin-bottom:0}
+.hero .display em{white-space:nowrap}
+.w-strategy>.quotes{grid-template-columns:1fr;margin-top:48px}
+@media (max-width:860px){
+  .glance{padding-top:40px}
+  .glance-cards{grid-template-columns:1fr}
+  .cols12{display:block}
+  .cols12>h2{margin-bottom:22px}
+  .w-team .quotes,.w-retreats .quotes{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
@@ -475,10 +513,20 @@ h3{
   </div>
 </section>
 
+<!-- ============ AT A GLANCE ============ -->
+<section class="glance">
+  <div class="wrap">
+    <ul class="glance-cards">
+      <li><a href="#team-sessions"><h3>Team Sessions</h3><span class="g-price">from $1,500</span><p>Point the Finger · Hoops · Your Go-To Power Move</p><span class="g-go" aria-hidden="true">&rarr;</span></a></li>
+      <li><a href="#strategy"><h3>The Strategy Session</h3><span class="g-price">from $7,500</span><p>A strategy day built on what you can do, not what you can't.</p><span class="g-go" aria-hidden="true">&rarr;</span></a></li>
+      <li><a href="#retreats"><h3>Custom Leadership Retreats</h3><p>Built around what your team needs right now.</p><span class="g-go" aria-hidden="true">&rarr;</span></a></li>
+    </ul>
+  </div>
+</section>
 <!-- ============ TEAM SESSIONS ============ -->
 <section class="section section-tint" id="team-sessions">
-  <div class="wrap">
-    <h2 class="reveal">Team Sessions <em>· from $1,500</em></h2>
+  <div class="wrap cols12 w-team">
+    <h2 class="reveal">Team Sessions <em class="price-tag">from $1,500</em></h2>
     <p class="formats reveal">These are tried and true, ready to go, and I've run every one of them more times than I can count. You bring the space and the snacks, I bring the rest, and we're done in ninety minutes.</p>
     <ul class="sessions reveal">
       <li class="session">
@@ -499,7 +547,7 @@ h3{
       <!-- Team Session payment link (Power Hour and a half), same on /workshops -->
       <a class="btn btn-line" href="https://link.syncovatellc.com/payment-link/6ac7d2c0c0e70c7fefb7355e">Book It</a>
     </div>
-    <div class="quotes reveal" style="margin-top:56px">
+    <div class="quotes reveal">
       <div class="quote">
         <p>"Dr. Shannon Jennings was a featured speaker at the REF CIO Forum retreat. She led us in experiential learning exercises. The group enjoyed the exercises while learning a bit more about themselves. Dr. Shannon Jennings skillfully facilitated the group of professionals who are not generally excited about experiential exercises. I would recommend Business Psychologist Dr. Shannon Jennings for your corporate group or team."</p>
         <cite><b>Clifford Clarke</b>REF Indiana, Facilitator Leaders – CIO Forum</cite>
@@ -514,10 +562,10 @@ h3{
 
 <!-- ============ STRATEGY SESSION ============ -->
 <section class="section" id="strategy">
-  <div class="wrap">
-    <h2 class="reveal">The Strategy Session <em>· from $7,500</em></h2>
+  <div class="wrap cols12 w-strategy">
+    <h2 class="reveal">The Strategy Session <em class="price-tag">from $7,500</em></h2>
     <p class="formats reveal">A strategy day built on what you can do, not what you can't.</p>
-    <div class="prose reveal" style="margin-top:22px">
+    <div class="prose reveal">
       <p>Most strategy sessions start with what's broken. Mine starts with what's working, because that's the stuff you can build on. Grounded in appreciative inquiry, this full-day session gets everybody up and moving, and it gets everybody's thinking up on the wall, the owner's and the team's. By the end of the day your team agrees on what direction you're headed and walks out with a concrete plan for how to get there.</p>
       <p>Most strategy fails in the follow-through, not the plan, so I offer quarterly check-ins to keep it moving.</p>
       <p>Looking for a full multi-day strategic plan? I use the standard tools and make them something your team will want to show up for. Let's talk about it.</p>
@@ -525,7 +573,7 @@ h3{
     <div class="cta-row reveal" style="margin-top:30px">
       <a class="btn btn-gold" href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo">Talk First</a>
     </div>
-    <div class="quotes reveal" style="grid-template-columns:1fr;margin-top:48px">
+    <div class="quotes reveal">
       <div class="quote">
         <p>"Dr. Jennings played a key role in creating and implementing our strategic plan, including creating and maintaining organizational alignment and engagement through meeting structures and communication initiatives."</p>
         <cite><b>Willy Veldman</b>President, Veldman's Inc.</cite>
@@ -536,16 +584,16 @@ h3{
 
 <!-- ============ CUSTOM RETREATS ============ -->
 <section class="section section-tint" id="retreats">
-  <div class="wrap">
+  <div class="wrap cols12 w-retreats">
     <h2 class="reveal">Custom Leadership Retreats</h2>
     <p class="formats reveal">Built around what your team needs right now.</p>
-    <div class="prose reveal" style="margin-top:22px">
+    <div class="prose reveal">
       <p>Sometimes it's a leadership team that needs to get on the same page. Sometimes it's a family business working out who decides what (and who gets to say so at dinner). Sometimes it's a team ready to understand how each person works best, with StrengthsFinder as the starting point. We design the day around the problem in front of you and make sure you leave with agreements people will keep.</p>
     </div>
     <div class="cta-row reveal" style="margin-top:30px">
       <a class="btn btn-gold" href="https://link.syncovatellc.com/widget/booking/29K6RwPvCIc2xOxgUVKo">Talk First</a>
     </div>
-    <div class="quotes reveal" style="grid-template-columns:1fr 1fr;margin-top:48px">
+    <div class="quotes reveal">
       <div class="quote">
         <p>"The StrengthsFinder workshop with Shannon had many lasting effects. Our newest employee told me it was really good to learn more about herself and her new co-workers. It helped her understand what strengths she could bring to the table and how to approach her new co-workers. The whole team gets along pretty amazingly, and I'm sure understanding each of our strengths has really helped."</p>
         <cite><b>Christen Carter</b>President/Owner, Busy Beaver Button Co.</cite>
