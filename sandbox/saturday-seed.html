@@ -307,7 +307,8 @@ h3{
 .seed-hero{padding:112px 0 88px}
 .seed-hero .display{max-width:16ch}
 .seed-hero .lede{margin:28px 0 40px;max-width:600px}
-.signup{max-width:560px}
+.seed-hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:center}
+.signup{max-width:none}
 .signup .row{display:grid;grid-template-columns:1fr 1.4fr;gap:12px}
 .signup input{
   width:100%;font-family:var(--sy-sans);font-size:15px;font-weight:300;
@@ -338,7 +339,7 @@ h3{
 .seed-foot .bottom a{color:var(--sy-teal-deep);border-bottom:1px solid transparent}
 .seed-foot .bottom a:hover{border-bottom-color:var(--sy-gold)}
 @media (max-width:1024px){.three{grid-template-columns:1fr;gap:28px}}
-@media (max-width:840px){.seed-hero{padding:80px 0 64px}}
+@media (max-width:840px){.seed-hero{padding:80px 0 64px}.seed-hero .wrap{grid-template-columns:1fr;gap:40px}}
 @media (max-width:520px){.signup .row{grid-template-columns:1fr}}
 /* ===== DESIGN LAYER (v2): dark frame, depth, numbered lists, cards ===== */
 .nav{background:rgba(37,40,48,0.94);border-bottom:1px solid rgba(250,248,245,0.08)}
@@ -448,9 +449,11 @@ h3{
 <!-- ============ HERO + FORM ============ -->
 <section class="seed-hero">
   <div class="wrap">
-    <h1 class="overline">The Saturday Seed</h1>
-    <p class="display">One leadership idea you can <em>put into play Monday.</em></p>
-    <p class="lede">Every Saturday morning, one idea for owners and leaders of growing companies. Small enough to read over coffee, built to grow all week.</p>
+    <div class="hero-copy">
+      <h1 class="overline">The Saturday Seed</h1>
+      <p class="display">One leadership idea you can <em>put into play Monday.</em></p>
+      <p class="lede">Every Saturday morning, one idea for owners and leaders of growing companies. Small enough to read over coffee, built to grow all week.</p>
+    </div>
 
     <!-- GHL form "Saturday Seed Sign Up Form" (first name, email, consent). If the footer on another page sent an address, it is passed to the form as ?email=. -->
     <div class="signup">
