@@ -18,12 +18,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
 
 <style>
-/* ============================================================
-   SYNCOVATE — SATURDAY SEED (landing page)
-   Design system: Brand Bible v1.8 (locked)
-   Cormorant Garamond (headings) / DM Sans (body)
-   Never #C4935A.
-   ============================================================ */
+
 :root{
   --sy-gold:      #BF8756;
   --sy-gold-deep: #8C613A;
@@ -60,7 +55,6 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--sy-gold);outline-of
 p{max-width:var(--wrap-text)}
 strong{font-weight:500;color:var(--sy-charcoal)}
 
-/* ---------- Type ---------- */
 .overline{
   font-family:var(--sy-sans);
   font-size:12.5px;
@@ -98,13 +92,11 @@ h3{
 }
 .lede{font-size:19px;line-height:1.7;color:var(--sy-charcoal2)}
 
-/* ---------- Layout ---------- */
 .wrap{max-width:var(--wrap);margin:0 auto;padding:0 32px}
 .section{padding:104px 0}
 .section-tint{background:var(--sy-warmgray)}
 .rule{border:0;border-top:1px solid var(--sy-rule)}
 
-/* ---------- Buttons ---------- */
 .btn{
   display:inline-flex;align-items:center;justify-content:center;
   font-family:var(--sy-sans);font-weight:500;font-size:14px;
@@ -126,7 +118,6 @@ h3{
 }
 .textlink:hover{color:var(--sy-gold-deep);border-color:var(--sy-gold)}
 
-/* ---------- Nav ---------- */
 .nav{
   position:sticky;top:0;z-index:50;
   background:rgba(250,248,245,0.94);
@@ -150,14 +141,12 @@ h3{
 }
 .nav-toggle span{display:block;width:20px;height:1.5px;background:var(--sy-charcoal);transition:transform .2s,opacity .2s}
 
-/* ---------- Hero ---------- */
 .hero{padding:120px 0 96px}
 .hero .lede{margin:30px 0 40px;max-width:600px}
 .cta-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
 .cta-note{margin-top:22px;font-size:15.5px;color:var(--sy-ink-soft);max-width:560px}
 .cta-note a{color:var(--sy-teal-deep)}
 
-/* ---------- Credentials strip ---------- */
 .creds{border-top:1px solid var(--sy-rule);border-bottom:1px solid var(--sy-rule)}
 .creds .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
 .cred{padding:34px 28px 32px;border-left:1px solid var(--sy-rule)}
@@ -165,7 +154,6 @@ h3{
 .cred b{display:block;font-family:var(--sy-serif);font-weight:500;font-size:30px;line-height:1;color:var(--sy-charcoal);margin-bottom:10px}
 .cred span{font-size:13.5px;color:var(--sy-ink-soft);line-height:1.45;display:block}
 
-/* ---------- Problem ---------- */
 .problem-grid{display:grid;grid-template-columns:1.05fr 0.95fr;gap:72px;align-items:start}
 .signals{list-style:none;margin:8px 0 0;border-top:1px solid var(--sy-rule)}
 .signals li{
@@ -181,7 +169,6 @@ h3{
   font-size:clamp(24px,2.6vw,31px);line-height:1.38;color:var(--sy-charcoal);max-width:820px;
 }
 
-/* ---------- Ways in ---------- */
 .ways{list-style:none;border-top:1px solid var(--sy-rule);margin-top:8px}
 .ways li{border-bottom:1px solid var(--sy-rule)}
 .ways a{
@@ -195,7 +182,6 @@ h3{
 .ways .go{font-size:14px;font-weight:500;color:var(--sy-charcoal2);white-space:nowrap}
 .ways-note{margin-top:28px;font-size:15.5px;color:var(--sy-ink-soft)}
 
-/* ---------- About ---------- */
 .about-grid{display:grid;grid-template-columns:440px 1fr;gap:80px;align-items:center}
 .portrait{
   aspect-ratio:4/5;background:var(--sy-warmgray) center/cover no-repeat;
@@ -205,7 +191,6 @@ h3{
 .about-copy .kicker{font-family:var(--sy-serif);font-size:24px;line-height:1.35;color:var(--sy-charcoal);margin-top:28px}
 .about-copy .textlink{display:inline-block;margin-top:30px;font-weight:500;font-size:15px}
 
-/* ---------- Testimonials ---------- */
 .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
 .quote{border-top:1px solid var(--sy-gold);padding-top:26px}
 .quote p{font-family:var(--sy-serif);font-size:21px;line-height:1.4;color:var(--sy-charcoal);font-style:italic}
@@ -213,14 +198,12 @@ h3{
 .quote cite b{font-weight:500;color:var(--sy-charcoal2);display:block}
 .affil{margin-top:72px;padding-top:32px;border-top:1px solid var(--sy-rule);display:flex;flex-wrap:wrap;gap:12px 40px;font-size:14px;color:var(--sy-ink-soft)}
 
-/* ---------- Closing ---------- */
 .close{background:var(--sy-warmgray);padding:112px 0}
 .close .inner{max-width:720px}
 .close h2{max-width:none;margin-bottom:26px}
 .close .lede{color:var(--sy-charcoal);margin-bottom:40px;font-size:20px;line-height:1.65}
 .close .cta-note{margin-top:24px}
 
-/* ---------- Saturday Seed ---------- */
 .seed{
   display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;
   padding:0 0 56px;margin-bottom:56px;border-bottom:1px solid var(--sy-rule);
@@ -240,7 +223,6 @@ h3{
 @media (max-width:840px){.seed{grid-template-columns:1fr;gap:20px}}
 @media (max-width:520px){.seed-form{flex-direction:column}.seed-form .btn{width:100%}}
 
-/* ---------- Footer ---------- */
 .footer{padding:64px 0 40px;border-top:1px solid var(--sy-rule)}
 .footer .top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:48px}
 .footer .brand{font-size:19px}
@@ -252,7 +234,6 @@ h3{
 .footer li a:hover{border-bottom-color:var(--sy-gold)}
 .footer .bottom{margin-top:56px;padding-top:24px;border-top:1px solid var(--sy-rule);font-size:13.5px;color:var(--sy-ink-soft);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
 
-/* ---------- Reveal (single, quiet) ---------- */
 .reveal{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease}
 .reveal.on{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){
@@ -260,7 +241,6 @@ h3{
   html{scroll-behavior:auto}
 }
 
-/* ---------- Responsive ---------- */
 @media (max-width:1024px){
   .problem-grid{grid-template-columns:1fr;gap:48px}
   .about-grid{grid-template-columns:360px 1fr;gap:56px}
@@ -299,7 +279,6 @@ h3{
   .cta-row{flex-direction:column;align-items:stretch}
 }
 
-/* ---------- Seed landing ---------- */
 .seed-top{border-bottom:1px solid var(--sy-rule)}
 .seed-top .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
 .seed-top .back{font-size:14.5px;color:var(--sy-charcoal2);border-bottom:1px solid transparent}
@@ -341,7 +320,7 @@ h3{
 @media (max-width:1024px){.three{grid-template-columns:1fr;gap:28px}}
 @media (max-width:840px){.seed-hero{padding:80px 0 64px}.seed-hero .wrap{grid-template-columns:1fr;gap:40px}}
 @media (max-width:520px){.signup .row{grid-template-columns:1fr}}
-/* ===== DESIGN LAYER (v2): dark frame, depth, numbered lists, cards ===== */
+
 .nav{background:rgba(37,40,48,0.94);border-bottom:1px solid rgba(250,248,245,0.08)}
 .nav .brand{color:var(--sy-cream)}
 .nav-links a{color:rgba(250,248,245,0.78)}
@@ -420,13 +399,10 @@ h3{
 .seed-form input::placeholder{color:rgba(250,248,245,0.5)}
 .section-tint,.tint{background:var(--sy-warmgray)}
 
-
-/* ---------- Logo ---------- */
 .brand svg{display:block;height:20px;width:auto}
 .footer .brand svg{height:52px}
 @media (max-width:640px){.brand svg{height:17px}.footer .brand svg{height:44px}}
 
-/* ---------- Accessibility pass: text contrast 4.5:1 or better ---------- */
 .btn-gold,.badge{color:var(--sy-charcoal)}
 .btn-gold:hover{background:#D4A574;border-color:#D4A574;color:var(--sy-charcoal)}
 .hero .micro,.hero .heroq,.close .contact,.close .where{color:rgba(250,248,245,0.8)}
@@ -436,7 +412,6 @@ h3{
 </head>
 <body>
 
-<!-- ============ TOP ============ -->
 <header class="seed-top">
   <div class="wrap">
     <a class="brand" href="https://syncovatellc.com/" aria-label="Syncovate home"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="100 628 1300 140" role="img" aria-label="Syncovate — Business + Psychology"><g fill="currentColor"><path fill-rule="evenodd" d="M492.678,755.657 C492.666,758.342 488.992,756.874 487.553,755.298 C487.553,755.298 404.617,664.463 404.617,664.463 C404.617,664.463 404.831,737.817 404.831,737.817 C404.856,746.517 411.53,751.941 419.691,751.228 C419.691,751.228 423.413,751.866 423.413,751.866 C424.114,751.986 424.01,754.495 423.108,755.384 C423.108,755.384 383.996,755.01 383.996,755.01 C382.761,755.799 381.221,755.389 380.754,754.502 C380.414,753.858 380.445,752.311 380.942,751.537 C381.335,750.926 382.634,750.56 384.066,750.738 C391.186,751.625 397.302,746.561 397.346,738.834 C397.346,738.834 397.773,663.102 397.773,663.102 C397.827,653.561 391.35,647.35 381.86,646.915 C381.86,646.915 378.628,646.767 378.628,646.767 C377.713,646.725 377.355,643.158 378.241,643.055 C378.241,643.055 406.191,642.536 406.191,642.536 C413.452,652.52 421.361,660.561 429.588,669.43 C429.588,669.43 486.357,730.631 486.357,730.631 C486.357,730.631 486.321,661.151 486.321,661.151 C486.319,656.32 484.07,651.911 480.734,649.394 C476.421,647.209 471.979,647.01 467.267,646.524 C466.316,646.426 466.385,642.694 467.902,642.699 C467.902,642.699 507.828,642.834 507.828,642.834 C508.518,642.837 508.664,646.313 508.024,646.494 C507.384,646.676 506.301,646.853 504.984,646.803 C498.36,646.549 493.138,650.991 493.106,658.238 C493.106,658.238 492.678,755.657 492.678,755.657 Z "/><path fill-rule="evenodd" d="M734.017,744.496 C711.464,725.787 706.198,695.176 719.916,670.004 C728.838,653.632 744.602,642.864 761.224,640.327 C781.196,637.279 799.555,644.067 812.632,658.198 C830.837,677.87 833.535,705.986 820.004,728.98 C802.001,759.573 761.601,767.379 734.017,744.496 Z M804.514,731.72 C815.602,707.671 811.762,678.335 795.267,657.969 C787.197,648.005 775.487,643.282 762.863,645.2 C752.408,646.788 741.999,653.806 736.63,665.019 C725.386,688.504 728.901,718.1 745.071,738.651 C753.322,749.137 765.118,753.982 778.157,751.981 C788.708,750.362 799.102,743.459 804.514,731.72 Z "/><path fill-rule="evenodd" d="M1362.27,700.409 C1362.27,700.409 1338,700.366 1338,700.366 C1338,700.366 1338.24,737.924 1338.24,737.924 C1338.28,744.93 1341.86,750.249 1349.08,750.271 C1349.08,750.271 1371.07,750.335 1371.07,750.335 C1381.6,750.366 1389.44,743.779 1392.68,733.625 C1392.68,733.625 1393.89,731.252 1393.89,731.252 C1394.43,730.183 1397.54,730.301 1397.81,731.298 C1397.81,731.298 1391.38,755.689 1391.38,755.689 C1391.38,755.689 1306.91,755.683 1306.91,755.683 C1304.66,748.69 1314.37,753.533 1319.18,748.545 C1321.35,746.29 1322.09,742.652 1322.1,738.912 C1322.1,738.912 1322.15,658.09 1322.15,658.09 C1322.16,654.847 1321.5,651.775 1319.66,649.821 C1317.65,647.682 1314.45,647.117 1310.95,646.934 C1310.95,646.934 1307.59,646.757 1307.59,646.757 C1306.64,646.707 1306.09,643.603 1307.14,642.727 C1307.14,642.727 1386.23,642.605 1386.23,642.605 C1386.23,642.605 1386.41,664.04 1386.41,664.04 C1386.43,665.746 1386.18,666.805 1384.52,667.092 C1383.4,667.286 1382.51,666.268 1382.31,664.784 C1380.99,654.947 1373.88,648.192 1363.92,648.096 C1363.92,648.096 1337.96,647.845 1337.96,647.845 C1337.96,647.845 1338.09,693.618 1338.09,693.618 C1338.09,693.618 1363.19,693.256 1363.19,693.256 C1368.62,693.177 1371.95,688.097 1372.72,682.905 C1372.55,681.612 1372.86,680.575 1373.53,680 C1374.19,679.438 1376.09,679.816 1376.1,680.874 C1376.1,680.874 1376.43,715.085 1376.43,715.085 C1376.43,715.832 1373.96,716.198 1373.53,715.745 C1372.92,715.102 1372.69,713.353 1372.74,712.146 C1373.04,705.312 1369.18,700.422 1362.27,700.409 Z "/><path fill-rule="evenodd" d="M1048.51,713.319 C1048.51,713.319 1040.71,740.052 1040.71,740.052 C1039.94,742.7 1039.91,747.056 1041.94,749.093 C1044.9,752.062 1050.02,751.53 1053.75,751.437 C1055.61,751.391 1055.78,755.558 1054.63,755.562 C1054.63,755.562 1016.78,755.698 1016.78,755.698 C1016.11,754.418 1016.13,752.585 1016.53,751.917 C1017.63,750.088 1027.35,753.197 1031.86,740.647 C1031.86,740.647 1060.86,660.057 1060.86,660.057 C1062.69,654.982 1062.86,650.226 1062.69,645.03 C1069.36,642.745 1073.74,635.358 1074.82,638.331 C1074.82,638.331 1112.17,741.679 1112.17,741.679 C1116.68,754.157 1126.75,749.537 1127.53,752.864 C1127.73,753.722 1127.83,755.757 1126.02,755.752 C1126.02,755.752 1086.07,755.65 1086.07,755.65 C1085.04,755.647 1084.79,752.064 1085.71,751.632 C1089.16,751.37 1093.05,751.615 1096.06,749.031 C1097.3,746.509 1096.8,743.663 1095.9,741.045 C1095.9,741.045 1086.41,713.394 1086.41,713.394 C1086.41,713.394 1048.51,713.319 1048.51,713.319 Z M1084.04,706.587 C1084.04,706.587 1066.4,659.283 1066.4,659.283 C1066.4,659.283 1050.62,706.679 1050.62,706.679 C1050.62,706.679 1084.04,706.587 1084.04,706.587 Z "/><path fill-rule="evenodd" d="M958.205,646.788 C957.579,645.833 957.365,644.153 958.119,642.628 C958.119,642.628 991.141,642.666 991.141,642.666 C992.049,643.044 992.195,645.836 991.624,646.667 C987.16,646.849 982.523,649.145 980.635,653.855 C980.635,653.855 939.177,757.267 939.177,757.267 C937.701,758.108 935.211,757.791 933.038,757.594 C933.038,757.594 891.831,655.352 891.831,655.352 C887.666,645.018 878.044,647.637 876.904,646.389 C876.058,645.462 876.447,642.583 877.898,642.587 C877.898,642.587 919.208,642.703 919.208,642.703 C920.12,642.706 920.523,646.019 919.476,646.785 C916.443,646.819 910.63,646.35 909.218,649.919 C908.272,652.308 909.617,656.199 910.502,658.44 C910.502,658.44 940.828,735.237 940.828,735.237 C940.828,735.237 962.755,678.979 962.755,678.979 C962.755,678.979 968.918,660.9 968.918,660.9 C969.654,657.659 970.953,653.105 968.849,650.056 C966.666,646.891 961.741,646.712 958.205,646.788 Z "/><path fill-rule="evenodd" d="M322.299,653.964 C322.299,653.964 289.714,697.945 289.714,697.945 C289.714,697.945 289.784,741.977 289.784,741.977 C289.789,744.818 290.974,747.476 292.528,748.97 C294.456,750.823 297.07,751.093 300.06,751.256 C300.06,751.256 303.363,751.436 303.363,751.436 C304.24,751.484 304.994,753.487 304.142,755.676 C304.142,755.676 259.063,755.666 259.063,755.666 C258.761,754.1 258.674,752.121 259.158,751.703 C259.802,751.145 261.785,751.317 262.848,751.338 C269.147,751.459 273.659,748.009 273.681,741.878 C273.681,741.878 273.83,700.827 273.83,700.827 C273.83,700.827 238.297,651.794 238.297,651.794 C232.493,643.786 222.223,650.064 225.264,642.757 C225.264,642.757 266.364,642.511 266.364,642.511 C267.336,643.545 267.303,645.555 266.87,646.774 C263.531,646.598 260.571,646.989 257.994,649.251 C258.133,652.487 259.99,655.324 261.936,658.067 C261.936,658.067 286.061,692.089 286.061,692.089 C286.061,692.089 312.104,656.154 312.104,656.154 C313.67,653.993 314.367,650.238 312.51,648.523 C310.092,646.291 306.299,646.721 302.864,646.722 C301.58,646.722 301.62,642.777 302.835,642.77 C302.835,642.77 333.87,642.568 333.87,642.568 C334.237,644.543 334.11,645.502 333.933,646.816 C328.777,646.887 325.407,649.769 322.299,653.964 Z "/><path fill-rule="evenodd" d="M1217.87,740.406 C1217.87,747.353 1221.54,751.26 1228.22,751.207 C1229.33,751.198 1231.65,751.256 1232.43,751.883 C1233.18,752.482 1232.87,755.641 1231.83,755.642 C1231.83,755.642 1187.75,755.671 1187.75,755.671 C1184.74,748.567 1194.19,753.491 1199.22,748.665 C1200.99,746.962 1201.99,744.184 1201.99,740.903 C1201.99,740.903 1202,649.314 1202,649.314 C1202,649.314 1176.15,649.394 1176.15,649.394 C1163.52,649.434 1163.78,662.519 1162.83,663.404 C1162.25,663.949 1160.4,663.986 1158.72,663.5 C1158.72,663.5 1160.34,638.394 1160.34,638.394 C1163.85,636.154 1164.95,642.46 1169.83,642.462 C1169.83,642.462 1250.27,642.496 1250.27,642.496 C1256.38,642.499 1257.94,636.535 1260.97,638.254 C1260.97,638.254 1259.91,663.52 1259.91,663.52 C1258.57,663.937 1256.64,663.923 1255.95,663.465 C1255.29,663.026 1255.23,661.186 1255.15,660.069 C1255.77,653.922 1251.79,649.439 1245.85,649.416 C1245.85,649.416 1217.91,649.309 1217.91,649.309 C1217.91,649.309 1217.87,740.406 1217.87,740.406 Z "/><path fill-rule="evenodd" d="M615.481,751.751 C634.514,755.588 650.976,744.067 654.946,725.884 C655.218,724.641 656.613,724.514 657.444,724.97 C658.523,725.561 659.049,726.239 658.779,727.891 C658.779,727.891 655.267,749.422 655.267,749.422 C641.553,755.283 626.675,758.768 611.757,757.315 C579.191,754.142 558.801,732.07 557.71,699.076 C557.151,682.167 564.04,666.932 576.718,655.623 C600.102,634.763 629.348,636.616 657.289,648.615 C657.289,648.615 658.808,671.119 658.808,671.119 C658.655,672.091 655.039,672.095 654.848,671.146 C652.911,661.529 648.292,653.018 639.066,648.789 C617.568,638.933 590.89,647.576 580.392,669.34 C565.184,700.865 579.842,744.567 615.481,751.751 Z "/><path fill-rule="evenodd" d="M155.116,754.289 C141.518,759.721 126.386,758.358 112.875,752.119 C112.875,752.119 109.687,728.72 109.687,728.72 C110.837,728.368 112.132,728.317 113.455,728.68 C115.818,738.205 121.473,747.367 130.88,750.931 C141.827,755.077 153.937,750.336 158.668,740.53 C163.643,730.219 160.533,717.722 150.069,711.758 C150.069,711.758 129.261,699.898 129.261,699.898 C118.037,693.5 112.519,682.804 112.85,669.968 C113.26,654.119 124.158,642.171 140.212,640.087 C149.309,638.906 158.451,640.174 167.51,642.326 C167.51,642.326 169.73,662.353 169.73,662.353 C163.644,665.601 167.403,652.883 155.903,647.206 C148.038,643.323 138.321,643.794 131.852,649.886 C126.446,654.977 125.283,662.357 126.326,670.075 C127.104,675.839 131.561,681.853 137.801,685.318 C137.801,685.318 160.205,697.758 160.205,697.758 C171.402,703.975 176.879,715.399 175.618,728.124 C174.483,739.576 166.767,749.634 155.116,754.289 Z "/></g><path fill="#BF8756" d="M692.291,856.853 C692.291,856.853 682.602,856.926 682.602,856.926 C682.602,856.926 682.573,841.014 682.573,841.014 C682.573,841.014 666.408,840.991 666.408,840.991 C666.408,840.991 666.407,831.944 666.407,831.944 C666.407,831.944 682.568,831.877 682.568,831.877 C682.568,831.877 682.588,816.058 682.588,816.058 C682.588,816.058 692.281,816.055 692.281,816.055 C692.281,816.055 692.298,831.879 692.298,831.879 C692.298,831.879 708.314,831.917 708.314,831.917 C708.314,831.917 708.33,840.995 708.33,840.995 C708.33,840.995 692.29,841.006 692.29,841.006 C692.29,841.006 692.291,856.853 692.291,856.853 Z "/></svg></a>
@@ -446,7 +421,6 @@ h3{
 
 <main>
 
-<!-- ============ HERO + FORM ============ -->
 <section class="seed-hero">
   <div class="wrap">
     <div class="hero-copy">
@@ -455,7 +429,6 @@ h3{
       <p class="lede">Every Saturday morning, one idea for owners and leaders of growing companies. Small enough to read over coffee, built to grow all week.</p>
     </div>
 
-    <!-- GHL form "Saturday Seed Sign Up Form" (first name, email, consent). If the footer on another page sent an address, it is passed to the form as ?email=. -->
     <div class="signup">
       <iframe id="inline-Ri9xtq1bNLmpkOKaJUj4" title="Saturday Seed Sign Up Form" style="width:100%;height:380px;border:none;border-radius:2px"
         src="https://link.syncovatellc.com/widget/form/Ri9xtq1bNLmpkOKaJUj4"
@@ -473,7 +446,6 @@ h3{
   </div>
 </section>
 
-<!-- ============ THREE ============ -->
 <section class="section section-tint">
   <div class="wrap">
     <ul class="three reveal">
@@ -484,7 +456,6 @@ h3{
   </div>
 </section>
 
-<!-- ============ A FEW SEEDS ============ -->
 <section class="section">
   <div class="wrap">
     <h2 class="reveal">A few seeds we've planted.</h2>
@@ -501,7 +472,6 @@ h3{
 
 </main>
 
-<!-- ============ FOOTER (landing, minimal) ============ -->
 <footer class="seed-foot">
   <div class="wrap">
     <div>
